@@ -1,0 +1,81 @@
+# 在留資格「定住者」 のページ内リンク（取得日 2026-09-15）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+本文へ	https://www.moj.go.jp/isa/applications/status/longtermresident.html#contentsArea
+Multi language	https://www.moj.go.jp/isa/other_languages.html
+組織・採用	https://www.moj.go.jp/isa/about/index.html
+出入国在留管理庁の概要	https://www.moj.go.jp/isa/about/organization/index.html
+機構図	https://www.moj.go.jp/isa/about/organization/chart.html
+幹部一覧	https://www.moj.go.jp/isa/about/organization/executive.html
+地方出入国在留管理官署	https://www.moj.go.jp/isa/about/region/index.html
+採用案内	https://www.moj.go.jp/isa/about/recruitment/index.html
+出入国手続	https://www.moj.go.jp/isa/immigration/index.html
+出入（帰）国手続について（解説）	https://www.moj.go.jp/isa/immigration/procedures/tetuduki_index1_1.html
+再入国許可申請	https://www.moj.go.jp/isa/immigration/procedures/16-5.html
+トラスティド・トラベラー・プログラム（TTP）	https://www.moj.go.jp/isa/immigration/procedures/ttp2_index.html
+乗員上陸許可申請（NACCS）	https://www.moj.go.jp/isa/immigration/procedures/06_00005.html
+各種公表資料	https://www.moj.go.jp/isa/immigration/resources/index.html
+出入国審査・在留審査Q&A	https://www.moj.go.jp/isa/immigration/faq/kanri_qa.html
+在留手続	https://www.moj.go.jp/isa/applications/index.html
+在留資格から探す	https://www.moj.go.jp/isa/applications/status/index.html
+手続の種類から探す	https://www.moj.go.jp/isa/applications/procedures/index.html
+オンライン手続	https://www.moj.go.jp/isa/applications/online/onlineprocedures.html
+育成就労制度	https://www.moj.go.jp/isa/applications/index_00005.html
+特定技能制度	https://www.moj.go.jp/isa/applications/ssw/index.html
+外国人技能実習制度	https://www.moj.go.jp/isa/applications/titp/nyuukokukanri05_00014.html
+高度人材ポイント制	https://www.moj.go.jp/isa/applications/resources/newimmiact_3_index.html
+J-Skip/J-Find	https://www.moj.go.jp/isa/applications/resources/nyukan_nyukan50_00002.html
+スタートアップ関連施策	https://www.moj.go.jp/isa/applications/resources/03_00070.html
+留学生の就職	https://www.moj.go.jp/isa/applications/resources/10_00015.html
+各種公表資料	https://www.moj.go.jp/isa/applications/resources/index.html
+在留支援	https://www.moj.go.jp/isa/support/index.html
+ロードマップ	https://www.moj.go.jp/isa/support/coexistence/04_00033.html
+総合的対応策	https://www.moj.go.jp/isa/support/coexistence/nyuukokukanri01_00140.html
+HarmoniUP!	https://www.moj.go.jp/isa/support/coexistence/04_00070.html
+新規入国者向けガイダンスページ	https://www.moj.go.jp/isa/support/guidance/index.html
+外国人生活支援ポータルサイト	https://www.moj.go.jp/isa/support/portal/index.html
+生活・就労ガイドブック	https://www.moj.go.jp/isa/support/portal/guidebook_all.html
+外国人在留支援センター(FRESC／フレスク）	https://www.moj.go.jp/isa/support/fresc/fresc01.html
+相談窓口	https://www.moj.go.jp/isa/support/consultation/index.html
+外国人との共生施策に係る御意見・御要望（御意見箱）	https://www.moj.go.jp/isa/support/opinion.html
+退去強制手続	https://www.moj.go.jp/isa/deportation/index.html
+退去強制手続と出国命令制度	https://www.moj.go.jp/isa/deportation/procedures/tetuduki_index5_00002.html
+監理措置制度	https://www.moj.go.jp/isa/08_00045.html
+仮放免制度	https://www.moj.go.jp/isa/08_00050.html
+各種申請	https://www.moj.go.jp/isa/deportation/application.html
+入管法違反者に関する情報提供	https://www.moj.go.jp/isa/consultation/report/index.html
+各種公表資料	https://www.moj.go.jp/isa/deportation/resources/index.html
+退去強制手続・出国命令制度・上陸拒否期間の短縮決定Q&A	https://www.moj.go.jp/isa/deportation/guide/tetuduki_taikyo_qa.html
+難民の認定等	https://www.moj.go.jp/isa/refugee/index.html
+難民認定手続・補完的保護対象者認定手続	https://www.moj.go.jp/isa/refugee/procedures/16-6.html
+難民旅行証明書交付申請手続	https://www.moj.go.jp/isa/refugee/procedures/16-7.html
+第三国定住による難民の受入れ	https://www.moj.go.jp/isa/refugee/procedures/07_00046.html
+一時庇護上陸許可	https://www.moj.go.jp/isa/refugee/procedures/higo_00001.html
+各種公表資料	https://www.moj.go.jp/isa/refugee/resources/index.html
+政策情報（会議・統計等）	https://www.moj.go.jp/isa/policies/index.html
+会議・委員会等	https://www.moj.go.jp/isa/policies/conference/seisaku_index.html
+統計	https://www.moj.go.jp/isa/policies/statistics/index.html
+基本計画・白書・パンフレット	https://www.moj.go.jp/isa/policies/policies/index.html
+関係法令	https://www.moj.go.jp/isa/policies/bill/01_00442.html
+その他政策情報	https://www.moj.go.jp/isa/policies/others/index.html
+広報・情報公開等	https://www.moj.go.jp/isa/publications/index.html
+プレスリリース	https://www.moj.go.jp/isa/publications/press/index.html
+更新情報	https://www.moj.go.jp/isa/publications/newslist/index.html
+広報	https://www.moj.go.jp/isa/publications/publications/index.html
+調達情報	https://www.moj.go.jp/isa/publications/procurement/index.html
+情報公開・個人情報保護	https://www.moj.go.jp/isa/disclosure_privacy.html
+公文書管理	https://www.moj.go.jp/isa/publications/record/index.html
+ご意見・情報提供	https://www.moj.go.jp/isa/publications/contact/index.html
+その他の公表情報	https://www.moj.go.jp/isa/publications/others/index.html
+よくあるお問い合わせ（FAQ）	https://www.moj.go.jp/isa/publications/faq.html
+トップページ	https://www.moj.go.jp/isa/index.html
+１ 外国人（申請人）の方が日系３世である場合	https://www.moj.go.jp/isa/applications/status/longtermresident_01.html
+２ 外国人（申請人）の方が日系２世の配偶者（夫又は妻）である場合	https://www.moj.go.jp/isa/applications/status/longtermresident01.html
+３ 外国人（申請人）の方が日系３世の配偶者（夫又は妻）である場合	https://www.moj.go.jp/isa/applications/status/logntermresident03.html
+４ 外国人（申請人）の方が「永住者」、「定住者」、「日本人の配偶者等」、「永住者の配偶者等」又は「特別永住者」のいずれかの方の扶養を受けて生活する、未成年で未婚の実子である場合	https://www.moj.go.jp/isa/applications/status/longtermresident04.html
+５ 外国人（申請人）の方が「日本人」、「永住者」、「定住者」又は「特別永住者」のいずれかの方の扶養を受けて生活する、６歳未満の養子である場合	https://www.moj.go.jp/isa/applications/status/longtermresident05.html
+「日本人の配偶者等」又は「永住者の配偶者等」から「定住者」への在留資格変更許可が認められた事例及び認められなかった事例について	https://www.moj.go.jp/isa/applications/resources/nyuukokukanri07_00057.html
+ページトップ	https://www.moj.go.jp/isa/applications/status/longtermresident.html#
+サイトマップ	https://www.moj.go.jp/isa/sitemap.html
+リンク・著作権等について	https://www.moj.go.jp/isa/copyright/index.html
+こちら	https://www.moj.go.jp/isa/disclosure_privacy.html
