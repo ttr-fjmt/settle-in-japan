@@ -1,0 +1,14 @@
+{
+  "name": "settle-in-japan-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Settle in Japan のデータ収集・検証。依存パッケージなし（Node 22 の標準機能だけ）",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "validate": "node validate.js",
+    "fetch": "node fetch-official.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

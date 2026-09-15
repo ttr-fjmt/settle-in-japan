@@ -1,0 +1,72 @@
+name: Fetch official pages
+
+# 公式ページ（出入国在留管理庁など）の本文を取得して data/raw/ に保存する。
+#
+# クラウド（Claude Code on the web）のセッションは許可ドメインしか見られず、
+# moj.go.jp に直接アクセスできない。GitHub Actions からは出られるので、
+# 「取得」だけをここで行い、保存した本文をセッション側が読んでデータを作る。
+#
+# 手動実行のみ。公式サイトに負荷をかけないよう、定期実行にはしていない
+# （制度の確認が必要になったときに実行する）。
+
+on:
+  workflow_dispatch:
+
+# 既定のシェルを bash に固定する（pipefail を有効にし、失敗を握りつぶさないため）。
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Run unit tests
+        working-directory: scraper
+        run: npm test
+
+      - name: Fetch official pages
+        working-directory: scraper
+        run: node fetch-official.js
+
+      - name: Validate data against the fetched pages
+        working-directory: scraper
+        run: npm run validate
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/raw
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: 公式ページの本文を取得し直す ($(date -u +%Y-%m-%d))"
+
+          max_retries=2
+          attempt=0
+          until git push; do
+            attempt=$((attempt + 1))
+            if [ "$attempt" -gt "$max_retries" ]; then
+              echo "::error::push failed after $max_retries retries"
+              exit 1
+            fi
+            echo "push failed (attempt $attempt/$max_retries) — pulling --rebase and retrying..."
+            git pull --rebase origin main
+          done
