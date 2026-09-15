@@ -65,8 +65,14 @@ const FIELDS = {
   name_ja: { type: 'string', required: true },
   name_en: { type: 'string', required: true },
   group: { type: 'enum', required: true, values: VISA_GROUP },
-  /** 公式一覧表の「本邦において行うことができる活動」の文言をそのまま入れる */
-  activities_ja: { type: 'string', required: true, verifyAgainstSource: true },
+  /**
+   * 公式一覧表の「本邦において行うことができる活動」の文言を、そのまま1つずつ入れる。
+   * 高度専門職・特定技能・技能実習のように活動がイ・ロ・ハと分かれている資格があるため配列。
+   * つなげて1文にすると本文照合に落ちる（つないだ文は本文に存在しないため）。
+   */
+  activities_ja: { type: 'string[]', required: true, verifyAgainstSource: true },
+  /** 公式一覧表の「該当例」の文言。該当例の欄が無い資格もあるので必須にしない */
+  examples_ja: { type: 'string', required: false, verifyAgainstSource: true },
   /** 公式一覧表の「在留期間」の文言をそのまま、1つずつ入れる */
   periods_ja: { type: 'string[]', required: true, verifyAgainstSource: true },
   work_allowed: { type: 'enum', required: true, values: TRISTATE },

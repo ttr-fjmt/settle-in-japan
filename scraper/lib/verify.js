@@ -60,8 +60,13 @@ function verifyRecord(record, { dir = RAW_DIR } = {}) {
   if (raw == null) return { checked: false, missing: [] };
 
   const missing = [];
-  if (record.activities_ja && !textAppearsIn(record.activities_ja, raw)) {
-    missing.push(`activities_ja: 公式ページの本文に見当たりません`);
+  for (const activity of record.activities_ja || []) {
+    if (!textAppearsIn(activity, raw)) {
+      missing.push(`activities_ja "${activity.slice(0, 24)}…": 公式ページの本文に見当たりません`);
+    }
+  }
+  if (record.examples_ja && !textAppearsIn(record.examples_ja, raw)) {
+    missing.push(`examples_ja: 公式ページの本文に見当たりません`);
   }
   for (const period of record.periods_ja || []) {
     if (!textAppearsIn(period, raw)) {

@@ -33,3 +33,22 @@ test('source_id は出典リストに登録されたものだけ', () => {
     assert.ok(ids.has(r.source_id), `${r.id}: source_id "${r.source_id}" が sources.json にありません`);
   }
 });
+
+test('一覧表にある在留資格が、1つも欠けずに入っている', () => {
+  // 取得し直したときに、表の形が変わって一部を取りこぼすことがある。
+  // 29種類（号で分かれるものは号ごと）が揃っていることを、ここで見張る。
+  const { STATUSES } = require('../extract-visa-types');
+  const names = records.map(r => r.name_ja);
+  for (const s of STATUSES) {
+    assert.ok(
+      names.some(n => n === s.name || n.startsWith(s.name + '１号') || n.startsWith(s.name)),
+      `${s.name} が入っていません`
+    );
+  }
+  assert.ok(records.length >= STATUSES.length, `件数が少なすぎます: ${records.length}`);
+});
+
+test('すべてのレコードに在留期間が1つ以上ある', () => {
+  const missing = records.filter(r => !(r.periods_ja || []).length).map(r => r.name_ja);
+  assert.deepStrictEqual(missing, [], '在留期間が空のレコード: ' + missing.join('、'));
+});

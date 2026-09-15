@@ -17,10 +17,11 @@
 |---|---|
 | `data/sources.json` | 出典にする公式ページの一覧（出入国在留管理庁など） |
 | `data/raw/` | 公式ページの本文。`fetch-official.js` が保存する。手で編集しない |
-| `data/visa-types.json` | 在留資格のデータ。**まだ空**（公式ページを取得してから作る） |
+| `data/visa-types.json` | 在留資格のデータ。**33件**（29種類。高度専門職・特定技能・技能実習は号ごと） |
 | `scraper/lib/schema.js` | データの形と許容値。分類を増やすときはここだけを変える |
 | `scraper/lib/verify.js` | 本文照合。書いた文言が公式ページに実在するかを確かめる |
 | `scraper/fetch-official.js` | 公式ページを取得して `data/raw/` に保存する |
+| `scraper/extract-visa-types.js` | 保存した本文から `data/visa-types.json` を組み立てる |
 
 ## なぜ「取得」と「データ作り」を分けているか
 
@@ -50,6 +51,7 @@ cd scraper
 npm test            # ユニットテスト（データの形・出典・本文照合・表現のチェック）
 npm run validate    # data/visa-types.json を検証
 npm run fetch       # 公式ページを取得（※通信が必要。ふつうは Actions で動かす）
+npm run extract     # 保存した本文から visa-types.json を作り直す（--dry-run で確認だけ）
 ```
 
 依存パッケージは無い（Node 22 の標準機能だけ）。`npm install` は不要。
@@ -64,6 +66,7 @@ npm run fetch       # 公式ページを取得（※通信が必要。ふつう�
 
 ## 次にやること
 
-1. `fetch-official.yml` を実行して、在留資格一覧表の本文を取得する
-2. 取得した本文から `data/visa-types.json` を組み立てる
-3. 一覧・比較ページを作る（表示は既存3サイトの作りを踏襲する）
+1. 一覧・比較ページを作る（表示は既存3サイトの作りを踏襲する）
+2. 就労の可否と家族帯同の可否を、在留資格ごとの個別ページから埋める
+   （いまは一覧表に書かれていない9件が `unknown`）
+3. 英語・やさしい日本語の文章を用意する
