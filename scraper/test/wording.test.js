@@ -29,7 +29,7 @@ const records = JSON.parse(
 test('掲載データに、個別の判断を述べる表現が無い', () => {
   const hits = [];
   for (const r of records) {
-    const text = [r.activities_ja, ...(r.periods_ja || []), r.summary_ja || ''].join(' ');
+    const text = [...(r.activities_ja || []), ...(r.periods_ja || []), r.summary_ja || ''].join(' ');
     for (const word of FORBIDDEN) {
       if (text.includes(word)) hits.push(`${r.id}: 「${word}」`);
     }

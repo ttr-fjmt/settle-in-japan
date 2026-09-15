@@ -11,7 +11,7 @@ const base = () => ({
   name_ja: '技術・人文知識・国際業務',
   name_en: 'Engineer / Specialist in Humanities / International Services',
   group: 'work',
-  activities_ja: '本邦の公私の機関との契約に基づいて行う業務に従事する活動',
+  activities_ja: ['本邦の公私の機関との契約に基づいて行う業務に従事する活動'],
   periods_ja: ['5年', '3年', '1年', '3月'],
   work_allowed: 'yes',
   family_stay: 'yes',

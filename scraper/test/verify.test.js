@@ -47,7 +47,7 @@ test('取得済みなら、本文に無い記述を指摘する', () => {
   const good = verifyRecord(
     {
       source_id: 'visa-list',
-      activities_ja: '本邦の公私の機関との契約に基づいて行う業務に従事する活動',
+      activities_ja: ['本邦の公私の機関との契約に基づいて行う業務に従事する活動'],
       periods_ja: ['5年', '3年'],
     },
     { dir }
@@ -56,7 +56,7 @@ test('取得済みなら、本文に無い記述を指摘する', () => {
   assert.deepStrictEqual(good.missing, []);
 
   const bad = verifyRecord(
-    { source_id: 'visa-list', activities_ja: '自由に働ける活動', periods_ja: ['10年'] },
+    { source_id: 'visa-list', activities_ja: ['自由に働ける活動'], periods_ja: ['10年'] },
     { dir }
   );
   assert.strictEqual(bad.checked, true);

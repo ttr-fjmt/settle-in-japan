@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --test \"test/*.test.js\"",
     "validate": "node validate.js",
-    "fetch": "node fetch-official.js"
+    "fetch": "node fetch-official.js",
+    "extract": "node extract-visa-types.js"
   },
   "engines": {
     "node": ">=22"
