@@ -7,7 +7,8 @@
     "test": "node --test \"test/*.test.js\"",
     "validate": "node validate.js",
     "fetch": "node fetch-official.js",
-    "extract": "node extract-visa-types.js"
+    "extract": "node extract-visa-types.js",
+    "pages": "node generate-visa-pages.js"
   },
   "engines": {
     "node": ">=22"
