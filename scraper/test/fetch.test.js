@@ -3,7 +3,7 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
-const { htmlToText } = require('../fetch-official');
+const { htmlToText, USER_AGENT } = require('../fetch-official');
 
 test('HTMLから本文だけを取り出す', () => {
   const html = `
@@ -25,4 +25,15 @@ test('HTMLから本文だけを取り出す', () => {
 test('表のセルは区切りが残る（在留期間がつながらない）', () => {
   const text = htmlToText('<tr><td>5年</td><td>3年</td></tr>');
   assert.ok(!text.includes('5年3年'), 'セルが連結すると照合が壊れる');
+});
+
+test('名乗り（User-Agent）は ASCII だけ', () => {
+  // HTTPヘッダーに日本語を入れると、送信前に例外になって1件も取得できない。
+  // 実際に「公式情報の照合用」と書いて3ページすべてが失敗した。その再発をここで止める。
+  assert.ok(USER_AGENT.length > 0);
+  for (const ch of USER_AGENT) {
+    assert.ok(ch.codePointAt(0) <= 0xff, `ASCII以外の文字が入っています: ${ch}`);
+  }
+  // 実際にヘッダーとして組み立てられるかも確かめる（ここで落ちれば取得も落ちる）
+  assert.doesNotThrow(() => new Headers({ 'User-Agent': USER_AGENT }));
 });

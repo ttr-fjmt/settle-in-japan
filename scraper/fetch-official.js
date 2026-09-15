@@ -24,8 +24,10 @@ const ROOT = path.join(__dirname, '..');
 const SOURCES_PATH = path.join(ROOT, 'data', 'sources.json');
 const RAW_DIR = path.join(ROOT, 'data', 'raw');
 
+// HTTPヘッダーに使えるのは ASCII だけ。日本語を入れると送信前に例外になり、1件も取得できない
+// （実際に「公式情報の照合用」と書いて全件失敗した）。名乗りは英数字だけで書く。
 const USER_AGENT =
-  'settle-in-japan-bot/1.0 (+https://github.com/ttr-fjmt/settle-in-japan) 公式情報の照合用';
+  'settle-in-japan-bot/1.0 (+https://github.com/ttr-fjmt/settle-in-japan; verifying official sources)';
 
 /** 連続アクセスの間隔。公式サイトに負荷をかけないため。 */
 const DELAY_MS = 3000;
@@ -126,4 +128,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { htmlToText, readSources };
+module.exports = { htmlToText, readSources, USER_AGENT };
