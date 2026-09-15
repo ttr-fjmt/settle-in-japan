@@ -52,6 +52,8 @@ npm test            # ユニットテスト（データの形・出典・本文�
 npm run validate    # data/visa-types.json を検証
 npm run fetch       # 公式ページを取得（※通信が必要。ふつうは Actions で動かす）
 npm run extract     # 保存した本文から visa-types.json を作り直す（--dry-run で確認だけ）
+npm run pages       # ページ（トップ・一覧・在留資格ごと）を書き出す
+npm run sitemap     # sitemap.xml・llms.txt・404.html を書き出す
 ```
 
 依存パッケージは無い（Node 22 の標準機能だけ）。`npm install` は不要。

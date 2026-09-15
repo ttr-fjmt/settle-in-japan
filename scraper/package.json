@@ -8,7 +8,8 @@
     "validate": "node validate.js",
     "fetch": "node fetch-official.js",
     "extract": "node extract-visa-types.js",
-    "pages": "node generate-visa-pages.js"
+    "pages": "node generate-visa-pages.js",
+    "sitemap": "node generate-sitemap.js"
   },
   "engines": {
     "node": ">=22"
