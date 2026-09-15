@@ -55,6 +55,38 @@ function htmlToText(html) {
     .trim();
 }
 
+/**
+ * ページの中のリンクを「文字\tURL」の形で取り出す。
+ *
+ * 本文だけを保存すると、一覧ページから個別ページへのリンク先が失われ、
+ * 「次にどのページを取ればいいか」が分からなくなる（実際にそうなった）。
+ * 同じ公式サイトの中のリンクだけを残す。外部サイトは出典にしないため。
+ */
+function extractLinks(html, pageUrl) {
+  const host = new URL(pageUrl).hostname;
+  const seen = new Set();
+  const links = [];
+  const re = /<a\s[^>]*href\s*=\s*"([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    let url;
+    try {
+      url = new URL(m[1], pageUrl);
+    } catch {
+      continue;
+    }
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') continue;
+    if (url.hostname !== host) continue;
+    const text = htmlToText(m[2]).replace(/\s+/g, ' ').trim();
+    if (!text) continue;
+    const key = `${text}\t${url.href}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    links.push({ text, url: url.href });
+  }
+  return links;
+}
+
 function readSources() {
   const sources = JSON.parse(fs.readFileSync(SOURCES_PATH, 'utf8'));
   if (!Array.isArray(sources)) throw new Error('data/sources.json は配列である必要があります');
@@ -74,9 +106,10 @@ async function fetchOne(source) {
     throw new Error('PDFは対象外です（HTML版のページを登録してください）');
   }
 
-  const text = htmlToText(await res.text());
+  const html = await res.text();
+  const text = htmlToText(html);
   if (text.length < 200) throw new Error(`本文が短すぎます（${text.length}文字）。取得に失敗した可能性`);
-  return text;
+  return { text, links: extractLinks(html, res.url || source.url) };
 }
 
 async function main() {
@@ -95,7 +128,7 @@ async function main() {
   for (const [i, source] of sources.entries()) {
     if (i > 0) await delay(DELAY_MS);
     try {
-      const body = await fetchOne(source);
+      const { text: body, links } = await fetchOne(source);
       const header = [
         `# ${source.title}`,
         `# 取得元: ${source.url}`,
@@ -105,7 +138,16 @@ async function main() {
         '',
       ].join('\n');
       fs.writeFileSync(path.join(RAW_DIR, `${source.id}.txt`), header + body + '\n');
-      console.log(`[ok]   ${source.id}: ${body.length}文字 → data/raw/${source.id}.txt`);
+      // リンク先は別ファイルに分ける。本文照合の対象は本文だけにしたいため。
+      const linkFile = path.join(RAW_DIR, `${source.id}.links.txt`);
+      fs.writeFileSync(
+        linkFile,
+        `# ${source.title} のページ内リンク（取得日 ${today}）\n` +
+          '# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。\n\n' +
+          links.map(l => `${l.text}\t${l.url}`).join('\n') +
+          '\n'
+      );
+      console.log(`[ok]   ${source.id}: ${body.length}文字・リンク${links.length}件 → data/raw/${source.id}.txt`);
       ok += 1;
     } catch (err) {
       console.warn(`[fail] ${source.id}: ${err.message}`);
@@ -128,4 +170,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { htmlToText, readSources, USER_AGENT };
+module.exports = { htmlToText, extractLinks, readSources, USER_AGENT };

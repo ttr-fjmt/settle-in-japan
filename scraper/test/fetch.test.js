@@ -37,3 +37,21 @@ test('名乗り（User-Agent）は ASCII だけ', () => {
   // 実際にヘッダーとして組み立てられるかも確かめる（ここで落ちれば取得も落ちる）
   assert.doesNotThrow(() => new Headers({ 'User-Agent': USER_AGENT }));
 });
+
+test('ページ内のリンクを「文字とURL」で取り出す', () => {
+  const { extractLinks } = require('../fetch-official');
+  const html = `
+    <a href="/isa/applications/status/gijinkoku.html">技術・人文知識・国際業務</a>
+    <a href="https://www.moj.go.jp/isa/applications/status/permanent.html">永住者</a>
+    <a href="https://example.com/other">よその사이트</a>
+    <a href="mailto:test@example.com">メール</a>
+    <a href="/isa/applications/status/gijinkoku.html">技術・人文知識・国際業務</a>`;
+  const links = extractLinks(html, 'https://www.moj.go.jp/isa/applications/status/index.html');
+
+  assert.strictEqual(links.length, 2, '同じ公式サイトのリンクだけを、重複なく取る');
+  assert.deepStrictEqual(links[0], {
+    text: '技術・人文知識・国際業務',
+    url: 'https://www.moj.go.jp/isa/applications/status/gijinkoku.html',
+  });
+  assert.ok(links.every(l => l.url.startsWith('https://www.moj.go.jp/')), '外部サイトとmailtoは除く');
+});
