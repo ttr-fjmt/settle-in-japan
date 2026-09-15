@@ -19,5 +19,47 @@
     "url": "https://www.moj.go.jp/isa/applications/procedures/index.html",
     "publisher": "出入国在留管理庁",
     "note": "在留資格変更・期間更新などの手続き一覧。「やることリスト」の根拠に使う。"
+  },
+  {
+    "id": "visa-designated-activities",
+    "title": "在留資格「特定活動」",
+    "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities.html",
+    "publisher": "出入国在留管理庁",
+    "note": "特定活動の就労可否を確認するため。活動の内容は個々の許可によるため、一覧表だけでは判定できない。"
+  },
+  {
+    "id": "visa-permanent-resident",
+    "title": "永住許可申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-4.html",
+    "publisher": "出入国在留管理庁",
+    "note": "永住者の就労可否を確認するため。"
+  },
+  {
+    "id": "visa-spouse-of-japanese",
+    "title": "在留資格「日本人の配偶者等」",
+    "url": "https://www.moj.go.jp/isa/applications/status/spouseorchildofjapanese.html",
+    "publisher": "出入国在留管理庁",
+    "note": "就労可否を確認するため。"
+  },
+  {
+    "id": "visa-spouse-of-permanent-resident",
+    "title": "在留資格「永住者の配偶者等」",
+    "url": "https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html",
+    "publisher": "出入国在留管理庁",
+    "note": "就労可否を確認するため。"
+  },
+  {
+    "id": "visa-long-term-resident",
+    "title": "在留資格「定住者」",
+    "url": "https://www.moj.go.jp/isa/applications/status/longtermresident.html",
+    "publisher": "出入国在留管理庁",
+    "note": "就労可否を確認するため。"
+  },
+  {
+    "id": "visa-dependent",
+    "title": "在留資格「家族滞在」",
+    "url": "https://www.moj.go.jp/isa/applications/status/dependent.html",
+    "publisher": "出入国在留管理庁",
+    "note": "家族帯同の可否を確認するため（どの在留資格の家族が対象かが書かれている）。"
   }
 ]
