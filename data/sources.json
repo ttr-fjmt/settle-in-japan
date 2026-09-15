@@ -1,0 +1,23 @@
+[
+  {
+    "id": "visa-list",
+    "title": "在留資格一覧表",
+    "url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留資格ごとの「本邦において行うことができる活動」「該当例」「在留期間」。在留資格図鑑の土台。"
+  },
+  {
+    "id": "status-index",
+    "title": "在留資格から探す",
+    "url": "https://www.moj.go.jp/isa/applications/status/index.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留資格ごとの個別ページへの入口。各資格の詳細ページのURLをここから拾う。"
+  },
+  {
+    "id": "procedures-index",
+    "title": "手続の種類から探す",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/index.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留資格変更・期間更新などの手続き一覧。「やることリスト」の根拠に使う。"
+  }
+]
