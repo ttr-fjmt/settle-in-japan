@@ -124,21 +124,33 @@ function checkQuotes(article, { loadRaw = loadRawText } = {}) {
   return problems;
 }
 
+/** その節の引用に出てくる「数字＋単位」（書き直しを頼むときに、使える表記を示すため）。 */
+function numbersInQuotes(quoted) {
+  return [...new Set(String(quoted).match(NUMBER_PATTERN) || [])].map(n => n.replace(/\s/g, ''));
+}
+
 /** 本文に書いた数字が、同じ節の引用に実在するか。 */
 function checkNumbers(article) {
   const problems = [];
   for (const section of article.sections) {
     const quoted = (section.quotes || []).map(q => q.text).join(' ');
+    // 公式が「6月」と書いているものを「6か月」と書き換えると落ちる。使える表記を添えて返す。
+    const available = numbersInQuotes(quoted);
+    const hint = available.length
+      ? `この節の引用にある表記は「${available.join('」「')}」です。そのまま使ってください`
+      : 'この節の引用には数字がありません。数字を書かないか、数字のある公式の文を引いてください';
     for (const paragraph of section.body) {
       for (const found of String(paragraph.ja).match(NUMBER_PATTERN) || []) {
         const number = found.replace(/\s/g, '');
         if (!textAppearsIn(number, quoted)) {
-          problems.push(`${section.heading_ja}: 「${number}」を裏づける引用がありません`);
+          problems.push(`${section.heading_ja}: 「${number}」を裏づける引用がありません。${hint}`);
         }
       }
       for (const found of String(paragraph.en).match(ENGLISH_NUMBER_PATTERN) || []) {
         if (!textAppearsIn(found.replace(/,/g, ''), quoted)) {
-          problems.push(`${section.heading_ja}: 英語の本文にある "${found}" を裏づける引用がありません`);
+          problems.push(
+            `${section.heading_ja}: 英語の本文にある "${found}" を裏づける引用がありません。${hint}`
+          );
         }
       }
     }
@@ -197,6 +209,7 @@ module.exports = {
   checkSources,
   CLOSING_HEADING_JA,
   FORBIDDEN,
+  numbersInQuotes,
   NUMBER_PATTERN,
   ENGLISH_NUMBER_PATTERN,
 };
