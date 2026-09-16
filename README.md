@@ -53,7 +53,14 @@ npm run validate    # data/visa-types.json を検証
 npm run fetch       # 公式ページを取得（※通信が必要。ふつうは Actions で動かす）
 npm run extract     # 保存した本文から visa-types.json を作り直す（--dry-run で確認だけ）
 npm run pages       # ページ（トップ・一覧・在留資格ごと）を書き出す
+npm run articles    # 解説記事のページを書き出す
+npm run brand       # ロゴ（favicon・apple-touch-icon・logo.svg）を書き出す
+npm run ogp         # OGP画像（SNSに出る画像）を足りないぶんだけ作る（--all で全部）
 npm run sitemap     # sitemap.xml・llms.txt・404.html を書き出す
+
+# 記事の自動更新（ふつうは Actions が毎日動かす）
+node write-next-article.js --dry-run   # 次に書く題材を確認する
+node write-next-article.js --check-pace # 今日が書く日かどうかだけ見る
 ```
 
 依存パッケージは無い（Node 22 の標準機能だけ）。`npm install` は不要。

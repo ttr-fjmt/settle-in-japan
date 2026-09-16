@@ -1,0 +1,1035 @@
+[
+  {
+    "n": 1,
+    "id": "what-is-residence-status",
+    "title_ja": "在留資格とは何か——全体像",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-list",
+      "status-index"
+    ],
+    "status": "pending",
+    "note": "在留資格図鑑と対で読ませる"
+  },
+  {
+    "n": 2,
+    "id": "work-or-no-work-status",
+    "title_ja": "就労できる在留資格と、できない在留資格の違い",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-list"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 3,
+    "id": "certificate-of-eligibility",
+    "title_ja": "在留資格認定証明書とは何か、誰が申請するのか",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 4,
+    "id": "short-term-stay",
+    "title_ja": "短期滞在（観光）で日本に来られる期間",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 5,
+    "id": "engineer-specialist-jobs",
+    "title_ja": "技術・人文知識・国際業務で働けるのはどんな仕事か",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-list"
+    ],
+    "status": "pending",
+    "note": "検索が多い"
+  },
+  {
+    "n": 6,
+    "id": "specified-skilled-worker-1-2",
+    "title_ja": "特定技能1号と2号は何が違うのか",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-list"
+    ],
+    "status": "pending",
+    "note": "家族帯同の違いが要点"
+  },
+  {
+    "n": 7,
+    "id": "technical-intern-vs-ssw",
+    "title_ja": "技能実習と特定技能はどう違うのか",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 8,
+    "id": "highly-skilled-professional-points",
+    "title_ja": "高度専門職のポイント制とは",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 9,
+    "id": "student-visa",
+    "title_ja": "留学の在留資格で日本に来るには",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-list"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 10,
+    "id": "dependent-visa-eligibility",
+    "title_ja": "家族滞在の対象になる在留資格",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-dependent",
+      "visa-list"
+    ],
+    "status": "pending",
+    "note": "在留資格図鑑のデータと連動"
+  },
+  {
+    "n": 11,
+    "id": "business-manager-visa",
+    "title_ja": "経営・管理の在留資格で会社を作る",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "visa-list"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 12,
+    "id": "where-to-apply-immigration",
+    "title_ja": "在留資格の申請はどこでするのか（地方出入国在留管理局）",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [
+      "card-where",
+      "procedures-index"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 13,
+    "id": "application-fees",
+    "title_ja": "申請に必要な手数料",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": "金額は公式のものだけ"
+  },
+  {
+    "n": 14,
+    "id": "customs-restricted-items",
+    "title_ja": "日本に持ち込めないもの・申告が必要なもの",
+    "phase": "before-arrival",
+    "basis": "税関",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 15,
+    "id": "documents-before-arrival",
+    "title_ja": "来日前に用意しておくとよい書類",
+    "phase": "before-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": "公式に列挙のあるものだけ"
+  },
+  {
+    "n": 16,
+    "id": "first-14-days",
+    "title_ja": "来日後14日以内にやること",
+    "phase": "after-arrival",
+    "basis": "ISA / MIC / LOCAL",
+    "sources": [],
+    "status": "published",
+    "note": "✅ 公開済み `/guide/first-14-days/`"
+  },
+  {
+    "n": 17,
+    "id": "move-in-notification",
+    "title_ja": "住民登録（転入届）の手順",
+    "phase": "after-arrival",
+    "basis": "MIC / LOCAL",
+    "sources": [],
+    "status": "published",
+    "note": "✅ 公開済み `/guide/move-in-notification/`"
+  },
+  {
+    "n": 18,
+    "id": "residence-card",
+    "title_ja": "在留カードの役割と、いつ受け取るか",
+    "phase": "after-arrival",
+    "basis": "ISA",
+    "sources": [],
+    "status": "published",
+    "note": "✅ 公開済み `/guide/residence-card/`"
+  },
+  {
+    "n": 19,
+    "id": "national-health-insurance",
+    "title_ja": "国民健康保険の入り方",
+    "phase": "after-arrival",
+    "basis": "MHLW / LOCAL",
+    "sources": [],
+    "status": "published",
+    "note": "✅ 公開済み `/guide/national-health-insurance/`"
+  },
+  {
+    "n": 20,
+    "id": "change-of-address",
+    "title_ja": "住所が変わったときの届出（在留カード・住民票）",
+    "phase": "after-arrival",
+    "basis": "ISA / MIC",
+    "sources": [],
+    "status": "published",
+    "note": "✅ 公開済み `/guide/change-of-address/`"
+  },
+  {
+    "n": 21,
+    "id": "my-number-card",
+    "title_ja": "マイナンバーカードの作り方",
+    "phase": "after-arrival",
+    "basis": "MIC",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 22,
+    "id": "opening-bank-account",
+    "title_ja": "銀行口座を開くために必要なもの",
+    "phase": "after-arrival",
+    "basis": "金融庁",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 23,
+    "id": "mobile-phone-contract",
+    "title_ja": "携帯電話の契約に必要な書類",
+    "phase": "after-arrival",
+    "basis": "総務省",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 24,
+    "id": "national-pension-enrolment",
+    "title_ja": "国民年金への加入",
+    "phase": "after-arrival",
+    "basis": "NPS",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 25,
+    "id": "health-insurance-card",
+    "title_ja": "健康保険証（マイナ保険証）の使い方",
+    "phase": "after-arrival",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 26,
+    "id": "hanko-seal-registration",
+    "title_ja": "印鑑（はんこ）は必要か、印鑑登録とは",
+    "phase": "after-arrival",
+    "basis": "LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 27,
+    "id": "renting-a-home",
+    "title_ja": "賃貸住宅を借りるときの流れ",
+    "phase": "after-arrival",
+    "basis": "MLIT",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 28,
+    "id": "guarantor-and-guarantee-company",
+    "title_ja": "保証人・保証会社とは何か",
+    "phase": "after-arrival",
+    "basis": "MLIT",
+    "sources": [],
+    "status": "pending",
+    "note": "相場は書かない"
+  },
+  {
+    "n": 29,
+    "id": "deposit-and-key-money",
+    "title_ja": "敷金・礼金とは何か",
+    "phase": "after-arrival",
+    "basis": "MLIT",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 30,
+    "id": "utilities-setup",
+    "title_ja": "電気・ガス・水道の開始手続き",
+    "phase": "after-arrival",
+    "basis": "各事業者",
+    "sources": [],
+    "status": "pending",
+    "note": "公式に書かれた手順のみ"
+  },
+  {
+    "n": 31,
+    "id": "garbage-sorting",
+    "title_ja": "ごみの出し方（分別と収集日）",
+    "phase": "after-arrival",
+    "basis": "LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": "自治体図鑑と連動"
+  },
+  {
+    "n": 32,
+    "id": "bicycle-registration",
+    "title_ja": "自転車の防犯登録",
+    "phase": "after-arrival",
+    "basis": "警察庁",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 33,
+    "id": "driving-licence-conversion",
+    "title_ja": "運転免許の切替（外免切替）",
+    "phase": "after-arrival",
+    "basis": "警察庁",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 34,
+    "id": "moving-out-notification",
+    "title_ja": "転出・転居したときの手続き",
+    "phase": "after-arrival",
+    "basis": "MIC / LOCAL",
+    "sources": [
+      "jutei-move"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 35,
+    "id": "residence-certificate-copy",
+    "title_ja": "住民票の写しの取り方と使い道",
+    "phase": "after-arrival",
+    "basis": "MIC / LOCAL",
+    "sources": [
+      "jutei-resident-record"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 36,
+    "id": "income-tax-and-resident-tax",
+    "title_ja": "所得税と住民税の違い",
+    "phase": "daily-life",
+    "basis": "NTA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 37,
+    "id": "year-end-adjustment",
+    "title_ja": "年末調整とは何か",
+    "phase": "daily-life",
+    "basis": "NTA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 38,
+    "id": "filing-tax-return",
+    "title_ja": "確定申告が必要になる人",
+    "phase": "daily-life",
+    "basis": "NTA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 39,
+    "id": "dependent-deduction",
+    "title_ja": "扶養控除とは（家族が海外にいる場合）",
+    "phase": "daily-life",
+    "basis": "NTA",
+    "sources": [],
+    "status": "pending",
+    "note": "条件は公式の記載のみ"
+  },
+  {
+    "n": 40,
+    "id": "reading-your-payslip",
+    "title_ja": "給与明細の読み方",
+    "phase": "daily-life",
+    "basis": "MHLW / NTA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 41,
+    "id": "shakai-hoken-vs-kokuho",
+    "title_ja": "社会保険と国民健康保険の違い",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 42,
+    "id": "employee-vs-national-pension",
+    "title_ja": "厚生年金と国民年金の違い",
+    "phase": "daily-life",
+    "basis": "NPS",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 43,
+    "id": "seeing-a-doctor",
+    "title_ja": "病院のかかり方（保険証・自己負担）",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 44,
+    "id": "emergency-119",
+    "title_ja": "救急のとき（119番と受診）",
+    "phase": "daily-life",
+    "basis": "消防庁",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 45,
+    "id": "high-cost-medical-expenses",
+    "title_ja": "高額療養費制度とは",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 46,
+    "id": "pregnancy-and-birth",
+    "title_ja": "妊娠・出産のときの手続き",
+    "phase": "daily-life",
+    "basis": "MHLW / LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 47,
+    "id": "childbirth-lump-sum",
+    "title_ja": "出産育児一時金",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": "金額は公式のものだけ"
+  },
+  {
+    "n": 48,
+    "id": "nursery-school",
+    "title_ja": "子どもを保育園に入れる",
+    "phase": "daily-life",
+    "basis": "LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 49,
+    "id": "school-enrolment",
+    "title_ja": "子どもを小中学校に入れる（就学案内）",
+    "phase": "daily-life",
+    "basis": "MEXT / LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 50,
+    "id": "child-allowance",
+    "title_ja": "児童手当",
+    "phase": "daily-life",
+    "basis": "LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 51,
+    "id": "child-vaccinations",
+    "title_ja": "予防接種（子ども）",
+    "phase": "daily-life",
+    "basis": "MHLW / LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 52,
+    "id": "free-japanese-classes",
+    "title_ja": "日本語を無料で学べる場所（自治体・NPO）",
+    "phase": "daily-life",
+    "basis": "文化庁 / LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": "日本語学習図鑑と連動"
+  },
+  {
+    "n": 53,
+    "id": "jlpt",
+    "title_ja": "日本語能力試験（JLPT）とは",
+    "phase": "daily-life",
+    "basis": "主催団体",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 54,
+    "id": "hello-work",
+    "title_ja": "ハローワークの使い方",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 55,
+    "id": "employment-insurance",
+    "title_ja": "雇用保険（失業給付）のしくみ",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 56,
+    "id": "working-conditions-notice",
+    "title_ja": "労働条件通知書で確認すること",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 57,
+    "id": "paid-leave",
+    "title_ja": "有給休暇のルール",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 58,
+    "id": "overtime-pay",
+    "title_ja": "残業と割増賃金のルール",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 59,
+    "id": "minimum-wage",
+    "title_ja": "最低賃金の調べ方",
+    "phase": "daily-life",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": "都道府県ごと。数字は公式のみ"
+  },
+  {
+    "n": 60,
+    "id": "permission-for-part-time-work",
+    "title_ja": "資格外活動許可（アルバイトをする）",
+    "phase": "daily-life",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": "留学生に必須"
+  },
+  {
+    "n": 61,
+    "id": "extension-of-stay",
+    "title_ja": "在留期間の更新（更新申請の流れ）",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [
+      "procedures-index"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 62,
+    "id": "change-of-status",
+    "title_ja": "在留資格の変更（転職・進学のとき）",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [
+      "procedures-index"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 63,
+    "id": "certificate-of-authorized-employment",
+    "title_ja": "就労資格証明書とは",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 64,
+    "id": "notify-change-of-employer",
+    "title_ja": "転職したときの届出（14日以内）",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 65,
+    "id": "permanent-residence-requirements",
+    "title_ja": "永住許可の要件",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [
+      "visa-permanent-resident"
+    ],
+    "status": "pending",
+    "note": "個別判断はしない"
+  },
+  {
+    "n": 66,
+    "id": "permanent-residence-vs-naturalisation",
+    "title_ja": "永住と帰化の違い",
+    "phase": "long-term",
+    "basis": "ISA / MOJ",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 67,
+    "id": "naturalisation-procedure",
+    "title_ja": "帰化の手続き（法務局）",
+    "phase": "long-term",
+    "basis": "MOJ",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 68,
+    "id": "bringing-family-to-japan",
+    "title_ja": "家族を日本に呼ぶ（家族滞在の申請）",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 69,
+    "id": "re-entry-permit",
+    "title_ja": "再入国許可・みなし再入国",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 70,
+    "id": "residence-card-validity",
+    "title_ja": "在留カードの有効期間と更新",
+    "phase": "long-term",
+    "basis": "ISA",
+    "sources": [
+      "card-what"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 71,
+    "id": "buying-a-home",
+    "title_ja": "日本で家を買う（住宅ローンの基礎）",
+    "phase": "long-term",
+    "basis": "MLIT / 金融庁",
+    "sources": [],
+    "status": "pending",
+    "note": "相場・金利は書かない"
+  },
+  {
+    "n": 72,
+    "id": "pension-contribution-periods",
+    "title_ja": "年金を納めた期間はどうなるか",
+    "phase": "long-term",
+    "basis": "NPS",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 73,
+    "id": "lump-sum-withdrawal-payment",
+    "title_ja": "脱退一時金（帰国するとき）",
+    "phase": "long-term",
+    "basis": "NPS",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 74,
+    "id": "leaving-japan-notification",
+    "title_ja": "国外転出のときの手続き",
+    "phase": "long-term",
+    "basis": "MIC / NTA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 75,
+    "id": "long-term-care-insurance",
+    "title_ja": "介護保険とは（40歳以上）",
+    "phase": "long-term",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 76,
+    "id": "health-insurance-after-leaving-job",
+    "title_ja": "会社をやめたときの健康保険",
+    "phase": "long-term",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 77,
+    "id": "car-purchase-parking-certificate",
+    "title_ja": "自動車の購入と車庫証明",
+    "phase": "long-term",
+    "basis": "警察庁",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 78,
+    "id": "moving-house-checklist",
+    "title_ja": "引っ越しのときにやること一覧",
+    "phase": "long-term",
+    "basis": "MIC / LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 79,
+    "id": "high-school-admission",
+    "title_ja": "子どもの高校進学",
+    "phase": "long-term",
+    "basis": "MEXT",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 80,
+    "id": "starting-a-company",
+    "title_ja": "日本で起業する（会社設立の登記）",
+    "phase": "long-term",
+    "basis": "MOJ",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 81,
+    "id": "lost-residence-card",
+    "title_ja": "在留カードをなくした（再交付申請）",
+    "phase": "trouble",
+    "basis": "ISA",
+    "sources": [
+      "card-reissue-lost"
+    ],
+    "status": "pending",
+    "note": "緊急ページ"
+  },
+  {
+    "n": 82,
+    "id": "lost-passport",
+    "title_ja": "パスポートをなくした",
+    "phase": "trouble",
+    "basis": "各国大使館 / MOFA",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 83,
+    "id": "overstaying",
+    "title_ja": "在留期間を過ぎてしまったら",
+    "phase": "trouble",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": "出頭申告の制度説明のみ"
+  },
+  {
+    "n": 84,
+    "id": "dismissal-from-job",
+    "title_ja": "解雇されたとき",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 85,
+    "id": "unpaid-wages",
+    "title_ja": "給料が払われないとき（労働基準監督署）",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 86,
+    "id": "work-injury-compensation",
+    "title_ja": "労災にあったとき",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 87,
+    "id": "workplace-harassment",
+    "title_ja": "職場でハラスメントを受けたとき",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 88,
+    "id": "fresc",
+    "title_ja": "外国人在留支援センター（FRESC）とは",
+    "phase": "trouble",
+    "basis": "ISA",
+    "sources": [],
+    "status": "pending",
+    "note": "相談窓口図鑑と連動"
+  },
+  {
+    "n": 89,
+    "id": "multilingual-consultation-desks",
+    "title_ja": "多言語で相談できる窓口一覧",
+    "phase": "trouble",
+    "basis": "ISA / LOCAL",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 90,
+    "id": "houterasu",
+    "title_ja": "法テラス（無料の法律相談）",
+    "phase": "trouble",
+    "basis": "法テラス",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 91,
+    "id": "human-rights-counselling",
+    "title_ja": "人権相談窓口",
+    "phase": "trouble",
+    "basis": "MOJ",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 92,
+    "id": "eviction",
+    "title_ja": "家を追い出されそうなとき",
+    "phase": "trouble",
+    "basis": "MLIT / 法テラス",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 93,
+    "id": "housing-security-benefit",
+    "title_ja": "家賃が払えないとき（住居確保給付金）",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 94,
+    "id": "support-for-those-in-need",
+    "title_ja": "生活が苦しいとき（生活困窮者自立支援）",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 95,
+    "id": "divorce-and-residence-status",
+    "title_ja": "離婚するとき（在留資格への影響）",
+    "phase": "trouble",
+    "basis": "ISA / MOJ",
+    "sources": [],
+    "status": "pending",
+    "note": "個別判断はしない"
+  },
+  {
+    "n": 96,
+    "id": "domestic-violence",
+    "title_ja": "DV被害を受けたとき",
+    "phase": "trouble",
+    "basis": "内閣府",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 97,
+    "id": "injury-and-sickness-allowance",
+    "title_ja": "病気で働けないとき（傷病手当金）",
+    "phase": "trouble",
+    "basis": "MHLW",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 98,
+    "id": "disaster-information",
+    "title_ja": "災害が起きたとき（避難情報の多言語配信）",
+    "phase": "trouble",
+    "basis": "気象庁 / 内閣府",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 99,
+    "id": "consumer-affairs-centre",
+    "title_ja": "詐欺・悪質商法にあったとき（消費生活センター）",
+    "phase": "trouble",
+    "basis": "消費者庁",
+    "sources": [],
+    "status": "pending",
+    "note": "出典の追加が必要"
+  },
+  {
+    "n": 100,
+    "id": "leaving-japan-checklist",
+    "title_ja": "帰国するときにやること一覧",
+    "phase": "trouble",
+    "basis": "ISA / MIC / NPS",
+    "sources": [],
+    "status": "pending",
+    "note": ""
+  }
+]

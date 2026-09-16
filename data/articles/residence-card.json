@@ -80,8 +80,8 @@
       "heading_ja": "記載事項が変わったとき",
       "body": [
         {
-          "en": "If your name, date of birth, sex, or nationality and region change, there is a separate notification, and the same two-week window applies.",
-          "ja": "氏名・生年月日・性別・国籍地域が変わったときは、別の届出があります。期限は同じく2週間です。"
+          "en": "If your name, date of birth, sex, or nationality and region change, there is a separate notification, due within 14 days of the change.",
+          "ja": "氏名・生年月日・性別・国籍地域が変わったときは、別の届出があります。期限は変更が生じた日から14日以内です。"
         }
       ],
       "quotes": [

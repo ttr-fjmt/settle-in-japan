@@ -18,8 +18,9 @@
  * 模様が薄くても、文字の後ろにあると読みにくくなる。
  */
 
-const SITE_NAME = 'Settle in Japan';
-const SITE_URL = 'https://settle-in-japan.net';
+const { logoMark, SITE_NAME, SITE_URL } = require('./brand');
+const { ogpUrl } = require('./ogp');
+
 const GA_MEASUREMENT_ID = 'G-44PECD16GK';
 const ADSENSE_CLIENT = 'ca-pub-5761092657360295';
 
@@ -169,8 +170,15 @@ function icon(name, size = 22) {
   return `<svg class="icon" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
 }
 
-/** ページの共通の外側。 */
+/**
+ * ページの共通の外側。
+ *
+ * OGP画像は canonical から決める（/guide/xxx/ → /assets/ogp/guide-xxx.png）。
+ * ページを作る側が指定し忘れても必ず入るようにするため、引数ではなく自動で導く。
+ */
 function layout({ title, description, canonical, body, hero = '' }) {
+  const pagePath = canonical.replace(SITE_URL, '') || '/';
+  const ogImage = ogpUrl(pagePath);
   return `<!doctype html>
 <html lang="ja">
 <head>
@@ -184,7 +192,17 @@ function layout({ title, description, canonical, body, hero = '' }) {
 <meta property="og:title" content="${escape(title)}">
 <meta property="og:description" content="${escape(description)}">
 <meta property="og:url" content="${escape(canonical)}">
-<meta name="twitter:card" content="summary">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="${escape(ogImage)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${escape(title)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${escape(ogImage)}">
+<meta name="theme-color" content="#16294a">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${headTags()}
 <style>
 /* 浮世絵の色：藍（プルシアンブルー）・生成りの紙・朱 */
@@ -218,8 +236,10 @@ header.site{background:var(--indigo-deep);background-image:${SEIGAIHA};color:#f4
   border-bottom:3px solid var(--vermilion)}
 header.site .wrap{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;
   gap:10px 20px;flex-wrap:wrap}
-.brand{font-weight:700;font-size:1.05rem;text-decoration:none;color:#fffdf8;letter-spacing:.01em}
-.brand span{display:block;font-size:.72rem;font-weight:400;color:#c9d6e6}
+.brand{font-weight:700;font-size:1.05rem;text-decoration:none;color:#fffdf8;letter-spacing:.01em;
+  display:inline-flex;align-items:center;gap:10px}
+.brand .logo{flex:none;border-radius:8px}
+.brand-text span{display:block;font-size:.72rem;font-weight:400;color:#c9d6e6}
 header.site nav{display:flex;gap:16px;flex-wrap:wrap}
 header.site nav a{color:#e8eef6;text-decoration:none;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;
   padding:4px 0;border-bottom:1px solid transparent}
@@ -328,7 +348,7 @@ footer.site a{color:#cfe0f2}
 </head>
 <body>
 <header class="site"><div class="wrap">
-<a class="brand" href="/">${SITE_NAME}<span>日本移住ガイド</span></a>
+<a class="brand" href="/">${logoMark(34)}<span class="brand-text">${SITE_NAME}<span>日本移住ガイド</span></span></a>
 <nav>
   <a href="/visa/">${icon('card', 18)}Residence statuses / 在留資格</a>
   <a href="/guide/">${icon('guide', 18)}Guides / 手続きの解説</a>
