@@ -87,8 +87,17 @@ const SEIGAIHA = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /**
  * トップページの絵。富士と波を、浮世絵の色で描いたもの（自作のSVG）。
  * 文字は重ねない。絵の上に文字を置くと読みにくくなるため、絵は絵として独立させる。
+ *
+ * 【動きについて】
+ * 波はゆっくり横に流し、日は静かに上下して光がまたたく。動きはCSSだけで作る（JavaScriptを使わない）。
+ * 波の絵は同じ形を2つ並べて、1つぶん（800）動かしたら元に戻す。継ぎ目が出ないようにするため。
+ *
+ * 目が疲れる速さにはしない。また、端末の設定で「視差効果を減らす」を選んでいる人には
+ * 動きを止める（prefers-reduced-motion）。動きが苦手な人・乗り物酔いしやすい人がいるため。
  */
 function heroArt() {
+  const wave = 'M0 196 C 90 176 150 214 240 196 C 330 178 390 214 480 196 C 570 178 630 214 720 196 C 760 188 780 192 800 196 L800 280 L0 280 Z';
+  const waveBack = 'M0 202 C 100 186 160 216 260 202 C 360 188 420 218 520 202 C 620 186 680 216 780 202 C 790 200 795 201 800 202 L800 280 L0 280 Z';
   return `<div class="hero-art" role="img" aria-label="A stylised view of Mount Fuji beyond the waves / 波の向こうの富士山を描いた絵">
 <svg viewBox="0 0 800 260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -100,17 +109,38 @@ function heroArt() {
       <stop offset="0%" stop-color="#2a5183"/>
       <stop offset="100%" stop-color="#16294a"/>
     </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#c4573c" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#c4573c" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="800" height="260"/></clipPath>
   </defs>
-  <rect width="800" height="260" fill="url(#sky)"/>
-  <circle cx="626" cy="74" r="34" fill="#c4573c" opacity="0.85"/>
-  <path d="M255 182 L372 66 Q385 53 398 66 L515 182 Z" fill="#1f3a63"/>
-  <path d="M338 100 L372 66 Q385 53 398 66 L432 100 L412 92 L396 104 L378 90 L358 104 Z" fill="#f5f0e6"/>
-  <path d="M0 182 H800 V196 H0 Z" fill="#2a5183" opacity="0.35"/>
-  <path d="M0 196 C 90 176 150 214 240 196 C 330 178 390 214 480 196 C 570 178 630 214 720 196 C 760 188 780 192 800 196 L800 260 L0 260 Z" fill="url(#sea)"/>
-  <g fill="none" stroke="#f5f0e6" stroke-opacity="0.5" stroke-width="2.5" stroke-linecap="round">
-    <path d="M60 222 q22 -14 44 0 q22 14 44 0"/>
-    <path d="M300 232 q22 -14 44 0 q22 14 44 0"/>
-    <path d="M560 224 q22 -14 44 0 q22 14 44 0"/>
+  <g clip-path="url(#frame)">
+    <rect width="800" height="260" fill="url(#sky)"/>
+
+    <g class="sun">
+      <circle cx="626" cy="74" r="70" fill="url(#glow)" class="sun-glow"/>
+      <circle cx="626" cy="74" r="34" fill="#c4573c" opacity="0.85"/>
+    </g>
+
+    <path d="M255 182 L372 66 Q385 53 398 66 L515 182 Z" fill="#1f3a63"/>
+    <path d="M338 100 L372 66 Q385 53 398 66 L432 100 L412 92 L396 104 L378 90 L358 104 Z" fill="#f5f0e6"/>
+    <path d="M0 182 H800 V196 H0 Z" fill="#2a5183" opacity="0.35"/>
+
+    <g class="sea-back" opacity="0.55">
+      <path d="${waveBack}" fill="#2a5183"/>
+      <path d="${waveBack}" fill="#2a5183" transform="translate(800,0)"/>
+    </g>
+    <g class="sea-front">
+      <path d="${wave}" fill="url(#sea)"/>
+      <path d="${wave}" fill="url(#sea)" transform="translate(800,0)"/>
+    </g>
+
+    <g class="foam" fill="none" stroke="#f5f0e6" stroke-opacity="0.5" stroke-width="2.5" stroke-linecap="round">
+      <path d="M60 222 q22 -14 44 0 q22 14 44 0"/>
+      <path d="M300 232 q22 -14 44 0 q22 14 44 0" class="foam-2"/>
+      <path d="M560 224 q22 -14 44 0 q22 14 44 0" class="foam-3"/>
+    </g>
   </g>
 </svg>
 </div>`;
@@ -197,6 +227,22 @@ header.site nav a:hover{border-bottom-color:var(--vermilion)}
 
 /* トップの絵 */
 .hero-art{line-height:0;background:#f2ead9}
+/* 波はゆっくり流れ、日は静かに上下する。動きはここだけ。本文には動きを入れない */
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes driftBack{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes sunRise{0%{transform:translateY(4px)}100%{transform:translateY(-8px)}}
+@keyframes sunGlow{0%{opacity:.55}100%{opacity:1}}
+@keyframes bob{0%{transform:translateY(0)}100%{transform:translateY(-4px)}}
+.sea-front{animation:drift 26s linear infinite}
+.sea-back{animation:driftBack 44s linear infinite}
+.sun{animation:sunRise 30s ease-in-out infinite alternate;transform-origin:626px 74px}
+.sun-glow{animation:sunGlow 7s ease-in-out infinite alternate}
+.foam path{animation:bob 5s ease-in-out infinite alternate}
+.foam .foam-2{animation-duration:6.5s;animation-delay:-2s}
+.foam .foam-3{animation-duration:8s;animation-delay:-4s}
+@media (prefers-reduced-motion:reduce){
+  .sea-front,.sea-back,.sun,.sun-glow,.foam path{animation:none}
+}
 .hero-art svg{width:100%;height:auto;aspect-ratio:800/260;display:block}
 
 h1{font-size:clamp(1.55rem,5vw,2.15rem);line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
