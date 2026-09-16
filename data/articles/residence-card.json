@@ -4,7 +4,12 @@
   "title_ja": "在留カードの役割と、いつ受け取るか",
   "description": "在留カードが何のためのカードで、誰に交付され、どこで受け取るのかを、出入国在留管理庁の公式ページの記載にもとづいて説明します。記載事項が変わったときの届出まで。",
   "published_at": "2026-09-16",
-  "sources": ["card-what", "card-where", "card-notify-change", "residence-notify-new"],
+  "sources": [
+    "card-what",
+    "card-where",
+    "card-notify-change",
+    "residence-notify-new"
+  ],
   "sections": [
     {
       "heading_en": "What the card is for",
@@ -100,5 +105,6 @@
         }
       ]
     }
-  ]
+  ],
+  "icon": "card"
 }

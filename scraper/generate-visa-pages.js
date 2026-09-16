@@ -26,7 +26,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { VISA_GROUP_LABELS } = require('./lib/schema');
-const { layout, escape, SITE_NAME, SITE_URL } = require('./lib/page-layout');
+const { layout, escape, icon, heroArt, SITE_NAME, SITE_URL } = require('./lib/page-layout');
 
 const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
@@ -38,10 +38,10 @@ Last checked / 最終確認日: ${escape(record.source_checked_at)}</p>`;
 
 /** 区分の見出し。英語と日本語を併記する。 */
 const GROUP_HEADINGS = {
-  work: { en: 'Work permitted', ja: VISA_GROUP_LABELS.work },
-  non_work: { en: 'Work not permitted', ja: VISA_GROUP_LABELS.non_work },
-  designated: { en: 'Designated individually', ja: VISA_GROUP_LABELS.designated },
-  status_based: { en: 'Based on status', ja: VISA_GROUP_LABELS.status_based },
+  work: { en: 'Work permitted', ja: VISA_GROUP_LABELS.work, icon: 'work' },
+  non_work: { en: 'Work not permitted', ja: VISA_GROUP_LABELS.non_work, icon: 'study' },
+  designated: { en: 'Designated individually', ja: VISA_GROUP_LABELS.designated, icon: 'designated' },
+  status_based: { en: 'Based on status', ja: VISA_GROUP_LABELS.status_based, icon: 'status' },
 };
 const GROUP_ORDER = ['work', 'non_work', 'designated', 'status_based'];
 
@@ -72,27 +72,27 @@ function buildDetailPage(record) {
   const family = FAMILY_LABELS[record.family_stay];
   const body = `
 <h1>${escape(record.name_en)}<span class="ja">${escape(record.name_ja)}</span></h1>
-<p class="lead">${escape(GROUP_HEADINGS[record.group].en)} / ${escape(GROUP_HEADINGS[record.group].ja)}</p>
+<p class="lead">${icon(GROUP_HEADINGS[record.group].icon, 18)} ${escape(GROUP_HEADINGS[record.group].en)} / ${escape(GROUP_HEADINGS[record.group].ja)}</p>
 
 <div class="card">
-  <h3>Activities / 本邦において行うことができる活動</h3>
+  <h3>${icon('guide',16)}Activities / 本邦において行うことができる活動</h3>
   <ul class="official">
     ${record.activities_ja.map(a => `<li>${escape(a)}</li>`).join('\n    ')}
   </ul>
 </div>
 ${
   record.examples_ja
-    ? `<div class="card"><h3>Examples / 該当例</h3><p class="official">${escape(record.examples_ja)}</p></div>`
+    ? `<div class="card"><h3>${icon('status',16)}Examples / 該当例</h3><p class="official">${escape(record.examples_ja)}</p></div>`
     : ''
 }
 <div class="card">
-  <h3>Period of stay / 在留期間</h3>
+  <h3>${icon('clock',16)}Period of stay / 在留期間</h3>
   <p class="official">${record.periods_ja.map(escape).join('<br>')}</p>
 </div>
 <div class="card">
-  <h3>Work / 就労</h3>
+  <h3>${icon('work',16)}Work / 就労</h3>
   <p><span class="pill ${work.tone}">${escape(work.en)}</span> ${escape(work.ja)}</p>
-  <h3 style="margin-top:14px">Family on the Dependent status / 家族滞在の対象</h3>
+  <h3 style="margin-top:16px">${icon('home',16)}Family on the Dependent status / 家族滞在の対象</h3>
   <p><span class="pill ${family.tone}">${escape(family.en)}</span> ${escape(family.ja)}</p>
   <p style="font-size:.85rem;color:var(--ink-2);margin:6px 0 0">Whether a spouse or child can stay on the <a href="/visa/dependent/">Dependent</a> status. Some statuses include family members in the status itself — see the activities above.<br>
   配偶者・子が「家族滞在」で在留できるかを示します。在留資格そのものに家族の活動が含まれるものもあります（上の活動内容をご覧ください）。</p>
@@ -130,7 +130,7 @@ function buildListPage(records) {
 
   const sections = GROUP_ORDER.filter(g => records.some(r => r.group === g))
     .map(
-      g => `<h2>${escape(GROUP_HEADINGS[g].en)} <span class="ja">/ ${escape(GROUP_HEADINGS[g].ja)}</span></h2>
+      g => `<h2>${icon(GROUP_HEADINGS[g].icon)}${escape(GROUP_HEADINGS[g].en)} <span class="ja">/ ${escape(GROUP_HEADINGS[g].ja)}（${records.filter(r => r.group === g).length}）</span></h2>
 <div class="scroll"><table>
   <thead><tr>
     <th>Status / 在留資格</th><th>Work / 就労</th><th>Period of stay / 在留期間</th><th>Examples / 該当例</th>
@@ -164,30 +164,81 @@ Last checked / 最終確認日: ${escape(checked)}</p>
   });
 }
 
-/** サイトのトップ。いまは在留資格図鑑への入口だけを出す。 */
-function buildTopPage(records) {
+/**
+ * サイトのトップ。
+ *
+ * 入口は「来日からの時期」で5つに分ける（DECISIONS.md 2026-09-15）。
+ * 在留資格で分けると、読む人が先に自分の在留資格を理解していなければならない。
+ * 時期で分ければ、自分がどこにいるかがすぐ分かる。
+ *
+ * まだ作っていない入口も、隠さずに「準備中」と出す。
+ * 何がある予定のサイトなのかが伝わるほうが、白紙より分かりやすい。
+ */
+function buildTopPage(records, articleCount = 0) {
+  const entries = [
+    {
+      icon: 'card',
+      en: 'Residence statuses',
+      ja: '在留資格',
+      desc_en: `All ${records.length} entries from the official list, compared side by side.`,
+      desc_ja: `公式の一覧表にある${records.length}件を、活動内容・在留期間・就労の可否で比較できます。`,
+      href: '/visa/',
+    },
+    {
+      icon: 'guide',
+      en: 'Procedures after arrival',
+      ja: '来日直後の手続き',
+      desc_en: 'What to file in your first two weeks, step by step.',
+      desc_ja: '来日してすぐに行う届出を、順を追って説明します。',
+      href: '/guide/',
+      count: articleCount,
+    },
+    { icon: 'home', en: 'Housing', ja: '住まい', desc_en: 'Renting, guarantors, utilities.', desc_ja: '賃貸、保証会社、電気・ガス・水道。', soon: true },
+    { icon: 'health', en: 'Health and money', ja: '医療とお金', desc_en: 'Insurance, pension, tax.', desc_ja: '健康保険、年金、税金。', soon: true },
+    { icon: 'move', en: 'Staying longer', ja: '長く住む', desc_en: 'Renewal, permanent residence, family.', desc_ja: '在留期間の更新、永住、家族を呼ぶ。', soon: true },
+  ];
+
+  const cards = entries
+    .map(e => {
+      const inner = `<span class="head">${icon(e.icon)}${escape(e.en)}</span>
+  <span class="ja">${escape(e.ja)}</span>
+  <p>${escape(e.desc_en)}<br>${escape(e.desc_ja)}</p>`;
+      if (e.soon) {
+        return `<li class="card soon">${inner}
+  <span class="tag">Coming soon / 準備中</span>
+</li>`;
+      }
+      return `<li class="card"><a href="${escape(e.href)}">${inner}</a></li>`;
+    })
+    .join('\n');
+
   const body = `
 <h1>Settle in Japan<span class="ja">日本で暮らしはじめる人のための情報</span></h1>
 <p class="lead">Official rules on residence, procedures, housing and work — quoted from the source, with the date we last checked it.<br>
 在留資格・手続き・住まい・仕事の情報を、公式ページで確認できたものだけ、出典と確認日をつけて載せます。</p>
 
-<div class="card">
-  <h3>Available now / いま見られるもの</h3>
-  <p><a href="/visa/">Residence statuses of Japan — all ${records.length} entries compared</a><br>
-  <a href="/visa/">在留資格の一覧・比較（${records.length}件）</a></p>
-  <p style="margin-top:10px"><a href="/guide/">Guides — step-by-step explanations of the procedures</a><br>
-  <a href="/guide/">手続きの解説</a></p>
-</div>
+<ul class="cards">
+${cards}
+</ul>
 
-<p class="note">This site is being built. Sections on procedures after arrival, housing, money and consultation desks are not published yet.<br>
-このサイトは準備中です。来日後の手続き・住まい・お金・相談窓口のページは、まだ公開していません。</p>
+<p class="note">We quote the official pages in Japanese and do not translate legal wording, because a translation can change its meaning. Show the quoted Japanese at the counter — it is written the way the office expects to read it.<br>
+制度の文言は公式ページの日本語をそのまま引用し、私たちは翻訳しません（訳し方で意味が変わるため）。窓口では引用部分をそのまま見せてください。</p>
 `;
   return layout({
     title: `${SITE_NAME} — information for people settling in Japan`,
-    description: '外国人が日本で暮らしはじめるための情報。在留資格・手続き・住まい・仕事を、公式ページで確認できた内容だけ、出典つきで掲載します。',
+    description:
+      '外国人が日本で暮らしはじめるための情報。在留資格・手続き・住まい・仕事を、公式ページで確認できた内容だけ、出典つきで掲載します。',
     canonical: `${SITE_URL}/`,
+    hero: heroArt(),
     body,
   });
+}
+
+/** 記事の本数（トップに出すため）。記事がまだ無くても動くようにしておく。 */
+function countArticles() {
+  const dir = path.join(ROOT, 'data', 'articles');
+  if (!fs.existsSync(dir)) return 0;
+  return fs.readdirSync(dir).filter(f => f.endsWith('.json')).length;
 }
 
 function main() {
@@ -195,7 +246,7 @@ function main() {
   if (records.length === 0) throw new Error('data/visa-types.json が空です');
 
   const files = [
-    { path: 'index.html', html: buildTopPage(records) },
+    { path: 'index.html', html: buildTopPage(records, countArticles()) },
     { path: path.join('visa', 'index.html'), html: buildListPage(records) },
     ...records.map(r => ({ path: path.join('visa', r.id, 'index.html'), html: buildDetailPage(r) })),
   ];

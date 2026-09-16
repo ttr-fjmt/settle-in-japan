@@ -4,7 +4,11 @@
   "title_ja": "住民登録（転入届）の手順",
   "description": "市区町村への転入届のやり方を、総務省の公式ページの記載にもとづいて説明します。期限、持ち物、家族と暮らす場合に必要な書類、住民票に何が記載されるかまで。",
   "published_at": "2026-09-16",
-  "sources": ["jutei-move", "jutei-resident-record", "residence-notify-new"],
+  "sources": [
+    "jutei-move",
+    "jutei-resident-record",
+    "residence-notify-new"
+  ],
   "sections": [
     {
       "heading_en": "Who files it, and by when",
@@ -72,7 +76,10 @@
         }
       ],
       "quotes": [
-        { "source_id": "residence-notify-new", "text": "住居地を定めた日から１４日以内" }
+        {
+          "source_id": "residence-notify-new",
+          "text": "住居地を定めた日から１４日以内"
+        }
       ]
     },
     {
@@ -85,5 +92,6 @@
         }
       ]
     }
-  ]
+  ],
+  "icon": "home"
 }

@@ -4,7 +4,11 @@
   "title_ja": "国民健康保険の入り方",
   "description": "国民健康保険に加入する手続きを、厚生労働省の公式ページの記載にもとづいて説明します。誰が対象か、いつまでに届け出るか、どこの窓口かまで。",
   "published_at": "2026-09-16",
-  "sources": ["kokuho-join", "kokuho-foreign", "jutei-resident-record"],
+  "sources": [
+    "kokuho-join",
+    "kokuho-foreign",
+    "jutei-resident-record"
+  ],
   "sections": [
     {
       "heading_en": "Who becomes insured",
@@ -84,5 +88,6 @@
         }
       ]
     }
-  ]
+  ],
+  "icon": "health"
 }

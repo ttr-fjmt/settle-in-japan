@@ -23,7 +23,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { layout, escape, SITE_NAME, SITE_URL } = require('./lib/page-layout');
+const { layout, escape, icon, SITE_NAME, SITE_URL } = require('./lib/page-layout');
 
 const ROOT = path.join(__dirname, '..');
 const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
@@ -65,7 +65,7 @@ function buildArticlePage(article, sources) {
         .join('\n');
       const quotes = (section.quotes || []).map(q => quoteBlock(q, sources)).join('\n');
       return `<section>
-<h2>${escape(section.heading_en)} <span class="ja">/ ${escape(section.heading_ja)}</span></h2>
+<h2>${icon(section.icon || 'guide', 20)}${escape(section.heading_en)} <span class="ja">/ ${escape(section.heading_ja)}</span></h2>
 ${paragraphs}
 ${quotes}
 </section>`;
@@ -110,11 +110,11 @@ ${sourceList}
 function buildIndexPage(articles) {
   const items = articles
     .map(
-      a => `<li class="card">
-  <a href="/guide/${escape(a.id)}/"><strong>${escape(a.title_en)}</strong></a>
+      a => `<li class="card"><a href="/guide/${escape(a.id)}/">
+  <span class="head">${icon(a.icon || 'guide')}${escape(a.title_en)}</span>
   <span class="ja">${escape(a.title_ja)}</span>
   <p>${escape(a.description)}</p>
-</li>`
+</a></li>`
     )
     .join('\n');
 
