@@ -117,5 +117,19 @@
     "url": "https://www.mhlw.go.jp/stf/newpage_21895.html",
     "publisher": "厚生労働省",
     "note": "外国人が対象になる条件。"
+  },
+  {
+    "id": "card-what",
+    "title": "在留カードとは？",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/whatzairyu_00001.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留カードの役割・交付対象・空港での交付。記事3本目の根拠。"
+  },
+  {
+    "id": "card-reissue-lost",
+    "title": "紛失等による在留カードの再交付申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00010.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留カードをなくしたときの手続き。記事「在留カードをなくした」の根拠。"
   }
 ]
