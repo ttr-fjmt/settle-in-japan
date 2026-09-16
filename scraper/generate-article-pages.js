@@ -26,6 +26,7 @@ const path = require('path');
 const { layout, escape, icon, SITE_NAME, SITE_URL } = require('./lib/page-layout');
 const { categorise } = require('./lib/categories');
 const { adSlot } = require('./lib/ads');
+const { alternatesFor, localesWithArticle } = require('./lib/translations');
 
 const ROOT = path.join(__dirname, '..');
 const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
@@ -109,6 +110,7 @@ ${sourceList}
     title: `${article.title_en}（${article.title_ja}）| ${SITE_NAME}`,
     description: article.description,
     canonical: `${SITE_URL}/guide/${article.id}/`,
+    alternates: alternatesFor(`/guide/${article.id}/`, localesWithArticle(article.id)),
     body,
   });
 }
@@ -167,6 +169,7 @@ ${adSlot('guide-index', slots)}
     title: `Guides | ${SITE_NAME}`,
     description: '日本で暮らしはじめるための手続きを、公式ページの記載にもとづいて解説します。',
     canonical: `${SITE_URL}/guide/`,
+    alternates: alternatesFor('/guide/'),
     body,
   });
 }

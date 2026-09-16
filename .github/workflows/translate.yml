@@ -1,0 +1,109 @@
+name: Translate pages
+
+# 記事と画面の文言を、対応言語（やさしい日本語・ベトナム語）に訳す。
+#
+# 訳したあとに必ず機械の検査にかける（scraper/lib/translation-guards.js）。
+#   - 公式の引用が日本語のまま、1文字も変わっていないか
+#   - 数字が増減していないか
+#   - 節や段落が減っていないか
+# 落ちたものは保存しない。中途半端な訳を公開しないため。
+#
+# 原文が変わった記事だけを訳し直す（原文から求めた印を訳と一緒に保存している）。
+#
+# 必要な設定: リポジトリの Actions secrets に ANTHROPIC_API_KEY
+
+on:
+  workflow_dispatch:
+    inputs:
+      locale:
+        description: "言語を指定（空なら全部。例: vi / ja-easy）"
+        required: false
+        type: string
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Run unit tests
+        working-directory: scraper
+        run: npm test
+
+      - name: Translate
+        working-directory: scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.locale }}" ]; then
+            node translate.js --locale "${{ inputs.locale }}"
+          else
+            node translate.js
+          fi
+
+      - name: Stop if nothing was translated
+        id: check
+        run: |
+          if [ -z "$(git status --porcelain -- data/translations)" ]; then
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+            echo "訳すものはありませんでした。"
+          else
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+            git status --short -- data/translations
+          fi
+
+      - name: Rebuild pages
+        if: steps.check.outputs.changed == 'yes'
+        working-directory: scraper
+        run: |
+          node generate-locale-pages.js
+          node generate-article-pages.js
+          node generate-visa-pages.js
+          node generate-sitemap.js
+
+      - name: Verify before publishing
+        if: steps.check.outputs.changed == 'yes'
+        working-directory: scraper
+        run: |
+          npm test
+          npm run validate
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'yes'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: 記事と画面の文言を各言語に訳す"
+
+          max_retries=2
+          attempt=0
+          until git push; do
+            attempt=$((attempt + 1))
+            if [ "$attempt" -gt "$max_retries" ]; then
+              echo "::error::push failed after $max_retries retries"
+              exit 1
+            fi
+            git pull --rebase origin main
+          done

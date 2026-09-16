@@ -55,6 +55,8 @@ npm run extract     # 保存した本文から visa-types.json を作り直す�
 npm run pages       # ページ（トップ・一覧・在留資格ごと）を書き出す
 npm run articles    # 解説記事のページを書き出す
 npm run static      # 固定ページ（プライバシーポリシー・よくある質問）を書き出す
+npm run translate   # 記事と画面の文言を各言語に訳す（※APIキーが要る。ふつうは Actions で）
+npm run locale-pages # 各言語のページ（/easy/ /vi/）を書き出す
 # 広告の番号の入れ方は docs/ad-setup.md
 npm run brand       # ロゴ（favicon・apple-touch-icon・logo.svg）を書き出す
 npm run ogp         # OGP画像（SNSに出る画像）を足りないぶんだけ作る（--all で全部）

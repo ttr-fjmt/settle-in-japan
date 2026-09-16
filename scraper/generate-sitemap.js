@@ -16,6 +16,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { readArticles } = require('./generate-article-pages');
+const { localePages } = require('./generate-locale-pages');
 
 const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
@@ -26,7 +27,17 @@ function pagePaths(records, articles = readArticles()) {
   const guide = articles.length ? ['/guide/', ...articles.map(a => `/guide/${a.id}/`)] : [];
   // 固定ページ（よくある質問・プライバシーポリシー）も検索対象に入れる。
   // 広告と解析の説明は、広告の審査でも見られる。
-  return ['/', '/visa/', ...records.map(r => `/visa/${r.id}/`), ...guide, '/faq/', '/privacy/'];
+  // 各言語のページ（/easy/ /vi/ …）。訳があるものだけが返ってくる
+  const locales = localePages({ articles }).map(f => '/' + f.path.replace(/index\.html$/, ''));
+  return [
+    '/',
+    '/visa/',
+    ...records.map(r => `/visa/${r.id}/`),
+    ...guide,
+    '/faq/',
+    '/privacy/',
+    ...locales,
+  ];
 }
 
 function buildSitemap(records, lastmod) {
