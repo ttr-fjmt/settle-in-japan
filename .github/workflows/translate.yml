@@ -84,12 +84,8 @@ jobs:
       - name: Rebuild pages
         if: steps.check.outputs.changed == 'yes'
         working-directory: scraper
-        run: |
-          node generate-locale-pages.js
-          node generate-article-pages.js
-          node generate-visa-pages.js
-          node generate-ogp-images.js
-          node generate-sitemap.js
+        # 作り直すページは scraper/package.json の build-pages にまとめてある。
+        run: npm run build-pages
 
       - name: Verify before publishing
         if: steps.check.outputs.changed == 'yes'
