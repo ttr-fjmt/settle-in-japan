@@ -15,13 +15,16 @@
 const fs = require('fs');
 const path = require('path');
 
+const { readArticles } = require('./generate-article-pages');
+
 const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
 const SITE_URL = 'https://settle-in-japan.net';
 
 /** サイトに載っているページのURL一覧（サイト内の相対パス）。 */
-function pagePaths(records) {
-  return ['/', '/visa/', ...records.map(r => `/visa/${r.id}/`)];
+function pagePaths(records, articles = readArticles()) {
+  const guide = articles.length ? ['/guide/', ...articles.map(a => `/guide/${a.id}/`)] : [];
+  return ['/', '/visa/', ...records.map(r => `/visa/${r.id}/`), ...guide];
 }
 
 function buildSitemap(records, lastmod) {

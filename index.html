@@ -83,6 +83,19 @@ td.name small{display:block;font-weight:400;color:var(--ink-2)}
 .official li{margin-bottom:10px}
 .note{background:var(--surface);border-left:3px solid var(--indigo);padding:14px 16px;color:var(--ink-2);font-size:.9rem;margin:20px 0}
 .source{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-2)}
+.source ul{margin:6px 0;padding-left:1.2em}
+/* 記事：英語と日本語を並べる。引用（公式の日本語）は見た目で区別する。 */
+article section{margin-bottom:34px}
+article h1{margin-bottom:10px}
+p.en{margin:0 0 4px}
+p.ja{margin:0 0 18px;color:var(--ink-2);font-size:.95rem}
+blockquote.quote{margin:18px 0;padding:14px 18px;background:var(--surface);border-left:3px solid var(--indigo)}
+blockquote.quote p{margin:0 0 8px;font-size:.98rem;line-height:1.9}
+blockquote.quote cite{font-style:normal;font-size:.8rem;color:var(--ink-2)}
+ul.cards{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+ul.cards .card{padding:18px 20px}
+ul.cards .card .ja{display:block;color:var(--ink-2);font-size:.9rem;margin-top:2px}
+ul.cards .card p{margin:8px 0 0;font-size:.9rem;color:var(--ink-2)}
 footer.site{margin-top:48px;border-top:1px solid var(--line);background:var(--surface)}
 footer.site .wrap{padding:20px 16px;font-size:.85rem;color:var(--ink-2)}
 @media(prefers-color-scheme:dark){
@@ -94,7 +107,7 @@ thead th{background:#1d242e}
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="/">Settle in Japan<span>日本移住ガイド</span></a>
-<nav><a href="/visa/">Residence statuses / 在留資格</a></nav>
+<nav><a href="/visa/">Residence statuses / 在留資格</a> ・ <a href="/guide/">Guides / 手続きの解説</a></nav>
 </div></header>
 <main class="wrap">
 
@@ -106,6 +119,8 @@ thead th{background:#1d242e}
   <h3>Available now / いま見られるもの</h3>
   <p><a href="/visa/">Residence statuses of Japan — all 33 entries compared</a><br>
   <a href="/visa/">在留資格の一覧・比較（33件）</a></p>
+  <p style="margin-top:10px"><a href="/guide/">Guides — step-by-step explanations of the procedures</a><br>
+  <a href="/guide/">手続きの解説</a></p>
 </div>
 
 <p class="note">This site is being built. Sections on procedures after arrival, housing, money and consultation desks are not published yet.<br>

@@ -1,21 +1,29 @@
-<!doctype html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Religious Activities（宗教）| Settle in Japan</title>
-<meta name="description" content="宗教の活動内容・在留期間・就労の可否。出入国在留管理庁の在留資格一覧表（2026-09-15 確認）より。">
-<link rel="canonical" href="https://settle-in-japan.net/visa/religious-activities/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Settle in Japan">
-<meta property="og:title" content="Religious Activities（宗教）| Settle in Japan">
-<meta property="og:description" content="宗教の活動内容・在留期間・就労の可否。出入国在留管理庁の在留資格一覧表（2026-09-15 確認）より。">
-<meta property="og:url" content="https://settle-in-japan.net/visa/religious-activities/">
-<meta name="twitter:card" content="summary">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5761092657360295" crossorigin="anonymous"></script>
+'use strict';
+
+/**
+ * ページの外側（<head>・ヘッダー・フッター・スタイル）を1か所にまとめる。
+ *
+ * 在留資格のページと記事のページで同じ見た目にするため。ここを直せば全ページに効く。
+ * ページごとにスタイルを書くと、直し漏れが必ず出る。
+ */
+
+const SITE_NAME = 'Settle in Japan';
+const SITE_URL = 'https://settle-in-japan.net';
+const GA_MEASUREMENT_ID = 'G-44PECD16GK';
+const ADSENSE_CLIENT = 'ca-pub-5761092657360295';
+
+/**
+ * アクセス解析と広告のタグ。既存3サイトと同じ作りに揃えている。
+ *
+ * ?ga=off を一度開くと、そのブラウザでは以後計測しない（?ga=on で解除、?ga=status で確認）。
+ * 運営者自身のアクセスを数に入れないための仕組み。gtag の設定より前に置くこと
+ * （最初のページビューが送られる前に効かせるため）。
+ */
+function headTags() {
+  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>
 <script>
 (function () {
-  var MEASUREMENT_ID = 'G-44PECD16GK';
+  var MEASUREMENT_ID = '${GA_MEASUREMENT_ID}';
   var KEY = 'analytics-opt-out';
   var mode = null;
   try {
@@ -43,13 +51,39 @@
   });
 })();
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-44PECD16GK"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-44PECD16GK');
-</script>
+  gtag('config', '${GA_MEASUREMENT_ID}');
+</script>`;
+}
+
+const escape = s =>
+  String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+
+/** ページの共通の外側。スタイルは1か所にまとめる（ページごとに書かない）。 */
+function layout({ title, description, canonical, body }) {
+  return `<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escape(title)}</title>
+<meta name="description" content="${escape(description)}">
+<link rel="canonical" href="${escape(canonical)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:title" content="${escape(title)}">
+<meta property="og:description" content="${escape(description)}">
+<meta property="og:url" content="${escape(canonical)}">
+<meta name="twitter:card" content="summary">
+${headTags()}
 <style>
 :root{--ground:#f2f4f7;--surface:#fff;--ink:#16212e;--ink-2:#4a586a;--line:#dde3ea;--indigo:#23438a;--ok:#1f6b4f;--ok-bg:#e4f1eb;--no:#8a3a2a;--no-bg:#f8ebe7;--unknown:#6d5a1f;--unknown-bg:#f6f0dd}
 *{box-sizing:border-box}
@@ -106,46 +140,21 @@ thead th{background:#1d242e}
 </head>
 <body>
 <header class="site"><div class="wrap">
-<a class="brand" href="/">Settle in Japan<span>日本移住ガイド</span></a>
+<a class="brand" href="/">${SITE_NAME}<span>日本移住ガイド</span></a>
 <nav><a href="/visa/">Residence statuses / 在留資格</a> ・ <a href="/guide/">Guides / 手続きの解説</a></nav>
 </div></header>
 <main class="wrap">
-
-<h1>Religious Activities<span class="ja">宗教</span></h1>
-<p class="lead">Work permitted / 就労が認められる在留資格</p>
-
-<div class="card">
-  <h3>Activities / 本邦において行うことができる活動</h3>
-  <ul class="official">
-    <li>外国の宗教団体により本邦に派遣された宗教家の行う布教その他の宗教上の活動</li>
-  </ul>
-</div>
-<div class="card"><h3>Examples / 該当例</h3><p class="official">外国の宗教団体から派遣される宣教師等</p></div>
-<div class="card">
-  <h3>Period of stay / 在留期間</h3>
-  <p class="official">５年，３年，１年又は３月</p>
-</div>
-<div class="card">
-  <h3>Work / 就労</h3>
-  <p><span class="pill yes">Yes</span> 就労できる</p>
-  <h3 style="margin-top:14px">Family on the Dependent status / 家族滞在の対象</h3>
-  <p><span class="pill yes">Yes</span> 家族滞在の対象</p>
-  <p style="font-size:.85rem;color:var(--ink-2);margin:6px 0 0">Whether a spouse or child can stay on the <a href="/visa/dependent/">Dependent</a> status. Some statuses include family members in the status itself — see the activities above.<br>
-  配偶者・子が「家族滞在」で在留できるかを示します。在留資格そのものに家族の活動が含まれるものもあります（上の活動内容をご覧ください）。</p>
-</div>
-
-<p class="note">The text above is quoted from the official list in Japanese, exactly as published. We do not translate it, because a translation of legal wording can change its meaning. Show this page at the counter if it helps.<br>
-上の文章は、公式の一覧表の日本語をそのまま載せています。法律の文言は訳し方で意味が変わるため、私たちは翻訳しません。窓口ではこの画面をそのまま見せてください。</p>
-
-<p class="source">Source / 出典: <a href="https://www.moj.go.jp/isa/applications/status/qaq5.html" rel="nofollow">出入国在留管理庁「在留資格一覧表」</a><br>
-Last checked / 最終確認日: 2026-09-15</p>
-<p><a href="/visa/">&larr; All residence statuses / 在留資格の一覧</a></p>
-
+${body}
 </main>
 <footer class="site"><div class="wrap">
-Settle in Japan — information for people settling in Japan.<br>
+${SITE_NAME} — information for people settling in Japan.<br>
 This site explains the official rules and points you to official contacts. It does not give advice on individual cases.<br>
 このサイトは制度の説明と公式窓口の案内を行うもので、個別の申請についての判断はしません。
 </div></footer>
 </body>
 </html>
+`;
+}
+
+
+module.exports = { layout, escape, headTags, SITE_NAME, SITE_URL, GA_MEASUREMENT_ID, ADSENSE_CLIENT };

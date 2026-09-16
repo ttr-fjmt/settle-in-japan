@@ -1,0 +1,129 @@
+{
+  "id": "first-14-days",
+  "title_en": "What to do in your first 14 days in Japan",
+  "title_ja": "来日後14日以内にやること",
+  "description": "来日した中長期在留者が14日以内に行う手続き（転入届・住居地の届出・国民健康保険）を、出入国在留管理庁・総務省・厚生労働省の公式ページの記載にもとづいてまとめています。",
+  "published_at": "2026-09-16",
+  "sources": [
+    "jutei-move",
+    "residence-notify-new",
+    "residence-notify-change",
+    "kokuho-join"
+  ],
+  "sections": [
+    {
+      "heading_en": "Three deadlines fall in the same two weeks",
+      "heading_ja": "同じ2週間に、3つの期限が重なります",
+      "body": [
+        {
+          "en": "Japan gives new residents a short window for the paperwork that follows arrival. Three separate offices expect to hear from you, and each of them uses the same figure: 14 days. They are not one procedure, and doing one does not complete the others.",
+          "ja": "来日したあとの手続きには、短い期限が決められています。窓口は3つに分かれていて、どれも同じ「14日以内」という期限です。1つの手続きを済ませても、ほかの手続きは終わりません。"
+        },
+        {
+          "en": "The three are: the move-in notification at your city or ward office, the notification of your place of residence for your residence card, and enrolment in National Health Insurance. This page explains each one, quoting the official pages in Japanese so you can show them at the counter.",
+          "ja": "3つとは、市区町村への転入届、在留カードの住居地の届出、そして国民健康保険への加入です。このページでは、それぞれを公式ページの日本語の文言を引用しながら説明します。窓口ではこの画面をそのまま見せてください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "residence-notify-new",
+          "text": "住居地を定めた日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "1. Move-in notification at the city or ward office",
+      "heading_ja": "1. 市区町村への転入届",
+      "body": [
+        {
+          "en": "The Ministry of Internal Affairs and Communications states who has to do this, when, and what to bring. Note that people with the Temporary Visitor status, or a period of stay of three months or less, are not included.",
+          "ja": "総務省のページに、誰が・いつまでに・何を持って行くのかが書かれています。「短期滞在」の在留資格の方や、在留期間が3月以下の方は対象に含まれない点にご注意ください。"
+        },
+        {
+          "en": "If your family lives with you, the office also asks for a document proving your relationship to the head of the household, issued by a public authority in your home country, together with a Japanese translation.",
+          "ja": "家族と同じ世帯で暮らす場合は、世帯主との続柄を証明する文書（本国の公的機関が発行したもの）と、その日本語訳も必要になります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "新たに日本に入国し、入管法上の在留資格をもって日本に中長期間在留する「中長期在留者」（在留カード交付対象者。「短期滞在」の在留資格や「3月」以下の在留期間を有する方などは含まれません。）の方は、市区町村に新たに住所を定めた日から14日以内に、在留カード（空港等で在留カードが交付されなかった方については、パスポート）などをお持ちいただいて、お住まいの市区町村に転入の届出を行う必要があります。"
+        },
+        {
+          "source_id": "jutei-move",
+          "text": "世帯主の方とご本人との続柄を証明できる文書（本国の政府等公的機関が発行したもので、出生証明書、婚姻証明書などの原本）が必要となります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "2. Notification of your place of residence",
+      "heading_ja": "2. 住居地の届出（在留カード）",
+      "body": [
+        {
+          "en": "The Immigration Services Agency sets the same 14-day window for notifying your place of residence after you first land. The person themselves files it, except for those under 16, and a family member living with you can file on their behalf in the cases the agency lists.",
+          "ja": "出入国在留管理庁も、新規上陸後の住居地の届出について同じ14日以内という期限を定めています。届け出るのは本人で、16歳未満の方は除かれます。同居の親族による代理の届出も、公式ページに挙げられた場合に限って認められています。"
+        },
+        {
+          "en": "There is no fee for this notification.",
+          "ja": "この届出に手数料はかかりません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "residence-notify-new",
+          "text": "住居地を定めた日から１４日以内"
+        },
+        {
+          "source_id": "residence-notify-new",
+          "text": "届出人本人（１６歳未満の者を除く）"
+        },
+        {
+          "source_id": "residence-notify-new",
+          "text": "手数料はかかりません"
+        }
+      ]
+    },
+    {
+      "heading_en": "3. National Health Insurance",
+      "heading_ja": "3. 国民健康保険の加入",
+      "body": [
+        {
+          "en": "The Ministry of Health, Labour and Welfare states that the paperwork for joining or leaving National Health Insurance goes to the counter at your municipality within 14 days. If you join the health insurance at your workplace instead, ask your employer which applies to you.",
+          "ja": "厚生労働省のページには、国民健康保険の加入・脱退の届出を14日以内に市町村の窓口へ提出する必要がある、と書かれています。勤務先の健康保険に入る場合もあるので、どちらに当てはまるかは勤務先にご確認ください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "kokuho-join",
+          "text": "国民健康保険の被保険者となったとき、脱退するときなどは、14日以内に、お住まいの市町村の国民健康保険の窓口（国民健康保険組合の場合は国民健康保険組合の窓口等）まで関係書類を提出する必要があります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "The same window applies when you move again",
+      "heading_ja": "引っ越したときも、同じ期限です",
+      "body": [
+        {
+          "en": "If you move to a new address later, the Immigration Services Agency asks for a notification within 14 days of moving in, on the same terms. Keep this page for that day as well.",
+          "ja": "その後に引っ越したときも、出入国在留管理庁は新住居地に移転した日から14日以内の届出を求めています。条件は同じです。引っ越しの日にも、このページを見返してください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "residence-notify-change",
+          "text": "新住居地に移転した日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "If something does not fit your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "This page explains what the official pages say. It does not judge individual cases. If your situation is not covered above, ask your city or ward office, or a regional immigration bureau. They answer these questions for free.",
+          "ja": "このページは公式ページに書かれていることを説明したもので、個別の事情についての判断はしません。上に当てはまらない場合は、お住まいの市区町村の窓口か、地方出入国在留管理官署にお尋ねください。相談は無料です。"
+        }
+      ]
+    }
+  ]
+}
