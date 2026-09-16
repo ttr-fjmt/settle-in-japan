@@ -27,6 +27,7 @@ const path = require('path');
 
 const { VISA_GROUP_LABELS } = require('./lib/schema');
 const { layout, escape, icon, heroArt, SITE_NAME, SITE_URL } = require('./lib/page-layout');
+const { categorise } = require('./lib/categories');
 
 const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
@@ -174,52 +175,103 @@ Last checked / 最終確認日: ${escape(checked)}</p>
  * まだ作っていない入口も、隠さずに「準備中」と出す。
  * 何がある予定のサイトなのかが伝わるほうが、白紙より分かりやすい。
  */
-function buildTopPage(records, articleCount = 0) {
-  const entries = [
-    {
-      icon: 'card',
-      en: 'Residence statuses',
-      ja: '在留資格',
-      desc_en: `All ${records.length} entries from the official list, compared side by side.`,
-      desc_ja: `公式の一覧表にある${records.length}件を、活動内容・在留期間・就労の可否で比較できます。`,
-      href: '/visa/',
-    },
-    {
-      icon: 'guide',
-      en: 'Procedures after arrival',
-      ja: '来日直後の手続き',
-      desc_en: 'What to file in your first two weeks, step by step.',
-      desc_ja: '来日してすぐに行う届出を、順を追って説明します。',
-      href: '/guide/',
-      count: articleCount,
-    },
-    { icon: 'home', en: 'Housing', ja: '住まい', desc_en: 'Renting, guarantors, utilities.', desc_ja: '賃貸、保証会社、電気・ガス・水道。', soon: true },
-    { icon: 'health', en: 'Health and money', ja: '医療とお金', desc_en: 'Insurance, pension, tax.', desc_ja: '健康保険、年金、税金。', soon: true },
-    { icon: 'move', en: 'Staying longer', ja: '長く住む', desc_en: 'Renewal, permanent residence, family.', desc_ja: '在留期間の更新、永住、家族を呼ぶ。', soon: true },
-  ];
+/**
+ * トップページに必要なデータ（題材リストと公開済みの記事）を読む。
+ * 引数で渡されたらそれを使う（テストから差し替えられるようにするため）。
+ */
+function loadTopData(queue, articles) {
+  const articlesDir = path.join(ROOT, 'data', 'articles');
+  return {
+    queue: queue || JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'article-queue.json'), 'utf8')),
+    articles:
+      articles ||
+      (fs.existsSync(articlesDir)
+        ? fs
+            .readdirSync(articlesDir)
+            .filter(f => f.endsWith('.json'))
+            .map(f => JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf8')))
+        : []),
+  };
+}
 
-  const cards = entries
-    .map(e => {
-      const inner = `<span class="head">${icon(e.icon)}${escape(e.en)}</span>
-  <span class="ja">${escape(e.ja)}</span>
-  <p>${escape(e.desc_en)}<br>${escape(e.desc_ja)}</p>`;
-      if (e.soon) {
-        return `<li class="card soon">${inner}
-  <span class="tag">Coming soon / 準備中</span>
-</li>`;
-      }
-      return `<li class="card"><a href="${escape(e.href)}">${inner}</a></li>`;
+/**
+ * トップページ。
+ *
+ * 【考え方】
+ * 読者は日本語が読めず、「自分が何を知らないか」も分からないことが多い。
+ * そこで最初の画面は、文章ではなく**アイコンの並んだ入口**にする。
+ *   1. いちばん探される記事（来日後14日以内）を1枚だけ大きく
+ *   2. 用事ごとの入口タイル9枚（アイコン＋短い語＋件数）
+ *   3. 在留資格を選ぶところ
+ * 説明の文章はタイルに入れない。開いた先に書けば足りる。
+ *
+ * 件数は公開済みの記事から数える。中身の無いタイルは「準備中」と薄く出し、
+ * リンクにしない（押しても何も無いページに飛ばさない）。
+ */
+function buildTopPage(records, articleCount = 0, { queue = null, articles = null } = {}) {
+  const loaded = loadTopData(queue, articles);
+  const groups = categorise(loaded);
+
+  const tiles = groups
+    .map(group => {
+      const isVisa = group.id === 'visa';
+      const count = isVisa ? records.length : group.count;
+      const href = isVisa ? '/visa/' : `/guide/#${group.id}`;
+      const label = isVisa
+        ? `${records.length} statuses / ${records.length}件`
+        : `${count} ${count === 1 ? 'guide' : 'guides'} / 記事${count}本`;
+      const inner = `<span class="tile-icon">${icon(group.icon, 34)}</span>
+    <span class="tile-en">${escape(group.en)}</span>
+    <span class="tile-ja">${escape(group.ja)}</span>
+    <span class="tile-n">${count > 0 ? escape(label) : 'Coming soon / 準備中'}</span>`;
+      return count > 0
+        ? `<li class="tile"><a href="${href}">
+    ${inner}
+  </a></li>`
+        : `<li class="tile soon"><span>
+    ${inner}
+  </span></li>`;
     })
     .join('\n');
 
-  const body = `
-<h1>Settle in Japan<span class="ja">日本で暮らしはじめる人のための情報</span></h1>
-<p class="lead">Official rules on residence, procedures, housing and work — quoted from the source, with the date we last checked it.<br>
-在留資格・手続き・住まい・仕事の情報を、公式ページで確認できたものだけ、出典と確認日をつけて載せます。</p>
+  const options = records
+    .map(r => `<option value="/visa/${escape(r.id)}/">${escape(r.name_en)}（${escape(r.name_ja)}）</option>`)
+    .join('\n');
 
-<ul class="cards">
-${cards}
+  const body = `
+<h1 class="visually-hidden">${escape(SITE_NAME)} — information for people settling in Japan</h1>
+
+<div class="start">
+  <div class="start-body">
+    <span class="start-kicker">Just arrived? Start here</span>
+    <p class="start-title">What to do in your first 14 days<span class="ja">来日後14日以内にやること</span></p>
+    <p class="start-desc">Address registration, residence card, health insurance — in the order the offices expect.<br>
+    住所の届出・在留カード・健康保険を、窓口の順番どおりに。</p>
+    <a class="start-go" href="/guide/first-14-days/">Read the guide / 記事を読む &rarr;</a>
+  </div>
+  <div class="start-art">${icon('clock', 92)}</div>
+</div>
+
+<h2 class="tiles-h">Find what you need<span class="ja">探しているものから</span></h2>
+<ul class="tiles">
+${tiles}
 </ul>
+
+<div class="pick">
+  <span class="pick-icon">${icon('search', 26)}</span>
+  <div class="pick-body">
+    <b>Look up your residence status<span class="ja">在留資格から調べる</span></b>
+    <select id="visa-pick" aria-label="Residence status / 在留資格">
+      <option value="">— Select / 選んでください —</option>
+${options}
+    </select>
+  </div>
+</div>
+<script>
+document.getElementById('visa-pick').addEventListener('change', function (e) {
+  if (e.target.value) location.href = e.target.value;
+});
+</script>
 
 <p class="note">We quote the official pages in Japanese and do not translate legal wording, because a translation can change its meaning. Show the quoted Japanese at the counter — it is written the way the office expects to read it.<br>
 制度の文言は公式ページの日本語をそのまま引用し、私たちは翻訳しません（訳し方で意味が変わるため）。窓口では引用部分をそのまま見せてください。</p>
