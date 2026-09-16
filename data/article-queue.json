@@ -266,7 +266,9 @@
     "title_ja": "国民年金への加入",
     "phase": "after-arrival",
     "basis": "NPS",
-    "sources": [],
+    "sources": [
+      "nenkin-kokunen"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -400,7 +402,9 @@
     "title_ja": "年末調整とは何か",
     "phase": "daily-life",
     "basis": "NTA",
-    "sources": [],
+    "sources": [
+      "nta-nencho"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -410,7 +414,9 @@
     "title_ja": "確定申告が必要になる人",
     "phase": "daily-life",
     "basis": "NTA",
-    "sources": [],
+    "sources": [
+      "nta-kakutei"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -450,7 +456,10 @@
     "title_ja": "厚生年金と国民年金の違い",
     "phase": "daily-life",
     "basis": "NPS",
-    "sources": [],
+    "sources": [
+      "nenkin-kounen",
+      "nenkin-kokunen"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -480,7 +489,9 @@
     "title_ja": "高額療養費制度とは",
     "phase": "daily-life",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-iryouhoken"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -500,7 +511,9 @@
     "title_ja": "出産育児一時金",
     "phase": "daily-life",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-iryouhoken"
+    ],
     "status": "pending",
     "note": "金額は公式のものだけ"
   },
@@ -540,7 +553,9 @@
     "title_ja": "予防接種（子ども）",
     "phase": "daily-life",
     "basis": "MHLW / LOCAL",
-    "sources": [],
+    "sources": [
+      "mhlw-vaccination"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -570,7 +585,9 @@
     "title_ja": "ハローワークの使い方",
     "phase": "daily-life",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-labour-offices"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -620,7 +637,9 @@
     "title_ja": "最低賃金の調べ方",
     "phase": "daily-life",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-roudoukijun"
+    ],
     "status": "pending",
     "note": "都道府県ごと。数字は公式のみ"
   },
@@ -802,7 +821,9 @@
     "title_ja": "介護保険とは（40歳以上）",
     "phase": "long-term",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-hukushi-kaigo"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -924,7 +945,9 @@
     "title_ja": "職場でハラスメントを受けたとき",
     "phase": "trouble",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-koyoukintou"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -1029,7 +1052,9 @@
     "title_ja": "病気で働けないとき（傷病手当金）",
     "phase": "trouble",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-iryouhoken"
+    ],
     "status": "pending",
     "note": ""
   },
