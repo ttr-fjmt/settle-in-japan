@@ -411,5 +411,82 @@
     "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/index.html",
     "publisher": "厚生労働省",
     "note": "職場のハラスメント・育児休業の記事のために、個別ページをここから拾う。"
+  },
+  {
+    "id": "mhlw-kougaku",
+    "title": "高額療養費制度を利用される皆さまへ",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+    "publisher": "厚生労働省",
+    "note": "高額療養費制度の記事の根拠。"
+  },
+  {
+    "id": "mhlw-shussan",
+    "title": "出産育児一時金等について",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shussan/index.html",
+    "publisher": "厚生労働省",
+    "note": "出産育児一時金の記事の根拠。"
+  },
+  {
+    "id": "mhlw-minimum-wage",
+    "title": "地域別最低賃金の全国一覧",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/index.html",
+    "publisher": "厚生労働省",
+    "note": "最低賃金の調べ方の記事の根拠。都道府県ごとの金額もここにある。"
+  },
+  {
+    "id": "mhlw-rousai",
+    "title": "労災保険制度の概要、給付の請求手続等",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai/gaiyou.html",
+    "publisher": "厚生労働省",
+    "note": "労災にあったときの記事の根拠。"
+  },
+  {
+    "id": "mhlw-seikatsuhogo",
+    "title": "生活保護・福祉一般",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/index.html",
+    "publisher": "厚生労働省",
+    "note": "生活が苦しいときの記事の根拠。"
+  },
+  {
+    "id": "mhlw-kaigo",
+    "title": "介護・高齢者福祉",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index.html",
+    "publisher": "厚生労働省",
+    "note": "介護保険の記事の根拠。"
+  },
+  {
+    "id": "mhlw-roudou-keiyaku",
+    "title": "労働契約法について",
+    "url": "https://www.mhlw.go.jp/stf/newpage_21911.html",
+    "publisher": "厚生労働省",
+    "note": "労働条件通知書・労働契約の記事の根拠。"
+  },
+  {
+    "id": "nenkin-menjo",
+    "title": "国民年金保険料の免除・猶予・追納",
+    "url": "https://www.nenkin.go.jp/service/kokunen/menjo/index.html",
+    "publisher": "日本年金機構",
+    "note": "保険料を納めるのが難しいときの記事の根拠。"
+  },
+  {
+    "id": "nenkin-kyotei",
+    "title": "社会保障協定",
+    "url": "https://www.nenkin.go.jp/service/shaho-kyotei/index.html",
+    "publisher": "日本年金機構",
+    "note": "母国と日本の年金期間の扱いの記事の根拠。"
+  },
+  {
+    "id": "npa-traffic",
+    "title": "交通（警察庁）",
+    "url": "https://www.npa.go.jp/bureau/traffic/index.html",
+    "publisher": "警察庁",
+    "note": "運転免許の切替・自転車の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "customs-kojin",
+    "title": "個人の方に対する通関の取扱い",
+    "url": "https://www.customs.go.jp/tsukan/kojin.htm",
+    "publisher": "税関",
+    "note": "日本に持ち込めないもの・申告が必要なものの記事の根拠。"
   }
 ]

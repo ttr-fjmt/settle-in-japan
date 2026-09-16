@@ -93,6 +93,32 @@ function readSources() {
   return sources;
 }
 
+/**
+ * 本文の文字を正しく読む。
+ *
+ * 官公庁のページには、いまでも Shift_JIS や EUC-JP のものがある（税関など）。
+ * 素直に読むと UTF-8 として扱われ、全部が文字化けする。文字化けした本文を出典にすると、
+ * 引用も文字化けしたまま載ってしまうので、文字の種類を見てから読む。
+ *
+ * 種類は Content-Type ヘッダー →（無ければ）HTMLの <meta charset> の順で決める。
+ * 分からないときは UTF-8 とみなす（いまはこれが大多数）。
+ */
+function decodeBody(buffer, contentType = '') {
+  const fromHeader = /charset=["']?([\w-]+)/i.exec(contentType);
+  // meta は ASCII の範囲に書かれているので、先頭を仮に読んで探せる。
+  const head = buffer.slice(0, 2048).toString('latin1');
+  const fromMeta =
+    /<meta[^>]+charset=["']?([\w-]+)/i.exec(head) ||
+    /<meta[^>]+content=["'][^"']*charset=([\w-]+)/i.exec(head);
+  const label = (fromHeader && fromHeader[1]) || (fromMeta && fromMeta[1]) || 'utf-8';
+  try {
+    return new TextDecoder(label).decode(buffer);
+  } catch {
+    console.warn(`  文字の種類 "${label}" を読めないため UTF-8 として読みます`);
+    return new TextDecoder('utf-8').decode(buffer);
+  }
+}
+
 async function fetchOne(source) {
   const res = await fetch(source.url, {
     headers: { 'User-Agent': USER_AGENT, 'Accept-Language': 'ja' },
@@ -106,7 +132,7 @@ async function fetchOne(source) {
     throw new Error('PDFは対象外です（HTML版のページを登録してください）');
   }
 
-  const html = await res.text();
+  const html = decodeBody(Buffer.from(await res.arrayBuffer()), contentType);
   const text = htmlToText(html);
   if (text.length < 200) throw new Error(`本文が短すぎます（${text.length}文字）。取得に失敗した可能性`);
   return { text, links: extractLinks(html, res.url || source.url) };
@@ -170,4 +196,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { htmlToText, extractLinks, readSources, USER_AGENT };
+module.exports = { decodeBody, htmlToText, extractLinks, readSources, USER_AGENT };

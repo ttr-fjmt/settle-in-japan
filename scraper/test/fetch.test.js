@@ -55,3 +55,23 @@ test('ページ内のリンクを「文字とURL」で取り出す', () => {
   });
   assert.ok(links.every(l => l.url.startsWith('https://www.moj.go.jp/')), '外部サイトとmailtoは除く');
 });
+
+test('Shift_JIS のページも、文字化けせずに読める', () => {
+  // 官公庁には、いまでも Shift_JIS のページがある（税関など）。
+  // UTF-8 として読むと全部が文字化けし、引用まで化けたまま載ってしまう。
+  const { decodeBody } = require('../fetch-official');
+  const sjis = Buffer.from([0x93, 0xfa, 0x96, 0x7b, 0x8c, 0xea]); // 「日本語」
+  assert.strictEqual(decodeBody(sjis, 'text/html; charset=Shift_JIS'), '日本語');
+
+  const withMeta = Buffer.concat([
+    Buffer.from('<html><head><meta charset="Shift_JIS"></head><body>', 'latin1'),
+    sjis,
+  ]);
+  assert.ok(decodeBody(withMeta, 'text/html').includes('日本語'), 'meta の指定を見ていない');
+});
+
+test('文字の種類が分からないときは UTF-8 として読む', () => {
+  const { decodeBody } = require('../fetch-official');
+  assert.strictEqual(decodeBody(Buffer.from('日本語', 'utf8'), 'text/html'), '日本語');
+  assert.strictEqual(decodeBody(Buffer.from('日本語', 'utf8'), 'text/html; charset=none-such'), '日本語');
+});
