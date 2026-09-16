@@ -57,6 +57,10 @@ npm run articles    # 解説記事のページを書き出す
 npm run brand       # ロゴ（favicon・apple-touch-icon・logo.svg）を書き出す
 npm run ogp         # OGP画像（SNSに出る画像）を足りないぶんだけ作る（--all で全部）
 npm run sitemap     # sitemap.xml・llms.txt・404.html を書き出す
+
+# 記事の自動更新（ふつうは Actions が毎日動かす）
+node write-next-article.js --dry-run   # 次に書く題材を確認する
+node write-next-article.js --check-pace # 今日が書く日かどうかだけ見る
 ```
 
 依存パッケージは無い（Node 22 の標準機能だけ）。`npm install` は不要。

@@ -1,0 +1,131 @@
+name: Publish one article (daily)
+
+# 解説記事を1日1本ずつ公開する。
+#
+# 題材は data/article-queue.json（100本）の上から順。公式ページの本文を保存してあるものだけを選び、
+# 書いたあとに公式照合の検査（scraper/lib/article-guards.js）にかけ、通ったものだけを保存する。
+# 検査に落ちた日は何も公開しない。薄い記事や推測混じりの記事を出さないため。
+#
+# ペース（DECISIONS.md 2026-09-16）:
+#   100本に達するまで毎日1本 → 101本目からは週1本（日本時間の月曜）
+# 判定は scraper/write-next-article.js の中で行う。
+#
+# 必要な設定: リポジトリの Actions secrets に ANTHROPIC_API_KEY
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 日本時間 6:00
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "題材のID（空なら次の1本。例: my-number-card）"
+        required: false
+        type: string
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      # 壊れた状態から書き足さない。まず今のリポジトリが検査を通ることを確かめる。
+      - name: Run unit tests
+        working-directory: scraper
+        run: npm test
+
+      # OGP画像を作るのに使う。日本語のフォントが無いと題名が四角に化ける。
+      - name: Install Japanese fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+
+      # 画面のないブラウザ。ふつうの Chrome だと画像の下が切れる（lib/render.js の注意書き）。
+      - name: Install chrome-headless-shell
+        run: |
+          output=$(npx --yes @puppeteer/browsers install chrome-headless-shell@stable)
+          echo "$output"
+          echo "CHROME_PATH=$(echo "$output" | awk '{print $NF}')" >> "$GITHUB_ENV"
+
+      - name: Write the next article
+        working-directory: scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.topic }}" ]; then
+            node write-next-article.js --topic "${{ inputs.topic }}"
+          else
+            node write-next-article.js
+          fi
+
+      # 書けなかった日（ペース外・題材が出典待ち・検査に通らなかった）はここで静かに終わる。
+      - name: Stop if nothing was written
+        id: check
+        run: |
+          if git diff --quiet -- data/articles; then
+            echo "written=no" >> "$GITHUB_OUTPUT"
+            echo "今日は新しい記事はありません。"
+          else
+            echo "written=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rebuild pages, images and sitemap
+        if: steps.check.outputs.written == 'yes'
+        working-directory: scraper
+        run: |
+          node generate-article-pages.js
+          node generate-visa-pages.js
+          node generate-ogp-images.js
+          node generate-sitemap.js
+
+      # 書き出したページが記事データと一致しているか、公式照合を通っているかを、公開前にもう一度見る。
+      - name: Verify before publishing
+        if: steps.check.outputs.written == 'yes'
+        working-directory: scraper
+        run: |
+          npm test
+          npm run validate
+
+      - name: Commit and push
+        if: steps.check.outputs.written == 'yes'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data guide assets sitemap.xml llms.txt 404.html index.html visa
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          title=$(node -e "
+            const fs=require('fs');
+            const queue=JSON.parse(fs.readFileSync('data/article-queue.json','utf8'));
+            const latest=queue.filter(t=>t.published_at).sort((a,b)=>String(b.published_at).localeCompare(String(a.published_at)))[0];
+            process.stdout.write(latest ? latest.title_ja : '記事を1本追加');
+          ")
+          git commit -m "feat: 記事を追加「${title}」"
+
+          max_retries=2
+          attempt=0
+          until git push; do
+            attempt=$((attempt + 1))
+            if [ "$attempt" -gt "$max_retries" ]; then
+              echo "::error::push failed after $max_retries retries"
+              exit 1
+            fi
+            echo "push failed (attempt $attempt/$max_retries) — pulling --rebase and retrying..."
+            git pull --rebase origin main
+          done

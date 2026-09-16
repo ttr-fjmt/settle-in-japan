@@ -3,13 +3,9 @@
 /**
  * 記事が「公式に書かれていることだけ」を書いているかを見張る。
  *
- * 記事は在留資格のデータと違って、自分たちの言葉で書く部分がある。
- * そこが緩むと、公式に無いことが混じる。そこで2つの角度から止める。
- *
- *   1. 引用（公式の文言）が、保存した公式ページの本文に実在するか
- *   2. 本文に書いた数字（14日・3月など）が、同じ節の引用に実在するか
- *
- * 2つ目が肝。「14日以内」と書きたければ、14日と書かれた公式の文を引用するしかない。
+ * 検査の中身は lib/article-guards.js にある（毎日の自動更新でも同じ検査を使うため）。
+ * ここでは「掲載してある記事が全部その検査を通ること」と、
+ * 「書き出したページが記事データと一致していること」を確かめる。
  */
 
 const test = require('node:test');
@@ -17,87 +13,40 @@ const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
 
-const { textAppearsIn, loadRawText } = require('../lib/verify');
+const { checkArticle, checkNumbers, checkQuotes } = require('../lib/article-guards');
 const { readArticles, buildArticlePage } = require('../generate-article-pages');
 
 const ROOT = path.join(__dirname, '..', '..');
 const articles = readArticles();
 const sources = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'sources.json'), 'utf8'));
-const sourceIds = new Set(sources.map(s => s.id));
-
-/** 本文に出てくる「数字＋単位」。ここに挙げた単位だけを見張る。 */
-const NUMBER_PATTERN = /[０-９0-9]+\s*(日|年|月|歳|円|%|％)/g;
 
 test('記事が1本以上ある', () => {
   assert.ok(articles.length > 0, 'data/articles/ に記事がありません');
 });
 
-test('引用が、公式ページの本文に実在する', () => {
-  const missing = [];
+test('掲載中の記事が、すべて公式照合の検査を通る', () => {
+  const problems = [];
   for (const article of articles) {
-    for (const section of article.sections) {
-      for (const quote of section.quotes || []) {
-        const raw = loadRawText(quote.source_id);
-        if (raw == null) {
-          missing.push(`${article.id}: ${quote.source_id} をまだ取得していません`);
-          continue;
-        }
-        if (!textAppearsIn(quote.text, raw)) {
-          missing.push(`${article.id}: 引用「${quote.text.slice(0, 30)}…」が ${quote.source_id} に見当たりません`);
-        }
-      }
+    for (const problem of checkArticle(article, { sources })) {
+      problems.push(`${article.id}: ${problem}`);
     }
   }
-  assert.deepStrictEqual(missing, [], '\n' + missing.join('\n'));
+  assert.deepStrictEqual(problems, [], '\n' + problems.join('\n'));
 });
 
-test('本文に書いた数字は、同じ節の引用に実在する', () => {
-  // 「14日以内」と書きたければ、14日と書かれた公式の文を引用する。
-  // 引用のない節に数字を書くことはできない。
-  const unbacked = [];
-  for (const article of articles) {
-    for (const section of article.sections) {
-      const quoted = (section.quotes || []).map(q => q.text).join(' ');
-      for (const paragraph of section.body) {
-        const text = `${paragraph.en} ${paragraph.ja}`;
-        for (const found of text.match(NUMBER_PATTERN) || []) {
-          const number = found.replace(/\s/g, '');
-          if (!textAppearsIn(number, quoted)) {
-            unbacked.push(`${article.id} / ${section.heading_ja}: 「${number}」を裏づける引用がありません`);
-          }
-        }
-      }
-    }
-  }
-  assert.deepStrictEqual(unbacked, [], '\n' + unbacked.join('\n'));
+test('引用を1文字でも言い換えると、検査に落ちる', () => {
+  // この検査そのものが効いていることを確かめる（落ちない検査は無いのと同じ）。
+  const article = JSON.parse(JSON.stringify(articles[0]));
+  const section = article.sections.find(s => (s.quotes || []).length > 0);
+  section.quotes[0].text = section.quotes[0].text.replace(/。$/, '') + 'など。';
+  assert.ok(checkQuotes(article).length > 0, '言い換えた引用が素通りしています');
 });
 
-test('記事が挙げている出典は、すべて出典リストにある', () => {
-  for (const article of articles) {
-    for (const id of article.sources) {
-      assert.ok(sourceIds.has(id), `${article.id}: 出典 "${id}" が sources.json にありません`);
-    }
-    for (const section of article.sections) {
-      for (const quote of section.quotes || []) {
-        assert.ok(
-          article.sources.includes(quote.source_id),
-          `${article.id}: 引用元 "${quote.source_id}" が記事の出典一覧に入っていません`
-        );
-      }
-    }
-  }
-});
-
-test('記事に、個別の判断を述べる表現が無い', () => {
-  const forbidden = ['あなたは', 'あなたの場合', '取得できます', '申請できます', '大丈夫です', '問題ありません'];
-  const hits = [];
-  for (const article of articles) {
-    const html = buildArticlePage(article, sources);
-    for (const word of forbidden) {
-      if (html.includes(word)) hits.push(`${article.id}: 「${word}」`);
-    }
-  }
-  assert.deepStrictEqual(hits, [], hits.join('\n'));
+test('引用に無い数字を本文に書くと、検査に落ちる', () => {
+  const article = JSON.parse(JSON.stringify(articles[0]));
+  article.sections[0].body[0].ja += 'これは37日以内に行います。';
+  const problems = checkNumbers(article);
+  assert.ok(problems.some(p => p.includes('37日')), '裏づけの無い数字が素通りしています');
 });
 
 test('記事のページに、出典と最終確認日が出ている', () => {
@@ -107,17 +56,6 @@ test('記事のページに、出典と最終確認日が出ている', () => {
     for (const id of article.sources) {
       const source = sources.find(s => s.id === id);
       assert.ok(html.includes(source.url), `${article.id}: ${id} の出典URLが無い`);
-    }
-  }
-});
-
-test('記事は、英語と日本語の両方で書かれている', () => {
-  for (const article of articles) {
-    for (const section of article.sections) {
-      for (const paragraph of section.body) {
-        assert.ok(paragraph.en && paragraph.en.trim(), `${article.id}: 英語が空の段落があります`);
-        assert.ok(paragraph.ja && paragraph.ja.trim(), `${article.id}: 日本語が空の段落があります`);
-      }
     }
   }
 });

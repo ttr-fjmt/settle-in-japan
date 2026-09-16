@@ -1,0 +1,253 @@
+'use strict';
+
+/**
+ * 題材リストの次の1本を書く（毎日 GitHub Actions から動く）。
+ *
+ * 【流れ】
+ *   1. data/article-queue.json から、まだ書いていない題材を1つ選ぶ
+ *      （出典が登録されていて、data/raw に本文が保存されているものだけ）
+ *   2. 保存してある公式ページの本文を渡して、記事の下書きを書いてもらう
+ *   3. lib/article-guards.js の検査にかける
+ *   4. 落ちたら、落ちた理由をそのまま渡して書き直してもらう（3回まで）
+ *   5. 通ったものだけ data/articles/<id>.json に保存し、題材リストに「公開済み」を書き込む
+ *
+ * 【絶対に守ること】
+ * 検査に通らなかった記事は保存しない。1本落ちても、次の日にまた試せばよい。
+ * 「公式に書いていないことを書かない」は、頼み方ではなく検査で守る。
+ *
+ * 【公開のペース】
+ * 100本に達するまでは毎日1本。101本目からは週1本（月曜日）。DECISIONS.md の決めごと。
+ *
+ * 実行例:
+ *   node write-next-article.js                 # 次の1本を書く
+ *   node write-next-article.js --dry-run       # 何を書くかだけ見る（APIは呼ばない）
+ *   node write-next-article.js --topic my-number-card
+ *   node write-next-article.js --check-pace    # 今日書く日かどうかだけ見る
+ */
+
+const fs = require('node:fs');
+const path = require('node:path');
+
+const { ask, extractJson, jstDate, DEFAULT_MODEL } = require('./lib/anthropic');
+const { checkArticle, CLOSING_HEADING_JA, FORBIDDEN } = require('./lib/article-guards');
+const { loadRawText } = require('./lib/verify');
+
+const ROOT = path.join(__dirname, '..');
+const QUEUE_PATH = path.join(ROOT, 'data', 'article-queue.json');
+const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
+const SOURCES_PATH = path.join(ROOT, 'data', 'sources.json');
+
+const TARGET_COUNT = 100; // ここまでは毎日1本
+const MAX_ATTEMPTS = 3;
+const ICONS = ['card', 'home', 'health', 'move', 'guide', 'clock', 'work', 'study', 'status', 'designated'];
+
+const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+
+/** 公開済みの記事の数。 */
+function publishedCount(dir = ARTICLES_DIR) {
+  if (!fs.existsSync(dir)) return 0;
+  return fs.readdirSync(dir).filter(f => f.endsWith('.json')).length;
+}
+
+/**
+ * 今日は書く日か。
+ * 100本に達するまでは毎日。達したあとは週1本（日本時間の月曜日）。
+ */
+function shouldPublishToday(count = publishedCount(), now = new Date()) {
+  if (count < TARGET_COUNT) return { publish: true, reason: `公開済み${count}本。100本まで毎日1本` };
+  const jst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+  const isMonday = jst.getUTCDay() === 1;
+  return {
+    publish: isMonday,
+    reason: isMonday
+      ? `公開済み${count}本。101本目からは週1本（今日は月曜日）`
+      : `公開済み${count}本。101本目からは週1本（今日は月曜日ではないので書かない）`,
+  };
+}
+
+/** 次に書く題材。出典が登録済みで、本文が保存されているものだけを選ぶ。 */
+function pickTopic(queue, { topicId = null } = {}) {
+  const published = new Set(
+    fs.existsSync(ARTICLES_DIR)
+      ? fs.readdirSync(ARTICLES_DIR).filter(f => f.endsWith('.json')).map(f => f.replace(/\.json$/, ''))
+      : []
+  );
+  const candidates = queue.filter(t => t.status !== 'published' && !published.has(t.id));
+
+  if (topicId) {
+    const found = candidates.find(t => t.id === topicId);
+    if (!found) throw new Error(`題材 "${topicId}" が見つからないか、すでに公開済みです`);
+    return found;
+  }
+  const ready = candidates.filter(t => t.sources.length > 0 && t.sources.every(id => loadRawText(id) != null));
+  const blocked = candidates.length - ready.length;
+  if (ready.length === 0) return { topic: null, blocked };
+  return { topic: ready[0], blocked };
+}
+
+/** 記事の書き方の指示。ここに書いたルールは、すべて lib/article-guards.js の検査と対になっている。 */
+function systemPrompt() {
+  return `あなたは、日本で暮らしはじめる外国人に向けた解説記事を書く編集者です。
+読者は日本語が読めない人が中心で、これから役所の窓口に行く人です。
+
+【いちばん大事な決まり】
+渡された「公式ページの本文」に書かれていないことは、絶対に書かないでください。
+知っている知識で補わないでください。本文に無いことは、書かずに飛ばしてください。
+
+【引用】
+- 各節には、その節の内容の根拠になる公式の文を quotes として入れます
+- 引用は、渡された本文から**一字一句そのまま**写してください（言い換え・要約・省略は不可）
+- 文の途中で切らず、句点までの1文をそのまま入れてください
+- 引用は日本語のまま出します（窓口でそのまま見せてもらうため）
+
+【数字】
+本文（body）に数字（14日・3か月・500円など）を書けるのは、**同じ節の引用にその数字がある場合だけ**です。
+引用に無い数字は書かないでください。
+
+【書いてはいけない表現】
+${FORBIDDEN.map(w => `「${w}」`).join('、')}
+個別の事情についての判断はしません。「制度はこうなっている（出典）」という書き方に徹してください。
+
+【記事の形】
+- 節は5〜7個。最初の節から順に、読んだ人がその日のうちに動ける順番で
+- 各段落は英語（en）と日本語（ja）の対で書く。英語が主、日本語は同じ内容を短く
+- **最後の節の見出しは必ず** heading_ja: "${CLOSING_HEADING_JA}" とし、
+  公式の相談窓口へ案内して締めます（この節には引用を入れなくてかまいません）
+- 日本語の本文は合計400字以上、英語は合計1200字以上を目安に
+
+出力は JSON だけ。説明文やコードの囲みは付けないでください。`;
+}
+
+function userPrompt(topic, sources, previousProblems = []) {
+  const materials = topic.sources
+    .map(id => {
+      const source = sources.find(s => s.id === id);
+      return `----- 出典ID: ${id}（${source.publisher}「${source.title}」）-----
+${loadRawText(id)}`;
+    })
+    .join('\n\n');
+
+  const retry =
+    previousProblems.length > 0
+      ? `\n【前回の下書きは、次の点で公開できませんでした。直してください】\n${previousProblems
+          .map(p => `- ${p}`)
+          .join('\n')}\n`
+      : '';
+
+  return `次の題材で記事を1本書いてください。
+
+題材（日本語）: ${topic.title_ja}
+記事のID: ${topic.id}
+${retry}
+【出力する JSON の形】
+{
+  "id": "${topic.id}",
+  "title_en": "英語の題名（60文字以内）",
+  "title_ja": "${topic.title_ja}",
+  "description": "日本語で100〜140字。検索結果に出る説明文",
+  "icon": ${JSON.stringify(ICONS)} のどれか1つ,
+  "published_at": "${jstDate()}",
+  "sources": ${JSON.stringify(topic.sources)},
+  "sections": [
+    {
+      "heading_en": "英語の見出し",
+      "heading_ja": "日本語の見出し",
+      "body": [{ "en": "英語の段落", "ja": "日本語の段落" }],
+      "quotes": [{ "source_id": "出典ID", "text": "公式の本文からそのまま写した1文" }]
+    }
+  ]
+}
+
+【公式ページの本文（ここに書かれていることだけを使う）】
+
+${materials}`;
+}
+
+async function writeArticle(topic, sources, { model = DEFAULT_MODEL } = {}) {
+  let problems = [];
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    console.log(`  下書き ${attempt}回目…`);
+    const text = await ask({
+      system: systemPrompt(),
+      prompt: userPrompt(topic, sources, problems),
+      model,
+      maxTokens: 8000,
+      script: 'write-next-article',
+    });
+    const article = extractJson(text);
+    if (!article) {
+      problems = ['JSON として読めませんでした。JSON だけを出力してください'];
+      continue;
+    }
+    article.id = topic.id; // IDは題材リストのものに固定する
+    article.published_at = jstDate();
+    if (!ICONS.includes(article.icon)) article.icon = 'guide';
+
+    problems = checkArticle(article, { sources });
+    if (problems.length === 0) return { article, attempts: attempt };
+    console.log(`  検査に通りませんでした（${problems.length}件）:`);
+    problems.forEach(p => console.log(`    - ${p}`));
+  }
+  return { article: null, attempts: MAX_ATTEMPTS, problems };
+}
+
+async function main() {
+  const dryRun = process.argv.includes('--dry-run');
+  const checkPaceOnly = process.argv.includes('--check-pace');
+  const topicArg = process.argv.indexOf('--topic');
+  const topicId = topicArg === -1 ? null : process.argv[topicArg + 1];
+
+  const pace = shouldPublishToday();
+  console.log(pace.reason);
+  if (checkPaceOnly) {
+    console.log(pace.publish ? 'publish=yes' : 'publish=no');
+    return;
+  }
+  if (!pace.publish && !topicId) return;
+
+  const queue = readJson(QUEUE_PATH);
+  const sources = readJson(SOURCES_PATH);
+  const { topic, blocked } = pickTopic(queue, { topicId });
+
+  if (!topic) {
+    // 題材が尽きた／出典待ちのときは、薄い記事を作らずに止める（DECISIONS.md）。
+    console.log(`書ける題材がありません（出典の登録・取得を待っている題材が${blocked}件）`);
+    console.log('出典を登録するには data/sources.json に足して fetch-official.yml を実行してください');
+    return;
+  }
+
+  console.log(`題材: #${topic.n} ${topic.title_ja}（${topic.id}）`);
+  console.log(`出典: ${topic.sources.join(', ')}`);
+  if (dryRun) {
+    console.log('[DRY RUN] ここで下書きを頼みます（APIは呼びません）');
+    return;
+  }
+
+  const { article, problems } = await writeArticle(topic, sources);
+  if (!article) {
+    console.error(`${MAX_ATTEMPTS}回書き直しても検査に通りませんでした。今日は公開しません`);
+    problems.forEach(p => console.error(`  - ${p}`));
+    process.exitCode = 1;
+    return;
+  }
+
+  fs.mkdirSync(ARTICLES_DIR, { recursive: true });
+  fs.writeFileSync(path.join(ARTICLES_DIR, `${topic.id}.json`), JSON.stringify(article, null, 2) + '\n');
+
+  const updated = queue.map(t =>
+    t.id === topic.id ? { ...t, status: 'published', published_at: article.published_at } : t
+  );
+  fs.writeFileSync(QUEUE_PATH, JSON.stringify(updated, null, 2) + '\n');
+
+  console.log(`書きました: data/articles/${topic.id}.json`);
+  console.log(`公開済み ${publishedCount()}本 / 100本`);
+}
+
+if (require.main === module) {
+  main().catch(error => {
+    console.error(error.message);
+    process.exit(1);
+  });
+}
+
+module.exports = { shouldPublishToday, pickTopic, publishedCount, systemPrompt, userPrompt, TARGET_COUNT };
