@@ -73,14 +73,16 @@ jobs:
           fi
 
       # 書けなかった日（ペース外・題材が出典待ち・検査に通らなかった）はここで静かに終わる。
+      # 新しい記事は「新規ファイル」なので、git diff では見つからない（git status で見る）。
       - name: Stop if nothing was written
         id: check
         run: |
-          if git diff --quiet -- data/articles; then
+          if [ -z "$(git status --porcelain -- data/articles)" ]; then
             echo "written=no" >> "$GITHUB_OUTPUT"
             echo "今日は新しい記事はありません。"
           else
             echo "written=yes" >> "$GITHUB_OUTPUT"
+            git status --short -- data/articles
           fi
 
       - name: Rebuild pages, images and sitemap
