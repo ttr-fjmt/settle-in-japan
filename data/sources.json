@@ -68,5 +68,54 @@
     "url": "https://www.moj.go.jp/isa/support/portal/guidebook_all.html",
     "publisher": "出入国在留管理庁",
     "note": "身分・地位に基づく在留資格と特定活動の就労可否を確認するため。生活全般の公式説明で、記事の根拠にも使う。"
+  },
+  {
+    "id": "residence-notify-new",
+    "title": "新規上陸後の住居地の届出（中長期在留者）",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00021.html",
+    "publisher": "出入国在留管理庁",
+    "note": "来日後の住居地届出の期限と方法。記事1本目の根拠。"
+  },
+  {
+    "id": "residence-notify-change",
+    "title": "住居地の変更届出（中長期在留者）",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00023.html",
+    "publisher": "出入国在留管理庁",
+    "note": "引っ越したときの住居地届出。記事5本目の根拠。"
+  },
+  {
+    "id": "card-notify-change",
+    "title": "住居地以外の在留カード記載事項の変更届出",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00009.html",
+    "publisher": "出入国在留管理庁",
+    "note": "氏名・国籍等が変わったときの届出。"
+  },
+  {
+    "id": "jutei-move",
+    "title": "外国人住民に係る住基台帳制度：転入・転出",
+    "url": "https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/move-in_move-out.html",
+    "publisher": "総務省",
+    "note": "転入届の期限と必要書類。記事1・2本目の根拠。"
+  },
+  {
+    "id": "jutei-resident-record",
+    "title": "外国人住民に係る住基台帳制度：住民票",
+    "url": "https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html",
+    "publisher": "総務省",
+    "note": "住民票に何が載るか。"
+  },
+  {
+    "id": "kokuho-join",
+    "title": "国民健康保険の加入・脱退について",
+    "url": "https://www.mhlw.go.jp/stf/newpage_21539.html",
+    "publisher": "厚生労働省",
+    "note": "国民健康保険の加入手続きと期限。記事4本目の根拠。"
+  },
+  {
+    "id": "kokuho-foreign",
+    "title": "国民健康保険の外国人被保険者について",
+    "url": "https://www.mhlw.go.jp/stf/newpage_21895.html",
+    "publisher": "厚生労働省",
+    "note": "外国人が対象になる条件。"
   }
 ]
