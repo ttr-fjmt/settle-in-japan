@@ -1,6 +1,6 @@
 # 在留資格「日本人の配偶者等」
 # 取得元: https://www.moj.go.jp/isa/applications/status/spouseorchildofjapanese.html
-# 取得日: 2026-09-15
+# 取得日: 2026-09-16
 # このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
 
 在留資格「日本人の配偶者等」 | 出入国在留管理庁

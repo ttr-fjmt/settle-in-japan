@@ -1,7 +1,7 @@
-# 在留資格「永住者の配偶者等」 のページ内リンク（取得日 2026-09-16）
+# 生活・就労ガイドブック のページ内リンク（取得日 2026-09-16）
 # このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
 
-本文へ	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#contentsArea
+本文へ	https://www.moj.go.jp/isa/support/portal/guidebook_all.html#contentsArea
 Multi language	https://www.moj.go.jp/isa/other_languages.html
 組織・採用	https://www.moj.go.jp/isa/about/index.html
 出入国在留管理庁の概要	https://www.moj.go.jp/isa/about/organization/index.html
@@ -69,53 +69,11 @@ HarmoniUP!	https://www.moj.go.jp/isa/support/coexistence/04_00070.html
 その他の公表情報	https://www.moj.go.jp/isa/publications/others/index.html
 よくあるお問い合わせ（FAQ）	https://www.moj.go.jp/isa/publications/faq.html
 トップページ	https://www.moj.go.jp/isa/index.html
-在留資格認定証明書交付申請	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#midashi01
-在留資格変更許可申請	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#midashi02
-在留期間更新許可申請	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#midashi03
-在留資格取得許可申請	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#midashi04
-この在留資格で在留中の方に必要な届出	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#midashi05
-外国人在留総合インフォメーションセンター	https://www.moj.go.jp/isa/consultation/center/index.html
-地方出入国在留管理局	https://www.moj.go.jp/isa/about/region/index.html
-提出書類のチェックシートはこちら	https://www.moj.go.jp/isa/content/001426553.pdf
-在留資格認定証明書交付申請書（PDF:225KB）	https://www.moj.go.jp/isa/content/930004054.pdf
-こちら	https://www.moj.go.jp/isa/content/001459557.pdf
-在留資格認定証明書交付申請書（Excel:97KB）	https://www.moj.go.jp/isa/content/930004055.xlsx
-指定の規格を満たした写真	https://www.moj.go.jp/isa/applications/status/photo_info_00002.html
-身元保証書（PDF:29KB）	https://www.moj.go.jp/isa/content/001373949.pdf
-身元保証書（英語版）（PDF:14KB）	https://www.moj.go.jp/isa/content/001373950.pdf
-質問書（PDF：387KB）	https://www.moj.go.jp/isa/content/930003288.pdf
-質問書（英語）（PDF：173KB）	https://www.moj.go.jp/isa/content/930003535.pdf
-質問書（中国語・簡体字）（PDF：429KB）	https://www.moj.go.jp/isa/content/930003536.pdf
-質問書（中国語・繁体字）（PDF：225KB）	https://www.moj.go.jp/isa/content/930003537.pdf
-質問書（韓国語）（PDF：527KB）	https://www.moj.go.jp/isa/content/930003538.pdf
-質問書（ポルトガル語）（PDF：273KB）	https://www.moj.go.jp/isa/content/930003540.pdf
-質問書（スペイン語）（PDF：718KB）	https://www.moj.go.jp/isa/content/930003539.pdf
-質問書（タガログ語）（PDF：481KB）	https://www.moj.go.jp/isa/content/930003542.pdf
-質問書（ベトナム語）（PDF：390KB）	https://www.moj.go.jp/isa/content/930003543.pdf
-質問書（タイ語）（PDF：618KB）	https://www.moj.go.jp/isa/content/930003541.pdf
-質問書（インドネシア語）（PDF：448KB）	https://www.moj.go.jp/isa/content/930003544.pdf
-申請書類を提出できる方については、こちらのページを確認してください。	https://www.moj.go.jp/isa/applications/procedures/16-1.html#midashi05
-本来の在留資格に基づく活動を行っていない場合には、在留資格を取り消される場合があります	https://www.moj.go.jp/isa/applications/guide/torikeshi.html
-提出書類のチェックシートはこちら	https://www.moj.go.jp/isa/content/001426554.pdf
-在留資格変更許可申請書（PDF:162KB）	https://www.moj.go.jp/isa/content/930004084.pdf
-こちら	https://www.moj.go.jp/isa/content/001459558.pdf
-在留資格変更許可申請書（Excel:197KB）	https://www.moj.go.jp/isa/content/930004085.xlsx
-申請書類を提出できる方については、こちらのページを確認してください。	https://www.moj.go.jp/isa/applications/procedures/16-2.html#midashi05
-提出書類のチェックシートはこちら	https://www.moj.go.jp/isa/content/001426555.pdf
-在留期間更新許可申請書（PDF:197KB）	https://www.moj.go.jp/isa/content/930004114.pdf
-こちら	https://www.moj.go.jp/isa/content/001459559.pdf
-在留期間更新許可申請書（Excel:162KB）	https://www.moj.go.jp/isa/content/930004115.xlsx
-申請書類を提出できる方については、こちらのページを確認してください。	https://www.moj.go.jp/isa/applications/procedures/16-3.html#midashi05
-提出書類のチェックシートはこちら	https://www.moj.go.jp/isa/content/001426557.pdf
-在留資格取得許可申請書（PDF:102KB）	https://www.moj.go.jp/isa/content/930004120.pdf
-こちら	https://www.moj.go.jp/isa/content/001459560.pdf
-在留資格取得許可申請書（Excel:33KB）	https://www.moj.go.jp/isa/content/930004121.xlsx
-申請書類を提出できる方については、こちらのページを確認してください。	https://www.moj.go.jp/isa/applications/procedures/16-10.html#midashi05
-【入国後住居地を定めたとき】新規上陸後の住居地の届出	https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00021.html
-【住居地に変更があったとき（引っ越したとき）】住居地変更の届出	https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00023.html
-【在留カードの住居地以外の項目に変更があったとき】住居地以外の在留カード記載事項の変更届出	https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00009.html
-【配偶者と死別又は離別したとき】配偶者に関する届出	https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00016.html
-ページトップ	https://www.moj.go.jp/isa/applications/status/spouseorchildofpermanentresident.html#
+:	https://www.moj.go.jp/isa/content/001450885.pdf
+:	https://www.moj.go.jp/isa/content/001450888.pdf
+製本・印刷について	https://www.moj.go.jp/isa/support/portal/12_00134.html
+生活・就労ガイドブックの情報掲載に関するガイドライン	https://www.moj.go.jp/isa/content/001452892.pdf
+ページトップ	https://www.moj.go.jp/isa/support/portal/guidebook_all.html#
 サイトマップ	https://www.moj.go.jp/isa/sitemap.html
 リンク・著作権等について	https://www.moj.go.jp/isa/copyright/index.html
 こちら	https://www.moj.go.jp/isa/disclosure_privacy.html

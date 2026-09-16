@@ -1,6 +1,6 @@
 # 永住許可申請
 # 取得元: https://www.moj.go.jp/isa/applications/procedures/16-4.html
-# 取得日: 2026-09-15
+# 取得日: 2026-09-16
 # このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
 
 永住許可申請 | 出入国在留管理庁

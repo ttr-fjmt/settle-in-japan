@@ -1,0 +1,96 @@
+# 外国人住民に係る住基台帳制度：住民票 のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+メインナビゲーションへジャンプ	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html#jumpToNavi
+メインコンテンツへジャンプ	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html#jumpToContents
+フッターへジャンプ	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html#jumpToFooter
+ご意見・ご提案	https://www.soumu.go.jp/form/common/opinions.html
+ENGLISH(TOP)	https://www.soumu.go.jp/english/index.html
+English	https://www.soumu.go.jp/main_sosiki/joho_tsusin/eng/
+Fran&ccedil;ais	https://www.soumu.go.jp/main_sosiki/joho_tsusin/fr/
+Espa&ntilde;ol	https://www.soumu.go.jp/main_sosiki/joho_tsusin/esp/
+Русский	https://www.soumu.go.jp/main_sosiki/joho_tsusin/rus/
+中文	https://www.soumu.go.jp/main_sosiki/joho_tsusin/chs/
+عربي	https://www.soumu.go.jp/main_sosiki/joho_tsusin/ar/
+総務省の紹介	https://www.soumu.go.jp/menu_syokai/index.html
+総務省の紹介 TOP	https://www.soumu.go.jp/menu_syokai/index.html
+大臣・副大臣・政務官	https://www.soumu.go.jp/menu_sosiki/annai/soshiki/index.html
+所在地・連絡先	https://www.soumu.go.jp/menu_sosiki/annai/map-1.html
+採用情報	https://www.soumu.go.jp/menu_syokai/saiyou/index.html
+各種募集	https://www.soumu.go.jp/menu_syokai/bosyu/index.html
+子どもページ	https://www.soumu.go.jp/menu_kyotsuu/kids/index.html
+広報・報道	https://www.soumu.go.jp/menu_news/index.html
+広報・報道 TOP	https://www.soumu.go.jp/menu_news/index.html
+大臣会見・発言等	https://www.soumu.go.jp/menu_news/kaiken/index.html
+報道資料	https://www.soumu.go.jp/menu_news/s-news/index.html
+報道予定	https://www.soumu.go.jp/menu_news/release001.html
+広報誌・パンフレット	https://www.soumu.go.jp/menu_news/kouhoushi/index.html
+行事案内	https://www.soumu.go.jp/menu_news/gyouji/index.html
+フォトギャラリー	https://www.soumu.go.jp/photo_gallery/index.html
+政策	https://www.soumu.go.jp/menu_seisaku/index.html
+政策 TOP	https://www.soumu.go.jp/menu_seisaku/index.html
+白書	https://www.soumu.go.jp/menu_seisaku/hakusyo/index.html
+統計情報	https://www.soumu.go.jp/menu_seisaku/toukei/index.html
+意見募集(パブリックコメント）	https://www.soumu.go.jp/menu_seisaku/iken_bosyu/index.html
+組織案内	https://www.soumu.go.jp/menu_sosiki/index.html
+組織案内 TOP	https://www.soumu.go.jp/menu_sosiki/index.html
+外局等	https://www.soumu.go.jp/menu_kyotsuu/gaikyoku/index.html
+地方支分部局	https://www.soumu.go.jp/menu_kyotsuu/chihou.html
+審議会・委員会・会議等	https://www.soumu.go.jp/menu_sosiki/singi/index.html
+研究会等	https://www.soumu.go.jp/menu_sosiki/kenkyu/kenkyu.html
+所管法令	https://www.soumu.go.jp/menu_hourei/index.html
+所管法令 TOP	https://www.soumu.go.jp/menu_hourei/index.html
+国会提出法案	https://www.soumu.go.jp/menu_hourei/k_houan.html
+新規制定・改正法令・告示	https://www.soumu.go.jp/menu_hourei/s_houritsu.html
+通知・通達	https://www.soumu.go.jp/menu_hourei/tsutatsu/t_tsutatsu.html
+予算・決算	https://www.soumu.go.jp/menu_yosan/index.html
+予算・決算 TOP	https://www.soumu.go.jp/menu_yosan/index.html
+予算	https://www.soumu.go.jp/menu_yosan/yosan.html
+決算	https://www.soumu.go.jp/menu_yosan/kesan.html
+申請・手続	https://www.soumu.go.jp/menu_sinsei/index.html
+申請・手続 TOP	https://www.soumu.go.jp/menu_sinsei/index.html
+調達情報・電子入札	https://www.soumu.go.jp/menu_sinsei/cyoutatsu/index.html
+申請・届出等の手続案内	https://www.soumu.go.jp/menu_sinsei/shinsei/index.html
+個人情報保護	https://www.soumu.go.jp/menu_sinsei/kojin_jyouhou/index.html
+法令適用事前確認手続	https://www.soumu.go.jp/menu_sinsei/hourei_tekiyou/index.html
+公文書管理	https://www.soumu.go.jp/menu_sinsei/koubunsho/index.html
+情報公開	https://www.soumu.go.jp/menu_sinsei/jyouhou_koukai/index.html
+公益通報者保護・コンプライアンス	https://www.soumu.go.jp/menu_sinsei/koekitsuho/index.html
+災害用備蓄食品の提供	https://www.soumu.go.jp/menu_sinsei/saigaiyo_bichiku/index.html
+政策評価	https://www.soumu.go.jp/menu_seisakuhyouka/index.html
+政策評価 TOP	https://www.soumu.go.jp/menu_seisakuhyouka/index.html
+政策評価ポータルサイト	https://www.soumu.go.jp/main_sosiki/hyouka/seisaku_n/portal/index.html
+独立行政法人評価ポータルサイト	https://www.soumu.go.jp/main_sosiki/gyoukan/kanri/portal/index.html
+サイトマップ	https://www.soumu.go.jp/menu_kyotsuu/sitemap.html
+プライバシーポリシー	https://www.soumu.go.jp/menu_kyotsuu/policy/policy.html
+当省ホームページについて	https://www.soumu.go.jp/menu_kyotsuu/policy/tyosaku.html
+総務省トップ	https://www.soumu.go.jp/index.html
+地方行財政	https://www.soumu.go.jp/menu_seisaku/chiho/index.html
+住民基本台帳等	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/daityo/gaiyou.html
+外国人住民に係る住基台帳制度	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/index.html
+詳しくはこちらをご参照ください	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/pdf/restriction/restriction_jpn.pdf
+ページトップへ戻る	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html#pTop
+外国人住民に係る住民基本台帳制度	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/index.html
+転入・転出	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/move-in_move-out.html
+住民票	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html
+住基カード／マイナンバーカード	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/basic_resident_registration_card.html
+関係法令	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/related-laws_and_regulations.html
+関係資料・リーフレット等	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/related_materials-publicity_leaflets-etc.html
+過去の検討及び説明会実施状況	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/information_session.html
+住民基本台帳制度	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/daityo/gaiyou.html
+日本語	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/resident_record.html
+English	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/english/resident_record.html
+中文(简体字)	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/chi_kan/resident_record.html
+中文(繁体字)	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/chi_han/resident_record.html
+한국어	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/korean/resident_record.html
+Português	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/portugues/resident_record.html
+Español	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/espanol/resident_record.html
+ภาษาไทย	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/thai/resident_record.html
+Tagalog	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/tagalog/resident_record.html
+नेपाली भाषा	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/nepali/resident_record.html
+Tiếng Việt	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/vietnamese/resident_record.html
+Bahasa Indonesia	https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/indonesia/resident_record.html
+総務省ソーシャルアカウント一覧	https://www.soumu.go.jp/sns/index.html
+関連リンク	https://www.soumu.go.jp/menu_kyotsuu/link.html
+所在地図	https://www.soumu.go.jp/menu_sosiki/annai/map-1.html
+※ 電話リレーサービス（手話リンク）のご利用について	https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html

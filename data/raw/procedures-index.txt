@@ -1,6 +1,6 @@
 # 手続の種類から探す
 # 取得元: https://www.moj.go.jp/isa/applications/procedures/index.html
-# 取得日: 2026-09-15
+# 取得日: 2026-09-16
 # このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
 
 手続の種類から探す | 出入国在留管理庁
