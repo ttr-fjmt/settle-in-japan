@@ -53,7 +53,9 @@ jobs:
 
       - name: Install chrome-headless-shell
         run: |
-          output=$(npx --yes @puppeteer/browsers install chrome-headless-shell@stable)
+          # リポジトリの外に入れる。中に置くと git add で巻き込み、
+          # 188MB のファイルが push を拒否される（実際に起きた）
+          output=$(npx --yes @puppeteer/browsers install chrome-headless-shell@stable --path "$RUNNER_TEMP/browsers")
           echo "$output"
           echo "CHROME_PATH=$(echo "$output" | awk '{print $NF}')" >> "$GITHUB_ENV"
 
