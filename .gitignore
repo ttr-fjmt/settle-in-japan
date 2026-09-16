@@ -1,2 +1,6 @@
 node_modules/
 .DS_Store
+
+# ページの画像を作るときに落としてくるブラウザ（リポジトリには入れない）
+chrome-headless-shell/
+chrome/
