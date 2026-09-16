@@ -267,7 +267,8 @@
     "phase": "after-arrival",
     "basis": "NPS",
     "sources": [
-      "nenkin-kokunen"
+      "nenkin-kokunen",
+      "nenkin-menjo"
     ],
     "status": "pending",
     "note": ""
@@ -490,7 +491,7 @@
     "phase": "daily-life",
     "basis": "MHLW",
     "sources": [
-      "mhlw-iryouhoken"
+      "mhlw-kougaku"
     ],
     "status": "pending",
     "note": ""
@@ -512,7 +513,7 @@
     "phase": "daily-life",
     "basis": "MHLW",
     "sources": [
-      "mhlw-iryouhoken"
+      "mhlw-shussan"
     ],
     "status": "pending",
     "note": "金額は公式のものだけ"
@@ -638,7 +639,7 @@
     "phase": "daily-life",
     "basis": "MHLW",
     "sources": [
-      "mhlw-roudoukijun"
+      "mhlw-minimum-wage"
     ],
     "status": "pending",
     "note": "都道府県ごと。数字は公式のみ"
@@ -791,7 +792,9 @@
     "title_ja": "年金を納めた期間はどうなるか",
     "phase": "long-term",
     "basis": "NPS",
-    "sources": [],
+    "sources": [
+      "nenkin-kyotei"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -822,7 +825,8 @@
     "phase": "long-term",
     "basis": "MHLW",
     "sources": [
-      "mhlw-hukushi-kaigo"
+      "mhlw-kaigo",
+      "mhlw-kaigo-gaiyo"
     ],
     "status": "pending",
     "note": ""
@@ -935,7 +939,9 @@
     "title_ja": "労災にあったとき",
     "phase": "trouble",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-rousai"
+    ],
     "status": "pending",
     "note": ""
   },
