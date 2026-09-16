@@ -1018,7 +1018,9 @@
     "title_ja": "家賃が払えないとき（住居確保給付金）",
     "phase": "trouble",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-konkyu"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -1028,7 +1030,10 @@
     "title_ja": "生活が苦しいとき（生活困窮者自立支援）",
     "phase": "trouble",
     "basis": "MHLW",
-    "sources": [],
+    "sources": [
+      "mhlw-konkyu",
+      "mhlw-seikatsuhogo"
+    ],
     "status": "pending",
     "note": ""
   },
