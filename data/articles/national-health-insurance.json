@@ -1,0 +1,88 @@
+{
+  "id": "national-health-insurance",
+  "title_en": "How to join National Health Insurance",
+  "title_ja": "国民健康保険の入り方",
+  "description": "国民健康保険に加入する手続きを、厚生労働省の公式ページの記載にもとづいて説明します。誰が対象か、いつまでに届け出るか、どこの窓口かまで。",
+  "published_at": "2026-09-16",
+  "sources": ["kokuho-join", "kokuho-foreign", "jutei-resident-record"],
+  "sections": [
+    {
+      "heading_en": "Who becomes insured",
+      "heading_ja": "誰が対象になるか",
+      "body": [
+        {
+          "en": "National Health Insurance is run by municipalities. The Ministry of Health, Labour and Welfare states the rule by exclusion: if you have an address in Japan and none of the listed exceptions apply to you, you become insured.",
+          "ja": "国民健康保険は市町村が運営しています。厚生労働省のページは、対象を「除外にあたらない人」という形で示しています。日本国内に住所があり、挙げられた条件のどれにも当てはまらない方が被保険者になります。"
+        },
+        {
+          "en": "If you are covered by health insurance at your workplace, that one applies instead. Ask your employer which of the two covers you before you go to the counter.",
+          "ja": "勤務先の健康保険に入る場合は、そちらが適用されます。窓口に行く前に、どちらに当てはまるかを勤務先に確認してください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "kokuho-join",
+          "text": "日本国内に住所を有する方であって、以下のいずれにも該当しない方は、国民健康保険の被保険者となります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where and by when",
+      "heading_ja": "どこへ・いつまでに",
+      "body": [
+        {
+          "en": "The paperwork goes to the National Health Insurance counter of the municipality where you live, within 14 days. The same window applies when you leave the insurance — for example when you start at a company that enrols you in its own scheme.",
+          "ja": "届出は、お住まいの市町村の国民健康保険の窓口へ、14日以内に提出します。脱退するとき（勤務先の健康保険に入るときなど）も同じ期限です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "kokuho-join",
+          "text": "国民健康保険の被保険者となったとき、脱退するときなどは、14日以内に、お住まいの市町村の国民健康保険の窓口（国民健康保険組合の場合は国民健康保険組合の窓口等）まで関係書類を提出する必要があります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "It is recorded on your residence record",
+      "heading_ja": "住民票にも記載されます",
+      "body": [
+        {
+          "en": "Your insurance status is part of your residence record, alongside your name, date of birth and address. That is one reason the move-in notification comes first: the insurance counter works from that registration.",
+          "ja": "国民健康保険の被保険者に関する事項は、氏名や住所とともに住民票に記載されます。転入届を先に行う理由のひとつがこれで、保険の窓口はその登録をもとに手続きします。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-resident-record",
+          "text": "外国人住民に係る住民票には、日本人と同様に、氏名、出生の年月日、男女の別、住所等の基本事項に加え、国民健康保険や国民年金等の被保険者に関する事項が記載されます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Leaflets in your language",
+      "heading_ja": "多言語の案内",
+      "body": [
+        {
+          "en": "The ministry publishes a leaflet explaining the basics of the system for people who live in Japan and for people who have just arrived. It is linked from the official page listed in the sources below.",
+          "ja": "厚生労働省は、日本に居住する外国人や新しく来日した方に向けて、制度の基本をまとめたリーフレットを公開しています。下の出典のページから見られます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "kokuho-foreign",
+          "text": "日本に居住する外国人及び新しく日本に来られた外国人の方向けに、国民健康保険制度の基本的な内容をまとめたリーフレットを掲載しています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If something does not fit your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Premiums and the exact documents differ by municipality, and this page does not judge individual cases. Ask the National Health Insurance counter where you live.",
+          "ja": "保険料や必要書類は市町村によって違い、このページは個別の事情についての判断はしません。お住まいの市町村の国民健康保険の窓口にお尋ねください。"
+        }
+      ]
+    }
+  ]
+}
