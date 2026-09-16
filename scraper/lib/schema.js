@@ -49,6 +49,10 @@ const OFFICIAL_HOSTS = [
   'digital.go.jp', // デジタル庁
   'e-gov.go.jp', // e-Gov（法令）
   'soumu.go.jp', // 総務省
+  'mext.go.jp', // 文部科学省（子どもの就学）
+  'cfa.go.jp', // こども家庭庁（児童手当・保育）
+  'npa.go.jp', // 警察庁（運転免許・自転車防犯登録）
+  'customs.go.jp', // 税関（持ち込みの制限）
 ];
 
 /** 確認できなかったことを残すための印。理由の分からない空欄を作らないための仕組み。 */

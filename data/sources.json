@@ -264,5 +264,75 @@
     "url": "https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/basic_resident_registration_card.html",
     "publisher": "総務省",
     "note": "マイナンバーカードの作り方の根拠。"
+  },
+  {
+    "id": "nta-index",
+    "title": "国税庁",
+    "url": "https://www.nta.go.jp/",
+    "publisher": "国税庁",
+    "note": "所得税・住民税・年末調整の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "nenkin-index",
+    "title": "日本年金機構",
+    "url": "https://www.nenkin.go.jp/",
+    "publisher": "日本年金機構",
+    "note": "国民年金・脱退一時金の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "mhlw-index",
+    "title": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/",
+    "publisher": "厚生労働省",
+    "note": "医療・年金・労働の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "mhlw-labour-offices",
+    "title": "労働局・労働基準監督署・ハローワーク",
+    "url": "https://www.mhlw.go.jp/stf/kouseiroudoushou/roudoukyoku/index.html",
+    "publisher": "厚生労働省",
+    "note": "ハローワークの使い方・労働基準監督署への相談の根拠。"
+  },
+  {
+    "id": "mhlw-consultation",
+    "title": "相談窓口等（雇用・労働）",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/soudanmadogutitou/index.html",
+    "publisher": "厚生労働省",
+    "note": "解雇・賃金未払いなど、働くことで困ったときの相談先の根拠。"
+  },
+  {
+    "id": "mhlw-vaccination",
+    "title": "予防接種",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/yobou-sesshu/index.html",
+    "publisher": "厚生労働省",
+    "note": "子どもの予防接種の根拠。"
+  },
+  {
+    "id": "mext-index",
+    "title": "文部科学省",
+    "url": "https://www.mext.go.jp/",
+    "publisher": "文部科学省",
+    "note": "子どもの就学・高校進学の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "cfa-index",
+    "title": "こども家庭庁",
+    "url": "https://www.cfa.go.jp/",
+    "publisher": "こども家庭庁",
+    "note": "児童手当・保育園の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "npa-index",
+    "title": "警察庁",
+    "url": "https://www.npa.go.jp/",
+    "publisher": "警察庁",
+    "note": "運転免許の切替・自転車防犯登録の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "customs-index",
+    "title": "税関",
+    "url": "https://www.customs.go.jp/",
+    "publisher": "税関",
+    "note": "日本に持ち込めないもの・申告が必要なものの記事のために、個別ページのURLをここから拾う。"
   }
 ]
