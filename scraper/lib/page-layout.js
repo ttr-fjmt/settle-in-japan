@@ -185,18 +185,25 @@ function layout({
     ? `\n<link rel="alternate" hreflang="x-default" href="${escape(SITE_URL + defaultAlternate.href)}">`
     : '';
 
-  // 言語の切り替え。いま見ている言語は押せないようにする
+  // 言語の切り替え。ヘッダーが詰まらないよう、プルダウンにまとめる。
+  // JavaScript を使わない details/summary なので、動かない環境でも開ける
+  const current = alternates.find(a => a.code === locale.code);
   const switcher =
     alternates.length > 1
-      ? `<nav class="langs" aria-label="${escape(label('other_languages') || 'Other languages / ほかの言語')}">
+      ? `<details class="langs">
+<summary aria-label="${escape(label('other_languages') || 'Language / 言語')}">
+${icon('globe', 18)}<span>${escape((current && current.label) || locale.label)}</span>
+</summary>
+<ul>
 ${alternates
   .map(a =>
     a.code === locale.code
-      ? `<span class="current">${escape(a.label)}</span>`
-      : `<a href="${escape(a.href)}" hreflang="${escape(a.hreflang || a.code)}" lang="${escape(a.hreflang || a.code)}">${escape(a.label)}</a>`
+      ? `<li><span class="current" aria-current="true">${escape(a.label)}</span></li>`
+      : `<li><a href="${escape(a.href)}" hreflang="${escape(a.hreflang || a.code)}" lang="${escape(a.hreflang || a.code)}">${escape(a.label)}</a></li>`
   )
   .join('\n')}
-</nav>`
+</ul>
+</details>`
       : '';
 
   return `<!doctype html>
@@ -246,8 +253,10 @@ ${headTags()}
   --warn-soft:#f6efd9;
 }
 *{box-sizing:border-box}
+/* ベトナム語の記号つき文字（ế ệ など）は、日本語フォントに入っていないことがある。
+   先にラテン文字をきちんと持つフォントを置く。日本語はそのあとのフォントから出る */
 body{margin:0;background:var(--paper);color:var(--ink);
-  font:16px/1.85 "Hiragino Sans","Yu Gothic",system-ui,sans-serif}
+  font:16px/1.85 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Yu Gothic",Roboto,sans-serif}
 .wrap{max-width:62rem;margin:0 auto;padding:28px 16px 64px}
 a{color:var(--indigo)}
 .icon{vertical-align:-4px;flex:none}
@@ -255,8 +264,9 @@ a{color:var(--indigo)}
 /* ヘッダー：藍地に青海波の地紋 */
 header.site{background:var(--indigo-deep);background-image:${SEIGAIHA};color:#f4efe4;
   border-bottom:3px solid var(--vermilion)}
-header.site .wrap{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;
-  gap:10px 20px;flex-wrap:wrap}
+header.site .wrap{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;
+  gap:10px 24px;flex-wrap:wrap}
+header.site .right{display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap}
 .brand{font-weight:700;font-size:1.05rem;text-decoration:none;color:#fffdf8;letter-spacing:.01em;
   display:inline-flex;align-items:center;gap:10px}
 .brand .logo{flex:none;border-radius:8px}
@@ -400,11 +410,36 @@ ul.cards .card.soon{opacity:.72}
 ul.cards .card .tag{align-self:flex-start;margin-top:8px;font-size:.72rem;padding:1px 8px;border-radius:999px;
   background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line)}
 
-/* 言語の切り替え */
-nav.langs{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.82rem}
-nav.langs a{color:#e8eef6;text-decoration:none;border-bottom:1px solid transparent;padding:2px 0}
-nav.langs a:hover{border-bottom-color:var(--vermilion)}
-nav.langs .current{color:#fffdf8;font-weight:700}
+/* 言語の切り替え（プルダウン）。ヘッダーに言語を並べると詰まって読みにくいため */
+details.langs{position:relative}
+details.langs summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:7px;
+  font-size:.85rem;color:#e8eef6;padding:6px 12px;border:1px solid rgba(255,255,255,.25);
+  border-radius:999px;white-space:nowrap}
+details.langs summary::-webkit-details-marker{display:none}
+details.langs summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:-3px 0 0 2px}
+details.langs summary:hover{background:rgba(255,255,255,.1);border-color:var(--vermilion)}
+details[open].langs summary{background:rgba(255,255,255,.12)}
+details.langs ul{position:absolute;right:0;top:calc(100% + 8px);z-index:900;margin:0;padding:6px;
+  list-style:none;min-width:12rem;background:var(--surface);border:1px solid var(--line);
+  border-radius:6px;box-shadow:0 10px 28px rgba(22,41,74,.28)}
+details.langs li{margin:0}
+details.langs a,details.langs .current{display:block;padding:9px 12px;border-radius:4px;
+  font-size:.88rem;text-decoration:none;color:var(--ink)}
+details.langs a:hover{background:var(--indigo-soft);color:var(--indigo)}
+details.langs .current{font-weight:700;background:var(--surface-2);color:var(--ink-2)}
+
+/* 案内のリンク */
+header.site nav{gap:18px}
+
+/* 画面が狭いとき：1行目にロゴと言語、2行目に案内。日本語の併記は省いて詰まりを防ぐ */
+@media (max-width:640px){
+  header.site .wrap{gap:8px 12px}
+  header.site .right{width:100%;justify-content:space-between;gap:8px 12px}
+  header.site nav{gap:16px;font-size:.84rem}
+  header.site nav .ja{display:none}
+  details.langs summary{padding:5px 10px;font-size:.8rem}
+}
 
 /* 広告の枠。公式の情報と見分けがつくよう、必ず「広告」と添える */
 .ad{margin:30px 0;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -451,11 +486,19 @@ ${GUIDE_WIDGET_CSS}
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="${escape(locale.path || '/')}">${logoMark(34)}<span class="brand-text">${SITE_NAME}<span>${escape(label('site_tagline') || '日本移住ガイド')}</span></span></a>
+<div class="right">
 <nav>
-  <a href="/visa/">${icon('card', 18)}${escape(label('nav_visa') || 'Residence statuses / 在留資格')}</a>
-  <a href="${escape((locale.path || '') + '/guide/')}">${icon('guide', 18)}${escape(label('nav_guide') || 'Guides / 手続きの解説')}</a>
+  <a href="/visa/">${icon('card', 18)}${
+    label('nav_visa')
+      ? escape(label('nav_visa'))
+      : 'Residence statuses<span class="ja"> / 在留資格</span>'
+  }</a>
+  <a href="${escape((locale.path || '') + '/guide/')}">${icon('guide', 18)}${
+    label('nav_guide') ? escape(label('nav_guide')) : 'Guides<span class="ja"> / 手続きの解説</span>'
+  }</a>
 </nav>
 ${switcher}
+</div>
 </div></header>
 ${hero}
 <main class="wrap">
