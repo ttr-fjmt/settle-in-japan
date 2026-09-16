@@ -334,5 +334,82 @@
     "url": "https://www.customs.go.jp/",
     "publisher": "税関",
     "note": "日本に持ち込めないもの・申告が必要なものの記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "nta-kojin",
+    "title": "個人の方（国税庁）",
+    "url": "https://www.nta.go.jp/users/kojin/index.htm",
+    "publisher": "国税庁",
+    "note": "所得税・住民税の記事のために、個別ページのURLをここから拾う。"
+  },
+  {
+    "id": "nta-kakutei",
+    "title": "所得税の確定申告",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei.htm",
+    "publisher": "国税庁",
+    "note": "確定申告が必要になる人の記事の根拠。"
+  },
+  {
+    "id": "nta-nencho",
+    "title": "年末調整がよくわかるページ",
+    "url": "https://www.nta.go.jp/users/gensen/nencho/index.htm",
+    "publisher": "国税庁",
+    "note": "年末調整とは何かの記事の根拠。"
+  },
+  {
+    "id": "nenkin-kokunen",
+    "title": "国民年金",
+    "url": "https://www.nenkin.go.jp/service/kokunen/index.html",
+    "publisher": "日本年金機構",
+    "note": "国民年金への加入・保険料の記事の根拠。"
+  },
+  {
+    "id": "nenkin-kounen",
+    "title": "厚生年金保険",
+    "url": "https://www.nenkin.go.jp/service/kounen/index.html",
+    "publisher": "日本年金機構",
+    "note": "厚生年金と国民年金の違いの記事の根拠。"
+  },
+  {
+    "id": "nenkin-international",
+    "title": "年金の国際業務（外国人の方）",
+    "url": "https://www.nenkin.go.jp/international/index.html",
+    "publisher": "日本年金機構",
+    "note": "脱退一時金・社会保障協定の記事の根拠。"
+  },
+  {
+    "id": "mhlw-koyou-hoken",
+    "title": "雇用保険給付",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html",
+    "publisher": "厚生労働省",
+    "note": "失業給付のしくみの記事の根拠。"
+  },
+  {
+    "id": "mhlw-roudoukijun",
+    "title": "労働基準",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/index.html",
+    "publisher": "厚生労働省",
+    "note": "労働条件・有給・割増賃金・最低賃金の記事のために、個別ページをここから拾う。"
+  },
+  {
+    "id": "mhlw-iryouhoken",
+    "title": "医療保険",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/index.html",
+    "publisher": "厚生労働省",
+    "note": "高額療養費・出産育児一時金・傷病手当金の記事のために、個別ページをここから拾う。"
+  },
+  {
+    "id": "mhlw-hukushi-kaigo",
+    "title": "福祉・介護",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/index.html",
+    "publisher": "厚生労働省",
+    "note": "介護保険・生活困窮者支援の記事のために、個別ページをここから拾う。"
+  },
+  {
+    "id": "mhlw-koyoukintou",
+    "title": "雇用環境・均等",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/index.html",
+    "publisher": "厚生労働省",
+    "note": "職場のハラスメント・育児休業の記事のために、個別ページをここから拾う。"
   }
 ]
