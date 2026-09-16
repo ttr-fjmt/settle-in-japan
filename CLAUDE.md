@@ -58,6 +58,7 @@ cd scraper
 npm test            # ユニットテスト（データの形・出典・本文照合）
 npm run validate    # data/visa-types.json をスキーマ検証
 npm run fetch       # 公式ページを取得して data/raw/ に保存（※通信が必要。ふつうは Actions で動かす）
+npm run verify-live # 公開サイトがリポジトリどおりか確認（main への反映が終わったあと）
 ```
 
 依存パッケージは使っていない（Node 22 の標準機能だけ）。`npm install` は不要。

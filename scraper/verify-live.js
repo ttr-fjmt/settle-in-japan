@@ -22,6 +22,7 @@
  */
 
 const https = require('https');
+const http = require('http');
 const path = require('path');
 const fs = require('fs');
 
@@ -35,26 +36,69 @@ const { readArticles } = require('./generate-article-pages');
 const { pagePaths } = require('./generate-sitemap');
 const { ogpFile } = require('./lib/ogp');
 
-/** 取得する。キャッシュを避けるため、毎回ちがう問い合わせを付ける。 */
-function get(url, { method = 'GET' } = {}) {
-  const sep = url.includes('?') ? '&' : '?';
+/**
+ * 取得する。キャッシュを避けるため、毎回ちがう問い合わせを付ける。
+ *
+ * 【プロキシ対応】
+ * パソコンからは直接つなぐ。クラウドのセッションは外に出るときプロキシを通るため、
+ * 環境変数 HTTPS_PROXY があるときは、そこにトンネル（CONNECT）を掘ってから TLS でつなぐ。
+ * 対応していないと、クラウドからは全部 403 になる（実際に起きた）。
+ */
+function openSocket(target) {
+  const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
+  if (!proxy) return Promise.resolve(null); // 直接つなぐ
+
+  const { hostname, port, username, password } = new URL(proxy);
+  const headers = {};
+  if (username) {
+    headers['proxy-authorization'] =
+      'Basic ' + Buffer.from(`${decodeURIComponent(username)}:${decodeURIComponent(password)}`).toString('base64');
+  }
   return new Promise((resolve, reject) => {
-    https
-      .request(
-        `${url}${sep}nocache=${Date.now()}`,
-        { method, headers: { 'user-agent': 'settle-in-japan-verify-live' } },
-        res => {
-          let body = '';
-          res.on('data', c => {
-            body += c;
-          });
-          res.on('end', () =>
-            resolve({ status: res.statusCode, body, type: res.headers['content-type'] || '' })
-          );
-        }
-      )
-      .on('error', reject)
-      .end();
+    const req = http.request({
+      host: hostname,
+      port: port || 80,
+      method: 'CONNECT',
+      path: `${target.hostname}:443`,
+      headers,
+    });
+    req.on('connect', (res, socket) => {
+      if (res.statusCode !== 200) return reject(new Error(`プロキシが ${res.statusCode} を返しました`));
+      resolve(socket);
+    });
+    req.on('error', reject);
+    req.end();
+  });
+}
+
+async function get(url, { method = 'GET' } = {}) {
+  const sep = url.includes('?') ? '&' : '?';
+  const target = new URL(`${url}${sep}nocache=${Date.now()}`);
+  const socket = await openSocket(target);
+
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      {
+        host: target.hostname,
+        servername: target.hostname,
+        path: target.pathname + target.search,
+        method,
+        socket: socket || undefined,
+        agent: socket ? false : undefined,
+        headers: { 'user-agent': 'settle-in-japan-verify-live', host: target.hostname },
+      },
+      res => {
+        let body = '';
+        res.on('data', c => {
+          body += c;
+        });
+        res.on('end', () =>
+          resolve({ status: res.statusCode, body, type: res.headers['content-type'] || '' })
+        );
+      }
+    );
+    req.on('error', reject);
+    req.end();
   });
 }
 
