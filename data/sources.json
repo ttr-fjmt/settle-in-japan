@@ -138,5 +138,131 @@
     "url": "https://www.moj.go.jp/isa/publications/faq/newimmiact_4_port-city.html",
     "publisher": "出入国在留管理庁",
     "note": "在留カードをどこで受け取るか（空港での交付と、後日交付の場合）。記事3本目の根拠。"
+  },
+  {
+    "id": "apply-coe",
+    "title": "在留資格認定証明書交付申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-1.html",
+    "publisher": "出入国在留管理庁",
+    "note": "来日前の手続き（認定証明書）と、家族を呼ぶときの手続きの根拠。"
+  },
+  {
+    "id": "apply-change-status",
+    "title": "在留資格変更許可申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-2.html",
+    "publisher": "出入国在留管理庁",
+    "note": "転職・進学のときの在留資格変更の根拠。"
+  },
+  {
+    "id": "apply-extend-period",
+    "title": "在留期間更新許可申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-3.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留期間の更新の根拠。"
+  },
+  {
+    "id": "apply-work-permission",
+    "title": "資格外活動許可申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-8.html",
+    "publisher": "出入国在留管理庁",
+    "note": "留学生などがアルバイトをするときの許可の根拠。"
+  },
+  {
+    "id": "apply-work-certificate",
+    "title": "就労資格証明書交付申請",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/16-9.html",
+    "publisher": "出入国在留管理庁",
+    "note": "就労資格証明書の説明の根拠。"
+  },
+  {
+    "id": "apply-reentry",
+    "title": "再入国許可申請",
+    "url": "https://www.moj.go.jp/isa/immigration/procedures/16-5.html",
+    "publisher": "出入国在留管理庁",
+    "note": "再入国許可・みなし再入国の根拠。"
+  },
+  {
+    "id": "notify-activity-org",
+    "title": "所属（活動）機関に関する届出",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00014.html",
+    "publisher": "出入国在留管理庁",
+    "note": "留学・研修など、所属機関が変わったときの届出の根拠。"
+  },
+  {
+    "id": "notify-contract-org",
+    "title": "所属（契約）機関に関する届出",
+    "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00015.html",
+    "publisher": "出入国在留管理庁",
+    "note": "転職したときの届出（技術・人文知識・国際業務など）の根拠。"
+  },
+  {
+    "id": "fresc",
+    "title": "外国人在留支援センター（FRESC／フレスク）",
+    "url": "https://www.moj.go.jp/isa/support/fresc/fresc01.html",
+    "publisher": "出入国在留管理庁",
+    "note": "困ったときの相談先。記事の末尾の案内に使う。"
+  },
+  {
+    "id": "consultation-desks",
+    "title": "相談窓口",
+    "url": "https://www.moj.go.jp/isa/support/consultation/index.html",
+    "publisher": "出入国在留管理庁",
+    "note": "多言語で相談できる窓口の一覧の根拠。"
+  },
+  {
+    "id": "visa-temporary-visitor",
+    "title": "在留資格「短期滞在」",
+    "url": "https://www.moj.go.jp/isa/applications/status/temporaryvisitor.html",
+    "publisher": "出入国在留管理庁",
+    "note": "観光などで来るときの在留資格の根拠。"
+  },
+  {
+    "id": "visa-gijinkoku",
+    "title": "在留資格「技術・人文知識・国際業務」",
+    "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html",
+    "publisher": "出入国在留管理庁",
+    "note": "働く人がいちばん多い在留資格の根拠。"
+  },
+  {
+    "id": "visa-ssw",
+    "title": "在留資格「特定技能」",
+    "url": "https://www.moj.go.jp/isa/applications/status/specifiedskilledworker.html",
+    "publisher": "出入国在留管理庁",
+    "note": "特定技能1号・2号の違いの根拠。"
+  },
+  {
+    "id": "visa-technical-intern",
+    "title": "在留資格「技能実習」",
+    "url": "https://www.moj.go.jp/isa/applications/status/technicalinterntraining.html",
+    "publisher": "出入国在留管理庁",
+    "note": "技能実習と特定技能の違いの根拠。"
+  },
+  {
+    "id": "visa-highly-skilled",
+    "title": "在留資格「高度専門職」",
+    "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities02_00004.html",
+    "publisher": "出入国在留管理庁",
+    "note": "高度専門職（ポイント制）の根拠。"
+  },
+  {
+    "id": "visa-student",
+    "title": "在留資格「留学」",
+    "url": "https://www.moj.go.jp/isa/applications/status/student.html",
+    "publisher": "出入国在留管理庁",
+    "note": "留学で来日するときの根拠。"
+  },
+  {
+    "id": "visa-business-manager",
+    "title": "在留資格「経営・管理」",
+    "url": "https://www.moj.go.jp/isa/applications/status/businessmanager.html",
+    "publisher": "出入国在留管理庁",
+    "note": "日本で会社を作るときの在留資格の根拠。"
+  },
+  {
+    "id": "jutei-mynumber-card",
+    "title": "外国人住民に係る住基台帳制度：住基カード／マイナンバーカード",
+    "url": "https://www.soumu.go.jp/main_sosiki/jichi_gyousei/c-gyousei/zairyu/basic_resident_registration_card.html",
+    "publisher": "総務省",
+    "note": "マイナンバーカードの作り方の根拠。"
   }
 ]
