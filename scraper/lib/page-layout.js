@@ -22,6 +22,7 @@ const { logoMark, SITE_NAME, SITE_URL } = require('./brand');
 const { ogpUrl } = require('./ogp');
 const { icon } = require('./icons');
 const { guideWidget, GUIDE_WIDGET_CSS } = require('./guide-widget');
+const { LOCALES } = require('./locales');
 
 const GA_MEASUREMENT_ID = 'G-44PECD16GK';
 const ADSENSE_CLIENT = 'ca-pub-5761092657360295';
@@ -160,17 +161,53 @@ function heroArt() {
  * OGP画像は canonical から決める（/guide/xxx/ → /assets/ogp/guide-xxx.png）。
  * ページを作る側が指定し忘れても必ず入るようにするため、引数ではなく自動で導く。
  */
-function layout({ title, description, canonical, body, hero = '' }) {
+function layout({
+  title,
+  description,
+  canonical,
+  body,
+  hero = '',
+  locale = LOCALES[0],
+  // その ページが存在する言語の一覧 [{ code, href }]。無い言語は出さない（404にしないため）
+  alternates = [],
+  ui = null,
+}) {
   const pagePath = canonical.replace(SITE_URL, '') || '/';
   const ogImage = ogpUrl(pagePath);
+  const label = key => (ui && ui[key]) || null;
+
+  // 同じページの他言語版（hreflang）。検索エンジンに「これは同じ内容の別言語」と伝える
+  const hreflangs = alternates
+    .map(a => `<link rel="alternate" hreflang="${escape(a.hreflang || a.code)}" href="${escape(SITE_URL + a.href)}">`)
+    .join('\n');
+  const defaultAlternate = alternates.find(a => a.code === 'en');
+  const xDefault = defaultAlternate
+    ? `\n<link rel="alternate" hreflang="x-default" href="${escape(SITE_URL + defaultAlternate.href)}">`
+    : '';
+
+  // 言語の切り替え。いま見ている言語は押せないようにする
+  const switcher =
+    alternates.length > 1
+      ? `<nav class="langs" aria-label="${escape(label('other_languages') || 'Other languages / ほかの言語')}">
+${alternates
+  .map(a =>
+    a.code === locale.code
+      ? `<span class="current">${escape(a.label)}</span>`
+      : `<a href="${escape(a.href)}" hreflang="${escape(a.hreflang || a.code)}" lang="${escape(a.hreflang || a.code)}">${escape(a.label)}</a>`
+  )
+  .join('\n')}
+</nav>`
+      : '';
+
   return `<!doctype html>
-<html lang="ja">
+<html lang="${escape(locale.htmlLang)}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escape(title)}</title>
 <meta name="description" content="${escape(description)}">
 <link rel="canonical" href="${escape(canonical)}">
+${hreflangs}${xDefault}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${SITE_NAME}">
 <meta property="og:title" content="${escape(title)}">
@@ -363,6 +400,12 @@ ul.cards .card.soon{opacity:.72}
 ul.cards .card .tag{align-self:flex-start;margin-top:8px;font-size:.72rem;padding:1px 8px;border-radius:999px;
   background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line)}
 
+/* 言語の切り替え */
+nav.langs{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.82rem}
+nav.langs a{color:#e8eef6;text-decoration:none;border-bottom:1px solid transparent;padding:2px 0}
+nav.langs a:hover{border-bottom-color:var(--vermilion)}
+nav.langs .current{color:#fffdf8;font-weight:700}
+
 /* 広告の枠。公式の情報と見分けがつくよう、必ず「広告」と添える */
 .ad{margin:30px 0;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .ad-label{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
@@ -407,11 +450,12 @@ ${GUIDE_WIDGET_CSS}
 </head>
 <body>
 <header class="site"><div class="wrap">
-<a class="brand" href="/">${logoMark(34)}<span class="brand-text">${SITE_NAME}<span>日本移住ガイド</span></span></a>
+<a class="brand" href="${escape(locale.path || '/')}">${logoMark(34)}<span class="brand-text">${SITE_NAME}<span>${escape(label('site_tagline') || '日本移住ガイド')}</span></span></a>
 <nav>
-  <a href="/visa/">${icon('card', 18)}Residence statuses / 在留資格</a>
-  <a href="/guide/">${icon('guide', 18)}Guides / 手続きの解説</a>
+  <a href="/visa/">${icon('card', 18)}${escape(label('nav_visa') || 'Residence statuses / 在留資格')}</a>
+  <a href="${escape((locale.path || '') + '/guide/')}">${icon('guide', 18)}${escape(label('nav_guide') || 'Guides / 手続きの解説')}</a>
 </nav>
+${switcher}
 </div></header>
 ${hero}
 <main class="wrap">

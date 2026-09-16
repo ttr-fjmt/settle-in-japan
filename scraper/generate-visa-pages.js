@@ -29,6 +29,7 @@ const { VISA_GROUP_LABELS } = require('./lib/schema');
 const { layout, escape, icon, heroArt, SITE_NAME, SITE_URL } = require('./lib/page-layout');
 const { categorise } = require('./lib/categories');
 const { adSlot } = require('./lib/ads');
+const { alternatesFor } = require('./lib/translations');
 
 const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
@@ -284,6 +285,7 @@ document.getElementById('visa-pick').addEventListener('change', function (e) {
     description:
       '外国人が日本で暮らしはじめるための情報。在留資格・手続き・住まい・仕事を、公式ページで確認できた内容だけ、出典つきで掲載します。',
     canonical: `${SITE_URL}/`,
+    alternates: alternatesFor('/'),
     hero: heroArt(),
     body,
   });
