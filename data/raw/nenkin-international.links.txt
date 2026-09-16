@@ -1,0 +1,18 @@
+# 年金の国際業務（外国人の方） のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+メニューを飛ばして本文へ	https://www.nenkin.go.jp/international/index.html#CONT
+Home	https://www.nenkin.go.jp/international/english/index.html
+Japanese Social Insurance Systems	https://www.nenkin.go.jp/international/english/japanese-system/index.html
+International Social Security Agreement	https://www.nenkin.go.jp/international/english/agreement/index.html
+Where to consult	https://www.nenkin.go.jp/international/english/consult/index.html
+Sitemap	https://www.nenkin.go.jp/sitemap.html
+Japanese	https://www.nenkin.go.jp/index.html
+Read Out	https://www.nenkin.go.jp/info/aboutweb/yomiage.html
+Top page	https://www.nenkin.go.jp/index.html
+English	https://www.nenkin.go.jp/international/english/index.html
+やさしいにほんご	https://www.nenkin.go.jp/international/simplejapanese/index.html
+About This Site	https://www.nenkin.go.jp/info/aboutweb/aboutsite.html
+Links・About copyright	https://www.nenkin.go.jp/info/aboutweb/kojinjoho.html
+Related site	https://www.nenkin.go.jp/info/aboutweb/kanren/kanren.html
+Social Media	https://www.nenkin.go.jp/info/aboutweb/tw-policy.html
