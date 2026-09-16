@@ -384,6 +384,7 @@ blockquote.quote cite{font-style:normal;font-size:.8rem;color:var(--ink-2)}
 footer.site{margin-top:52px;background:var(--indigo-deep);background-image:${SEIGAIHA};color:#d8e2ee}
 footer.site .wrap{padding:24px 16px;font-size:.85rem}
 footer.site a{color:#cfe0f2}
+footer.site .foot-links{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:6px 4px}
 
 ${GUIDE_WIDGET_CSS}
 
@@ -415,6 +416,9 @@ ${body}
 ${SITE_NAME} — information for people settling in Japan.<br>
 This site explains the official rules and points you to official contacts. It does not give advice on individual cases.<br>
 このサイトは制度の説明と公式窓口の案内を行うもので、個別の申請についての判断はしません。
+<p class="foot-links"><a href="/">Top / トップ</a> ・ <a href="/visa/">Residence statuses / 在留資格</a> ・
+<a href="/guide/">Guides / 手続きの解説</a> ・ <a href="/faq/">FAQ / よくある質問</a> ・
+<a href="/privacy/">Privacy policy / プライバシーポリシー</a></p>
 </div></footer>
 ${guideWidget()}
 </body>

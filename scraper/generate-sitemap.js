@@ -24,7 +24,9 @@ const SITE_URL = 'https://settle-in-japan.net';
 /** サイトに載っているページのURL一覧（サイト内の相対パス）。 */
 function pagePaths(records, articles = readArticles()) {
   const guide = articles.length ? ['/guide/', ...articles.map(a => `/guide/${a.id}/`)] : [];
-  return ['/', '/visa/', ...records.map(r => `/visa/${r.id}/`), ...guide];
+  // 固定ページ（よくある質問・プライバシーポリシー）も検索対象に入れる。
+  // 広告と解析の説明は、広告の審査でも見られる。
+  return ['/', '/visa/', ...records.map(r => `/visa/${r.id}/`), ...guide, '/faq/', '/privacy/'];
 }
 
 function buildSitemap(records, lastmod) {

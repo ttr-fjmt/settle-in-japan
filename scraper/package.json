@@ -10,6 +10,7 @@
     "extract": "node extract-visa-types.js",
     "pages": "node generate-visa-pages.js",
     "articles": "node generate-article-pages.js",
+    "static": "node generate-static-pages.js",
     "brand": "node generate-brand-assets.js",
     "ogp": "node generate-ogp-images.js",
     "sitemap": "node generate-sitemap.js"

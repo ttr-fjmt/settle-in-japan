@@ -61,6 +61,21 @@ function ogpTargets(records = JSON.parse(fs.readFileSync(VISA_PATH, 'utf8')), ar
     },
   ];
 
+  targets.push(
+    {
+      pagePath: '/faq/',
+      kicker: 'FAQ / よくある質問',
+      titleEn: 'What this site is, and what it does not do',
+      titleJa: 'このサイトが何で、何をしない場所なのか',
+    },
+    {
+      pagePath: '/privacy/',
+      kicker: 'Privacy / プライバシー',
+      titleEn: 'Privacy policy',
+      titleJa: 'プライバシーポリシー（Cookie・広告・アクセス解析）',
+    }
+  );
+
   for (const record of records) {
     targets.push({
       pagePath: `/visa/${record.id}/`,
