@@ -47,6 +47,16 @@ jobs:
         working-directory: scraper
         run: npm test
 
+      # 言語ページのSNS用画像を作るのに使う（日本語・ベトナム語の文字を出すため）
+      - name: Install Japanese fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+
+      - name: Install chrome-headless-shell
+        run: |
+          output=$(npx --yes @puppeteer/browsers install chrome-headless-shell@stable)
+          echo "$output"
+          echo "CHROME_PATH=$(echo "$output" | awk '{print $NF}')" >> "$GITHUB_ENV"
+
       - name: Translate
         working-directory: scraper
         env:
@@ -76,6 +86,7 @@ jobs:
           node generate-locale-pages.js
           node generate-article-pages.js
           node generate-visa-pages.js
+          node generate-ogp-images.js
           node generate-sitemap.js
 
       - name: Verify before publishing

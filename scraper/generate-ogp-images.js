@@ -27,6 +27,7 @@ const path = require('node:path');
 const { ogpHtml, ogpFile, OGP_WIDTH, OGP_HEIGHT } = require('./lib/ogp');
 const { renderPng, findBrowser } = require('./lib/render');
 const { readArticles } = require('./generate-article-pages');
+const { readyLocales, loadLocale } = require('./lib/translations');
 
 const ROOT = path.join(__dirname, '..');
 const VISA_PATH = path.join(ROOT, 'data', 'visa-types.json');
@@ -91,6 +92,37 @@ function ogpTargets(records = JSON.parse(fs.readFileSync(VISA_PATH, 'utf8')), ar
       titleEn: article.title_en,
       titleJa: article.title_ja,
     });
+  }
+
+  // 各言語のページ（/easy/ /vi/ …）。題名はその言語のものを焼き込む。
+  // 訳が無いページは作られないので、ここにも出てこない。
+  for (const locale of readyLocales()) {
+    const { articles: translations } = loadLocale(locale);
+    const entries = articles.filter(a => translations[a.id]);
+    if (entries.length === 0) continue;
+
+    targets.push(
+      {
+        pagePath: `${locale.path}/`,
+        kicker: locale.label,
+        titleEn: 'Settle in Japan',
+        titleJa: translations[entries[0].id] ? locale.label : locale.label,
+      },
+      {
+        pagePath: `${locale.path}/guide/`,
+        kicker: locale.label,
+        titleEn: 'Guides',
+        titleJa: locale.label,
+      }
+    );
+    for (const article of entries) {
+      targets.push({
+        pagePath: `${locale.path}/guide/${article.id}/`,
+        kicker: locale.label,
+        titleEn: translations[article.id].title,
+        titleJa: article.title_ja,
+      });
+    }
   }
   return targets;
 }
