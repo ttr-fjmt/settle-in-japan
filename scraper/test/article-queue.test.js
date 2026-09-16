@@ -82,6 +82,29 @@ test('出典が取れていない題材は、次の1本に選ばれない', () =
   }
 });
 
+test('題材の状態は、決めた3つのどれかになっている', () => {
+  for (const topic of queue) {
+    assert.ok(
+      ['pending', 'published', 'blocked'].includes(topic.status),
+      `${topic.id}: 知らない状態「${topic.status}」`
+    );
+    if (topic.status === 'blocked') {
+      assert.ok(topic.blocked_reason, `${topic.id}: 印をつけた理由が書かれていない`);
+    }
+  }
+});
+
+test('書けなかった印のついた題材は、次の1本に選ばれない', () => {
+  // 印をつけずに飛ばさないと、翌日も同じ題材で止まり、後ろの題材が永久に出ない。
+  const withBlocked = queue.map((t, i) =>
+    i === 0 && t.status === 'pending'
+      ? { ...t, status: 'blocked', blocked_reason: 'テスト' }
+      : t
+  );
+  const { topic } = pickTopic(withBlocked);
+  if (topic) assert.notStrictEqual(topic.id, withBlocked[0].id, '印のついた題材が選ばれました');
+});
+
 test('すでに書いた記事は、もう一度選ばれない', () => {
   const { topic } = pickTopic(queue);
   if (topic) assert.ok(!articleIds.includes(topic.id), `${topic.id}: すでに公開済みです`);

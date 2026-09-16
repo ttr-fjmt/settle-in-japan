@@ -72,7 +72,11 @@ function pickTopic(queue, { topicId = null } = {}) {
       ? fs.readdirSync(ARTICLES_DIR).filter(f => f.endsWith('.json')).map(f => f.replace(/\.json$/, ''))
       : []
   );
-  const candidates = queue.filter(t => t.status !== 'published' && !published.has(t.id));
+  // blocked ＝ 3回書き直しても検査に通らなかった題材。出典を足し直すまで飛ばす
+  // （飛ばさないと、翌日も翌々日も同じ題材で止まり、後ろの題材が永久に出ない）。
+  const candidates = queue.filter(
+    t => t.status !== 'published' && t.status !== 'blocked' && !published.has(t.id)
+  );
 
   if (topicId) {
     const found = candidates.find(t => t.id === topicId);
@@ -239,9 +243,19 @@ async function main() {
 
   const { article, problems } = await writeArticle(topic, sources);
   if (!article) {
+    // 何度書き直しても通らないのは、たいてい出典のページにその話が書かれていないため。
+    // 印をつけて次の題材へ進む。人が出典を足し直したら、印を消してまた書ける。
     console.error(`${MAX_ATTEMPTS}回書き直しても検査に通りませんでした。今日は公開しません`);
     problems.forEach(p => console.error(`  - ${p}`));
-    process.exitCode = 1;
+
+    const blocked = queue.map(t =>
+      t.id === topic.id
+        ? { ...t, status: 'blocked', blocked_reason: problems[0], blocked_at: jstDate() }
+        : t
+    );
+    fs.writeFileSync(QUEUE_PATH, JSON.stringify(blocked, null, 2) + '\n');
+    console.error(`「${topic.title_ja}」に印をつけました。出典を足し直すまで飛ばします`);
+    console.error('印を消すには data/article-queue.json の status を pending に戻してください');
     return;
   }
 

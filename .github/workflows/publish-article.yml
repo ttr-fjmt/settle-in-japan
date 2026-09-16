@@ -74,7 +74,7 @@ jobs:
 
       # 書けなかった日（ペース外・題材が出典待ち・検査に通らなかった）はここで静かに終わる。
       # 新しい記事は「新規ファイル」なので、git diff では見つからない（git status で見る）。
-      - name: Stop if nothing was written
+      - name: Check what changed
         id: check
         run: |
           if [ -z "$(git status --porcelain -- data/articles)" ]; then
@@ -83,6 +83,12 @@ jobs:
           else
             echo "written=yes" >> "$GITHUB_OUTPUT"
             git status --short -- data/articles
+          fi
+          # 記事が書けなかった日でも、題材リストの印（書けなかった理由）は残す。
+          if [ -z "$(git status --porcelain -- data)" ]; then
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Rebuild pages, images and sitemap
@@ -103,7 +109,7 @@ jobs:
           npm run validate
 
       - name: Commit and push
-        if: steps.check.outputs.written == 'yes'
+        if: steps.check.outputs.changed == 'yes'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -112,13 +118,17 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          title=$(node -e "
-            const fs=require('fs');
-            const queue=JSON.parse(fs.readFileSync('data/article-queue.json','utf8'));
-            const latest=queue.filter(t=>t.published_at).sort((a,b)=>String(b.published_at).localeCompare(String(a.published_at)))[0];
-            process.stdout.write(latest ? latest.title_ja : '記事を1本追加');
-          ")
-          git commit -m "feat: 記事を追加「${title}」"
+          if [ "${{ steps.check.outputs.written }}" = "yes" ]; then
+            title=$(node -e "
+              const fs=require('fs');
+              const queue=JSON.parse(fs.readFileSync('data/article-queue.json','utf8'));
+              const latest=queue.filter(t=>t.published_at).sort((a,b)=>String(b.published_at).localeCompare(String(a.published_at)))[0];
+              process.stdout.write(latest ? latest.title_ja : '記事を1本追加');
+            ")
+            git commit -m "feat: 記事を追加「${title}」"
+          else
+            git commit -m "chore: 公式ページで裏が取れなかった題材に印をつける"
+          fi
 
           max_retries=2
           attempt=0
