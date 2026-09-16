@@ -131,5 +131,12 @@
     "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00010.html",
     "publisher": "出入国在留管理庁",
     "note": "在留カードをなくしたときの手続き。記事「在留カードをなくした」の根拠。"
+  },
+  {
+    "id": "card-where",
+    "title": "出入国港での手続／市区町村での手続／地方出入国在留管理官署での手続",
+    "url": "https://www.moj.go.jp/isa/publications/faq/newimmiact_4_port-city.html",
+    "publisher": "出入国在留管理庁",
+    "note": "在留カードをどこで受け取るか（空港での交付と、後日交付の場合）。記事3本目の根拠。"
   }
 ]
