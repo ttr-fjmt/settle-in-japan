@@ -25,6 +25,7 @@ const path = require('path');
 
 const { layout, escape, icon, SITE_NAME, SITE_URL } = require('./lib/page-layout');
 const { categorise } = require('./lib/categories');
+const { adSlot } = require('./lib/ads');
 
 const ROOT = path.join(__dirname, '..');
 const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
@@ -55,7 +56,7 @@ function quoteBlock(quote, sources) {
 </blockquote>`;
 }
 
-function buildArticlePage(article, sources) {
+function buildArticlePage(article, sources, { slots = undefined } = {}) {
   const sections = article.sections
     .map(section => {
       const paragraphs = section.body
@@ -88,7 +89,11 @@ ${quotes}
 <p class="note">This page explains what the official pages say, quoting them in Japanese. It does not give advice on individual cases. Show the quoted Japanese at the counter if it helps.<br>
 このページは公式ページに書かれていることを、日本語の原文を引用しながら説明しています。個別の事情についての判断はしません。窓口では引用部分をそのまま見せてください。</p>
 
+${adSlot('article-top', slots)}
+
 ${sections}
+
+${adSlot('article-bottom', slots)}
 
 <div class="source">
 <p>Sources / 出典</p>
@@ -114,7 +119,7 @@ ${sourceList}
  * タイルから `/guide/#health` のように飛んでくるので、分類の id を見出しに付ける。
  * 記事の無い分類は出さない（何も無い見出しだけが並ぶのを避けるため）。
  */
-function buildIndexPage(articles, { queue = null } = {}) {
+function buildIndexPage(articles, { queue = null, slots = undefined } = {}) {
   const loadedQueue =
     queue ||
     JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'article-queue.json'), 'utf8'));
@@ -156,6 +161,7 @@ ${list
 ${jump}
 </nav>
 ${sections}
+${adSlot('guide-index', slots)}
 `;
   return layout({
     title: `Guides | ${SITE_NAME}`,

@@ -28,6 +28,7 @@ const path = require('path');
 const { VISA_GROUP_LABELS } = require('./lib/schema');
 const { layout, escape, icon, heroArt, SITE_NAME, SITE_URL } = require('./lib/page-layout');
 const { categorise } = require('./lib/categories');
+const { adSlot } = require('./lib/ads');
 
 const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
@@ -68,7 +69,7 @@ const FAMILY_LABELS = {
 };
 
 /** 在留資格ごとのページ。 */
-function buildDetailPage(record) {
+function buildDetailPage(record, { slots = undefined } = {}) {
   const work = WORK_LABELS[record.work_allowed];
   const family = FAMILY_LABELS[record.family_stay];
   const body = `
@@ -102,6 +103,7 @@ ${
 <p class="note">The text above is quoted from the official list in Japanese, exactly as published. We do not translate it, because a translation of legal wording can change its meaning. Show this page at the counter if it helps.<br>
 上の文章は、公式の一覧表の日本語をそのまま載せています。法律の文言は訳し方で意味が変わるため、私たちは翻訳しません。窓口ではこの画面をそのまま見せてください。</p>
 
+${adSlot('visa-detail', slots)}
 ${sourceBlock(record)}
 <p><a href="/visa/">&larr; All residence statuses / 在留資格の一覧</a></p>
 `;
@@ -208,7 +210,7 @@ function loadTopData(queue, articles) {
  * 件数は公開済みの記事から数える。中身の無いタイルは「準備中」と薄く出し、
  * リンクにしない（押しても何も無いページに飛ばさない）。
  */
-function buildTopPage(records, articleCount = 0, { queue = null, articles = null } = {}) {
+function buildTopPage(records, articleCount = 0, { queue = null, articles = null, slots = undefined } = {}) {
   const loaded = loadTopData(queue, articles);
   const groups = categorise(loaded);
 
@@ -256,6 +258,7 @@ function buildTopPage(records, articleCount = 0, { queue = null, articles = null
 <ul class="tiles">
 ${tiles}
 </ul>
+${adSlot('top', slots)}
 
 <div class="pick">
   <span class="pick-icon">${icon('search', 26)}</span>
