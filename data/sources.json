@@ -488,5 +488,33 @@
     "url": "https://www.customs.go.jp/tsukan/kojin.htm",
     "publisher": "税関",
     "note": "日本に持ち込めないもの・申告が必要なものの記事の根拠。"
+  },
+  {
+    "id": "mhlw-kaigo-gaiyo",
+    "title": "介護保険制度の概要",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+    "publisher": "厚生労働省",
+    "note": "介護保険（40歳以上）の記事の根拠。"
+  },
+  {
+    "id": "mhlw-konkyu",
+    "title": "生活困窮者自立支援制度",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000059425.html",
+    "publisher": "厚生労働省",
+    "note": "生活が苦しいときの記事の根拠。住居確保給付金もここから。"
+  },
+  {
+    "id": "npa-menkyo",
+    "title": "運転免許（警察庁）",
+    "url": "https://www.npa.go.jp/bureau/traffic/menkyo/index.html",
+    "publisher": "警察庁",
+    "note": "運転免許の切替・更新の記事のために、個別ページをここから拾う。"
+  },
+  {
+    "id": "customs-bessouhin",
+    "title": "別送品手続（海外から荷物を送る）",
+    "url": "https://www.customs.go.jp/kaigairyoko/bessouhin.htm",
+    "publisher": "税関",
+    "note": "引越し荷物を送るときの記事の根拠。"
   }
 ]
