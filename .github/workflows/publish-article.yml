@@ -105,12 +105,10 @@ jobs:
       - name: Rebuild pages, images and sitemap
         if: steps.check.outputs.written == 'yes'
         working-directory: scraper
-        run: |
-          node generate-article-pages.js
-          node generate-visa-pages.js
-          node generate-locale-pages.js
-          node generate-ogp-images.js
-          node generate-sitemap.js
+        # 作り直すページは scraper/package.json の build-pages にまとめてある。
+        # ここに並べ直すと、固定ページ（privacy / faq）のように作り直し忘れが起きる
+        # （右下のガイドに記事の一覧が入っているので、記事が増えると全ページが変わる）。
+        run: npm run build-pages
 
       # 書き出したページが記事データと一致しているか、公式照合を通っているかを、公開前にもう一度見る。
       - name: Verify before publishing

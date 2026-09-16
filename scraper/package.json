@@ -16,6 +16,7 @@
     "brand": "node generate-brand-assets.js",
     "ogp": "node generate-ogp-images.js",
     "sitemap": "node generate-sitemap.js",
+    "build-pages": "node generate-article-pages.js && node generate-visa-pages.js && node generate-locale-pages.js && node generate-static-pages.js && node generate-ogp-images.js && node generate-sitemap.js",
     "verify-live": "node verify-live.js"
   },
   "engines": {
