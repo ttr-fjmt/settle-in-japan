@@ -99,6 +99,19 @@ const WORK_LABELS = {
   unknown: { en: 'Not stated in the list', ja: '一覧表に記載なし（確認中）', tone: 'unknown' },
 };
 
+/**
+ * 家族滞在の対象かどうかの表示。
+ * 「家族を呼べるか」ではなく「家族滞在の対象か」と書く。外交・公用は在留資格そのものに
+ * 家族の活動が含まれ、身分・地位に基づく資格には別の道があるため、no を「呼べない」と
+ * 読ませてはいけない。
+ */
+const FAMILY_LABELS = {
+  yes: { en: 'Yes', ja: '家族滞在の対象', tone: 'yes' },
+  no: { en: 'Not on this route', ja: '家族滞在の対象ではない', tone: 'unknown' },
+  depends: { en: 'Depends', ja: '許可の内容による', tone: 'unknown' },
+  unknown: { en: 'Not confirmed', ja: '確認中', tone: 'unknown' },
+};
+
 const escape = s =>
   String(s == null ? '' : s)
     .replace(/&/g, '&amp;')
@@ -191,7 +204,7 @@ Last checked / 最終確認日: ${escape(record.source_checked_at)}</p>`;
 /** 在留資格ごとのページ。 */
 function buildDetailPage(record) {
   const work = WORK_LABELS[record.work_allowed];
-  const family = WORK_LABELS[record.family_stay];
+  const family = FAMILY_LABELS[record.family_stay];
   const body = `
 <h1>${escape(record.name_en)}<span class="ja">${escape(record.name_ja)}</span></h1>
 <p class="lead">${escape(GROUP_HEADINGS[record.group].en)} / ${escape(GROUP_HEADINGS[record.group].ja)}</p>
@@ -214,8 +227,10 @@ ${
 <div class="card">
   <h3>Work / 就労</h3>
   <p><span class="pill ${work.tone}">${escape(work.en)}</span> ${escape(work.ja)}</p>
-  <h3 style="margin-top:14px">Bringing family / 家族の帯同</h3>
+  <h3 style="margin-top:14px">Family on the Dependent status / 家族滞在の対象</h3>
   <p><span class="pill ${family.tone}">${escape(family.en)}</span> ${escape(family.ja)}</p>
+  <p style="font-size:.85rem;color:var(--ink-2);margin:6px 0 0">Whether a spouse or child can stay on the <a href="/visa/dependent/">Dependent</a> status. Some statuses include family members in the status itself — see the activities above.<br>
+  配偶者・子が「家族滞在」で在留できるかを示します。在留資格そのものに家族の活動が含まれるものもあります（上の活動内容をご覧ください）。</p>
 </div>
 
 <p class="note">The text above is quoted from the official list in Japanese, exactly as published. We do not translate it, because a translation of legal wording can change its meaning. Show this page at the counter if it helps.<br>

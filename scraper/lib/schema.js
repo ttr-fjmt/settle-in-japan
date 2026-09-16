@@ -76,7 +76,15 @@ const FIELDS = {
   /** 公式一覧表の「在留期間」の文言をそのまま、1つずつ入れる */
   periods_ja: { type: 'string[]', required: true, verifyAgainstSource: true },
   work_allowed: { type: 'enum', required: true, values: TRISTATE },
+  /**
+   * 配偶者・子が「家族滞在」の在留資格で在留できるか。
+   * 家族滞在のページに対象の在留資格が列挙されており、そこにあるかどうかで決める。
+   * no は「家族を呼べない」という意味ではない（外交・公用は在留資格そのものに家族の活動が
+   * 含まれ、身分・地位に基づく資格には別の道がある）。画面では「家族滞在の対象」と表示する。
+   */
   family_stay: { type: 'enum', required: true, values: TRISTATE },
+  /** family_stay の根拠にした出典（sources.json の id）。unknown のときは持たない */
+  family_stay_source_id: { type: 'string', required: false },
   source_id: { type: 'string', required: true },
   source_url: { type: 'string', required: true, official: true },
   source_checked_at: { type: 'date', required: true },
