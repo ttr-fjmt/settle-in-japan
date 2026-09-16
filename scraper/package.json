@@ -9,6 +9,7 @@
     "fetch": "node fetch-official.js",
     "extract": "node extract-visa-types.js",
     "pages": "node generate-visa-pages.js",
+    "articles": "node generate-article-pages.js",
     "sitemap": "node generate-sitemap.js"
   },
   "engines": {
