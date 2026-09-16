@@ -70,10 +70,13 @@ function recordUsage({ script, model, usage }, logDir = LOG_DIR) {
 }
 
 /**
- * Claude に1回頼む。戻り値は本文の文字列。
+ * Claude に1回頼む。戻り値は { text, stopReason }。
  * 混み合っているとき（429・5xx）は間を空けて3回まで試す。
+ *
+ * stopReason が 'max_tokens' のときは、返事が**途中で切れている**。
+ * JSON を頼んでいる場合、途中で切れたものは必ず読めないので、呼び出し側でそれと分かるようにする。
  */
-async function ask({ system, prompt, model = DEFAULT_MODEL, maxTokens = 8000, script = 'unknown' }) {
+async function ask({ system, prompt, model = DEFAULT_MODEL, maxTokens = 16000, script = 'unknown' }) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY が設定されていません（Actions secrets に入れてください）');
 
@@ -113,10 +116,13 @@ async function ask({ system, prompt, model = DEFAULT_MODEL, maxTokens = 8000, sc
 
     const data = await response.json();
     recordUsage({ script, model, usage: data.usage || {} });
-    return (data.content || [])
-      .filter(block => block.type === 'text')
-      .map(block => block.text)
-      .join('');
+    return {
+      text: (data.content || [])
+        .filter(block => block.type === 'text')
+        .map(block => block.text)
+        .join(''),
+      stopReason: data.stop_reason,
+    };
   }
   throw lastError || new Error('API を呼べませんでした');
 }

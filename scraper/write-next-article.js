@@ -108,14 +108,15 @@ function systemPrompt() {
 ${FORBIDDEN.map(w => `「${w}」`).join('、')}
 個別の事情についての判断はしません。「制度はこうなっている（出典）」という書き方に徹してください。
 
-【記事の形】
-- 節は5〜7個。最初の節から順に、読んだ人がその日のうちに動ける順番で
+【記事の形】（この大きさを守ってください。長すぎると途中で切れて公開できません）
+- 節は5個、多くても6個。最初の節から順に、読んだ人がその日のうちに動ける順番で
+- 1つの節の段落は1〜2個、引用は1〜2文まで。長い条文は、必要な1文だけを引く
 - 各段落は英語（en）と日本語（ja）の対で書く。英語が主、日本語は同じ内容を短く
 - **最後の節の見出しは必ず** heading_ja: "${CLOSING_HEADING_JA}" とし、
   公式の相談窓口へ案内して締めます（この節には引用を入れなくてかまいません）
-- 日本語の本文は合計400字以上、英語は合計1200字以上を目安に
+- 日本語の本文は合計400〜700字、英語は合計1200〜1800字
 
-出力は JSON だけ。説明文やコードの囲みは付けないでください。`;
+出力は JSON だけ。前置きの文も、\`\`\` の囲みも、あとがきも付けないでください。`;
 }
 
 function userPrompt(topic, sources, previousProblems = []) {
@@ -167,16 +168,24 @@ async function writeArticle(topic, sources, { model = DEFAULT_MODEL } = {}) {
   let problems = [];
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
     console.log(`  下書き ${attempt}回目…`);
-    const text = await ask({
+    const { text, stopReason } = await ask({
       system: systemPrompt(),
       prompt: userPrompt(topic, sources, problems),
       model,
-      maxTokens: 8000,
+      maxTokens: 16000,
       script: 'write-next-article',
     });
     const article = extractJson(text);
     if (!article) {
-      problems = ['JSON として読めませんでした。JSON だけを出力してください'];
+      // 途中で切れたのか、形が違うのかで、次に頼むことが変わる。
+      problems =
+        stopReason === 'max_tokens'
+          ? [
+              '長すぎて途中で切れました。節を5つまでに減らし、1つの節の段落は2つまで、' +
+                '引用は1〜2文にして、もっと短く書いてください',
+            ]
+          : ['JSON として読めませんでした。前置きも ``` の囲みも付けず、JSON だけを出力してください'];
+      console.log(`    （返事は${text.length}文字、終わり方: ${stopReason}）`);
       continue;
     }
     article.id = topic.id; // IDは題材リストのものに固定する
