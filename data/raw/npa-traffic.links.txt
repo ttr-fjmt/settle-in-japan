@@ -1,0 +1,46 @@
+# 交通（警察庁） のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+ホーム	https://www.npa.go.jp/
+各部局から	https://www.npa.go.jp/bureau/index.html
+総合的な交通事故防止対策	https://www.npa.go.jp/bureau/traffic/index.html#sougou
+交通安全のための情報	https://www.npa.go.jp/bureau/traffic/index.html#anzenjyouhou
+自動運転	https://www.npa.go.jp/bureau/traffic/index.html#jidou
+運転免許	https://www.npa.go.jp/bureau/traffic/index.html#unmen
+交通規制・交通管制・信号機（道路交通環境の整備）	https://www.npa.go.jp/bureau/traffic/index.html#kisei
+交通指導取締り・交通事故事件捜査等	https://www.npa.go.jp/bureau/traffic/index.html#shidou
+神奈川県警第二交通機動隊隊員らによる不適正な取締り事案等への対応	https://www.npa.go.jp/bureau/traffic/index.html#kanagawa
+交通事故被害者サポート事業	https://www.npa.go.jp/bureau/traffic/index.html#higaisha
+交通安全ファミリー作文コンクール	https://www.npa.go.jp/bureau/traffic/index.html#sakubun
+全国白バイ安全運転競技大会	https://www.npa.go.jp/bureau/traffic/index.html#shirobai
+交通統計	https://www.npa.go.jp/bureau/traffic/toukei_k/index.html
+交通事故分析資料	https://www.npa.go.jp/bureau/traffic/bunseki/info.html
+国家公安委員会・警察庁交通安全業務計画	https://www.npa.go.jp/bureau/traffic/keikaku/index.html
+道路交通法等の改正関連	https://www.npa.go.jp/bureau/traffic/law/index.html
+安全運転管理者制度	https://www.npa.go.jp/bureau/traffic/anzenuntenkanrisya/index.html
+各種有識者会議等	https://www.npa.go.jp/bureau/traffic/council/index.html
+交通安全のための情報	https://www.npa.go.jp/bureau/traffic/koutsuuannzennjyouhou.html
+交通安全啓発ポスター・リーフレット	https://www.npa.go.jp/bureau/traffic/anzen/poster.html
+自動運転	https://www.npa.go.jp/bureau/traffic/selfdriving/index.html
+自動運転の公道実証実験について	https://www.npa.go.jp/bureau/traffic/selfdriving/roadtesting/index.html
+交通ルールの解釈の明確化に関する窓口	https://www.npa.go.jp/bureau/traffic/selfdriving/index.html#kouturulekaisyaku
+運転免許	https://www.npa.go.jp/bureau/traffic/menkyo/index.html
+運転免許の更新等運転免許に関する諸手続について	https://www.npa.go.jp/policies/application/license_renewal/index.html
+海外滞在者の運転免許証の更新等に係る特例について	https://www.npa.go.jp/bureau/traffic/menkyo/kaigai_tokurei.html
+運転免許の拒否等を受けることとなる一定の病気等について	https://www.npa.go.jp/policies/application/license_renewal/list2.html
+更新時講習（優良運転者講習）のオンライン化に係る調査研究報告書（2023年３月17日）	https://www.npa.go.jp/bureau/traffic/menkyo/online_kousyu_report.pdf
+更新時講習（優良運転者講習及び一般運転者講習）のオンライン化に係る調査研究報告書（2024年３月15日）	https://www.npa.go.jp/bureau/traffic/online_kousyu_report_20240315.pdf.pdf
+「オンライン更新時講習（優良運転者講習及び一般運転者講習）の高度化に係る調査研究」報告書（2025年（令和７年）３月21日）	https://www.npa.go.jp/bureau/traffic/online_kousyu_report_20250321.pdf
+高齢運転者対策・第二種免許等の受験資格の見直し（令和２年改正道路交通法）	https://www.npa.go.jp/bureau/traffic/r2kaisei_main.html
+マイナンバーカードと運転免許証の一体化・オンライン更新時講習	https://www.npa.go.jp/bureau/traffic/r4kaisei_main.html
+交通規制・交通管制・信号機（道路交通環境の整備）	https://www.npa.go.jp/bureau/traffic/seibi2/index.html
+交通指導取締り・交通事故事件捜査等	https://www.npa.go.jp/bureau/traffic/shidou/index.html
+【注意喚起】自転車に対する反則金（青切符）名目の詐欺事案の発生について	https://www.npa.go.jp/bureau/traffic/shidou/fraud-alert.html
+神奈川県警第二交通機動隊隊員らによる不適正な取締り事案等への対応	https://www.npa.go.jp/bureau/traffic/kanagawa.html
+交通事故被害者サポート事業	https://www.npa.go.jp/bureau/traffic/jikosupport/index.html
+令和８年度交通安全ファミリー作文コンクール	https://www.npa.go.jp/bureau/traffic/sakubun/index.html
+令和７年度交通安全ファミリー作文コンクールの結果について	https://www.npa.go.jp/bureau/traffic/sakubun-kekka/index1.html
+第55回全国白バイ安全運転競技大会成績	https://www.npa.go.jp/bureau/traffic/55kekka.pdf
+過去の団体成績	https://www.npa.go.jp/bureau/traffic/55dantai.pdf
+全国白バイ安全運転競技大会の概要	https://www.npa.go.jp/bureau/traffic/shidou/sirobaitaikai/sirobaitaikaigaiyou.pdf
+ページの先頭へ	https://www.npa.go.jp/bureau/traffic/index.html#page-top

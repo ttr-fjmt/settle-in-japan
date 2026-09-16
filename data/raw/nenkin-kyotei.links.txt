@@ -1,0 +1,97 @@
+# 社会保障協定 のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+メニューを飛ばして本文へ	https://www.nenkin.go.jp/service/shaho-kyotei/index.html#CONT
+年金の制度・手続き	https://www.nenkin.go.jp/service/index.html
+国民年金	https://www.nenkin.go.jp/service/kokunen/index.html
+厚生年金保険	https://www.nenkin.go.jp/service/kounen/index.html
+年金の受け取り	https://www.nenkin.go.jp/service/jukyu/index.html
+利用者別ガイド	https://www.nenkin.go.jp/service/riyoushabetsu/index.html
+年金制度全般	https://www.nenkin.go.jp/service/seidozenpan/index.html
+年金記録に関する取り組み	https://www.nenkin.go.jp/service/nenkinkiroku/index.html
+社会保障協定	https://www.nenkin.go.jp/service/shaho-kyotei/index.html
+「特定技能」にかかる社会保険関係の書類交付	https://www.nenkin.go.jp/service/tokuteiginou/index.html
+年金について学ぼう	https://www.nenkin.go.jp/service/learn/index.html
+パンフレット	https://www.nenkin.go.jp/service/pamphlet/index.html
+動画	https://www.nenkin.go.jp/service/doga/index.html
+年金用語集	https://www.nenkin.go.jp/service/yougo/index.html
+シーンから探す	https://www.nenkin.go.jp/service/scenebetsu/index.html
+様式のダウンロード	https://www.nenkin.go.jp/shinsei/index.html
+申請・届出様式（国民年金）	https://www.nenkin.go.jp/shinsei/kokunen/index.html
+申請・届出様式（健康保険・厚生年金保険）	https://www.nenkin.go.jp/shinsei/kounen/index.html
+申請・届出様式（年金等の受け取り）	https://www.nenkin.go.jp/shinsei/jukyu/index.html
+申請・届出様式（年金記録の照会、訂正請求）	https://www.nenkin.go.jp/shinsei/kiroku/index.html
+申請・届出様式（社会保障協定）	https://www.nenkin.go.jp/shinsei/kyotei/index.html
+申請・届出様式（「特定技能」にかかる書類交付）	https://www.nenkin.go.jp/shinsei/sonota/index.html
+申請・届出様式（年金委員）	https://www.nenkin.go.jp/shinsei/nenkiniin/index.html
+オンラインで手続きする（個人の方）	https://www.nenkin.go.jp/denshibenri_kojin/index.html
+オンラインで手続きする（事業所の方）	https://www.nenkin.go.jp/denshibenri/index.html
+ご相談・Q&A	https://www.nenkin.go.jp/section/index.html
+Q&Aから探す	https://www.nenkin.go.jp/section/faq/index.html
+チャットボットで調べる	https://www.nenkin.go.jp/service/seidozenpan/chatbot.html
+相談・手続き窓口	https://www.nenkin.go.jp/section/index.html
+日本年金機構について	https://www.nenkin.go.jp/info/index.html
+理事長のごあいさつ	https://www.nenkin.go.jp/info/message.html
+基本情報	https://www.nenkin.go.jp/info/kihonjoho/index.html
+各種方針	https://www.nenkin.go.jp/info/houshin/index.html
+日本年金機構の取り組み	https://www.nenkin.go.jp/info/torikumi/index.html
+アニュアルレポート	https://www.nenkin.go.jp/info/annual/index.html
+情報公開・統計情報	https://www.nenkin.go.jp/info/kokaitokei/index.html
+ご意見・ご要望、法令等違反通報	https://www.nenkin.go.jp/info/goiken/index.html
+日本年金機構ホームページについて	https://www.nenkin.go.jp/info/aboutweb/index.html
+法人文書・個人情報の開示	https://www.nenkin.go.jp/info/kaiji.html
+プレスリリース	https://www.nenkin.go.jp/info/press/index.html
+調達情報	https://www.nenkin.go.jp/info/chotatu/index.html
+採用情報	https://www.nenkin.go.jp/info/recruit/index.html
+公示送達情報	https://www.nenkin.go.jp/info/koji/index.html
+サイトマップ	https://www.nenkin.go.jp/sitemap.html
+language	https://www.nenkin.go.jp/international/index.html
+年金の制度・ 手続き	https://www.nenkin.go.jp/service/index.html
+様式の ダウンロード	https://www.nenkin.go.jp/shinsei/index.html
+日本年金機構 について	https://www.nenkin.go.jp/info/index.html
+音声読み上げ	https://www.nenkin.go.jp/info/aboutweb/yomiage.html
+国民年金​	https://www.nenkin.go.jp/service/kokunen/index.html
+年金の受け取り​	https://www.nenkin.go.jp/service/jukyu/index.html
+年金用語集​	https://www.nenkin.go.jp/service/yougo/index.html
+20歳になったとき	https://www.nenkin.go.jp/service/scenebetsu/hatachi.html
+就職・転職・退職	https://www.nenkin.go.jp/service/scenebetsu/shushoku.html
+結婚・離婚・出産・育児	https://www.nenkin.go.jp/service/scenebetsu/kekkon.html
+海外転出入・海外在住の皆さま	https://www.nenkin.go.jp/service/scenebetsu/kaigai.html
+老齢年金の手続き	https://www.nenkin.go.jp/service/scenebetsu/rourei.html
+病気やけがで障害が残ったとき	https://www.nenkin.go.jp/service/scenebetsu/shougai.html
+身近な方が亡くなったとき	https://www.nenkin.go.jp/service/scenebetsu/shibou.html
+被災したとき	https://www.nenkin.go.jp/service/scenebetsu/hisai.html
+国民年金	https://www.nenkin.go.jp/shinsei/kokunen/index.html
+健康保険・厚生年金保険	https://www.nenkin.go.jp/shinsei/kounen/index.html
+年金等の受け取り	https://www.nenkin.go.jp/shinsei/jukyu/index.html
+年金記録の照会、訂正請求	https://www.nenkin.go.jp/shinsei/kiroku/index.html
+社会保障協定	https://www.nenkin.go.jp/shinsei/kyotei/index.html
+特定技能	https://www.nenkin.go.jp/shinsei/sonota/index.html
+年金委員	https://www.nenkin.go.jp/shinsei/nenkiniin/index.html
+オンラインで手続きする （個人の方）	https://www.nenkin.go.jp/denshibenri_kojin/index.html
+オンラインで手続きする （事業所の方）	https://www.nenkin.go.jp/denshibenri/index.html
+理事長のごあいさつ​	https://www.nenkin.go.jp/info/message.html
+基本情報​	https://www.nenkin.go.jp/info/kihonjoho/index.html
+各種方針​	https://www.nenkin.go.jp/info/houshin/index.html
+日本年金機構の取り組み​	https://www.nenkin.go.jp/info/torikumi/index.html
+アニュアルレポート​	https://www.nenkin.go.jp/info/annual/index.html
+情報公開・統計情報​	https://www.nenkin.go.jp/info/kokaitokei/index.html
+ご意見・ご要望、法令等違反通報​	https://www.nenkin.go.jp/info/goiken/index.html
+法人文書・個人情報の開示​	https://www.nenkin.go.jp/info/kaiji.html
+プレスリリース​	https://www.nenkin.go.jp/info/press/index.html
+調達情報​	https://www.nenkin.go.jp/info/chotatu/index.html
+採用情報​	https://www.nenkin.go.jp/info/recruit/index.html
+公示送達情報​	https://www.nenkin.go.jp/info/koji/index.html
+トップページ	https://www.nenkin.go.jp/index.html
+社会保障協定	https://www.nenkin.go.jp/service/shaho-kyotei/shaho.html
+社会保障協定のしくみと手続き	https://www.nenkin.go.jp/service/shaho-kyotei/shikumi/index.html
+協定相手国別諸情報	https://www.nenkin.go.jp/service/shaho-kyotei/kunibetsu/index.html
+シーン別ガイド	https://www.nenkin.go.jp/service/scenebetsu/index.html
+目的別ガイド	https://www.nenkin.go.jp/service/mokutekibetsu/index.html
+ねんきんネット	https://www.nenkin.go.jp/denshibenri_kojin/n_net/index.html
+通知書の見方を調べる	https://www.nenkin.go.jp/service/seidozenpan/20150601.html
+このサイトについて	https://www.nenkin.go.jp/info/aboutweb/aboutsite.html
+個人情報の保護について	https://www.nenkin.go.jp/info/aboutweb/kojinjoho.html
+関連サイト	https://www.nenkin.go.jp/info/aboutweb/kanren/kanren.html
+所在地・連絡先	https://www.nenkin.go.jp/info/kihonjoho/adress.html
+公式SNS	https://www.nenkin.go.jp/info/aboutweb/tw-policy.html
