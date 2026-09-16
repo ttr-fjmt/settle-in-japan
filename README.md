@@ -53,6 +53,9 @@ npm run validate    # data/visa-types.json を検証
 npm run fetch       # 公式ページを取得（※通信が必要。ふつうは Actions で動かす）
 npm run extract     # 保存した本文から visa-types.json を作り直す（--dry-run で確認だけ）
 npm run pages       # ページ（トップ・一覧・在留資格ごと）を書き出す
+npm run articles    # 解説記事のページを書き出す
+npm run brand       # ロゴ（favicon・apple-touch-icon・logo.svg）を書き出す
+npm run ogp         # OGP画像（SNSに出る画像）を足りないぶんだけ作る（--all で全部）
 npm run sitemap     # sitemap.xml・llms.txt・404.html を書き出す
 ```
 
