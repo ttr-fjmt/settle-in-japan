@@ -12,13 +12,12 @@
       "外交活動の期間"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "official",
@@ -33,13 +32,12 @@
       "５年，３年，１年，３月，３０日又は１５日"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "professor",
@@ -54,13 +52,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "artist",
@@ -75,13 +72,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "religious-activities",
@@ -96,13 +92,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "journalist",
@@ -117,13 +112,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "highly-skilled-professional-1",
@@ -141,13 +135,12 @@
       "５年"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "highly-skilled-professional-2",
@@ -166,13 +159,12 @@
       "無期限"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "business-manager",
@@ -187,13 +179,12 @@
       "５年，３年，１年，６月，４月又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "legal-accounting-services",
@@ -208,13 +199,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "medical-services",
@@ -229,13 +219,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "researcher",
@@ -250,13 +239,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "instructor",
@@ -271,13 +259,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "engineer-specialist",
@@ -292,13 +279,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "intra-company-transferee",
@@ -313,13 +299,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "nursing-care",
@@ -334,13 +319,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "entertainer",
@@ -355,13 +339,12 @@
       "３年，１年，６月，３月又は３０日"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "skilled-labor",
@@ -376,13 +359,12 @@
       "５年，３年，１年又は３月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "specified-skilled-worker-1",
@@ -397,13 +379,12 @@
       "法務大臣が個々に指定する期間（３年を超えない範囲）"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "specified-skilled-worker-2",
@@ -418,13 +399,12 @@
       "３年，２年，１年又は６月"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "technical-intern-training-1",
@@ -440,13 +420,12 @@
       "法務大臣が個々に指定する期間（１年を超えない範囲）"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "technical-intern-training-2",
@@ -462,13 +441,12 @@
       "法務大臣が個々に指定する期間（２年を超えない範囲）"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "technical-intern-training-3",
@@ -484,13 +462,12 @@
       "法務大臣が個々に指定する期間（２年を超えない範囲）"
     ],
     "work_allowed": "yes",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "cultural-activities",
@@ -505,13 +482,12 @@
       "３年，１年，６月又は３月"
     ],
     "work_allowed": "no",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "temporary-visitor",
@@ -526,13 +502,12 @@
       "９０日、３０日又は１５日（法務大臣が個々の外国人について９０日を超えない範囲内で日を単位とする期間を指定する場合にあっては、当該指定する期間)"
     ],
     "work_allowed": "no",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "student",
@@ -547,13 +522,12 @@
       "法務大臣が個々に指定する期間（４年３月を超えない範囲）"
     ],
     "work_allowed": "no",
-    "family_stay": "unknown",
+    "family_stay": "yes",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "trainee",
@@ -568,13 +542,12 @@
       "１年，６月又は３月"
     ],
     "work_allowed": "no",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "dependent",
@@ -589,13 +562,12 @@
       "法務大臣が個々に指定する期間（５年を超えない範囲）"
     ],
     "work_allowed": "no",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
-    "review_flags": [
-      "family_stay_unconfirmed"
-    ]
+    "review_flags": []
   },
   {
     "id": "designated-activities",
@@ -610,13 +582,13 @@
       "５年，３年，１年，６月，３月又は法務大臣が個々に指定する期間（５年を超えない範囲）"
     ],
     "work_allowed": "unknown",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
     "review_flags": [
-      "work_allowed_unconfirmed",
-      "family_stay_unconfirmed"
+      "work_allowed_unconfirmed"
     ]
   },
   {
@@ -632,13 +604,13 @@
       "無期限"
     ],
     "work_allowed": "unknown",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
     "review_flags": [
-      "work_allowed_unconfirmed",
-      "family_stay_unconfirmed"
+      "work_allowed_unconfirmed"
     ]
   },
   {
@@ -654,13 +626,13 @@
       "５年，３年，１年又は６月"
     ],
     "work_allowed": "unknown",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
     "review_flags": [
-      "work_allowed_unconfirmed",
-      "family_stay_unconfirmed"
+      "work_allowed_unconfirmed"
     ]
   },
   {
@@ -676,13 +648,13 @@
       "５年，３年，１年又は６月"
     ],
     "work_allowed": "unknown",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
     "review_flags": [
-      "work_allowed_unconfirmed",
-      "family_stay_unconfirmed"
+      "work_allowed_unconfirmed"
     ]
   },
   {
@@ -698,13 +670,13 @@
       "５年，３年，１年，６月又は法務大臣が個々に指定する期間（５年を超えない範囲）"
     ],
     "work_allowed": "unknown",
-    "family_stay": "unknown",
+    "family_stay": "no",
+    "family_stay_source_id": "visa-dependent",
     "source_id": "visa-list",
     "source_url": "https://www.moj.go.jp/isa/applications/status/qaq5.html",
     "source_checked_at": "2026-09-15",
     "review_flags": [
-      "work_allowed_unconfirmed",
-      "family_stay_unconfirmed"
+      "work_allowed_unconfirmed"
     ]
   }
 ]

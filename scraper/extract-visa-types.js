@@ -70,6 +70,27 @@ const STATUSES = [
 const NUMBERED = new Set(['高度専門職', '特定技能', '技能実習']);
 const NUMBER_MARKER = /^[１２３]号$/;
 
+/**
+ * 「家族滞在」の対象になる在留資格を、公式ページの本文から読み取る。
+ *
+ * 家族滞在のページには、対象となる在留資格が列挙されている（その列挙がすべて）。
+ *   「入管法別表第一の一の表の教授、芸術、…又はこの表の留学の在留資格をもって在留する者の
+ *     扶養を受ける配偶者又は子として行う日常的な活動。」
+ * ここに名前がある資格は「配偶者・子が家族滞在で在留できる」、無い資格は「家族滞在の対象ではない」。
+ *
+ * ※「家族滞在の対象ではない」は「家族を呼べない」という意味ではない。
+ *   外交・公用は在留資格そのものに家族の活動が含まれ、身分・地位に基づく資格には別の道がある。
+ *   だから画面では「家族滞在の対象」という言い方にしている。
+ */
+function familyEligibility() {
+  const file = path.join(ROOT, 'data', 'raw', 'visa-dependent.txt');
+  if (!fs.existsSync(file)) return null;
+  const text = fs.readFileSync(file, 'utf8').replace(/[\t\r]/g, '');
+  const m = text.match(/入管法別表第一の[^。]*扶養を受ける配偶者又は子として行う日常的な活動。/);
+  if (!m) return null;
+  return { sentence: m[0], names: STATUSES.map(s => s.name).filter(n => m[0].includes(n)) };
+}
+
 /** 本文を、空行を除いた行の配列にする（タブと改行コードは落とす）。 */
 function readLines() {
   return fs
@@ -159,20 +180,20 @@ function regionsOf(lines) {
 }
 
 /** 号で分かれていない資格を1件にまとめる。 */
-function buildSimple(region, group, checkedAt) {
+function buildSimple(region, group, checkedAt, family) {
   const parts = splitPart(region.body);
   if (!parts) throw new Error(`${region.name}: 在留期間の行が見つかりません`);
-  return [record(region.id, region.name, region.en, group, parts, checkedAt)];
+  return [record(region.id, region.name, region.en, group, parts, checkedAt, family)];
 }
 
 /** 号で分かれている資格（高度専門職・特定技能・技能実習）を、号ごとの件にする。 */
-function buildNumbered(region, group, checkedAt) {
+function buildNumbered(region, group, checkedAt, family) {
   const body = region.body;
   const starts = [];
   body.forEach((l, i) => {
     if (NUMBER_MARKER.test(l)) starts.push({ number: l, at: i });
   });
-  if (starts.length === 0) return buildSimple(region, group, checkedAt);
+  if (starts.length === 0) return buildSimple(region, group, checkedAt, family);
 
   const suffixes = { '１号': '1', '２号': '2', '３号': '3' };
   const romans = { '１号': 'i', '２号': 'ii', '３号': 'iii' };
@@ -186,19 +207,38 @@ function buildNumbered(region, group, checkedAt) {
       `${region.en} (${romans[s.number]})`,
       group,
       parts,
-      checkedAt
+      checkedAt,
+      familyFor(family, region.name, s.number)
     );
   });
 }
 
-function record(id, nameJa, nameEn, group, parts, checkedAt) {
+/**
+ * 号ごとの資格も含めて、家族滞在の対象かどうかを決める。
+ * 列挙に「特定技能２号」とあるのは2号だけが対象という意味なので、号まで見て判定する。
+ */
+function familyFor(family, name, number) {
+  if (!family) return null;
+  const full = number ? `${name}${number}` : name;
+  if (family.sentence.includes(full)) return { value: 'yes' };
+  // 号の指定なしで資格名が挙がっている場合は、その資格のすべての号が対象。
+  const numberedInSentence = /[１２３]号/.test(
+    (family.sentence.match(new RegExp(`${name}[^、。]*`)) || [''])[0]
+  );
+  if (family.names.includes(name) && !numberedInSentence) return { value: 'yes' };
+  return { value: 'no' };
+}
+
+function record(id, nameJa, nameEn, group, parts, checkedAt, family) {
   // 就労の可否は、一覧表が「就労資格／非就労資格」と書いている区分からだけ取る。
   // 身分・地位に基づく在留資格と特定活動は、この表に書かれていないので unknown のままにする。
   const workAllowed = group === 'work' ? 'yes' : group === 'non_work' ? 'no' : 'unknown';
   const flags = [];
   if (workAllowed === 'unknown') flags.push('work_allowed_unconfirmed');
-  // 家族帯同の可否は、この一覧表には書かれていない。
-  flags.push('family_stay_unconfirmed');
+  // 家族滞在の対象かどうかは、家族滞在のページの列挙から決める。
+  // そのページをまだ取得していなければ unknown のままにする。
+  const familyStay = family ? family.value : 'unknown';
+  if (familyStay === 'unknown') flags.push('family_stay_unconfirmed');
 
   return {
     id,
@@ -209,7 +249,8 @@ function record(id, nameJa, nameEn, group, parts, checkedAt) {
     examples_ja: parts.example,
     periods_ja: [parts.period],
     work_allowed: workAllowed,
-    family_stay: 'unknown',
+    family_stay: familyStay,
+    family_stay_source_id: familyStay === 'unknown' ? undefined : 'visa-dependent',
     source_id: SOURCE_ID,
     source_url: SOURCE_URL,
     source_checked_at: checkedAt,
@@ -230,12 +271,17 @@ function main() {
   const checkedAt = fetchedDate(lines);
   const records = [];
 
+  const family = familyEligibility();
+  if (!family) {
+    console.warn('家族滞在のページ（data/raw/visa-dependent.txt）が無いため、家族滞在の対象は未確認のままにします');
+  }
+
   for (const region of regionsOf(lines)) {
     const group = sectionAt(lines, region.line);
     if (!group) throw new Error(`${region.name}: どの表に属するか判定できません`);
     const built = NUMBERED.has(region.name)
-      ? buildNumbered(region, group, checkedAt)
-      : buildSimple(region, group, checkedAt);
+      ? buildNumbered(region, group, checkedAt, family)
+      : buildSimple(region, group, checkedAt, familyFor(family, region.name, null));
     records.push(...built);
   }
 
