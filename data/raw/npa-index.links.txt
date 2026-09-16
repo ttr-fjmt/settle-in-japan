@@ -1,0 +1,41 @@
+# 警察庁 のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+水害から身を守るために PDFファイルを開く	https://www.npa.go.jp/taisaku.pdf
+震災に便乗した悪質事犯にご注意 PDFファイルを開く	https://www.npa.go.jp/bureau/safetylife/akushitsujihantyuuikanki.pdf
+震災時の防犯対策 PDFファイルを開く	https://www.npa.go.jp/bureau/safetylife/bouhantaisaku.pdf
+熊本を震源とする地震に関する警察活動について	https://www.npa.go.jp/bureau/security/biki/disaster12.html
+警察庁・国家公安委員会をかたる不審メールに注意！警察庁や国家公安委員会をかたり、事件の当事者として期日までに連絡を求める不審メールが確認されています。（※不審メールの中には、警察庁が実際に使用するドメイン［@npa.go.jp］が表示されているものも確認されています）警察庁等から個別の事件に関して連絡をすることはありません！メールが届いても返信や電話をしないでください。（クリックすると実際に送られたメールを見ることができます。） PDFファイルを開く	https://www.npa.go.jp/260408_notice.pdf
+トピックス一覧	https://www.npa.go.jp/topic/index.html
+RSS	https://www.npa.go.jp/newlyarrived/rss20.xml
+新着情報一覧	https://www.npa.go.jp/newlyarrived/index.html
+最新の災害情報 PDFファイルを開く	https://www.npa.go.jp/00_saigai/saigai_jouhou.pdf
+報道	https://www.npa.go.jp/news/pr.html
+統計	https://www.npa.go.jp/publications/statistics/index.html
+申請・届出	https://www.npa.go.jp/policies/shinsei_index.html
+採用	https://www.npa.go.jp/about/recruitment/index.html
+災害への対応	https://www.npa.go.jp/bureau/security/saigai/index.html
+犯罪被害者等施策 犯罪被害にあわれた方や支援者のためのポータルサイト「ギュっとCH（チャンネル）」や犯罪被害者等施策に関する資料を公開しています。	https://www.npa.go.jp/hanzaihigai/index.html
+サイバーセキュリティ対策 サイバーセキュリティに係る各種施策、統計、サイバー犯罪・サイバー攻撃の手口や情勢に関する情報等を掲載しています。	https://www.npa.go.jp/bureau/cyber/index.html
+ストーカー対策等の推進 スマートフォンの普及や、ＳＮＳ利用の広がり等により多様化するストーカー問題。関係省庁と連携して、ストーカー対策を推進しています。	https://www.npa.go.jp/bureau/safetylife/stalker/stalker.html
+なくそう子供の性被害。 児童買春や児童ポルノ製造を始めとする子供の性被害を撲滅すべく、政府は様々な取組を行っています。	https://www.npa.go.jp/policy_area/no_cp/index.html
+特殊詐欺対策 全国で被害が相次ぐ特殊詐欺。取締りの推進とともに、新たな手口への注意喚起や被害防止対策に関する情報発信等の各種対策を進めています。	https://www.npa.go.jp/bureau/safetylife/sos47/index.html
+暴力団・薬物銃器対策、犯罪収益移転防止 治安に重大な影響を与える組織犯罪。暴力団等による被害防止、犯罪組織の弱体化や壊滅を図る施策を講じています。	https://www.npa.go.jp/policy_area/sotai.html
+安全・快適な交通の確保 交通安全教育、運転免許制度の運用、交通規制や信号機等の整備、交通事故捜査、自動運転等に関する施策を推進しています。	https://www.npa.go.jp/bureau/traffic/index.html
+災害・テロ対策 一たび発生すれば甚大な被害をもたらす災害やテロ。警察では、これら緊急事態に備えて、各種対策に取り組んでいます。	https://www.npa.go.jp/policy_area/keibi.html
+痴漢・盗撮事犯対策 被害者の心に大きな傷を残す痴漢や盗撮。痴漢・盗撮事犯の検挙状況、被害に遭わないための対策、各種相談窓口等の情報を掲載しています。	https://www.npa.go.jp/bureau/safetylife/bouhan/chikan/chikantaisaku2.html
+警察庁X(旧Twitter)	https://www.npa.go.jp/twitter/index.html
+警察庁（学生向け）X(旧Twitter)	https://www.npa.go.jp/about/recruitment/jinji_twitter.html
+警察庁（災害情報専用）X(旧Twitter)	https://www.npa.go.jp/twitter/Twittersaigai.html
+ギュっとちゃん_被害者支援（警察庁）Ｘ（旧Twitter）	https://www.npa.go.jp/twitter/about_gyuttochan_npa.html
+YouTube警察庁公式チャンネル	https://www.npa.go.jp/youtube/index.html
+警察庁総合職技術系（学生向け）X（旧Twitter)	https://www.npa.go.jp/about/recruitment/jinji_X_tech.html
+警察庁一般職技術系（学生向け）X（旧Twitter)	https://www.npa.go.jp/about/recruitment/ippansyokutech_twitter.html
+警察庁（@npa_sos47）Instagram	https://www.npa.go.jp/instagram/npa_sos47/index.html
+警察庁(性犯罪被害相談電話「#8103(ハートさん)」)Instagram	https://www.npa.go.jp/instagram/heart3/index.html
+警察庁（全国警察音楽隊）Instagram	https://www.npa.go.jp/instagram/police_band/index.html
+けいさつちょう企画課国際公式Facebook	https://www.npa.go.jp/about/overview/kokusai/facebook2.html
+警察庁（全国都道府県警察官採用）Instagram	https://www.npa.go.jp/instagram/keisatukannsaiyou/index.html
+ご意見、各種相談・情報提供等	https://www.npa.go.jp/goiken_index.html
+ページの先頭へ	https://www.npa.go.jp/#page-top
+GovBotのページへ	https://www.npa.go.jp/goiken_index.html#govotan

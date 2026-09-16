@@ -1,0 +1,22 @@
+# 文部科学省 のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+令和8年熊本地震について	https://www.mext.go.jp/a_menu/r8kumamotojisin/index.html
+教育	https://www.mext.go.jp/a_menu/a002.htm
+科学技術・学術	https://www.mext.go.jp/a_menu/a003.htm
+スポーツ	https://www.mext.go.jp/sports/index.htm
+その他（国際、災害、分野総合）	https://www.mext.go.jp/a_menu/a001.htm
+令和9年度文部科学省 概算要求等の発表資料一覧	https://www.mext.go.jp/a_menu/yosan/r01/1420668_00005.html
+令和8年度文部科学省予算	https://www.mext.go.jp/a_menu/yosan/r01/1420672_00001.html
+学校給食費の抜本的な負担軽減	https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html
+高校教育改革に関する基本方針（グランドデザイン）	https://www.mext.go.jp/a_menu/shotou/kaikaku/1358056_00005.htm
+新着情報一覧	https://www.mext.go.jp/b_menu/news/index.html
+審議会情報一覧	https://www.mext.go.jp/b_menu/shingi/main_b5.htm
+業務説明会・職員訪問	https://www.mext.go.jp/b_menu/saiyou/sougoujimu/setumei/1421199_00009.htm
+産業競争力・研究力中核大学群に関するワーキンググループ（第2回） 議事録	https://www.mext.go.jp/b_menu/shingi/gijyutu/gijyutu31/001/gijiroku/1422208_00001.htm
+松本洋平文部科学大臣記者会見録（令和8年9月15日）	https://www.mext.go.jp/b_menu/daijin/detail/mext_00728.html
+文部科学省国立教育政策研究所学力調査専門職 非常勤職員（期間業務職員）採用のお知らせ（令和9年4月1日採用予定）	https://www.mext.go.jp/b_menu/saiyou/hijyoukin/1421780_00219.html
+中央教育審議会初等中等教育分科会教育課程部会教育課程企画特別部会（第18回）を開催します	https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/kaisai/mext_00150.html
+国立大学法人評価委員会（第82回）の資料を掲載しました	https://www.mext.go.jp/b_menu/shingi/kokuritu/gijiroku/1411366_00009.html
+新着情報メールマガジンの登録はこちら	https://www.mext.go.jp/magazine/index.htm
+今日の出来事 令和8年9月14日更新 NEW 小林副大臣が「さきがけ35周年記念シンポジウム」に出席（9月11日）	https://www.mext.go.jp/b_menu/activity/index.htm

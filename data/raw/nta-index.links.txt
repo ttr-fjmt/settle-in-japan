@@ -1,0 +1,203 @@
+# 国税庁 のページ内リンク（取得日 2026-09-16）
+# このファイルは fetch-official.js が自動生成しています。手で編集しないこと。
+
+前へ	https://www.nta.go.jp/#sampleCarousel
+次へ	https://www.nta.go.jp/#sampleCarousel
+その他のバナー一覧	https://www.nta.go.jp/banner/index.htm
+トピックス	https://www.nta.go.jp/#tab1
+税の情報・手続・用紙	https://www.nta.go.jp/#tab2
+刊行物等	https://www.nta.go.jp/#tab3
+法令等	https://www.nta.go.jp/#tab4
+お知らせ	https://www.nta.go.jp/#tab5
+国税庁等について	https://www.nta.go.jp/#tab6
+「消費税率引下げ特設サイト」を開設しました。	https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/zeiritsuhikisage.htm
+第５回「取引相場のない株式の評価に関する有識者会議」の議事要旨等について	https://www.nta.go.jp/about/council/kenkyu.htm#nai-hyoka
+令和８年分の確定申告はスマホとマイナポータル連携でもっと便利に！	https://www.nta.go.jp/taxes/shiraberu/shinkoku/r8_smart_shinkoku/index.htm
+令和８年度税務大学校公開講座の開催	https://www.nta.go.jp/about/organization/ntc/kokai/index.htm
+マイナポータル連携対応予定のお知らせ	https://www.nta.go.jp/taxes/tetsuzuki/mynumberinfo/mynapo_renkeiyotei.htm
+令和８年度（第76回）税理士試験公告（再試験）	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+国税通則法施行規則第十五条第一項に規定する国税庁長官が定める書類を定める件の一部を改正する件（国税庁告示第23号）（PDF/83KB）	https://www.nta.go.jp/law/kokuji/pdf/0026007-078.pdf
+令和８年熊本地震発生に伴う熊本県（試験会場：グランメッセ熊本）における税理士試験の延期等について	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026007-124.pdf
+【酒類事業者向け】「酒類業振興支援事業費補助金」の募集の開始	https://www.nta.go.jp/taxes/sake/boshujoho/hojojigyo.htm
+「税務行政におけるオンラインツールの利用について」のページを更新しました。	https://www.nta.go.jp/about/introduction/torikumi/onlinetool/index.htm
+リファンド方式特設サイトの更新	https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/format/002.htm
+令和8年度（第76回）税理士試験申込者数（PDF/53KB）	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026006-102.pdf
+令和8年度（第76回）税理士試験試験会場一覧	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/shikenjouichiran.htm
+多言語通訳サービスに関するご案内	https://www.nta.go.jp/information/other/data/r08/multilingual/index.htm
+在留外国人に関する出入国在留管理庁と国税庁との間の情報連携について	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/fushhocho/01_30.htm
+在留外国人に関する出入国在留管理庁と国税庁との間の情報連携に関する確認書に係る補足書簡１	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/fushhocho/01_31.htm
+在留外国人に関する出入国在留管理庁と国税庁との間の情報連携に関する確認書に係る補足書簡２	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/fushhocho/01_32.htm
+令和８年分年末調整のための各種様式	https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/mokuji.htm
+令和７年度 査察の概要（令和８年６月）（PDF/215KB）	https://www.nta.go.jp/information/release/kokuzeicho/2026/sasatsu/r07_sasatsu.pdf
+パンフレット「国税査察制度～脱税は、犯罪。～」（令和８年６月）（PDF/3,732KB）	https://www.nta.go.jp/publication/pamph/koho/01.pdf
+「国税システムの更改について」のページを更新しました。	https://www.nta.go.jp/taxes/shiraberu/sodan/system.htm
+国税庁保有行政記録情報を用いた税務大学校との共同研究の決定について	https://www.nta.go.jp/about/organization/ntc/kyodokenkyu/koubo/index.htm#kettei
+令和７年分所得税等、消費税及び贈与税の確定申告状況等について（PDF/1,510KB）	https://www.nta.go.jp/information/release/pdf/0026005-037.pdf
+酒類事業者向け補助金の第２期採択事業者の決定	https://www.nta.go.jp/taxes/sake/boshujoho/hojojigyo.htm
+クールビズへの御協力について(PDF/103KB)	https://www.nta.go.jp/topics/pdf/0026004-127.pdf
+【国税システム更改】令和８年９月から申告書等の様式変更やe-Taxのメンテナンスがあります。	https://www.nta.go.jp/taxes/shiraberu/sodan/system.htm
+令和８年度税制改正による所得税の基礎控除額の引上げ等	https://www.nta.go.jp/users/gensen/2026kiso/index.htm
+令和8年度（第76回）税理士試験公告	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+通勤手当の非課税限度額の改正について	https://www.nta.go.jp/users/gensen/2026tsukin/index.htm
+「インボイス制度特設サイト」を更新しました	https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm
+国税通則法第二十二条に規定する国税庁長官が定める書類を定める件（平成十八年国税庁告示第七号）の一部を改正する件（国税庁告示第17号）	https://www.nta.go.jp/law/kokuji/r0803/06.htm
+国税徴収法施行規則第一条の五第三項に規定する国税庁長官が指定する許認可等を定める件（令和二年国税庁告示第十九号）の一部を改正する件（国税庁告示第16号）	https://www.nta.go.jp/law/kokuji/r0803/05.htm
+業務センターの名称が変わります	https://www.nta.go.jp/about/organization/gyoumu_center/index.htm#busi
+酒類事業者向け補助金の第１期採択事業者の決定	https://www.nta.go.jp/taxes/sake/boshujoho/hojojigyo.htm
+【2026年度】 国税専門官採用試験申込みの開始【申込期間：2月19日（木）～3月23日（月）】	https://www.nta.go.jp/about/recruitment/kokusen/shiken/test_02.htm
+「インボイス制度特設サイト」をリニューアルしました	https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm
+税務相談チャットボットで消費税（令和7年分）・インボイス制度・贈与税（令和7年分）の相談を開始しました	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+官民共同でキャッシュレス納付をＰＲ（PDF/290KB）	https://www.nta.go.jp/taxes/nozei/pdf/0025012-122.pdf
+税務相談チャットボットで所得税（令和７年分）の相談を開始しました	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+令和7年分 確定申告特集（本番編）ページの更新	https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/index.htm
+令和6年分 相続税の申告事績の概要（令和7年12月）	https://www.nta.go.jp/information/release/kokuzeicho/2025/sozoku_shinkoku/index.htm
+令和6事務年度における相続税の調査等の状況（令和7年12月）	https://www.nta.go.jp/information/release/kokuzeicho/2025/sozoku_chosa/index.htm
+令和7年分 確定申告特集（準備編）ページの更新	https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/index.htm
+令和7年分確定申告期の確定申告会場のお知らせ	https://www.nta.go.jp/information/other/data/r07/kakushin_kaijo/index.htm
+通勤手当の非課税限度額の改正について	https://www.nta.go.jp/users/gensen/2025tsukin/index.htm
+「税を考える週間」国税庁の取組紹介ページの更新	https://www.nta.go.jp/about/introduction/torikumi/week/index.htm
+自動車運転手の採用について（令和７年12月23日応募締切）	https://www.nta.go.jp/about/recruitment/car_driver/index.htm
+『STOP！免税品転売』ポスターを掲載しました	https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/0523_04.htm
+「伝統的酒造り」の特集ページについて	https://www.nta.go.jp/traditional_sake_making/index.htm
+酒類事業者向け補助金の第３期採択事業者の決定	https://www.nta.go.jp/taxes/sake/boshujoho/hojojigyo.htm
+マルチコピー機で印刷できる申告書・申請書・届出書等	https://www.nta.go.jp/taxes/tetsuzuki/shinsei/maruti/01.htm
+令和7年分 年調ソフト等の公開	https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm
+税務相談チャットボットによる年末調整に関するご相談の開始	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+ID・パスワードの新規発行停止について	https://www.nta.go.jp/taxes/shiraberu/shinkoku/pdf/idpw20251001.pdf
+年末調整がよくわかるページ（令和7年分）	https://www.nta.go.jp/users/gensen/nencho/index.htm
+令和７年分の確定申告はスマホとマイナポータル連携でもっと便利に！	https://www.nta.go.jp/taxes/shiraberu/shinkoku/r7_smart_shinkoku/index.htm
+有機酒類の販売等を行う酒類業者の皆様へ	https://www.nta.go.jp/taxes/sake/hyoji/seishu/gaiyo/03.htm
+令和7年度税務大学校公開講座の開催	https://www.nta.go.jp/about/organization/ntc/kokai/index.htm
+高騰する原料米価格にお困りの酒類業者の皆様へ	https://www.nta.go.jp/taxes/sake/kakaku/index.htm
+国税庁経験者採用試験の受験申込みが始まりました【8月18日（月）まで】	https://www.nta.go.jp/about/recruitment/keikensha/shiken/index.htm
+2025年 大阪・関西万博における取組	https://www.nta.go.jp/taxes/sake/tv/osaka_bampaku.htm
+令和7年分年末調整のための各種様式	https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/mokuji.htm
+パンフレット「国税査察制度～脱税は、犯罪。～」（令和7年6月）（PDF/2,274KB）	https://www.nta.go.jp/publication/pamph/koho/01.pdf
+ポスター「国税査察制度～脱税は、犯罪。～」（令和7年6月）【英語・中国語版】（PDF/632KB）	https://www.nta.go.jp/publication/pamph/koho/04.pdf
+令和6年度 査察の概要（令和7年6月）（PDF/395KB）	https://www.nta.go.jp/information/release/kokuzeicho/2025/sasatsu/r06_sasatsu.pdf
+適用額明細書の記載に係る区分番号一覧表等の更新	https://www.nta.go.jp/publication/pamph/hojin/tekiyougaku/01.htm
+令和６年分所得税等、消費税及び贈与税の確定申告状況等について（PDF/2,587KB）	https://www.nta.go.jp/topics/pdf/0025005-063.pdf
+大阪・関西万博における取組	https://www.nta.go.jp/taxes/sake/tv/osaka_bampaku.htm
+令和７年度税制改正による所得税の基礎控除の見直し等について	https://www.nta.go.jp/users/gensen/2025kiso/index.htm
+「国税庁採用情報特設サイト」の開設	https://www.nta.go.jp/saiyo_0025004-046/shiryo/index.html
+昨今の経済情勢の変化などの影響により納税が困難な方には猶予制度があります(PDF/408KB)	https://www.nta.go.jp/topics/pdf/0025004-089.pdf
+集中電話催告センター室（納税コールセンター）における閉庁日の納付指導及び電話催告の実施について	https://www.nta.go.jp/about/organization/callcenter/index.htm
+令和7年度（第75回）税理士試験公告	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/75.htm
+消費税法基本通達等の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kihon/shohi/kaisei/kaisei_a.htm
+輸出物品販売場制度のリファンド方式への見直し	https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/0523.htm
+匿名データの提供	https://www.nta.go.jp/publication/statistics/tokumei_data/index.htm
+【2025年度】国税専門官採用試験受験申込みの開始【申込期間：2月20日(木)～3月24日(月)】	https://www.nta.go.jp/about/recruitment/kokusen/shiken/test_02.htm
+税務相談チャットボットで消費税（令和６年分）・インボイス制度の相談を開始	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+「税務行政に対するご意見・ご要望」コーナーをご利用された皆様へ（PDF/74KB）	https://www.nta.go.jp/topics/pdf/0025001-014.pdf
+税務相談チャットボットで所得税（令和６年分）の相談を開始	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+定額減税特設サイト「確定申告に関する情報」	https://www.nta.go.jp/users/gensen/teigakugenzei/kakutei.htm
+令和6年分確定申告特集	https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/index.htm
+「外国税額控除に関する明細書」の様式誤り等に関するお知らせ	https://www.nta.go.jp/information/topics/0024011-034/index.htm
+「伝統的酒造り」のユネスコ無形文化遺産登録（代表一覧表記載）について	https://www.nta.go.jp/taxes/sake/koujikin/index.htm
+令和６年分確定申告期の確定申告会場のお知らせ	https://www.nta.go.jp/information/other/data/r06/kakushin_kaijo/index.htm
+令和6年分確定申告特集（準備編）	https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/index.htm
+「伝統的酒造り」のユネスコ無形文化遺産代表一覧表登録に関する評価機関による勧告について	https://www.nta.go.jp/taxes/sake/koujikin/index.htm
+令和６年分 年調ソフト等の更新	https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm
+令和６年分 年調ソフト等の公開	https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm
+「年末調整がよくわかるページ（令和６年分）」	https://www.nta.go.jp/users/gensen/nencho/index.htm
+令和６年分年末調整のための各種様式	https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/mokuji.htm
+令和７(2025)年度から国税専門官採用試験が大きく変わります	https://www.nta.go.jp/about/recruitment/kokusen/r7_kokusensaiyo.htm
+令和６年分の確定申告はスマホとマイナポータル連携でさらに便利に！	https://www.nta.go.jp/taxes/shiraberu/shinkoku/r6_smart_shinkoku/index.htm
+令和６年台風第10号により被害を受けられた皆様へ（災害関連情報）	https://www.nta.go.jp/taxes/shiraberu/saigai/index.htm
+令和５年度租税滞納状況の概要（PDF/3,191KB）	https://www.nta.go.jp/information/release/kokuzeicho/2024/sozei_taino/pdf/sozei_taino.pdf
+「電子帳簿保存法一問一答」を改訂しました	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/jirei/4-3.htm
+「税務行政に対するご意見・ご要望の受付」ページ等のシステムメンテナンスのお知らせについて	https://www.nta.go.jp/information/other/data/r06/maintenance240702.htm
+パンフレット「国税査察制度～脱税は、犯罪。～」（令和６年６月）(PDF/1,885KB)	https://www.nta.go.jp/publication/pamph/koho/01.pdf
+令和５年度 査察の概要（令和６年６月）(PDF/319KB)	https://www.nta.go.jp/information/release/kokuzeicho/2024/sasatsu/r05_sasatsu.pdf
+酒類事業者向け補助金の第２期採択事業者を決定しました	https://www.nta.go.jp/taxes/sake/boshujoho/hojojigyo.htm
+適用額明細書の記載に係る区分番号一覧表等の掲載について	https://www.nta.go.jp/publication/pamph/hojin/tekiyougaku/01.htm
+令和５年分所得税等、消費税及び贈与税の確定申告状況等について(PDF/2,350KB)	https://www.nta.go.jp/information/release/pdf/0024005-100.pdf
+「国税・地方税キャッシュレス納付推進全国宣言式」を開催しました	https://www.nta.go.jp/taxes/nozei/cashless_sengen.htm
+「税務行政に対するご意見・ご要望」コーナー等の不具合について	https://www.nta.go.jp/information/other/oshirase/r060423_index.htm
+国税庁ホームページのシステムメンテナンス（４月20日（土））のお知らせ	https://www.nta.go.jp/information/other/data/r06/maintenance240420.htm
+酒類事業者向け補助金の第１期採択事業者を決定しました。	https://www.nta.go.jp/taxes/sake/boshujoho/hojojigyo.htm
+集中電話催告センター室（納税コールセンター）における閉庁日の電話催告等の実施について	https://www.nta.go.jp/about/organization/callcenter/index.htm
+消費税の仕入税額控除制度における適格請求書等保存方式に関するＱ＆Ａ（インボイスＱ＆Ａ）を改訂しました。	https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/qa_01.htm
+令和６年度（第74回）税理士試験公告	https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/74.htm
+税務相談チャットボットで所得税の定額減税（令和６年分）の相談を開始しました	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+電子帳簿保存法に関する「お問い合わせの多いご質問」に質問を追加しました	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/jirei/4-3.htm#a0023011-017
+「令和６年能登半島地震により住宅や家財などに損害を受けた方」に関する情報を掲載しました	https://www.nta.go.jp/taxes/shiraberu/saigai/r6/noto/index.htm#a0024002-120
+【2024年度】国税専門官採用試験の受験申込みが始まりました【申込期間：２月22日（木）～３月25日（月）】	https://www.nta.go.jp/about/recruitment/kokusen/shiken/test_02.htm
+税務相談チャットボットで消費税（令和5年分）の相談を開始しました	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+定額減税特設サイトを開設しました	https://www.nta.go.jp/users/gensen/teigakugenzei/index.htm
+定額減税の概要について掲載しました	https://www.nta.go.jp/users/gensen/teigakugenzei/01.htm
+「令和５年分 確定申告特集」を開設しました	https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/index.htm
+税務相談チャットボットで所得税（令和５年分）の相談を開始しました	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+電子帳簿保存法に関する「お問い合わせの多いご質問」を掲載しました	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/jirei/4-3.htm#a0023011-017
+「令和５年分 年末調整控除申告書作成用ソフトウェア」をバージョンアップしました	https://www.nta.go.jp/users/gensen/nenmatsu/nencho.htm
+「令和５年分 確定申告特集（準備編）」を開設しました	https://www.nta.go.jp/taxes/shiraberu/shinkoku/tokushu/r05junbi/index.htm
+トピックス一覧へ	https://www.nta.go.jp/information/news/index.htm
+酒類の輸出動向（令和８年７月分）	https://www.nta.go.jp/taxes/sake/yushutsu/yushutsu_tokei/index.htm
+令和９年度予算概算要求（酒類業振興関係）の概要	https://www.nta.go.jp/taxes/sake/index.htm#kihon
+酒類の輸出動向（令和８年６月分）	https://www.nta.go.jp/taxes/sake/yushutsu/yushutsu_tokei/index.htm
+特定多国籍企業グループ等報告事項等（GIR）の自動的情報交換等に関する情報	https://www.nta.go.jp/taxes/shiraberu/kokusai/eoi/takokuseki.htm
+酒類の輸出動向（令和８年５月分）	https://www.nta.go.jp/taxes/sake/yushutsu/yushutsu_tokei/index.htm
+CRSコーナー（報告事項の提供方法等）	https://www.nta.go.jp/taxes/shiraberu/kokusai/crs/teikyohouhou.htm
+CARFコーナー（報告事項の提供方法等）	https://www.nta.go.jp/taxes/shiraberu/kokusai/carf/teikyohouhou.htm
+「相続税の申告書等の様式一覧（令和8年分用）」	https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/sozoku-zoyo/annai/r08.htm
+新着情報一覧へ	https://www.nta.go.jp/information/news/news.htm
+源泉所得税の改正のあらまし（日キルギス新租税協定）（PDF/375KB）	https://www.nta.go.jp/publication/pamph/pdf/0026007-029.pdf
+パンフレット「暮らしの税情報」（令和８年度版）の公開	https://www.nta.go.jp/publication/pamph/koho/kurashi/index.htm
+公益信託に財産を拠出した場合における譲渡所得等の非課税の特例のあらまし（PDF/498KB）	https://www.nta.go.jp/publication/pamph/pdf/0025012-037.pdf
+公益法人等に財産を寄附した場合における「租税特別措置法第40条の規定による承認申請書」の記載のしかた	https://www.nta.go.jp/publication/pamph/joto-sanrin/7402/01.htm
+公益信託に財産を拠出した場合における「租税特別措置法第40条の規定による承認申請書」の記載のしかた	https://www.nta.go.jp/publication/pamph/joto-sanrin/7402/02.htm
+「租税特別措置法第40条の規定による届出書等」の記載のしかた	https://www.nta.go.jp/publication/pamph/joto-sanrin/7402/03.htm
+「契約書や領収書と印紙税〈印紙税額一覧表〉（令和８年６月）」を掲載しました	https://www.nta.go.jp/publication/pamph/inshi/pdf/1504.pdf
+「印紙税の手引（令和８年６月）」を掲載しました	https://www.nta.go.jp/publication/pamph/inshi/tebiki/01.htm
+「租税特別措置法に係る所得税の取扱いについて」の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kobetsu/shotoku/sochiho/kaisei/2609/index.htm
+租税特別措置法関係通達（法人税編）の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kihon/hojin/kaisei/260904/index.htm
+「相続税法基本通達等の一部改正について（法令解釈通達）のあらまし（情報）」の掲載	https://www.nta.go.jp/law/joho-zeikaishaku/sozoku/r08/index.htm
+「法人課税関係の申請、届出等の様式の制定について」の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kobetsu/hojin/kaisei/260831/index.htm
+「東日本大震災の被災者等に係る国税関係法律の臨時特例に関する法律に係る法人課税関係の申請、届出等の様式の制定について」の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kobetsu/hojin/kaisei/20260831-1/index.htm
+「消費税関係申告書等の様式の制定について」の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kihon/shohi/kaisei/260831/index.htm
+「資産課税関係の申請、届出等の様式の制定について」の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kobetsu/sozoku/sochiho/kaisei/260830/index.htm
+「令和8年分の類似業種比準価額計算上の業種目及び業種目別株価等について」の一部改正について（法令解釈通達）	https://www.nta.go.jp/law/tsutatsu/kobetsu/hyoka/r08/2607_01/index.htm
+令和9年度 機構・定員要求について	https://www.nta.go.jp/information/release/kokuzeicho/2026/teiin_kiko/index.htm
+令和9年度 国税庁関係予算概算要求額	https://www.nta.go.jp/information/release/kokuzeicho/2026/yosan_gaisan/index.htm
+税理士等でない者に対する税務相談停止等命令	https://www.nta.go.jp/taxes/zeirishi/chokai/shobun/2606.htm
+令和７年度租税滞納状況の概要（PDF/6,942KB）	https://www.nta.go.jp/information/release/kokuzeicho/2026/sozei_taino/pdf/sozei_taino.pdf
+放射性物質に対する酒類の安全性確保のための施策について	https://www.nta.go.jp/taxes/sake/anzen/radioactivity.htm
+ネット口座振替受付サービスのメンテナンスについて	https://www.nta.go.jp/taxes/nozei/nozei-shomei/maintenance/index.htm
+「国境を越えた電子商取引に係る消費税の課税関係について」の更新	https://www.nta.go.jp/publication/pamph/shohi/denshisho/index.htm
+令和８年10月１日からの税務署総合窓口の受付時間について	https://www.nta.go.jp/about/introduction/torikumi/madoguchi_jikan/index.htm
+国税庁レポート2026（PDF版）の公開	https://www.nta.go.jp/about/introduction/torikumi/report/report2026/index.htm
+第９回「国税庁所管統計の整備に関する検討会」の配付資料等	https://www.nta.go.jp/about/council/kenkyu.htm#statistics
+第14回「国税庁保有行政記録情報を用いた税務大学校との共同研究に関する有識者会議」配付資料等	https://www.nta.go.jp/about/council/kyodokenkyu/260527/shiryo.htm
+第74回 事務年報	https://www.nta.go.jp/about/introduction/torikumi/jimunenpo/74/index.htm
+第6回「国税庁保有行政記録情報の整備に関する有識者検討会」の配付資料等	https://www.nta.go.jp/about/council/seibi/20260303/shiryo.htm
+タックスアンサー （よくある税の質問）	https://www.nta.go.jp/taxes/shiraberu/taxanswer/index2.htm
+所得税の確定申告	https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei.htm
+税の相談	https://www.nta.go.jp/taxes/shiraberu/sodan/index.htm
+国際税務関係情報	https://www.nta.go.jp/taxes/shiraberu/kokusai/index.htm
+税目別情報	https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/index.htm
+チャットボットに質問する	https://www.nta.go.jp/taxes/shiraberu/chatbot/index.htm
+税の学習コーナー	https://www.nta.go.jp/taxes/kids/index.htm
+個人の方	https://www.nta.go.jp/users/kojin/index.htm
+法人の方	https://www.nta.go.jp/users/hojin/index.htm
+源泉徴収義務者の方	https://www.nta.go.jp/users/gensen/index.htm
+税理士に関する情報	https://www.nta.go.jp/taxes/zeirishi/index.htm
+お酒に関する情報	https://www.nta.go.jp/taxes/sake/index.htm
+採用情報	https://www.nta.go.jp/about/recruitment/index.htm
+申告・申請・届出等、用紙（手続の案内・様式）	https://www.nta.go.jp/taxes/tetsuzuki/shinsei/index.htm
+社会保障・税番号制度＜マイナンバー＞	https://www.nta.go.jp/taxes/tetsuzuki/mynumberinfo/index.htm
+納税に関する総合案内	https://www.nta.go.jp/taxes/nozei/annai/index.htm
+納税証明書	https://www.nta.go.jp/taxes/nozei/nozei-shomei/01.htm
+税務行政のデジタル・トランスフォーメーション	https://www.nta.go.jp/about/introduction/torikumi/digitaltransformation2023/index.htm
+事業者のデジタル化促進	https://www.nta.go.jp/about/introduction/torikumi/jigyousyadx.htm
+災害により被害を受けられた皆様へ	https://www.nta.go.jp/taxes/shiraberu/saigai/index.htm
+納付書の事前送付について	https://www.nta.go.jp/taxes/nozei/oshirase.htm
+デジタルインボイス（Peppol）	https://www.nta.go.jp/about/introduction/torikumi/jigyousyadx.htm#a03
+電子帳簿保存法	https://www.nta.go.jp/law/joho-zeikaishaku/sonota/jirei/index.htm
+源泉徴収票のみなし提出の特例	https://www.nta.go.jp/users/gensen/hotei/index/minashi.htm
+免税店制度の（リファンド方式への）見直し	https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/0523.htm
+自宅からの国税関係手続のご案内	https://www.nta.go.jp/taxes/shiraberu/kansensho/zitaku.htm
+お酒に関する情報	https://www.nta.go.jp/taxes/sake/index.htm#topic
+令和7年1月からの収受日付印の押なつ見直し	https://www.nta.go.jp/taxes/tetsuzuki/onatsu/index.htm
+LINE	https://www.nta.go.jp/line/index.htm
+インターネット番組「Web-TAX-TV」	https://www.nta.go.jp/publication/webtaxtv/index.html
+新着情報・メールマガジン	https://www.nta.go.jp/merumaga/index.htm
