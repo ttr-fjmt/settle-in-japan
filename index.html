@@ -103,21 +103,27 @@ header.site nav a:hover{border-bottom-color:var(--vermilion)}
 
 /* トップの絵 */
 .hero-art{line-height:0;background:#f2ead9}
-/* 波はゆっくり流れ、日は静かに上下する。動きはここだけ。本文には動きを入れない */
+/* 波は流れながら上下に揺れ、日は静かに上下する。動きはここだけ。本文には動きを入れない。
+   「流れる」と「揺れる」を1つの要素で同時にはできないので、外側の入れ物を横に流し、
+   中身の波そのものを上下させている */
 @keyframes drift{from{transform:translateX(0)}to{transform:translateX(-1200px)}}
 @keyframes driftBack{from{transform:translateX(0)}to{transform:translateX(-1200px)}}
-@keyframes sunRise{0%{transform:translateY(4px)}100%{transform:translateY(-8px)}}
-@keyframes sunGlow{0%{opacity:.55}100%{opacity:1}}
-@keyframes bob{0%{transform:translateY(0)}100%{transform:translateY(-4px)}}
-.sea-front{animation:drift 26s linear infinite}
-.sea-back{animation:driftBack 44s linear infinite}
-.sun{animation:sunRise 30s ease-in-out infinite alternate;transform-origin:880px 62px}
-.sun-glow{animation:sunGlow 7s ease-in-out infinite alternate}
-.foam path{animation:bob 5s ease-in-out infinite alternate}
-.foam .foam-2{animation-duration:6.5s;animation-delay:-2s}
-.foam .foam-3{animation-duration:8s;animation-delay:-4s}
+@keyframes swell{0%{transform:translateY(8px)}100%{transform:translateY(-12px)}}
+@keyframes swellBack{0%{transform:translateY(-7px)}100%{transform:translateY(8px)}}
+@keyframes sunRise{0%{transform:translateY(7px)}100%{transform:translateY(-13px)}}
+@keyframes sunGlow{0%{opacity:.5}100%{opacity:1}}
+@keyframes bob{0%{transform:translateY(3px)}100%{transform:translateY(-7px)}}
+.sea-front{animation:drift 10s linear infinite}
+.sea-back{animation:driftBack 16s linear infinite}
+.sea-front path{animation:swell 4.5s ease-in-out infinite alternate}
+.sea-back path{animation:swellBack 6s ease-in-out infinite alternate}
+.sun{animation:sunRise 13s ease-in-out infinite alternate;transform-origin:880px 62px}
+.sun-glow{animation:sunGlow 3.5s ease-in-out infinite alternate}
+.foam path{animation:bob 3s ease-in-out infinite alternate}
+.foam .foam-2{animation-duration:3.8s;animation-delay:-1.2s}
+.foam .foam-3{animation-duration:4.6s;animation-delay:-2.4s}
 @media (prefers-reduced-motion:reduce){
-  .sea-front,.sea-back,.sun,.sun-glow,.foam path{animation:none}
+  .sea-front,.sea-back,.sea-front path,.sea-back path,.sun,.sun-glow,.foam path{animation:none}
 }
 .hero-art svg{width:100%;height:clamp(140px,17vw,200px);display:block}
 
@@ -359,12 +365,12 @@ footer.site a{color:#cfe0f2}
     <path d="M555 72 L588 32 Q600 20 612 32 L645 72 L626 63 L610 76 L592 61 L572 76 Z" fill="#f5f0e6"/>
 
     <g class="sea-back" opacity="0.5">
-      <path d="M0 140 C 150 124 240 154 390 140 C 540 126 630 156 780 140 C 930 124 1020 154 1170 140 L1200 140 L1200 220 L0 220 Z" fill="#2a5183"/>
-      <path d="M0 140 C 150 124 240 154 390 140 C 540 126 630 156 780 140 C 930 124 1020 154 1170 140 L1200 140 L1200 220 L0 220 Z" fill="#2a5183" transform="translate(1200,0)"/>
+      <g><path d="M0 142 C 150 116 240 164 390 142 C 540 120 630 166 780 142 C 930 116 1020 164 1170 142 L1200 142 L1200 220 L0 220 Z" fill="#2a5183"/></g>
+      <g transform="translate(1200,0)"><path d="M0 142 C 150 116 240 164 390 142 C 540 120 630 166 780 142 C 930 116 1020 164 1170 142 L1200 142 L1200 220 L0 220 Z" fill="#2a5183"/></g>
     </g>
     <g class="sea-front">
-      <path d="M0 130 C 120 112 210 148 330 130 C 450 112 540 148 660 130 C 780 112 870 148 990 130 C 1080 118 1140 124 1200 130 L1200 220 L0 220 Z" fill="url(#sea)"/>
-      <path d="M0 130 C 120 112 210 148 330 130 C 450 112 540 148 660 130 C 780 112 870 148 990 130 C 1080 118 1140 124 1200 130 L1200 220 L0 220 Z" fill="url(#sea)" transform="translate(1200,0)"/>
+      <g><path d="M0 130 C 120 104 210 156 330 130 C 450 104 540 156 660 130 C 780 104 870 156 990 130 C 1080 114 1140 122 1200 130 L1200 220 L0 220 Z" fill="url(#sea)"/></g>
+      <g transform="translate(1200,0)"><path d="M0 130 C 120 104 210 156 330 130 C 450 104 540 156 660 130 C 780 104 870 156 990 130 C 1080 114 1140 122 1200 130 L1200 220 L0 220 Z" fill="url(#sea)"/></g>
     </g>
 
     <g class="foam" fill="none" stroke="#f5f0e6" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round">
