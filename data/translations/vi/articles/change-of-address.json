@@ -1,0 +1,65 @@
+{
+  "id": "change-of-address",
+  "title": "Thủ tục cần làm khi thay đổi địa chỉ",
+  "description": "Giải thích các thủ tục cần làm khi chuyển nhà, dựa trên nội dung được ghi trên các trang chính thức của Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁) và Bộ Tổng vụ (総務省). Bao gồm từ việc thông báo nơi cư trú cho cục quản lý xuất nhập cảnh, đơn chuyển đi (転出届) và đơn chuyển đến (転入届) tại ủy ban thành phố/quận/huyện (市区町村), đến cách xử lý khi rời khỏi Nhật Bản.",
+  "sections": [
+    {
+      "heading": "Hai nơi làm thủ tục, thời hạn vẫn là 14 ngày",
+      "body": [
+        "Khi chuyển nhà, quy trình lặp lại giống như thời điểm mới đến Nhật Bản. Cần thông báo nơi cư trú mới cho Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁), đồng thời nộp đơn chuyển đi (転出届) và đơn chuyển đến (転入届) tại ủy ban thành phố/quận/huyện (市区町村) nơi cư trú. Cả hai thủ tục đều có thời hạn trong vòng 14 ngày."
+      ],
+      "quotes": [
+        "新住居地に移転した日から１４日以内"
+      ]
+    },
+    {
+      "heading": "1. Đơn chuyển đi (転出届) và đơn chuyển đến (転入届) nộp tại ủy ban thành phố/quận/huyện (市区町村)",
+      "body": [
+        "Khi chuyển đến một thành phố/quận/huyện khác, cần nộp đơn chuyển đi (転出届) tại nơi đang cư trú, và nộp đơn chuyển đến (転入届) tại nơi cư trú mới. Khi nộp đơn chuyển đi, sẽ được cấp “giấy chứng nhận chuyển đi (転出証明書)”, và giấy này cần mang theo khi nộp đơn chuyển đến."
+      ],
+      "quotes": [
+        "住民基本台帳制度では、外国人住民の方も、別の市区町村へ引っ越しをする際には、転出の届出をお住まいの市区町村にて行うとともに、転入の届出を新たにお住まいになる市区町村にて行っていただくことが必要となります。",
+        "新しい市区町村へ転入する際、住所を定めてから14日以内にこの「転出証明書」をお持ちいただいて転入の届出を行うことになります。"
+      ]
+    },
+    {
+      "heading": "2. Thông báo nơi cư trú cho Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁)",
+      "body": [
+        "Thời hạn thông báo cho Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁) là trong vòng 14 ngày kể từ ngày chuyển đến nơi cư trú mới. Người thông báo là chính bản thân người đó, ngoại trừ những người dưới 16 tuổi. Không mất phí."
+      ],
+      "quotes": [
+        "新住居地に移転した日から１４日以内",
+        "届出人本人（１６歳未満の者を除く）",
+        "手数料はかかりません"
+      ]
+    },
+    {
+      "heading": "Khi có thay đổi ngoài địa chỉ",
+      "body": [
+        "Khi có thay đổi ở những mục khác ngoài địa chỉ được ghi trên thẻ lưu trú (在留カード) — như họ tên, ngày sinh, giới tính, quốc tịch/khu vực — sẽ có một thủ tục thông báo riêng. Thời hạn cũng là trong vòng 14 ngày."
+      ],
+      "quotes": [
+        "氏名、生年月日、性別又は国籍・地域に変更が生じた中長期在留者",
+        "上記の記載事項に変更が生じた日から１４日以内"
+      ]
+    },
+    {
+      "heading": "Khi rời khỏi Nhật Bản",
+      "body": [
+        "Trường hợp xuất cảnh khỏi Nhật Bản để sinh sống ở nước ngoài, về nguyên tắc cần nộp đơn chuyển đi (転出届) tại ủy ban thành phố/quận/huyện (市区町村). Vào những ngày sát ngày xuất cảnh, quầy tiếp nhận có thể không mở, nên nên hoàn tất thủ tục này sớm."
+      ],
+      "quotes": [
+        "日本を出国して海外で暮らす場合は、原則としてお住まいの市区町村にて転出の届出が必要です。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ ra sao",
+      "body": [
+        "Trang này chỉ giải thích những nội dung được ghi trên các trang chính thức, không đưa ra phán đoán cho từng trường hợp cụ thể. Vui lòng hỏi tại quầy tiếp nhận của ủy ban thành phố/quận/huyện (市区町村), hoặc tại cơ quan quản lý xuất nhập cảnh và lưu trú địa phương (地方出入国在留管理官署)."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "41e700ca99739d12",
+  "translated_at": "2026-09-16"
+}

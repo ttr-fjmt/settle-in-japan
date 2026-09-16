@@ -1,0 +1,53 @@
+{
+  "id": "national-health-insurance",
+  "title": "Cách tham gia Bảo hiểm Y tế Quốc dân（国民健康保険）",
+  "description": "Bài viết giải thích thủ tục tham gia Bảo hiểm Y tế Quốc dân（国民健康保険）dựa trên nội dung trang chính thức của Bộ Y tế, Lao động và Phúc lợi. Bao gồm ai là đối tượng, hạn nộp hồ sơ là khi nào, và nộp ở đâu.",
+  "sections": [
+    {
+      "heading": "Ai trở thành đối tượng tham gia",
+      "body": [
+        "Bảo hiểm Y tế Quốc dân（国民健康保険）do chính quyền địa phương (thành phố, thị trấn, làng) quản lý. Trang web của Bộ Y tế, Lao động và Phúc lợi quy định đối tượng theo cách \"những người không thuộc diện loại trừ\". Người có địa chỉ cư trú tại Nhật Bản và không thuộc bất kỳ điều kiện loại trừ nào được liệt kê sẽ trở thành người tham gia bảo hiểm.",
+        "Nếu tham gia bảo hiểm y tế của công ty nơi làm việc, thì bảo hiểm đó sẽ được áp dụng thay vì Bảo hiểm Y tế Quốc dân（国民健康保険）. Trước khi đến quầy thủ tục, hãy hỏi nơi làm việc xem mình thuộc trường hợp nào."
+      ],
+      "quotes": [
+        "日本国内に住所を有する方であって、以下のいずれにも該当しない方は、国民健康保険の被保険者となります。"
+      ]
+    },
+    {
+      "heading": "Nộp ở đâu và trong thời hạn bao lâu",
+      "body": [
+        "Hồ sơ đăng ký cần được nộp tại quầy Bảo hiểm Y tế Quốc dân（国民健康保険）của chính quyền địa phương nơi cư trú, trong vòng 14 ngày. Khi rút khỏi bảo hiểm (ví dụ khi bắt đầu tham gia bảo hiểm y tế của công ty), thời hạn cũng là như vậy."
+      ],
+      "quotes": [
+        "国民健康保険の被保険者となったとき、脱退するときなどは、14日以内に、お住まいの市町村の国民健康保険の窓口（国民健康保険組合の場合は国民健康保険組合の窓口等）まで関係書類を提出する必要があります。"
+      ]
+    },
+    {
+      "heading": "Thông tin cũng được ghi trong Sổ đăng ký cư trú（住民票）",
+      "body": [
+        "Các thông tin liên quan đến việc tham gia Bảo hiểm Y tế Quốc dân（国民健康保険）được ghi vào Sổ đăng ký cư trú（住民票）cùng với họ tên và địa chỉ. Đây là một trong những lý do vì sao cần nộp Đơn chuyển đến（転入届）trước, vì quầy bảo hiểm sẽ dựa vào thông tin đăng ký đó để làm thủ tục."
+      ],
+      "quotes": [
+        "外国人住民に係る住民票には、日本人と同様に、氏名、出生の年月日、男女の別、住所等の基本事項に加え、国民健康保険や国民年金等の被保険者に関する事項が記載されます。"
+      ]
+    },
+    {
+      "heading": "Tài liệu hướng dẫn bằng nhiều ngôn ngữ",
+      "body": [
+        "Bộ Y tế, Lao động và Phúc lợi công bố tờ rơi tóm tắt những nội dung cơ bản của chế độ, dành cho người nước ngoài đang sinh sống tại Nhật Bản cũng như những người mới đến Nhật. Có thể xem tại trang nguồn được liệt kê bên dưới."
+      ],
+      "quotes": [
+        "日本に居住する外国人及び新しく日本に来られた外国人の方向けに、国民健康保険制度の基本的な内容をまとめたリーフレットを掲載しています。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình thì sao",
+      "body": [
+        "Mức phí bảo hiểm và giấy tờ cần thiết khác nhau tùy theo từng địa phương, và trang này không đưa ra phán đoán cho từng trường hợp cụ thể. Hãy hỏi trực tiếp tại quầy Bảo hiểm Y tế Quốc dân（国民健康保険）của chính quyền địa phương nơi cư trú."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "170e29b969bc0aeb",
+  "translated_at": "2026-09-16"
+}

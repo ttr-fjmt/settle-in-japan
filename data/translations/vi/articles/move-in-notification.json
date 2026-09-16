@@ -1,0 +1,54 @@
+{
+  "id": "move-in-notification",
+  "title": "Thủ tục đăng ký cư trú（住民登録）(khai báo chuyển đến)",
+  "description": "Hướng dẫn cách làm thủ tục khai báo chuyển đến tại tòa thị chính, dựa trên nội dung công bố chính thức của Bộ Nội vụ và Truyền thông. Bao gồm thời hạn, giấy tờ cần mang theo, giấy tờ cần thiết khi sống cùng gia đình, và nội dung được ghi trên Giấy chứng nhận cư trú（住民票）.",
+  "sections": [
+    {
+      "heading": "Ai nộp và trong thời hạn bao lâu",
+      "body": [
+        "Đơn đăng ký chuyển đến (chuyển vào) là thủ tục đầu tiên bạn thực hiện tại quầy của tòa thị chính hoặc văn phòng quận/huyện. Đối tượng áp dụng và thời hạn được ghi rõ trên trang web của Bộ Nội vụ và Truyền thông. Những người có tư cách lưu trú “lưu trú ngắn hạn” hoặc thời hạn lưu trú từ 3 tháng trở xuống không thuộc đối tượng này."
+      ],
+      "quotes": [
+        "新たに日本に入国し、入管法上の在留資格をもって日本に中長期間在留する「中長期在留者」（在留カード交付対象者。「短期滞在」の在留資格や「3月」以下の在留期間を有する方などは含まれません。）の方は、市区町村に新たに住所を定めた日から14日以内に、在留カード（空港等で在留カードが交付されなかった方については、パスポート）などをお持ちいただいて、お住まいの市区町村に転入の届出を行う必要があります。"
+      ]
+    },
+    {
+      "heading": "Cần mang theo những gì",
+      "body": [
+        "Hãy mang theo Thẻ cư trú（在留カード）. Nếu bạn chưa được cấp Thẻ cư trú（在留カード）tại sân bay, hãy mang theo Hộ chiếu thay thế — điều này được ghi rõ trong đoạn trích dẫn ở trên.",
+        "Nếu bạn sống chung hộ khẩu với gia đình, quầy tiếp nhận còn yêu cầu giấy tờ chứng minh quan hệ với chủ hộ, do cơ quan công quyền ở nước bạn cấp, kèm theo bản dịch tiếng Nhật."
+      ],
+      "quotes": [
+        "世帯主の方とご本人との続柄を証明できる文書（本国の政府等公的機関が発行したもので、出生証明書、婚姻証明書などの原本）が必要となります。",
+        "なお、世帯主との続柄を証明できる文書については、併せて日本語の翻訳文も必要となりますので、ご注意ください。"
+      ]
+    },
+    {
+      "heading": "Giấy chứng nhận cư trú（住民票）ghi những gì",
+      "body": [
+        "Sau khi đăng ký xong, Giấy chứng nhận cư trú（住民票）sẽ được lập cho bạn. Giấy này ghi các mục cơ bản giống như đối với người Nhật, cộng thêm các mục riêng dành cho cư dân nước ngoài. Sau này bạn sẽ được yêu cầu xuất trình bản sao giấy này — khi mở tài khoản, khi vào trường học, và trong nhiều thủ tục khác."
+      ],
+      "quotes": [
+        "外国人住民に係る住民票には、日本人と同様に、氏名、出生の年月日、男女の別、住所等の基本事項に加え、国民健康保険や国民年金等の被保険者に関する事項が記載されます。"
+      ]
+    },
+    {
+      "heading": "Đây là thủ tục khác với việc thông báo cho cơ quan quản lý xuất nhập cảnh",
+      "body": [
+        "Đơn đăng ký chuyển đến tại tòa thị chính và việc thông báo nơi cư trú cho Cục quản lý xuất nhập cảnh（出入国在留管理庁）là hai thủ tục khác nhau, mặc dù cả hai đều có cùng thời hạn 14 ngày. Hoàn thành thủ tục này không có nghĩa là thủ tục kia cũng đã xong."
+      ],
+      "quotes": [
+        "住居地を定めた日から１４日以内"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Trang này giải thích nội dung được ghi trên các trang chính thức, và không đưa ra phán đoán cho từng trường hợp cụ thể. Hãy hỏi trực tiếp tại quầy của tòa thị chính hoặc văn phòng quận/huyện nơi bạn sinh sống — quầy phụ trách đăng ký cư trú（住民登録）sẽ trả lời những câu hỏi này."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "d4bcf2fbfe4702cb",
+  "translated_at": "2026-09-16"
+}

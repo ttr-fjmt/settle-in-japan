@@ -1,0 +1,57 @@
+{
+  "id": "residence-card",
+  "title": "Thẻ lưu trú: vai trò của thẻ và khi nào bạn nhận được",
+  "description": "Bài viết giải thích thẻ lưu trú (在留カード) dùng để làm gì, được cấp cho ai, và nhận ở đâu, dựa theo nội dung ghi trên trang chính thức của Cục quản lý xuất nhập cảnh và lưu trú. Bài cũng nói về việc khai báo khi thông tin trên thẻ thay đổi.",
+  "sections": [
+    {
+      "heading": "Thẻ dùng để làm gì",
+      "body": [
+        "Thẻ lưu trú (在留カード) được cấp cho những người được phép lưu trú tại Nhật Bản trong thời gian trung và dài hạn. Cục quản lý xuất nhập cảnh và lưu trú giải thích rằng thẻ này có tính chất như một 'giấy chứng nhận', chứng minh người đó đang lưu trú hợp pháp.",
+        "Hãy luôn mang thẻ theo người. Đây là giấy tờ mà các nơi thường yêu cầu xem đầu tiên, từ quầy tiếp nhận ở tòa thị chính cho đến khi ký hợp đồng điện thoại di động."
+      ],
+      "quotes": [
+        "在留カードは、新規の上陸許可、在留資格の変更許可や在留期間の更新許可など在留資格に係る許可の結果として我が国に中長期間在留する者（中長期在留者）に対して交付されます。"
+      ]
+    },
+    {
+      "heading": "Những gì được ghi trên thẻ",
+      "body": [
+        "Trên thẻ có ghi những thông tin quan trọng liên quan đến việc lưu trú. Vì vậy, khi có sự thay đổi ở những nội dung này, người có thẻ có nghĩa vụ phải khai báo, để nội dung trên thẻ luôn được phản ánh mới nhất."
+      ],
+      "quotes": [
+        "在留カードには、氏名、生年月日、性別、国籍・地域、住居地、在留資格、就労の可否など、出入国在留管理庁長官が把握する情報の重要部分が記載されていますので、記載事項に変更が生じた場合には変更の届出を義務付けており、常に最新の情報が反映されることになります。"
+      ]
+    },
+    {
+      "heading": "Nhận thẻ ở đâu",
+      "body": [
+        "Tại 10 sân bay được quy định, thẻ lưu trú (在留カード) sẽ được cấp ngay tại chỗ khi làm thủ tục cho phép nhập cảnh. Ở các cửa khẩu xuất nhập cảnh khác, hộ chiếu sẽ được ghi chú rằng 'thẻ lưu trú sẽ được cấp sau'.",
+        "Trong trường hợp đó, thẻ sẽ được cấp sau khi đã khai báo nơi cư trú tại quầy tiếp nhận của quận/thành phố/thị trấn/làng (市区町村). Đây cũng là một lý do nên hoàn thành sớm thủ tục chuyển đến nơi ở mới — vì việc cấp thẻ phụ thuộc vào thủ tục này."
+      ],
+      "quotes": [
+        "新千歳空港、仙台空港、成田空港、羽田空港、中部空港、関西空港、神戸空港、広島空港、福岡空港及び那覇空港においては、旅券に上陸許可の証印をするとともに、上陸許可によって中長期在留者となった方には、在留カードを交付します。",
+        "その他の出入国港においては、旅券に上陸許可の証印をし、その近くに「在留カードを後日交付する」旨の記載をします。",
+        "住居地を定めた日から１４日以内"
+      ]
+    },
+    {
+      "heading": "Khi thông tin ghi trên thẻ thay đổi",
+      "body": [
+        "Khi họ tên, ngày sinh, giới tính, hoặc quốc tịch/khu vực có sự thay đổi, sẽ có một thủ tục khai báo riêng. Thời hạn khai báo là trong vòng 14 ngày kể từ ngày có sự thay đổi."
+      ],
+      "quotes": [
+        "氏名、生年月日、性別又は国籍・地域に変更が生じた中長期在留者",
+        "上記の記載事項に変更が生じた日から１４日以内"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Trang này chỉ giải thích những nội dung được ghi trên trang chính thức, và không đưa ra kết luận cho từng trường hợp cụ thể. Nếu có câu hỏi liên quan đến thẻ lưu trú (在留カード) của riêng mình, hãy hỏi tại cơ quan quản lý xuất nhập cảnh và lưu trú địa phương (地方出入国在留管理官署)."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "f03b7d347879086d",
+  "translated_at": "2026-09-16"
+}

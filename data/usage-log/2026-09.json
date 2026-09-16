@@ -7,5 +7,14 @@
     "input_tokens": 11227,
     "output_tokens": 8082,
     "estimated_usd": 0.1033
+  },
+  {
+    "date": "2026-09-16",
+    "script": "translate",
+    "model": "claude-sonnet-5",
+    "calls": 20,
+    "input_tokens": 46171,
+    "output_tokens": 75083,
+    "estimated_usd": 0.8432
   }
 ]

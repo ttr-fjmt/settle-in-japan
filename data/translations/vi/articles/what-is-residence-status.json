@@ -1,0 +1,65 @@
+{
+  "id": "what-is-residence-status",
+  "title": "Tư cách lưu trú là gì? Tổng quan",
+  "description": "Bài viết giải thích tư cách lưu trú là gì, dựa trên bảng danh mục chính thức của Cục Quản lý Xuất nhập cảnh và Lưu trú. Nội dung gồm sự khác biệt giữa tư cách được xác định theo hoạt động và theo thân phận, cách quy định thời hạn lưu trú — những kiến thức cơ bản nên biết trước khi đến quầy thủ tục.",
+  "sections": [
+    {
+      "heading": "Tư cách lưu trú là gì",
+      "body": [
+        "Để ở lại Nhật Bản và làm việc, học tập, hoặc sống cùng gia đình, người nước ngoài cần có \"tư cách lưu trú\" (在留資格) do nhà nước quy định. Mỗi tư cách lưu trú quy định những hoạt động được phép thực hiện tại Nhật Bản. Bảng danh mục chính thức ghi rõ nội dung hoạt động, ví dụ cụ thể và thời hạn lưu trú của từng tư cách."
+      ],
+      "quotes": [
+        "本邦において行うことができる活動や該当例、在留期間は在留資格一覧表を御確認ください。"
+      ]
+    },
+    {
+      "heading": "Tư cách lưu trú được xác định theo nội dung hoạt động",
+      "body": [
+        "Về mặt pháp luật, tư cách lưu trú được chia thành hai nhóm lớn. Một nhóm được gọi là \"tư cách hoạt động\" (活動資格), được xác định dựa trên việc người đó làm gì tại Nhật Bản, chẳng hạn như đi làm, du học, hay sống cùng gia đình."
+      ],
+      "quotes": [
+        "入管法別表第一の上欄の在留資格（活動資格）",
+        "日本で行う活動内容に応じた在留資格（就労・留学・家族滞在など）"
+      ]
+    },
+    {
+      "heading": "Tư cách lưu trú được xác định theo thân phận hoặc địa vị",
+      "body": [
+        "Nhóm còn lại được gọi là \"tư cách cư trú\" (居住資格), được xác định không phải theo nội dung hoạt động mà theo thân phận hoặc địa vị, ví dụ như người vĩnh trú, hoặc vợ/chồng và con của người Nhật."
+      ],
+      "quotes": [
+        "入管法別表第二の上欄の在留資格（居住資格）",
+        "身分や地位に応じた在留資格（永住者・日本人の配偶者や子）"
+      ]
+    },
+    {
+      "heading": "Mỗi tư cách lưu trú quy định một hoạt động cụ thể được phép",
+      "body": [
+        "Trong bảng danh mục, mỗi tư cách lưu trú đều được ghi rõ nội dung hoạt động cụ thể được cho phép. Ví dụ, tư cách lưu trú \"Giáo sư\" (教授) được quy định là hoạt động nghiên cứu, hướng dẫn nghiên cứu hoặc giảng dạy tại trường đại học Nhật Bản hay cơ quan tương đương, hoặc tại trường cao đẳng công nghệ."
+      ],
+      "quotes": [
+        "本邦の大学若しくはこれに準ずる機関又は高等専門学校において研究，研究の指導又は教育をする活動"
+      ]
+    },
+    {
+      "heading": "Thời hạn lưu trú cũng khác nhau tùy theo từng tư cách",
+      "body": [
+        "Bảng danh mục cũng ghi rõ thời hạn lưu trú cho từng tư cách. Ví dụ, đối với tư cách \"Giáo sư\", thời hạn lưu trú được quy định là 5 năm, 3 năm, 1 năm hoặc 3 tháng."
+      ],
+      "quotes": [
+        "５年，３年，１年又は３月"
+      ]
+    },
+    {
+      "heading": "Khi không chắc chắn trường hợp của mình thuộc tư cách nào",
+      "body": [
+        "Nếu không rõ tư cách lưu trú nào phù hợp với trường hợp của mình, không nên chỉ dựa vào bài viết này để tự quyết định, mà nên liên hệ với cơ quan chức năng chính thức. Đối với các câu hỏi về cách điền đơn xin cấp phép hoặc giấy tờ cần thiết, có thể liên hệ qua điện thoại với \"Trung tâm Thông tin Tổng hợp về Lưu trú dành cho Người nước ngoài\" (外国人在留総合インフォメーションセンター)."
+      ],
+      "quotes": [
+        "※申請書の書き方、必要書類等についての御質問は、「外国人在留総合インフォメーションセンター」へお問合せください。"
+      ]
+    }
+  ],
+  "source_hash": "7fc5b19ff7af32a1",
+  "translated_at": "2026-09-16"
+}
