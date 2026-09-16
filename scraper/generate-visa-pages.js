@@ -31,6 +31,56 @@ const ROOT = path.join(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'visa-types.json');
 const SITE_NAME = 'Settle in Japan';
 const SITE_URL = 'https://settle-in-japan.net';
+const GA_MEASUREMENT_ID = 'G-44PECD16GK';
+const ADSENSE_CLIENT = 'ca-pub-5761092657360295';
+
+/**
+ * アクセス解析と広告のタグ。既存3サイトと同じ作りに揃えている。
+ *
+ * ?ga=off を一度開くと、そのブラウザでは以後計測しない（?ga=on で解除、?ga=status で確認）。
+ * 運営者自身のアクセスを数に入れないための仕組み。gtag の設定より前に置くこと
+ * （最初のページビューが送られる前に効かせるため）。
+ */
+function headTags() {
+  return `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>
+<script>
+(function () {
+  var MEASUREMENT_ID = '${GA_MEASUREMENT_ID}';
+  var KEY = 'analytics-opt-out';
+  var mode = null;
+  try {
+    mode = new URLSearchParams(location.search).get('ga');
+    if (mode === 'off') localStorage.setItem(KEY, '1');
+    if (mode === 'on') localStorage.removeItem(KEY);
+    if (localStorage.getItem(KEY) === '1') window['ga-disable-' + MEASUREMENT_ID] = true;
+  } catch (e) {
+    // プライベートモード等で localStorage が使えなくても、サイト本体は動かす。
+  }
+  if (mode !== 'off' && mode !== 'on' && mode !== 'status') return;
+  var off = false;
+  try { off = localStorage.getItem(KEY) === '1'; } catch (e) { off = false; }
+  var text = off
+    ? 'このブラウザからのアクセスは計測しません（解除するには ?ga=on）'
+    : 'このブラウザからのアクセスを計測します（除外するには ?ga=off）';
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.createElement('div');
+    el.textContent = text;
+    el.style.cssText = 'position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:9999;' +
+      'background:#16212e;color:#fff;font-size:13px;line-height:1.6;padding:12px 18px;border-radius:8px;' +
+      'box-shadow:0 4px 16px rgba(0,0,0,.25);max-width:calc(100vw - 32px);text-align:center';
+    document.body.appendChild(el);
+    setTimeout(function () { el.remove(); }, 8000);
+  });
+})();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${GA_MEASUREMENT_ID}');
+</script>`;
+}
 
 /** 区分の見出し。英語と日本語を併記する。 */
 const GROUP_HEADINGS = {
@@ -66,6 +116,13 @@ function layout({ title, description, canonical, body }) {
 <title>${escape(title)}</title>
 <meta name="description" content="${escape(description)}">
 <link rel="canonical" href="${escape(canonical)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:title" content="${escape(title)}">
+<meta property="og:description" content="${escape(description)}">
+<meta property="og:url" content="${escape(canonical)}">
+<meta name="twitter:card" content="summary">
+${headTags()}
 <style>
 :root{--ground:#f2f4f7;--surface:#fff;--ink:#16212e;--ink-2:#4a586a;--line:#dde3ea;--indigo:#23438a;--ok:#1f6b4f;--ok-bg:#e4f1eb;--no:#8a3a2a;--no-bg:#f8ebe7;--unknown:#6d5a1f;--unknown-bg:#f6f0dd}
 *{box-sizing:border-box}
