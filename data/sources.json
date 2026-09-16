@@ -61,5 +61,12 @@
     "url": "https://www.moj.go.jp/isa/applications/status/dependent.html",
     "publisher": "出入国在留管理庁",
     "note": "家族帯同の可否を確認するため（どの在留資格の家族が対象かが書かれている）。"
+  },
+  {
+    "id": "guidebook",
+    "title": "生活・就労ガイドブック",
+    "url": "https://www.moj.go.jp/isa/support/portal/guidebook_all.html",
+    "publisher": "出入国在留管理庁",
+    "note": "身分・地位に基づく在留資格と特定活動の就労可否を確認するため。生活全般の公式説明で、記事の根拠にも使う。"
   }
 ]
