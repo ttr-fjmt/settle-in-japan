@@ -1,0 +1,118 @@
+{
+  "id": "what-is-residence-status",
+  "title_en": "What Is a Status of Residence? An Overview",
+  "title_ja": "在留資格とは何か——全体像",
+  "description": "在留資格とは何かを、出入国在留管理庁の公式の一覧表をもとに解説します。活動の内容で決まる資格と、身分や地位で決まる資格の違い、在留期間の決まり方など、これから役所の窓口に行く人がまず知っておきたい全体像をまとめました。",
+  "icon": "status",
+  "published_at": "2026-09-16",
+  "sources": [
+    "visa-list",
+    "status-index"
+  ],
+  "sections": [
+    {
+      "heading_en": "What is a status of residence?",
+      "heading_ja": "在留資格とは何か",
+      "body": [
+        {
+          "en": "To stay in Japan and to work, study, or live with family, you need a status of residence assigned by the government. Each status defines what activities you are allowed to do in Japan. The official status list explains the activities, examples, and length of stay for every status.",
+          "ja": "日本に滞在して働いたり、勉強したり、家族と暮らしたりするには、国が定める「在留資格」が必要です。在留資格ごとに、日本でできる活動が決まっています。公式の一覧表には、活動内容や該当例、在留期間が示されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "status-index",
+          "text": "本邦において行うことができる活動や該当例、在留期間は在留資格一覧表を御確認ください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Statuses based on activity",
+      "heading_ja": "活動の内容で決まる在留資格",
+      "body": [
+        {
+          "en": "The law divides statuses of residence into two large groups. One group is called activity-based statuses, and it covers things such as work, study, and family stay depending on what you actually do in Japan.",
+          "ja": "在留資格は、法律上大きく二つのグループに分かれています。一つは「活動資格」と呼ばれ、就労や留学、家族滞在など、日本で何をするかによって決まります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "入管法別表第一の上欄の在留資格（活動資格）"
+        },
+        {
+          "source_id": "status-index",
+          "text": "日本で行う活動内容に応じた在留資格（就労・留学・家族滞在など）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Statuses based on status or position",
+      "heading_ja": "身分や地位で決まる在留資格",
+      "body": [
+        {
+          "en": "The other group is called status-based residence categories. This group includes permanent residents and the spouses or children of Japanese nationals, and it is defined by who you are rather than by what activity you carry out.",
+          "ja": "もう一つは「居住資格」と呼ばれ、永住者や日本人の配偶者・子など、活動の内容ではなく身分や地位によって決まります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "入管法別表第二の上欄の在留資格（居住資格）"
+        },
+        {
+          "source_id": "status-index",
+          "text": "身分や地位に応じた在留資格（永住者・日本人の配偶者や子）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Each status defines a specific allowed activity",
+      "heading_ja": "在留資格ごとに認められる活動が決まっている",
+      "body": [
+        {
+          "en": "Every status of residence in the official list comes with a description of the exact activity that is allowed. For example, the status called Professor is defined as engaging in research, guidance of research, or education at a university or an equivalent institution, or at a college of technology, in Japan.",
+          "ja": "一覧表のそれぞれの在留資格には、認められる活動の内容が具体的に書かれています。例えば「教授」という在留資格は、日本の大学やこれに準ずる機関、高等専門学校で研究や研究の指導、教育を行う活動と定められています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "本邦の大学若しくはこれに準ずる機関又は高等専門学校において研究，研究の指導又は教育をする活動"
+        }
+      ]
+    },
+    {
+      "heading_en": "Length of stay also depends on the status",
+      "heading_ja": "在留期間も資格ごとに違う",
+      "body": [
+        {
+          "en": "The official list also shows the length of stay allowed for each status. For the Professor status, for instance, the possible periods of stay are 5 years, 3 years, 1 year, or 3 months, and the actual period given is decided individually.",
+          "ja": "一覧表には、在留資格ごとの在留期間も示されています。例えば「教授」の場合、在留期間は５年，３年，１年又は３月のいずれかとされています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "５年，３年，１年又は３月"
+        }
+      ]
+    },
+    {
+      "heading_en": "When you are not sure which status applies to you",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If it is not clear which status of residence fits your situation, this article alone cannot decide that for you. For questions about how to fill in application forms or which documents are required, the immigration authority operates a general information center for foreign residents that can be reached by phone.",
+          "ja": "自分にどの在留資格が当てはまるか分からないときは、この記事だけで判断せず、公式の窓口に相談してください。申請書の書き方や必要書類についての質問は、外国人在留総合インフォメーションセンターに電話で問い合わせることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "status-index",
+          "text": "※申請書の書き方、必要書類等についての御質問は、「外国人在留総合インフォメーションセンター」へお問合せください。"
+        }
+      ]
+    }
+  ]
+}
