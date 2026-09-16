@@ -19,6 +19,11 @@ const ICON_PATHS = {
   move: '<path d="M4 12h12"/><path d="M12 7l5 5-5 5"/><path d="M20 5v14"/>',
   guide: '<path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/>',
   clock: '<circle cx="12" cy="12" r="8"/><path d="M12 7v5l3.5 2"/>',
+  money: '<circle cx="12" cy="12" r="8.5"/><path d="M9 8.5l3 3.5 3-3.5"/><path d="M9 13h6M9 15.5h6M12 12v4.5"/>',
+  family:
+    '<circle cx="8.5" cy="8" r="2.6"/><circle cx="16.5" cy="9.5" r="2"/><path d="M4 19v-1.4A4.5 4.5 0 0 1 8.5 13a4.5 4.5 0 0 1 4.5 4.6V19"/><path d="M14.5 19v-.8a3.5 3.5 0 0 1 5.8-2.6"/>',
+  help: '<circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2-2.4 3.4"/><path d="M12 16.8h.01"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="M15.4 15.4L20 20"/>',
 };
 
 function icon(name, size = 22) {

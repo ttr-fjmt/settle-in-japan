@@ -24,6 +24,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { layout, escape, icon, SITE_NAME, SITE_URL } = require('./lib/page-layout');
+const { categorise } = require('./lib/categories');
 
 const ROOT = path.join(__dirname, '..');
 const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
@@ -107,24 +108,54 @@ ${sourceList}
   });
 }
 
-function buildIndexPage(articles) {
-  const items = articles
-    .map(
-      a => `<li class="card"><a href="/guide/${escape(a.id)}/">
+/**
+ * 記事の一覧。トップのタイルと同じ9つの分類でまとめる。
+ *
+ * タイルから `/guide/#health` のように飛んでくるので、分類の id を見出しに付ける。
+ * 記事の無い分類は出さない（何も無い見出しだけが並ぶのを避けるため）。
+ */
+function buildIndexPage(articles, { queue = null } = {}) {
+  const loadedQueue =
+    queue ||
+    JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'article-queue.json'), 'utf8'));
+  const groups = categorise({ queue: loadedQueue, articles }).filter(g => g.count > 0);
+
+  // どの分類にも入っていない記事があれば、最後にまとめて出す（取りこぼさないため）
+  const shown = new Set(groups.flatMap(g => g.articles.map(a => a.id)));
+  const rest = articles.filter(a => !shown.has(a.id));
+
+  const section = (id, iconName, en, ja, list) => `<section id="${escape(id)}">
+<h2>${icon(iconName, 20)}${escape(en)} <span class="ja">/ ${escape(ja)}</span></h2>
+<ul class="cards">
+${list
+  .map(
+    a => `<li class="card"><a href="/guide/${escape(a.id)}/">
   <span class="head">${icon(a.icon || 'guide')}${escape(a.title_en)}</span>
   <span class="ja">${escape(a.title_ja)}</span>
   <p>${escape(a.description)}</p>
 </a></li>`
-    )
+  )
+  .join('\n')}
+</ul>
+</section>`;
+
+  const sections = [
+    ...groups.map(g => section(g.id, g.icon, g.en, g.ja, g.articles)),
+    ...(rest.length ? [section('other', 'guide', 'Other guides', 'その他', rest)] : []),
+  ].join('\n');
+
+  const jump = groups
+    .map(g => `<a href="#${escape(g.id)}">${icon(g.icon, 16)}${escape(g.en)}<span class="ja">${escape(g.ja)}</span></a>`)
     .join('\n');
 
   const body = `
 <h1>Guides<span class="ja">手続きの解説</span></h1>
 <p class="lead">Step-by-step explanations of the procedures, quoting the official pages.<br>
 手続きのやり方を、公式ページを引用しながら順を追って説明します。</p>
-<ul class="cards">
-${items}
-</ul>
+<nav class="jump">
+${jump}
+</nav>
+${sections}
 `;
   return layout({
     title: `Guides | ${SITE_NAME}`,

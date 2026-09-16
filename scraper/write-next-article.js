@@ -31,6 +31,7 @@ const path = require('node:path');
 const { ask, extractJson, jstDate, DEFAULT_MODEL } = require('./lib/anthropic');
 const { checkArticle, CLOSING_HEADING_JA, FORBIDDEN } = require('./lib/article-guards');
 const { loadRawText } = require('./lib/verify');
+const { categorise, categoryOf } = require('./lib/categories');
 
 const ROOT = path.join(__dirname, '..');
 const QUEUE_PATH = path.join(ROOT, 'data', 'article-queue.json');
@@ -42,6 +43,15 @@ const MAX_ATTEMPTS = 3;
 const ICONS = ['card', 'home', 'health', 'move', 'guide', 'clock', 'work', 'study', 'status', 'designated'];
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+
+/** 公開済みの記事（分類ごとの本数を数えるのに使う）。 */
+function readPublishedArticles(dir = ARTICLES_DIR) {
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter(f => f.endsWith('.json'))
+    .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+}
 
 /** 公開済みの記事の数。 */
 function publishedCount(dir = ARTICLES_DIR) {
@@ -86,6 +96,19 @@ function pickTopic(queue, { topicId = null } = {}) {
   const ready = candidates.filter(t => t.sources.length > 0 && t.sources.every(id => loadRawText(id) != null));
   const blocked = candidates.length - ready.length;
   if (ready.length === 0) return { topic: null, blocked };
+
+  // 【どれから書くか】記事の少ない分類から先に書く。
+  // 題材リストの順（在留資格1〜15、来日直後16〜35…）のまま書くと、
+  // トップの入口タイルが1つずつしか埋まらず、何週間も「準備中」が並ぶ。
+  // 分類をまたいで書けば、読む人にとっても偏りが減る。同じ分類の中では番号順。
+  const counts = new Map(
+    categorise({ queue, articles: readPublishedArticles() }).map(c => [c.id, c.count])
+  );
+  const countOf = topic => {
+    const category = categoryOf(topic.n);
+    return category ? counts.get(category.id) ?? 0 : 99;
+  };
+  ready.sort((a, b) => countOf(a) - countOf(b) || a.n - b.n);
   return { topic: ready[0], blocked };
 }
 

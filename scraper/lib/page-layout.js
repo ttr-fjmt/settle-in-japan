@@ -91,58 +91,63 @@ const SEIGAIHA = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  * トップページの絵。富士と波を、浮世絵の色で描いたもの（自作のSVG）。
  * 文字は重ねない。絵の上に文字を置くと読みにくくなるため、絵は絵として独立させる。
  *
+ * 【横長の帯にしている理由】
+ * 以前は縦に大きい絵だったため、パソコンでもスマホでも、絵だけで最初の画面が埋まり、
+ * 入口のタイルが下に押し出されていた。見せたいのは入口なので、絵は帯の高さに抑える。
+ *
  * 【動きについて】
  * 波はゆっくり横に流し、日は静かに上下して光がまたたく。動きはCSSだけで作る（JavaScriptを使わない）。
- * 波の絵は同じ形を2つ並べて、1つぶん（800）動かしたら元に戻す。継ぎ目が出ないようにするため。
+ * 波の絵は同じ形を2つ並べて、1つぶん（1200）動かしたら元に戻す。継ぎ目が出ないようにするため。
  *
  * 目が疲れる速さにはしない。また、端末の設定で「視差効果を減らす」を選んでいる人には
  * 動きを止める（prefers-reduced-motion）。動きが苦手な人・乗り物酔いしやすい人がいるため。
  */
 function heroArt() {
-  const wave = 'M0 196 C 90 176 150 214 240 196 C 330 178 390 214 480 196 C 570 178 630 214 720 196 C 760 188 780 192 800 196 L800 280 L0 280 Z';
-  const waveBack = 'M0 202 C 100 186 160 216 260 202 C 360 188 420 218 520 202 C 620 186 680 216 780 202 C 790 200 795 201 800 202 L800 280 L0 280 Z';
+  const waveFront =
+    'M0 130 C 120 112 210 148 330 130 C 450 112 540 148 660 130 C 780 112 870 148 990 130 C 1080 118 1140 124 1200 130 L1200 220 L0 220 Z';
+  const waveBack =
+    'M0 140 C 150 124 240 154 390 140 C 540 126 630 156 780 140 C 930 124 1020 154 1170 140 L1200 140 L1200 220 L0 220 Z';
   return `<div class="hero-art" role="img" aria-label="A stylised view of Mount Fuji beyond the waves / 波の向こうの富士山を描いた絵">
-<svg viewBox="0 0 800 260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#e8dcc4"/>
-      <stop offset="60%" stop-color="#f2ead9"/>
+      <stop offset="70%" stop-color="#f2ead9"/>
     </linearGradient>
     <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#2a5183"/>
       <stop offset="100%" stop-color="#16294a"/>
     </linearGradient>
     <radialGradient id="glow">
-      <stop offset="0%" stop-color="#c4573c" stop-opacity="0.45"/>
+      <stop offset="0%" stop-color="#c4573c" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#c4573c" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="frame"><rect width="800" height="260"/></clipPath>
+    <clipPath id="frame"><rect width="1200" height="220"/></clipPath>
   </defs>
   <g clip-path="url(#frame)">
-    <rect width="800" height="260" fill="url(#sky)"/>
+    <rect width="1200" height="220" fill="url(#sky)"/>
 
     <g class="sun">
-      <circle cx="626" cy="74" r="70" fill="url(#glow)" class="sun-glow"/>
-      <circle cx="626" cy="74" r="34" fill="#c4573c" opacity="0.85"/>
+      <circle cx="880" cy="62" r="92" fill="url(#glow)" class="sun-glow"/>
+      <circle cx="880" cy="62" r="40" fill="#c4573c" opacity="0.85"/>
     </g>
 
-    <path d="M255 182 L372 66 Q385 53 398 66 L515 182 Z" fill="#1f3a63"/>
-    <path d="M338 100 L372 66 Q385 53 398 66 L432 100 L412 92 L396 104 L378 90 L358 104 Z" fill="#f5f0e6"/>
-    <path d="M0 182 H800 V196 H0 Z" fill="#2a5183" opacity="0.35"/>
+    <path d="M476 140 L588 32 Q600 20 612 32 L724 140 Z" fill="#1f3a63"/>
+    <path d="M555 72 L588 32 Q600 20 612 32 L645 72 L626 63 L610 76 L592 61 L572 76 Z" fill="#f5f0e6"/>
 
-    <g class="sea-back" opacity="0.55">
+    <g class="sea-back" opacity="0.5">
       <path d="${waveBack}" fill="#2a5183"/>
-      <path d="${waveBack}" fill="#2a5183" transform="translate(800,0)"/>
+      <path d="${waveBack}" fill="#2a5183" transform="translate(1200,0)"/>
     </g>
     <g class="sea-front">
-      <path d="${wave}" fill="url(#sea)"/>
-      <path d="${wave}" fill="url(#sea)" transform="translate(800,0)"/>
+      <path d="${waveFront}" fill="url(#sea)"/>
+      <path d="${waveFront}" fill="url(#sea)" transform="translate(1200,0)"/>
     </g>
 
-    <g class="foam" fill="none" stroke="#f5f0e6" stroke-opacity="0.5" stroke-width="2.5" stroke-linecap="round">
-      <path d="M60 222 q22 -14 44 0 q22 14 44 0"/>
-      <path d="M300 232 q22 -14 44 0 q22 14 44 0" class="foam-2"/>
-      <path d="M560 224 q22 -14 44 0 q22 14 44 0" class="foam-3"/>
+    <g class="foam" fill="none" stroke="#f5f0e6" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round">
+      <path d="M90 176 q28 -16 56 0 q28 16 56 0"/>
+      <path d="M430 184 q28 -16 56 0 q28 16 56 0" class="foam-2"/>
+      <path d="M820 178 q28 -16 56 0 q28 16 56 0" class="foam-3"/>
     </g>
   </g>
 </svg>
@@ -227,14 +232,14 @@ header.site nav a:hover{border-bottom-color:var(--vermilion)}
 /* トップの絵 */
 .hero-art{line-height:0;background:#f2ead9}
 /* 波はゆっくり流れ、日は静かに上下する。動きはここだけ。本文には動きを入れない */
-@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-800px)}}
-@keyframes driftBack{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-1200px)}}
+@keyframes driftBack{from{transform:translateX(0)}to{transform:translateX(-1200px)}}
 @keyframes sunRise{0%{transform:translateY(4px)}100%{transform:translateY(-8px)}}
 @keyframes sunGlow{0%{opacity:.55}100%{opacity:1}}
 @keyframes bob{0%{transform:translateY(0)}100%{transform:translateY(-4px)}}
 .sea-front{animation:drift 26s linear infinite}
 .sea-back{animation:driftBack 44s linear infinite}
-.sun{animation:sunRise 30s ease-in-out infinite alternate;transform-origin:626px 74px}
+.sun{animation:sunRise 30s ease-in-out infinite alternate;transform-origin:880px 62px}
 .sun-glow{animation:sunGlow 7s ease-in-out infinite alternate}
 .foam path{animation:bob 5s ease-in-out infinite alternate}
 .foam .foam-2{animation-duration:6.5s;animation-delay:-2s}
@@ -242,7 +247,7 @@ header.site nav a:hover{border-bottom-color:var(--vermilion)}
 @media (prefers-reduced-motion:reduce){
   .sea-front,.sea-back,.sun,.sun-glow,.foam path{animation:none}
 }
-.hero-art svg{width:100%;height:auto;aspect-ratio:800/260;display:block}
+.hero-art svg{width:100%;height:clamp(140px,17vw,200px);display:block}
 
 h1{font-size:clamp(1.55rem,5vw,2.15rem);line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
 h1 .ja{display:block;font-size:.95rem;color:var(--ink-2);font-weight:400;margin-top:6px}
@@ -285,7 +290,60 @@ td.name small{display:block;font-weight:400;color:var(--ink-3);font-size:.8rem;m
 .source{margin-top:30px;padding-top:18px;border-top:2px solid var(--line);font-size:.85rem;color:var(--ink-2)}
 .source ul{margin:6px 0;padding-left:1.2em}
 
-/* 入口のカード（トップ・記事一覧） */
+/* 読み上げ用にだけ残す見出し（画面には出さない） */
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* トップ：まず読む1本 */
+.start{display:flex;gap:18px;align-items:center;background:var(--indigo-deep);color:#fffdf8;
+  border-radius:6px;padding:24px 26px;margin:0 0 34px;border-bottom:3px solid var(--vermilion)}
+.start-body{flex:1;min-width:0}
+.start-kicker{display:inline-block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--vermilion);color:#fff;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.start-title{font-size:clamp(1.35rem,4vw,1.95rem);font-weight:700;line-height:1.3;margin:0 0 6px}
+.start-title .ja{display:block;font-size:.88rem;color:#c9d6e6;font-weight:400;margin-top:4px}
+.start-desc{margin:0 0 14px;color:#d8e2ee;font-size:.9rem;line-height:1.7}
+.start-go{display:inline-block;font-weight:700;color:#fff;text-decoration:none;
+  border-bottom:2px solid var(--vermilion);padding-bottom:2px}
+.start-go:hover{color:#ffd9ce}
+.start-art{color:#3a5f96;flex:none}
+
+/* トップ：用事ごとの入口タイル */
+h2.tiles-h{margin:0 0 14px;font-size:1.05rem}
+h2.tiles-h .ja{font-weight:400;color:var(--ink-2);font-size:.82rem}
+ul.tiles{list-style:none;margin:0 0 30px;padding:0;display:grid;gap:10px;
+  grid-template-columns:repeat(3,1fr)}
+ul.tiles li > *{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px 12px 16px;
+  text-decoration:none;color:var(--ink);height:100%}
+ul.tiles a:hover{border-color:var(--indigo);background:var(--indigo-soft)}
+.tile-icon{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;
+  background:var(--indigo-soft);color:var(--indigo);margin-bottom:6px}
+.tile-en{font-weight:700;font-size:.95rem;line-height:1.35}
+.tile-ja{font-size:.8rem;color:var(--ink-2)}
+.tile-n{font-size:.7rem;color:var(--ink-3);border:1px solid var(--line);border-radius:999px;
+  padding:1px 9px;margin-top:5px}
+ul.tiles .soon > *{opacity:.6}
+ul.tiles .soon .tile-icon{background:var(--surface-2)}
+
+/* トップ：在留資格を選ぶ */
+.pick{display:flex;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);
+  border-radius:6px;padding:16px 18px;margin-bottom:8px}
+.pick-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;
+  background:var(--vermilion-soft);color:var(--vermilion);flex:none}
+.pick-body{min-width:0;flex:1}
+.pick b{display:block;font-size:.95rem;margin-bottom:6px}
+.pick b .ja{font-weight:400;color:var(--ink-2);font-size:.8rem;margin-left:8px}
+.pick select{width:100%;max-width:26rem;padding:9px 10px;font:inherit;font-size:.88rem;
+  border:1px solid var(--line);border-radius:4px;background:var(--surface);color:var(--ink)}
+
+@media (max-width:640px){
+  ul.tiles{grid-template-columns:repeat(2,1fr)}
+  .start{flex-direction:column;align-items:flex-start;padding:20px}
+  .start-art{display:none}
+}
+
+/* 入口のカード（記事一覧） */
 ul.cards{list-style:none;margin:0;padding:0;display:grid;gap:8px;
   grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
 ul.cards .card{margin:0;display:flex;flex-direction:column;gap:4px}
@@ -298,6 +356,14 @@ ul.cards .card p{margin:6px 0 0;font-size:.88rem;color:var(--ink-2);line-height:
 ul.cards .card.soon{opacity:.72}
 ul.cards .card .tag{align-self:flex-start;margin-top:8px;font-size:.72rem;padding:1px 8px;border-radius:999px;
   background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line)}
+
+/* 記事一覧：分類へ飛ぶ小さな入口 */
+nav.jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+nav.jump a{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;text-decoration:none;
+  color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 13px}
+nav.jump a:hover{border-color:var(--indigo);background:var(--indigo-soft)}
+nav.jump .icon{color:var(--indigo)}
+nav.jump .ja{color:var(--ink-2);font-size:.75rem}
 
 /* 記事：英語と日本語を並べる。引用（公式の日本語）は見た目で区別する */
 article section{margin-bottom:36px}
