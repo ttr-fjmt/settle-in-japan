@@ -31,7 +31,9 @@
     "title_ja": "在留資格認定証明書とは何か、誰が申請するのか",
     "phase": "before-arrival",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "apply-coe"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -41,7 +43,9 @@
     "title_ja": "短期滞在（観光）で日本に来られる期間",
     "phase": "before-arrival",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "visa-temporary-visitor"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -52,7 +56,7 @@
     "phase": "before-arrival",
     "basis": "ISA",
     "sources": [
-      "visa-list"
+      "visa-gijinkoku"
     ],
     "status": "pending",
     "note": "検索が多い"
@@ -64,7 +68,7 @@
     "phase": "before-arrival",
     "basis": "ISA",
     "sources": [
-      "visa-list"
+      "visa-ssw"
     ],
     "status": "pending",
     "note": "家族帯同の違いが要点"
@@ -75,7 +79,10 @@
     "title_ja": "技能実習と特定技能はどう違うのか",
     "phase": "before-arrival",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "visa-technical-intern",
+      "visa-ssw"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -85,7 +92,9 @@
     "title_ja": "高度専門職のポイント制とは",
     "phase": "before-arrival",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "visa-highly-skilled"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -96,7 +105,7 @@
     "phase": "before-arrival",
     "basis": "ISA",
     "sources": [
-      "visa-list"
+      "visa-student"
     ],
     "status": "pending",
     "note": ""
@@ -121,7 +130,7 @@
     "phase": "before-arrival",
     "basis": "ISA",
     "sources": [
-      "visa-list"
+      "visa-business-manager"
     ],
     "status": "pending",
     "note": ""
@@ -225,7 +234,9 @@
     "title_ja": "マイナンバーカードの作り方",
     "phase": "after-arrival",
     "basis": "MIC",
-    "sources": [],
+    "sources": [
+      "jutei-mynumber-card"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -619,7 +630,9 @@
     "title_ja": "資格外活動許可（アルバイトをする）",
     "phase": "daily-life",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "apply-work-permission"
+    ],
     "status": "pending",
     "note": "留学生に必須"
   },
@@ -630,6 +643,7 @@
     "phase": "long-term",
     "basis": "ISA",
     "sources": [
+      "apply-extend-period",
       "procedures-index"
     ],
     "status": "pending",
@@ -642,6 +656,7 @@
     "phase": "long-term",
     "basis": "ISA",
     "sources": [
+      "apply-change-status",
       "procedures-index"
     ],
     "status": "pending",
@@ -653,7 +668,9 @@
     "title_ja": "就労資格証明書とは",
     "phase": "long-term",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "apply-work-certificate"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -663,7 +680,10 @@
     "title_ja": "転職したときの届出（14日以内）",
     "phase": "long-term",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "notify-contract-org",
+      "notify-activity-org"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -705,7 +725,10 @@
     "title_ja": "家族を日本に呼ぶ（家族滞在の申請）",
     "phase": "long-term",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "apply-coe",
+      "visa-dependent"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -715,7 +738,9 @@
     "title_ja": "再入国許可・みなし再入国",
     "phase": "long-term",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "apply-reentry"
+    ],
     "status": "pending",
     "note": ""
   },
@@ -909,7 +934,9 @@
     "title_ja": "外国人在留支援センター（FRESC）とは",
     "phase": "trouble",
     "basis": "ISA",
-    "sources": [],
+    "sources": [
+      "fresc"
+    ],
     "status": "pending",
     "note": "相談窓口図鑑と連動"
   },
@@ -919,7 +946,10 @@
     "title_ja": "多言語で相談できる窓口一覧",
     "phase": "trouble",
     "basis": "ISA / LOCAL",
-    "sources": [],
+    "sources": [
+      "consultation-desks",
+      "fresc"
+    ],
     "status": "pending",
     "note": ""
   },
