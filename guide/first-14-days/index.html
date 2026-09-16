@@ -36,7 +36,7 @@
     var el = document.createElement('div');
     el.textContent = text;
     el.style.cssText = 'position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:9999;' +
-      'background:#16212e;color:#fff;font-size:13px;line-height:1.6;padding:12px 18px;border-radius:8px;' +
+      'background:#16294a;color:#fff;font-size:13px;line-height:1.6;padding:12px 18px;border-radius:8px;' +
       'box-shadow:0 4px 16px rgba(0,0,0,.25);max-width:calc(100vw - 32px);text-align:center';
     document.body.appendChild(el);
     setTimeout(function () { el.remove(); }, 8000);
@@ -51,64 +51,154 @@
   gtag('config', 'G-44PECD16GK');
 </script>
 <style>
-:root{--ground:#f2f4f7;--surface:#fff;--ink:#16212e;--ink-2:#4a586a;--line:#dde3ea;--indigo:#23438a;--ok:#1f6b4f;--ok-bg:#e4f1eb;--no:#8a3a2a;--no-bg:#f8ebe7;--unknown:#6d5a1f;--unknown-bg:#f6f0dd}
+/* 浮世絵の色：藍（プルシアンブルー）・生成りの紙・朱 */
+:root{
+  --paper:#f4efe4;        /* 生成り（地の色） */
+  --surface:#fffdf8;      /* 本文を置く紙 */
+  --surface-2:#f8f4ea;
+  --ink:#1a2233;
+  --ink-2:#4d5a6b;
+  --ink-3:#7a8595;
+  --line:#ddd4c2;
+  --indigo:#1f3a63;       /* 藍 */
+  --indigo-deep:#16294a;
+  --indigo-soft:#e6ecf4;
+  --vermilion:#c4573c;    /* 朱 */
+  --vermilion-soft:#f7e9e4;
+  --ok:#1f6b4f;
+  --ok-soft:#e2efe8;
+  --warn:#8a6d1f;
+  --warn-soft:#f6efd9;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.8 "Hiragino Sans","Yu Gothic",system-ui,sans-serif}
-.wrap{max-width:60rem;margin:0 auto;padding:24px 16px 64px}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.85 "Hiragino Sans","Yu Gothic",system-ui,sans-serif}
+.wrap{max-width:62rem;margin:0 auto;padding:28px 16px 64px}
 a{color:var(--indigo)}
-header.site{background:var(--surface);border-bottom:1px solid var(--line)}
-header.site .wrap{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.brand{font-weight:700;text-decoration:none;color:var(--ink)}
-.brand span{display:block;font-size:.72rem;font-weight:400;color:var(--ink-2)}
-h1{font-size:clamp(1.5rem,5vw,2.1rem);line-height:1.3;margin:0 0 6px}
-h1 .ja{display:block;font-size:.95rem;color:var(--ink-2);font-weight:400;margin-top:4px}
-h2{font-size:1.15rem;margin:36px 0 10px}
+.icon{vertical-align:-4px;flex:none}
+
+/* ヘッダー：藍地に青海波の地紋 */
+header.site{background:var(--indigo-deep);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30' viewBox='0 0 60 30'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16' stroke-width='1.2'%3E%3Ccircle cx='30' cy='30' r='27'/%3E%3Ccircle cx='30' cy='30' r='19'/%3E%3Ccircle cx='30' cy='30' r='11'/%3E%3Ccircle cx='0' cy='30' r='27'/%3E%3Ccircle cx='0' cy='30' r='19'/%3E%3Ccircle cx='0' cy='30' r='11'/%3E%3Ccircle cx='60' cy='30' r='27'/%3E%3Ccircle cx='60' cy='30' r='19'/%3E%3Ccircle cx='60' cy='30' r='11'/%3E%3Ccircle cx='15' cy='0' r='27'/%3E%3Ccircle cx='45' cy='0' r='27'/%3E%3C/g%3E%3C/svg%3E");color:#f4efe4;
+  border-bottom:3px solid var(--vermilion)}
+header.site .wrap{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;
+  gap:10px 20px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:1.05rem;text-decoration:none;color:#fffdf8;letter-spacing:.01em}
+.brand span{display:block;font-size:.72rem;font-weight:400;color:#c9d6e6}
+header.site nav{display:flex;gap:16px;flex-wrap:wrap}
+header.site nav a{color:#e8eef6;text-decoration:none;font-size:.9rem;display:inline-flex;align-items:center;gap:6px;
+  padding:4px 0;border-bottom:1px solid transparent}
+header.site nav a:hover{border-bottom-color:var(--vermilion)}
+
+/* トップの絵 */
+.hero-art{line-height:0;background:#f2ead9}
+/* 波はゆっくり流れ、日は静かに上下する。動きはここだけ。本文には動きを入れない */
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes driftBack{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+@keyframes sunRise{0%{transform:translateY(4px)}100%{transform:translateY(-8px)}}
+@keyframes sunGlow{0%{opacity:.55}100%{opacity:1}}
+@keyframes bob{0%{transform:translateY(0)}100%{transform:translateY(-4px)}}
+.sea-front{animation:drift 26s linear infinite}
+.sea-back{animation:driftBack 44s linear infinite}
+.sun{animation:sunRise 30s ease-in-out infinite alternate;transform-origin:626px 74px}
+.sun-glow{animation:sunGlow 7s ease-in-out infinite alternate}
+.foam path{animation:bob 5s ease-in-out infinite alternate}
+.foam .foam-2{animation-duration:6.5s;animation-delay:-2s}
+.foam .foam-3{animation-duration:8s;animation-delay:-4s}
+@media (prefers-reduced-motion:reduce){
+  .sea-front,.sea-back,.sun,.sun-glow,.foam path{animation:none}
+}
+.hero-art svg{width:100%;height:auto;aspect-ratio:800/260;display:block}
+
+h1{font-size:clamp(1.55rem,5vw,2.15rem);line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
+h1 .ja{display:block;font-size:.95rem;color:var(--ink-2);font-weight:400;margin-top:6px}
+h2{font-size:1.2rem;margin:40px 0 12px;display:flex;align-items:center;gap:9px}
 h2 .ja{font-weight:400;color:var(--ink-2);font-size:.85rem}
-.lead{color:var(--ink-2);margin:0 0 20px}
-table{width:100%;border-collapse:collapse;background:var(--surface);font-size:.92rem}
-.scroll{overflow-x:auto;border:1px solid var(--line)}
-th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;line-break:strict;word-break:normal;overflow-wrap:normal}
+h2 .icon{color:var(--indigo)}
+.lead{color:var(--ink-2);margin:0 0 22px}
+
+/* 表：行を見分けやすくする */
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:3px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:.93rem}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;
+  line-break:strict;word-break:normal;overflow-wrap:normal}
 th:nth-child(3),td:nth-child(3){min-width:15rem}
-thead th{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:#fafbfc;white-space:nowrap}
+thead th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);
+  background:var(--surface-2);white-space:nowrap;border-bottom:2px solid var(--line)}
+tbody tr:nth-child(even){background:var(--surface-2)}
+tbody tr:hover{background:var(--indigo-soft)}
 tbody tr:last-child td{border-bottom:0}
-td.name{white-space:nowrap;font-weight:700}
-td.name small{display:block;font-weight:400;color:var(--ink-2)}
-.pill{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.78rem;white-space:nowrap}
-.pill.yes{background:var(--ok-bg);color:var(--ok)}
-.pill.no{background:var(--no-bg);color:var(--no)}
-.pill.unknown{background:var(--unknown-bg);color:var(--unknown)}
-.card{background:var(--surface);border:1px solid var(--line);padding:18px 20px;margin-bottom:2px}
-.card h3{margin:0 0 8px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
-.official{font-size:1rem;line-height:1.9}
+td.name{white-space:nowrap}
+td.name a{font-weight:700;font-size:1rem;text-decoration:none;border-bottom:1px solid transparent}
+td.name a:hover{border-bottom-color:var(--indigo)}
+td.name small{display:block;font-weight:400;color:var(--ink-3);font-size:.8rem;margin-top:2px}
+
+.pill{display:inline-flex;align-items:center;gap:5px;padding:2px 10px;border-radius:999px;
+  font-size:.78rem;font-weight:500;white-space:nowrap}
+.pill.yes{background:var(--ok-soft);color:var(--ok)}
+.pill.no{background:var(--vermilion-soft);color:var(--vermilion)}
+.pill.unknown{background:var(--warn-soft);color:var(--warn)}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:18px 20px;margin-bottom:6px}
+.card h3{margin:0 0 8px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);
+  display:flex;align-items:center;gap:7px}
+.card h3 .icon{color:var(--indigo)}
+.official{font-size:1rem;line-height:1.95}
 .official li{margin-bottom:10px}
-.note{background:var(--surface);border-left:3px solid var(--indigo);padding:14px 16px;color:var(--ink-2);font-size:.9rem;margin:20px 0}
-.source{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-2)}
+
+.note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--indigo);
+  padding:15px 18px;color:var(--ink-2);font-size:.9rem;margin:22px 0;border-radius:3px}
+.source{margin-top:30px;padding-top:18px;border-top:2px solid var(--line);font-size:.85rem;color:var(--ink-2)}
 .source ul{margin:6px 0;padding-left:1.2em}
-/* 記事：英語と日本語を並べる。引用（公式の日本語）は見た目で区別する。 */
-article section{margin-bottom:34px}
+
+/* 入口のカード（トップ・記事一覧） */
+ul.cards{list-style:none;margin:0;padding:0;display:grid;gap:8px;
+  grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+ul.cards .card{margin:0;display:flex;flex-direction:column;gap:4px}
+ul.cards .card .head{display:flex;align-items:center;gap:9px;font-weight:700}
+ul.cards .card .head .icon{color:var(--indigo)}
+ul.cards .card a{text-decoration:none}
+ul.cards .card a:hover .head{color:var(--indigo)}
+ul.cards .card .ja{color:var(--ink-2);font-size:.88rem}
+ul.cards .card p{margin:6px 0 0;font-size:.88rem;color:var(--ink-2);line-height:1.75}
+ul.cards .card.soon{opacity:.72}
+ul.cards .card .tag{align-self:flex-start;margin-top:8px;font-size:.72rem;padding:1px 8px;border-radius:999px;
+  background:var(--surface-2);color:var(--ink-3);border:1px solid var(--line)}
+
+/* 記事：英語と日本語を並べる。引用（公式の日本語）は見た目で区別する */
+article section{margin-bottom:36px}
 article h1{margin-bottom:10px}
 p.en{margin:0 0 4px}
 p.ja{margin:0 0 18px;color:var(--ink-2);font-size:.95rem}
-blockquote.quote{margin:18px 0;padding:14px 18px;background:var(--surface);border-left:3px solid var(--indigo)}
-blockquote.quote p{margin:0 0 8px;font-size:.98rem;line-height:1.9}
+blockquote.quote{margin:18px 0;padding:15px 18px;background:var(--surface);
+  border:1px solid var(--line);border-left:4px solid var(--vermilion);border-radius:3px}
+blockquote.quote p{margin:0 0 8px;font-size:.98rem;line-height:1.95}
 blockquote.quote cite{font-style:normal;font-size:.8rem;color:var(--ink-2)}
-ul.cards{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-ul.cards .card{padding:18px 20px}
-ul.cards .card .ja{display:block;color:var(--ink-2);font-size:.9rem;margin-top:2px}
-ul.cards .card p{margin:8px 0 0;font-size:.9rem;color:var(--ink-2)}
-footer.site{margin-top:48px;border-top:1px solid var(--line);background:var(--surface)}
-footer.site .wrap{padding:20px 16px;font-size:.85rem;color:var(--ink-2)}
-@media(prefers-color-scheme:dark){
-:root{--ground:#11161d;--surface:#181f28;--ink:#e9eef4;--ink-2:#aab6c4;--line:#2a3340;--indigo:#93b2ee;--ok:#7cc9a6;--ok-bg:#15281f;--no:#e5a08c;--no-bg:#2d1e1a;--unknown:#d8c078;--unknown-bg:#2a2617}
-thead th{background:#1d242e}
+
+footer.site{margin-top:52px;background:var(--indigo-deep);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30' viewBox='0 0 60 30'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16' stroke-width='1.2'%3E%3Ccircle cx='30' cy='30' r='27'/%3E%3Ccircle cx='30' cy='30' r='19'/%3E%3Ccircle cx='30' cy='30' r='11'/%3E%3Ccircle cx='0' cy='30' r='27'/%3E%3Ccircle cx='0' cy='30' r='19'/%3E%3Ccircle cx='0' cy='30' r='11'/%3E%3Ccircle cx='60' cy='30' r='27'/%3E%3Ccircle cx='60' cy='30' r='19'/%3E%3Ccircle cx='60' cy='30' r='11'/%3E%3Ccircle cx='15' cy='0' r='27'/%3E%3Ccircle cx='45' cy='0' r='27'/%3E%3C/g%3E%3C/svg%3E");color:#d8e2ee}
+footer.site .wrap{padding:24px 16px;font-size:.85rem}
+footer.site a{color:#cfe0f2}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#111821;--surface:#1a222e;--surface-2:#202936;--ink:#e9eef4;--ink-2:#aab6c4;--ink-3:#8593a3;
+    --line:#2e3a49;--indigo:#93b2ee;--indigo-deep:#0e1723;--indigo-soft:#1b2740;
+    --vermilion:#e0917a;--vermilion-soft:#2d1e1a;--ok:#7cc9a6;--ok-soft:#15281f;
+    --warn:#d8c078;--warn-soft:#2a2617;
+  }
+  .hero-art{background:#1a222e}
+  tbody tr:hover{background:var(--indigo-soft)}
 }
 </style>
 </head>
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="/">Settle in Japan<span>日本移住ガイド</span></a>
-<nav><a href="/visa/">Residence statuses / 在留資格</a> ・ <a href="/guide/">Guides / 手続きの解説</a></nav>
+<nav>
+  <a href="/visa/"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="8.5" cy="12" r="2"/><path d="M14 10h4M14 14h4"/></svg>Residence statuses / 在留資格</a>
+  <a href="/guide/"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>Guides / 手続きの解説</a>
+</nav>
 </div></header>
+
 <main class="wrap">
 
 <article>
@@ -119,7 +209,7 @@ thead th{background:#1d242e}
 このページは公式ページに書かれていることを、日本語の原文を引用しながら説明しています。個別の事情についての判断はしません。窓口では引用部分をそのまま見せてください。</p>
 
 <section>
-<h2>Three deadlines fall in the same two weeks <span class="ja">/ 同じ2週間に、3つの期限が重なります</span></h2>
+<h2><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>Three deadlines fall in the same two weeks <span class="ja">/ 同じ2週間に、3つの期限が重なります</span></h2>
 <p class="en">Japan gives new residents a short window for the paperwork that follows arrival. Three separate offices expect to hear from you, and each of them uses the same figure: 14 days. They are not one procedure, and doing one does not complete the others.</p>
 <p class="ja">来日したあとの手続きには、短い期限が決められています。窓口は3つに分かれていて、どれも同じ「14日以内」という期限です。1つの手続きを済ませても、ほかの手続きは終わりません。</p>
 <p class="en">The three are: the move-in notification at your city or ward office, the notification of your place of residence for your residence card, and enrolment in National Health Insurance. This page explains each one, quoting the official pages in Japanese so you can show them at the counter.</p>
@@ -130,7 +220,7 @@ thead th{background:#1d242e}
 </blockquote>
 </section>
 <section>
-<h2>1. Move-in notification at the city or ward office <span class="ja">/ 1. 市区町村への転入届</span></h2>
+<h2><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>1. Move-in notification at the city or ward office <span class="ja">/ 1. 市区町村への転入届</span></h2>
 <p class="en">The Ministry of Internal Affairs and Communications states who has to do this, when, and what to bring. Note that people with the Temporary Visitor status, or a period of stay of three months or less, are not included.</p>
 <p class="ja">総務省のページに、誰が・いつまでに・何を持って行くのかが書かれています。「短期滞在」の在留資格の方や、在留期間が3月以下の方は対象に含まれない点にご注意ください。</p>
 <p class="en">If your family lives with you, the office also asks for a document proving your relationship to the head of the household, issued by a public authority in your home country, together with a Japanese translation.</p>
@@ -145,7 +235,7 @@ thead th{background:#1d242e}
 </blockquote>
 </section>
 <section>
-<h2>2. Notification of your place of residence <span class="ja">/ 2. 住居地の届出（在留カード）</span></h2>
+<h2><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>2. Notification of your place of residence <span class="ja">/ 2. 住居地の届出（在留カード）</span></h2>
 <p class="en">The Immigration Services Agency sets the same 14-day window for notifying your place of residence after you first land. The person themselves files it, except for those under 16, and a family member living with you can file on their behalf in the cases the agency lists.</p>
 <p class="ja">出入国在留管理庁も、新規上陸後の住居地の届出について同じ14日以内という期限を定めています。届け出るのは本人で、16歳未満の方は除かれます。同居の親族による代理の届出も、公式ページに挙げられた場合に限って認められています。</p>
 <p class="en">There is no fee for this notification.</p>
@@ -164,7 +254,7 @@ thead th{background:#1d242e}
 </blockquote>
 </section>
 <section>
-<h2>3. National Health Insurance <span class="ja">/ 3. 国民健康保険の加入</span></h2>
+<h2><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>3. National Health Insurance <span class="ja">/ 3. 国民健康保険の加入</span></h2>
 <p class="en">The Ministry of Health, Labour and Welfare states that the paperwork for joining or leaving National Health Insurance goes to the counter at your municipality within 14 days. If you join the health insurance at your workplace instead, ask your employer which applies to you.</p>
 <p class="ja">厚生労働省のページには、国民健康保険の加入・脱退の届出を14日以内に市町村の窓口へ提出する必要がある、と書かれています。勤務先の健康保険に入る場合もあるので、どちらに当てはまるかは勤務先にご確認ください。</p>
 <blockquote class="quote">
@@ -173,7 +263,7 @@ thead th{background:#1d242e}
 </blockquote>
 </section>
 <section>
-<h2>The same window applies when you move again <span class="ja">/ 引っ越したときも、同じ期限です</span></h2>
+<h2><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>The same window applies when you move again <span class="ja">/ 引っ越したときも、同じ期限です</span></h2>
 <p class="en">If you move to a new address later, the Immigration Services Agency asks for a notification within 14 days of moving in, on the same terms. Keep this page for that day as well.</p>
 <p class="ja">その後に引っ越したときも、出入国在留管理庁は新住居地に移転した日から14日以内の届出を求めています。条件は同じです。引っ越しの日にも、このページを見返してください。</p>
 <blockquote class="quote">
@@ -182,7 +272,7 @@ thead th{background:#1d242e}
 </blockquote>
 </section>
 <section>
-<h2>If something does not fit your situation <span class="ja">/ 自分の場合はどうなるか分からないとき</span></h2>
+<h2><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l4 4v12H6z"/><path d="M15 4v4h4"/><path d="M9 13h7M9 16h7"/></svg>If something does not fit your situation <span class="ja">/ 自分の場合はどうなるか分からないとき</span></h2>
 <p class="en">This page explains what the official pages say. It does not judge individual cases. If your situation is not covered above, ask your city or ward office, or a regional immigration bureau. They answer these questions for free.</p>
 <p class="ja">このページは公式ページに書かれていることを説明したもので、個別の事情についての判断はしません。上に当てはまらない場合は、お住まいの市区町村の窓口か、地方出入国在留管理官署にお尋ねください。相談は無料です。</p>
 

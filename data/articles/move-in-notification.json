@@ -1,0 +1,97 @@
+{
+  "id": "move-in-notification",
+  "title_en": "How to register your address at the city office",
+  "title_ja": "住民登録（転入届）の手順",
+  "description": "市区町村への転入届のやり方を、総務省の公式ページの記載にもとづいて説明します。期限、持ち物、家族と暮らす場合に必要な書類、住民票に何が記載されるかまで。",
+  "published_at": "2026-09-16",
+  "sources": [
+    "jutei-move",
+    "jutei-resident-record",
+    "residence-notify-new"
+  ],
+  "sections": [
+    {
+      "heading_en": "Who files it, and by when",
+      "heading_ja": "誰が・いつまでに届け出るか",
+      "body": [
+        {
+          "en": "The move-in notification is the first thing most people do at the city or ward office. The Ministry of Internal Affairs and Communications explains who it applies to and how long you have. People with the Temporary Visitor status, or a period of stay of three months or less, are not included.",
+          "ja": "転入届は、市区町村の窓口で最初に行う手続きです。誰が対象で、いつまでに行うのかは総務省のページに書かれています。「短期滞在」の在留資格の方や、在留期間が3月以下の方は対象に含まれません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "新たに日本に入国し、入管法上の在留資格をもって日本に中長期間在留する「中長期在留者」（在留カード交付対象者。「短期滞在」の在留資格や「3月」以下の在留期間を有する方などは含まれません。）の方は、市区町村に新たに住所を定めた日から14日以内に、在留カード（空港等で在留カードが交付されなかった方については、パスポート）などをお持ちいただいて、お住まいの市区町村に転入の届出を行う必要があります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "What to bring",
+      "heading_ja": "持ち物",
+      "body": [
+        {
+          "en": "Bring your residence card. If the card was not handed to you at the airport, bring your passport instead — the quoted sentence above says so directly.",
+          "ja": "在留カードを持って行きます。空港などで在留カードが交付されなかった方は、代わりにパスポートを持って行きます。上の引用にそう書かれています。"
+        },
+        {
+          "en": "If you live in the same household as family members, the office also asks for a document proving your relationship to the head of the household, issued by a public authority in your home country, with a Japanese translation attached.",
+          "ja": "家族と同じ世帯で暮らす場合は、世帯主との続柄を証明する文書（本国の政府等公的機関が発行したもの）と、その日本語訳も必要です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "世帯主の方とご本人との続柄を証明できる文書（本国の政府等公的機関が発行したもので、出生証明書、婚姻証明書などの原本）が必要となります。"
+        },
+        {
+          "source_id": "jutei-move",
+          "text": "なお、世帯主との続柄を証明できる文書については、併せて日本語の翻訳文も必要となりますので、ご注意ください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "What goes on your residence record",
+      "heading_ja": "住民票に何が載るか",
+      "body": [
+        {
+          "en": "Once you are registered, a residence record (juminhyo) is created for you. It carries the same basic items as for Japanese residents, plus items specific to foreign residents. You will be asked for a copy of it later — for opening accounts, for school, for many procedures.",
+          "ja": "登録されると、住民票が作られます。日本人と同じ基本事項に加えて、外国人住民に特有の事項も記載されます。住民票の写しは、このあといろいろな手続きで求められます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-resident-record",
+          "text": "外国人住民に係る住民票には、日本人と同様に、氏名、出生の年月日、男女の別、住所等の基本事項に加え、国民健康保険や国民年金等の被保険者に関する事項が記載されます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "This is not the same as the immigration notification",
+      "heading_ja": "入管への届出とは別の手続きです",
+      "body": [
+        {
+          "en": "The move-in notification at the city office and the notification of your place of residence to the Immigration Services Agency are two different things, even though both use the same 14-day window. Doing one does not complete the other.",
+          "ja": "市区町村への転入届と、出入国在留管理庁への住居地の届出は別の手続きです。どちらも同じ14日以内という期限ですが、片方を済ませてももう片方は終わりません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "residence-notify-new",
+          "text": "住居地を定めた日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "If something does not fit your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "This page explains what the official pages say, and does not judge individual cases. Ask your city or ward office — the counter that handles resident registration answers these questions.",
+          "ja": "このページは公式ページに書かれていることを説明したもので、個別の事情についての判断はしません。お住まいの市区町村の窓口（住民登録の担当）にお尋ねください。"
+        }
+      ]
+    }
+  ],
+  "icon": "home"
+}

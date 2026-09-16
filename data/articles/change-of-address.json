@@ -1,0 +1,121 @@
+{
+  "id": "change-of-address",
+  "title_en": "What to file when you move to a new address",
+  "title_ja": "住所が変わったときの届出",
+  "description": "引っ越したときに必要な届出を、出入国在留管理庁と総務省の公式ページの記載にもとづいて説明します。入管への住居地の届出、市区町村への転出届と転入届、日本を離れるときの扱いまで。",
+  "published_at": "2026-09-16",
+  "sources": [
+    "residence-notify-change",
+    "jutei-move",
+    "card-notify-change"
+  ],
+  "sections": [
+    {
+      "heading_en": "Two offices again, the same two weeks",
+      "heading_ja": "窓口は2つ、期限はまた2週間",
+      "body": [
+        {
+          "en": "Moving house repeats the pattern of your first weeks in Japan: the Immigration Services Agency wants to know your new place of residence, and the municipalities want the move-out and move-in notifications. Both use 14 days.",
+          "ja": "引っ越しのときは、来日直後と同じ形になります。出入国在留管理庁には新しい住居地を届け出て、市区町村には転出届と転入届を出します。どちらも14日以内です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "residence-notify-change",
+          "text": "新住居地に移転した日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "1. Move-out and move-in at the municipalities",
+      "heading_ja": "1. 市区町村への転出届と転入届",
+      "body": [
+        {
+          "en": "When you move to a different municipality, you file a move-out notification where you lived, and a move-in notification where you now live. The first office gives you a move-out certificate, which the second office asks for.",
+          "ja": "別の市区町村へ引っ越すときは、これまでの市区町村に転出届、新しい市区町村に転入届を出します。転出届のときに「転出証明書」が交付され、転入届のときにそれを持って行きます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "住民基本台帳制度では、外国人住民の方も、別の市区町村へ引っ越しをする際には、転出の届出をお住まいの市区町村にて行うとともに、転入の届出を新たにお住まいになる市区町村にて行っていただくことが必要となります。"
+        },
+        {
+          "source_id": "jutei-move",
+          "text": "新しい市区町村へ転入する際、住所を定めてから14日以内にこの「転出証明書」をお持ちいただいて転入の届出を行うことになります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "2. Notify your new place of residence",
+      "heading_ja": "2. 入管への住居地の届出",
+      "body": [
+        {
+          "en": "The Immigration Services Agency asks for the notification within 14 days of moving in. The person themselves files it, except for those under 16, and there is no fee.",
+          "ja": "出入国在留管理庁への届出は、新住居地に移転した日から14日以内です。届け出るのは本人で、16歳未満の方は除かれます。手数料はかかりません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "residence-notify-change",
+          "text": "新住居地に移転した日から１４日以内"
+        },
+        {
+          "source_id": "residence-notify-change",
+          "text": "届出人本人（１６歳未満の者を除く）"
+        },
+        {
+          "source_id": "residence-notify-change",
+          "text": "手数料はかかりません"
+        }
+      ]
+    },
+    {
+      "heading_en": "If something other than your address changes",
+      "heading_ja": "住所以外が変わったとき",
+      "body": [
+        {
+          "en": "Changes to the other items printed on your residence card — your name, date of birth, sex, nationality or region — have their own notification, with the same 14-day window.",
+          "ja": "在留カードに書かれている住所以外の事項（氏名・生年月日・性別・国籍地域）が変わったときは、別の届出があります。期限は同じ14日以内です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-notify-change",
+          "text": "氏名、生年月日、性別又は国籍・地域に変更が生じた中長期在留者"
+        },
+        {
+          "source_id": "card-notify-change",
+          "text": "上記の記載事項に変更が生じた日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are leaving Japan",
+      "heading_ja": "日本を離れるとき",
+      "body": [
+        {
+          "en": "Leaving Japan to live abroad calls for a move-out notification at your municipality, as a rule. Plan it before your last week, when offices may be closed on the day you fly.",
+          "ja": "日本を出国して海外で暮らす場合は、原則として市区町村への転出の届出が必要です。出発の直前は窓口が開いていないこともあるので、早めに済ませてください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "日本を出国して海外で暮らす場合は、原則としてお住まいの市区町村にて転出の届出が必要です。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If something does not fit your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "This page explains what the official pages say, and does not judge individual cases. Ask your city or ward office, or a regional immigration bureau.",
+          "ja": "このページは公式ページに書かれていることを説明したもので、個別の事情についての判断はしません。市区町村の窓口か、地方出入国在留管理官署にお尋ねください。"
+        }
+      ]
+    }
+  ],
+  "icon": "move"
+}

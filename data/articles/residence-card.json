@@ -1,0 +1,110 @@
+{
+  "id": "residence-card",
+  "title_en": "Your residence card: what it is and when you get it",
+  "title_ja": "在留カードの役割と、いつ受け取るか",
+  "description": "在留カードが何のためのカードで、誰に交付され、どこで受け取るのかを、出入国在留管理庁の公式ページの記載にもとづいて説明します。記載事項が変わったときの届出まで。",
+  "published_at": "2026-09-16",
+  "sources": [
+    "card-what",
+    "card-where",
+    "card-notify-change",
+    "residence-notify-new"
+  ],
+  "sections": [
+    {
+      "heading_en": "What the card is for",
+      "heading_ja": "何のためのカードか",
+      "body": [
+        {
+          "en": "The residence card is issued to people who are permitted to stay in Japan for the medium to long term. The Immigration Services Agency describes it as proof that you are staying lawfully, with a particular status and period of stay.",
+          "ja": "在留カードは、日本に中長期間在留することを許可された人に交付されます。出入国在留管理庁は、適法に在留していることを証明する「証明書」としての性格を持つと説明しています。"
+        },
+        {
+          "en": "Carry it with you. It is the document offices ask for first, from the city hall counter to the mobile phone shop.",
+          "ja": "持ち歩いてください。市役所の窓口から携帯電話の契約まで、最初に求められるのがこのカードです。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-what",
+          "text": "在留カードは、新規の上陸許可、在留資格の変更許可や在留期間の更新許可など在留資格に係る許可の結果として我が国に中長期間在留する者（中長期在留者）に対して交付されます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "What is printed on it",
+      "heading_ja": "何が書かれているか",
+      "body": [
+        {
+          "en": "The card carries the core of what the agency knows about your stay. Because of that, when any of those items change, you are required to file a notification so the card stays current.",
+          "ja": "カードには、在留に関する重要な情報が記載されています。そのため、記載事項に変更が生じたときは届け出ることが義務づけられており、常に最新の内容が反映されるようになっています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-what",
+          "text": "在留カードには、氏名、生年月日、性別、国籍・地域、住居地、在留資格、就労の可否など、出入国在留管理庁長官が把握する情報の重要部分が記載されていますので、記載事項に変更が生じた場合には変更の届出を義務付けており、常に最新の情報が反映されることになります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where you receive it",
+      "heading_ja": "どこで受け取るか",
+      "body": [
+        {
+          "en": "At ten listed airports, the card is handed to you on arrival. At other ports of entry, your passport is stamped with a note that the card will be issued later.",
+          "ja": "定められた10の空港では、上陸許可のときにその場で在留カードが交付されます。それ以外の出入国港では、旅券に「在留カードを後日交付する」旨が記載されます。"
+        },
+        {
+          "en": "In that case the card comes after you file your place of residence at the city or ward office. This is another reason to do the move-in paperwork early — the card follows it.",
+          "ja": "その場合、カードは市区町村の窓口に住居地の届出をしたあとに交付されます。転入の手続きを早めに済ませたほうがよい理由が、ここにもあります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-where",
+          "text": "新千歳空港、仙台空港、成田空港、羽田空港、中部空港、関西空港、神戸空港、広島空港、福岡空港及び那覇空港においては、旅券に上陸許可の証印をするとともに、上陸許可によって中長期在留者となった方には、在留カードを交付します。"
+        },
+        {
+          "source_id": "card-where",
+          "text": "その他の出入国港においては、旅券に上陸許可の証印をし、その近くに「在留カードを後日交付する」旨の記載をします。"
+        },
+        {
+          "source_id": "residence-notify-new",
+          "text": "住居地を定めた日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "When the printed details change",
+      "heading_ja": "記載事項が変わったとき",
+      "body": [
+        {
+          "en": "If your name, date of birth, sex, or nationality and region change, there is a separate notification, and the same two-week window applies.",
+          "ja": "氏名・生年月日・性別・国籍地域が変わったときは、別の届出があります。期限は同じく2週間です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-notify-change",
+          "text": "氏名、生年月日、性別又は国籍・地域に変更が生じた中長期在留者"
+        },
+        {
+          "source_id": "card-notify-change",
+          "text": "上記の記載事項に変更が生じた日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "If something does not fit your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "This page explains what the official pages say, and does not judge individual cases. A regional immigration bureau answers questions about the card itself.",
+          "ja": "このページは公式ページに書かれていることを説明したもので、個別の事情についての判断はしません。カードそのものについては、地方出入国在留管理官署にお尋ねください。"
+        }
+      ]
+    }
+  ],
+  "icon": "card"
+}
