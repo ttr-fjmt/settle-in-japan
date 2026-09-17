@@ -1,0 +1,98 @@
+{
+  "id": "dependent-visa-eligibility",
+  "title_en": "Which Visas Allow Family Members to Get \"Family Stay\" Status",
+  "title_ja": "家族滞在の対象になる在留資格",
+  "description": "「家族滞在」の対象となる活動や、扶養者がどの在留資格を持つ場合に対象になるかを、出入国在留管理庁の公式情報にもとづいて解説します。",
+  "icon": "status",
+  "published_at": "2026-09-17",
+  "sources": [
+    "visa-dependent",
+    "visa-list"
+  ],
+  "sections": [
+    {
+      "heading_en": "What activity does \"Family Stay\" cover",
+      "heading_ja": "「家族滞在」とはどんな活動か",
+      "body": [
+        {
+          "en": "The \"Family Stay\" status is for the spouse or child of a foreign resident who holds certain other statuses, and it covers the daily activities of a person supported by that resident. The official page describes this as activity conducted by a spouse or child who is supported by a resident holding one of the listed statuses.",
+          "ja": "「家族滞在」は、一定の在留資格を持つ外国人に扶養される配偶者または子が行う日常的な活動のための在留資格です。公式ページでは、対象となる在留資格を持つ人に扶養される配偶者・子の活動として説明されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "入管法別表第一の一の表の教授、芸術、宗教、報道、二の表の高度専門職、経営・管理、法律・会計業務、医療、研究、教育、技術・人文知識・国際業務、企業内転勤、介護、興行、技能、特定技能２号、三の表の文化活動又はこの表の留学の在留資格をもって在留する者の扶養を受ける配偶者又は子として行う日常的な活動。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who counts as an example",
+      "heading_ja": "該当する例",
+      "body": [
+        {
+          "en": "The official page gives a concrete example of who this status is for: the spouse or child supported by a foreign resident living in Japan. This shows that the focus is on the family relationship with a resident whose own status is one of those listed above.",
+          "ja": "公式ページには具体的な該当例も示されています。日本に在留する外国人が扶養する配偶者・子がこれにあたるとされています。上記の在留資格を持つ本人との家族関係が焦点になっていることが分かります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "該当例としては、在留外国人が扶養する配偶者・子。"
+        }
+      ]
+    },
+    {
+      "heading_en": "How long can this status be held",
+      "heading_ja": "在留期間について",
+      "body": [
+        {
+          "en": "The period of stay for \"Family Stay\" is not fixed at one length. Instead, it is a period individually designated by the Minister of Justice, within a range that does not exceed a certain number of years, as shown in the official table for this status.",
+          "ja": "「家族滞在」の在留期間は一律ではありません。公式の一覧表には、法務大臣が個々に指定する期間で、一定の年数を超えない範囲とされています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "法務大臣が個々に指定する期間（５年を超えない範囲）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Which application to file",
+      "heading_ja": "どの申請をするか",
+      "body": [
+        {
+          "en": "The application type depends on the person's current situation. Those newly wishing to enter Japan under this status file the certificate of eligibility application, while those already in Japan under another status who want to switch to this activity file the change of status application.",
+          "ja": "現在の状況によって、行う申請の種類が変わります。新しくこの在留資格で日本への入国を希望する場合は在留資格認定証明書交付申請を、既に他の在留資格で日本に滞在中の人がこの活動へ変更する場合は在留資格変更許可申請を行います。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "新しくこの在留資格で日本への入国を希望する場合の申請です。"
+        },
+        {
+          "source_id": "visa-dependent",
+          "text": "既にほかの在留資格を持って日本に滞在されている方が、活動内容を変更し、この在留資格に該当する活動を行おうとする場合の申請です。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure about your own case",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Whether a specific family relationship or a specific status held by the resident qualifies depends on individual circumstances and documents. For questions about how to fill out application forms or which documents are required, the official page directs inquiries to the Immigration Information Center by phone.",
+          "ja": "具体的な家族関係や、扶養者が持つ在留資格が対象になるかどうかは、個々の事情や書類によって異なります。申請書の書き方や必要書類についての質問は、公式ページの案内にしたがって、電話で外国人在留総合インフォメーションセンターに問い合わせることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "申請書の書き方、必要書類等についての御質問は、「外国人在留総合インフォメーションセンター」へお問い合わせください。"
+        }
+      ]
+    }
+  ]
+}

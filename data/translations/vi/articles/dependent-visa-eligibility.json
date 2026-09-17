@@ -1,0 +1,55 @@
+{
+  "id": "dependent-visa-eligibility",
+  "title": "Các tư cách lưu trú thuộc diện áp dụng của 'Lưu trú gia đình' (家族滞在)",
+  "description": "Bài viết giải thích về các hoạt động thuộc diện áp dụng của tư cách lưu trú 'Lưu trú gia đình' (家族滞在), cũng như những tư cách lưu trú mà người nuôi dưỡng cần có để được áp dụng, dựa trên thông tin chính thức của Cục Quản lý Xuất nhập cảnh và Lưu trú (出入国在留管理庁).",
+  "sections": [
+    {
+      "heading": "'Lưu trú gia đình' (家族滞在) là hoạt động như thế nào?",
+      "body": [
+        "Tư cách lưu trú 'Lưu trú gia đình' (家族滞在) dành cho các hoạt động thường ngày của vợ/chồng hoặc con, những người được một người nước ngoài đang giữ một tư cách lưu trú nhất định nuôi dưỡng. Trên trang thông tin chính thức, đây được giải thích là hoạt động của vợ/chồng hoặc con được nuôi dưỡng bởi người đang giữ tư cách lưu trú thuộc diện áp dụng."
+      ],
+      "quotes": [
+        "入管法別表第一の一の表の教授、芸術、宗教、報道、二の表の高度専門職、経営・管理、法律・会計業務、医療、研究、教育、技術・人文知識・国際業務、企業内転勤、介護、興行、技能、特定技能２号、三の表の文化活動又はこの表の留学の在留資格をもって在留する者の扶養を受ける配偶者又は子として行う日常的な活動。"
+      ]
+    },
+    {
+      "heading": "Ví dụ về trường hợp phù hợp",
+      "body": [
+        "Trên trang thông tin chính thức cũng có nêu ví dụ cụ thể về trường hợp phù hợp. Đó là vợ/chồng hoặc con được một người nước ngoài đang lưu trú tại Nhật Bản nuôi dưỡng. Có thể thấy rằng điểm mấu chốt là mối quan hệ gia đình với người đang giữ một trong các tư cách lưu trú nêu trên."
+      ],
+      "quotes": [
+        "該当例としては、在留外国人が扶養する配偶者・子。"
+      ]
+    },
+    {
+      "heading": "Về thời gian lưu trú",
+      "body": [
+        "Thời gian lưu trú của 'Lưu trú gia đình' (家族滞在) không cố định giống nhau cho mọi trường hợp. Theo bảng thông tin chính thức, đây là khoảng thời gian do Bộ trưởng Bộ Tư pháp chỉ định riêng cho từng người, trong phạm vi không vượt quá một số năm nhất định."
+      ],
+      "quotes": [
+        "法務大臣が個々に指定する期間（５年を超えない範囲）"
+      ]
+    },
+    {
+      "heading": "Nộp loại đơn xin nào",
+      "body": [
+        "Loại đơn cần nộp sẽ khác nhau tùy theo tình trạng hiện tại. Người mới mong muốn nhập cảnh Nhật Bản với tư cách lưu trú này sẽ nộp đơn xin cấp Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書交付申請), còn người đang lưu trú tại Nhật Bản với một tư cách lưu trú khác và muốn chuyển sang hoạt động này sẽ nộp đơn xin thay đổi tư cách lưu trú (在留資格変更許可申請)."
+      ],
+      "quotes": [
+        "新しくこの在留資格で日本への入国を希望する場合の申請です。",
+        "既にほかの在留資格を持って日本に滞在されている方が、活動内容を変更し、この在留資格に該当する活動を行おうとする場合の申請です。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của bản thân",
+      "body": [
+        "Việc mối quan hệ gia đình cụ thể, hay tư cách lưu trú mà người nuôi dưỡng đang giữ có thuộc diện áp dụng hay không, sẽ khác nhau tùy theo hoàn cảnh và giấy tờ của từng người. Đối với các câu hỏi về cách điền đơn hay giấy tờ cần thiết, theo hướng dẫn trên trang thông tin chính thức, có thể liên hệ qua điện thoại tới Trung tâm Thông tin tổng hợp về lưu trú dành cho người nước ngoài (外国人在留総合インフォメーションセンター)."
+      ],
+      "quotes": [
+        "申請書の書き方、必要書類等についての御質問は、「外国人在留総合インフォメーションセンター」へお問い合わせください。"
+      ]
+    }
+  ],
+  "source_hash": "c595121d87108296",
+  "translated_at": "2026-09-17"
+}
