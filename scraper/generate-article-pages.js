@@ -94,8 +94,6 @@ ${adSlot('article-top', slots)}
 
 ${sections}
 
-${adSlot('article-bottom', slots)}
-
 <div class="source">
 <p>Sources / 出典</p>
 <ul>
@@ -103,6 +101,9 @@ ${sourceList}
 </ul>
 <p>Last checked / 最終確認日: ${escape(article.published_at)}</p>
 </div>
+
+${adSlot('article-bottom', slots)}
+
 <p><a href="/guide/">&larr; All guides / 記事の一覧</a></p>
 </article>
 `;

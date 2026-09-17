@@ -47,27 +47,33 @@ test('決めていない置き場所は使えない', () => {
 
 test('広告は、節の中に入らない（＝引用のすぐ隣に出ない）', () => {
   // 各節は引用で終わるため、節の中に広告を入れると引用の真下に出る。
-  // 節の外（本文の前・出典の前）にだけ置く。
+  // 節の外（本文の前・出典の下）にだけ置く。
+  //
+  // 【1本だけ見ていて取りこぼした】以前はいちばん新しい記事しか見ておらず、
+  // 最後の節が引用で終わる記事（what-is-residence-status）の違反に気づけなかった。
+  // 毎日1本増えるので、全部の記事を見る。
   const slots = { 'article-top': '1111111111', 'article-bottom': '2222222222' };
-  const html = buildArticlePage(articles[0], sources, { slots });
+  for (const article of articles) {
+    const html = buildArticlePage(article, sources, { slots });
 
-  const inside = [...html.matchAll(/<section>([\s\S]*?)<\/section>/g)].filter(m =>
-    m[1].includes('<div class="ad"')
-  );
-  assert.strictEqual(inside.length, 0, '節の中に広告が入っています');
+    const inside = [...html.matchAll(/<section>([\s\S]*?)<\/section>/g)].filter(m =>
+      m[1].includes('<div class="ad"')
+    );
+    assert.strictEqual(inside.length, 0, `${article.id}: 節の中に広告が入っています`);
 
-  // 引用と広告のあいだに、見出しか段落が必ずある（＝くっついていない）
-  const ads = [...html.matchAll(/<div class="ad"/g)].map(m => m.index);
-  for (const at of ads) {
-    const before = html.slice(Math.max(0, at - 400), at);
-    const after = html.slice(at, at + 400);
-    if (before.includes('</blockquote>')) {
-      const gap = before.slice(before.lastIndexOf('</blockquote>'));
-      assert.ok(/<h2|<p/.test(gap), '引用のすぐ下に広告があります');
-    }
-    if (after.includes('<blockquote')) {
-      const gap = after.slice(0, after.indexOf('<blockquote'));
-      assert.ok(/<h2|<p/.test(gap), '広告のすぐ下に引用があります');
+    // 引用と広告のあいだに、見出しか段落が必ずある（＝くっついていない）
+    const ads = [...html.matchAll(/<div class="ad"/g)].map(m => m.index);
+    for (const at of ads) {
+      const before = html.slice(Math.max(0, at - 400), at);
+      const after = html.slice(at, at + 400);
+      if (before.includes('</blockquote>')) {
+        const gap = before.slice(before.lastIndexOf('</blockquote>'));
+        assert.ok(/<h2|<p/.test(gap), `${article.id}: 引用のすぐ下に広告があります`);
+      }
+      if (after.includes('<blockquote')) {
+        const gap = after.slice(0, after.indexOf('<blockquote'));
+        assert.ok(/<h2|<p/.test(gap), `${article.id}: 広告のすぐ下に引用があります`);
+      }
     }
   }
 });
@@ -75,7 +81,7 @@ test('広告は、節の中に入らない（＝引用のすぐ隣に出ない�
 test('1ページに出す広告は2つまで', () => {
   const slots = Object.fromEntries(PLACEMENTS.map(p => [p, '1234567890']));
   const pages = [
-    ['記事', buildArticlePage(articles[0], sources, { slots })],
+    ...articles.map(a => [`記事(${a.id})`, buildArticlePage(a, sources, { slots })]),
     ['在留資格', buildDetailPage(records[0], { slots })],
     ['トップ', buildTopPage(records, 0, { slots })],
   ];
