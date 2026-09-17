@@ -1,0 +1,138 @@
+{
+  "source_hash": "3546f48e213b2221",
+  "translated_at": "2026-09-17",
+  "items": {
+    "diplomat": {
+      "name": "外交",
+      "description": "外国の大使や公使など、外交の仕事をする人のための資格です。家族もいっしょに住めます。"
+    },
+    "official": {
+      "name": "公用",
+      "description": "外国政府や国際機関で、公の仕事をする人のための資格です。大使館・領事館の職員などが対象です。家族もいっしょに住めます。"
+    },
+    "professor": {
+      "name": "教授",
+      "description": "大学や高等専門学校などで、研究や教育をする人のための資格です。"
+    },
+    "artist": {
+      "name": "芸術",
+      "description": "音楽や美術、文学などの芸術活動をして、お金をもらう人のための資格です。作曲家や画家などが対象です。"
+    },
+    "religious-activities": {
+      "name": "宗教",
+      "description": "外国の宗教団体から日本に送られて、布教などの宗教の仕事をする人のための資格です。"
+    },
+    "journalist": {
+      "name": "報道",
+      "description": "外国の報道機関と契約して、取材などの仕事をする人のための資格です。記者やカメラマンが対象です。"
+    },
+    "highly-skilled-professional-1": {
+      "name": "高度専門職１号",
+      "description": "高い専門の力を持つ人のための資格です。研究や経営など、決められた仕事をします。ポイント制で認められます。"
+    },
+    "highly-skilled-professional-2": {
+      "name": "高度専門職２号",
+      "description": "高度専門職１号として働いた後、日本にとって役立つと認められた人のための資格です。1号より活動の範囲が広がります。"
+    },
+    "business-manager": {
+      "name": "経営・管理",
+      "description": "日本で会社や事業を経営したり、管理したりする人のための資格です。"
+    },
+    "legal-accounting-services": {
+      "name": "法律・会計業務",
+      "description": "弁護士や公認会計士など、資格が必要な法律・会計の仕事をする人のための資格です。"
+    },
+    "medical-services": {
+      "name": "医療",
+      "description": "医師や歯科医師、看護師など、資格が必要な医療の仕事をする人のための資格です。"
+    },
+    "researcher": {
+      "name": "研究",
+      "description": "会社や機関と契約して、研究の仕事をする人のための資格です。"
+    },
+    "instructor": {
+      "name": "教育",
+      "description": "小学校から高校などで、語学やその他の教育をする人のための資格です。"
+    },
+    "engineer-specialist": {
+      "name": "技術・人文知識・国際業務",
+      "description": "会社と契約して、技術や知識を使う仕事、または外国の文化を活かす仕事をする人のための資格です。エンジニアや通訳、デザイナーなどが対象です。"
+    },
+    "intra-company-transferee": {
+      "name": "企業内転勤",
+      "description": "海外の事業所から日本の事業所に、期間を決めて転勤してくる人のための資格です。"
+    },
+    "nursing-care": {
+      "name": "介護",
+      "description": "介護福祉士の資格を持つ人が、介護の仕事や指導をするための資格です。"
+    },
+    "entertainer": {
+      "name": "興行",
+      "description": "演劇や音楽、スポーツなどの興行の仕事をする人のための資格です。俳優や歌手、スポーツ選手などが対象です。"
+    },
+    "skilled-labor": {
+      "name": "技能",
+      "description": "特別な熟練した技能が必要な仕事をする人のための資格です。外国料理の調理師や、パイロットなどが対象です。"
+    },
+    "specified-skilled-worker-1": {
+      "name": "特定技能１号",
+      "description": "人手が足りない分野で、ある程度の知識や経験がある技能を使って働く人のための資格です。"
+    },
+    "specified-skilled-worker-2": {
+      "name": "特定技能２号",
+      "description": "人手が足りない分野で、熟練した技能を使って働く人のための資格です。特定技能１号より高い技能が必要です。"
+    },
+    "technical-intern-training-1": {
+      "name": "技能実習１号",
+      "description": "日本で技能実習をする1年目の人のための資格です。講習を受けたり、技能を学ぶ仕事をしたりします。"
+    },
+    "technical-intern-training-2": {
+      "name": "技能実習２号",
+      "description": "技能実習１号の後、続けて技能を学ぶ仕事をする人のための資格です。"
+    },
+    "technical-intern-training-3": {
+      "name": "技能実習３号",
+      "description": "技能実習２号の後、さらに続けて技能を学ぶ仕事をする人のための資格です。"
+    },
+    "cultural-activities": {
+      "name": "文化活動",
+      "description": "お金をもらわずに、学問や芸術の活動をしたり、日本独自の文化・技芸を研究したりする人のための資格です。"
+    },
+    "temporary-visitor": {
+      "name": "短期滞在",
+      "description": "観光や親族訪問、会議への参加など、短い間だけ日本にいる人のための資格です。"
+    },
+    "student": {
+      "name": "留学",
+      "description": "大学や高校、専門学校などで教育を受ける人のための資格です。"
+    },
+    "trainee": {
+      "name": "研修",
+      "description": "会社などに受け入れられて、技能を学ぶ人のための資格です。留学や技能実習とは別のものです。"
+    },
+    "dependent": {
+      "name": "家族滞在",
+      "description": "教授や技術・人文知識・国際業務など、一部の在留資格を持つ人に養われている配偶者や子どものための資格です。"
+    },
+    "designated-activities": {
+      "name": "特定活動",
+      "description": "法務大臣が、一人一人に合わせて特別に認める活動をする人のための資格です。ワーキングホリデーなどが対象です。"
+    },
+    "permanent-resident": {
+      "name": "永住者",
+      "description": "法務大臣から永住を認められた人のための資格です。"
+    },
+    "spouse-of-japanese-national": {
+      "name": "日本人の配偶者等",
+      "description": "日本人の配偶者や、日本人の子として生まれた人、特別養子のための資格です。"
+    },
+    "spouse-of-permanent-resident": {
+      "name": "永住者の配偶者等",
+      "description": "永住者の配偶者や、永住者の子として日本で生まれ、そのまま日本に住み続けている人のための資格です。"
+    },
+    "long-term-resident": {
+      "name": "定住者",
+      "description": "法務大臣が特別な理由を考えて、住む期間を決めて認める人のための資格です。日系３世や中国残留邦人などが対象です。"
+    }
+  }
+}
