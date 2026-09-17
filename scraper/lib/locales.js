@@ -77,6 +77,33 @@ const UI_SOURCE = {
   other_languages: 'ほかの言語',
   translated_note:
     'このページの説明は機械で翻訳しています。公式の文言（日本語）だけが正式なものです。',
+
+  // ここから下は在留資格のページで使う文言。
+  // 活動内容・在留期間・該当例の中身そのものは訳さない（日本語のまま出す）。訳すのは見出しと説明だけ。
+  visa_title: '在留資格の一覧',
+  visa_lead: '出入国在留管理庁の一覧表をもとに、在留資格ごとの活動内容・在留期間・就労の可否をまとめています。',
+  visa_activities: '本邦において行うことができる活動',
+  visa_examples: '該当例',
+  visa_period: '在留期間',
+  visa_work: '就労',
+  visa_family: '家族滞在の対象',
+  visa_family_note:
+    '配偶者・子が「家族滞在」で在留できるかを示します。在留資格そのものに家族の活動が含まれるものもあります（上の活動内容をご覧ください）。',
+  visa_official_note:
+    '上の文章は、公式の一覧表の日本語をそのまま載せています。法律の文言は訳し方で意味が変わるため、翻訳していません。窓口ではこの画面をそのまま見せてください。',
+  back_to_visa: '在留資格の一覧にもどる',
+  group_work: '就労が認められる在留資格',
+  group_non_work: '就労が認められない在留資格',
+  group_designated: '特定活動',
+  group_status_based: '身分・地位に基づく在留資格',
+  work_yes: '就労できる',
+  work_no: '就労できない',
+  work_depends: '許可の内容による',
+  work_unknown: '一覧表に記載なし（確認中）',
+  family_yes: '家族滞在の対象',
+  family_no: '家族滞在の対象ではない',
+  family_depends: '許可の内容による',
+  family_unknown: '確認中',
 };
 
 const UI_KEYS = Object.keys(UI_SOURCE);
