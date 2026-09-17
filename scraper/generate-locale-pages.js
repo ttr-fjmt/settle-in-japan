@@ -6,6 +6,8 @@
  *   /<言語>/            … その言語のトップ
  *   /<言語>/guide/      … 記事の一覧
  *   /<言語>/guide/<id>/ … 記事
+ *   /<言語>/visa/       … 在留資格の一覧
+ *   /<言語>/visa/<id>/  … 在留資格
  *
  * 【この言語のページで守ること】
  * - **公式の引用は日本語のまま**。引用の手前に「ここは日本語のままです」とその言語で断る
@@ -24,8 +26,117 @@ const { layout, escape, icon, SITE_NAME, SITE_URL } = require('./lib/page-layout
 const { EXTRA_LOCALES } = require('./lib/locales');
 const { readArticles } = require('./generate-article-pages');
 const { loadLocale, alternatesFor } = require('./lib/translations');
+const { VISA_GROUP } = require('./lib/schema');
+const { UI_SOURCE } = require('./lib/locales');
+const { checkUi } = require('./lib/translation-guards');
 
 const ROOT = path.join(__dirname, '..');
+
+/** 就労・家族滞在の表示。値は画面の文言（ui）から取る。 */
+const WORK_TONE = { yes: 'yes', no: 'no', depends: 'unknown', unknown: 'unknown' };
+const FAMILY_TONE = { yes: 'yes', no: 'unknown', depends: 'unknown', unknown: 'unknown' };
+const GROUP_ICON = { work: 'work', non_work: 'study', designated: 'designated', status_based: 'status' };
+
+/**
+ * 在留資格のページ（言語版）。
+ *
+ * **活動内容・在留期間・該当例は、元のレコードから日本語のまま出す。**
+ * 訳すのは名前・説明・見出しだけ。訳した公式文言を窓口で見せても通じないため
+ * （lib/locales.js の冒頭に理由を書いてある）。
+ */
+function buildVisaDetailPage(record, translated, locale, ui, alternates) {
+  const official = text => `<span lang="ja">${escape(text)}</span>`;
+  const body = `
+<h1>${escape(translated.name)}<span class="ja" lang="ja">${escape(record.name_ja)}</span></h1>
+<p class="lead">${icon(GROUP_ICON[record.group] || 'status', 18)} ${escape(ui[`group_${record.group}`] || '')}</p>
+<p>${escape(translated.description)}</p>
+
+<div class="card">
+  <h3>${icon('guide', 16)}${escape(ui.visa_activities)}</h3>
+  <ul class="official">
+    ${record.activities_ja.map(a => `<li>${official(a)}</li>`).join('\n    ')}
+  </ul>
+</div>
+${
+  record.examples_ja
+    ? `<div class="card"><h3>${icon('status', 16)}${escape(ui.visa_examples)}</h3><p class="official">${official(record.examples_ja)}</p></div>`
+    : ''
+}
+<div class="card">
+  <h3>${icon('clock', 16)}${escape(ui.visa_period)}</h3>
+  <p class="official">${record.periods_ja.map(official).join('<br>')}</p>
+</div>
+<div class="card">
+  <h3>${icon('work', 16)}${escape(ui.visa_work)}</h3>
+  <p><span class="pill ${WORK_TONE[record.work_allowed] || 'unknown'}">${escape(ui[`work_${record.work_allowed}`] || '')}</span></p>
+  <h3 style="margin-top:16px">${icon('home', 16)}${escape(ui.visa_family)}</h3>
+  <p><span class="pill ${FAMILY_TONE[record.family_stay] || 'unknown'}">${escape(ui[`family_${record.family_stay}`] || '')}</span></p>
+  <p style="font-size:.85rem;color:var(--ink-2);margin:6px 0 0">${escape(ui.visa_family_note)}</p>
+</div>
+
+<p class="note">${escape(ui.visa_official_note)}<br>
+${escape(ui.translated_note)}</p>
+
+<div class="source">
+<p>${escape(ui.sources_label)}</p>
+<ul>
+<li lang="ja"><a href="${escape(record.source_url)}" rel="nofollow">出入国在留管理庁</a></li>
+</ul>
+<p>${escape(ui.last_checked)}: ${escape(record.source_checked_at)}</p>
+</div>
+<p><a href="${escape(locale.path)}/visa/">&larr; ${escape(ui.back_to_visa)}</a></p>
+`;
+  return layout({
+    title: `${translated.name}（${record.name_ja}）| ${SITE_NAME}`,
+    description: translated.description,
+    canonical: `${SITE_URL}${locale.path}/visa/${record.id}/`,
+    locale,
+    ui,
+    alternates,
+    body,
+  });
+}
+
+/** 在留資格の一覧（言語版）。分類ごとにまとめる。 */
+function buildVisaListPage(records, visaTranslations, locale, ui, alternates) {
+  const groups = VISA_GROUP.map(group => {
+    const rows = records
+      .filter(r => r.group === group)
+      .map(record => {
+        const t = visaTranslations[record.id];
+        return `<li class="card"><a href="${escape(locale.path)}/visa/${escape(record.id)}/">
+  <span class="head">${icon(GROUP_ICON[group] || 'status')}${escape(t.name)}<span class="ja" lang="ja">${escape(record.name_ja)}</span></span>
+  <p>${escape(t.description)}</p>
+</a></li>`;
+      })
+      .join('\n');
+    if (!rows) return '';
+    return `<h2 class="tiles-h">${icon(GROUP_ICON[group] || 'status', 20)}${escape(ui[`group_${group}`] || '')}</h2>
+<ul class="cards">
+${rows}
+</ul>`;
+  })
+    .filter(Boolean)
+    .join('\n');
+
+  const body = `
+<h1>${escape(ui.visa_title)}</h1>
+<p class="lead">${escape(ui.visa_lead)}</p>
+${groups}
+<p class="note">${escape(ui.visa_official_note)}</p>
+<p class="note">${escape(ui.no_advice)}</p>
+`;
+  return layout({
+    title: `${ui.visa_title} | ${SITE_NAME}`,
+    description: ui.visa_lead,
+    canonical: `${SITE_URL}${locale.path}/visa/`,
+    locale,
+    ui,
+    alternates,
+    body,
+  });
+}
+
 
 function buildArticlePage(article, translated, locale, ui, sources, alternates) {
   const sections = article.sections
@@ -146,7 +257,7 @@ ${cards}
 
 <p class="note">${escape(ui.quote_note)}</p>
 <p class="note">${escape(ui.no_advice)}<br>
-<a href="/visa/">${escape(ui.nav_visa)}（English / 日本語・${records.length}）</a></p>
+<a href="${escape(locale.path)}/visa/">${escape(ui.nav_visa)}（${records.length}）</a></p>
 `;
   return layout({
     title: `${SITE_NAME} — ${ui.site_tagline}`,
@@ -176,9 +287,21 @@ function localePages({ articles = readArticles(), records = null } = {}) {
     }
   }
 
+  // 在留資格のページを作れる言語（33件すべての訳がある言語だけ）。hreflang をここから出す。
+  const visaLocales = new Set(
+    EXTRA_LOCALES.filter(locale => {
+      const data = loaded.get(locale.code);
+      return data.ui && visa.every(record => data.visa[record.id]);
+    }).map(locale => locale.code)
+  );
+
   for (const locale of EXTRA_LOCALES) {
-    const { ui, articles: translations } = loaded.get(locale.code);
-    if (!ui) continue; // 画面の文言が無い言語はページを作らない
+    const { ui, articles: translations, visa: visaTranslations } = loaded.get(locale.code);
+    // 画面の文言が無い・足りない言語はページを作らない。
+    // 文言を足したのに訳し直していないと、見出しが空のページができてしまう。
+    if (!ui || checkUi(UI_SOURCE, ui, { code: locale.code, allowSameAsSource: true }).length > 0) {
+      continue;
+    }
 
     const entries = articles
       .filter(a => translations[a.id])
@@ -204,6 +327,28 @@ function localePages({ articles = readArticles(), records = null } = {}) {
           ui,
           sources,
           alternatesFor(`/guide/${entry.article.id}/`, translatedBy.get(entry.article.id))
+        ),
+      });
+    }
+
+    // 在留資格。訳が1件でも欠けていれば、その言語では一覧も詳細も作らない
+    // （一部だけ英語のまま混ざったページを出さないため）。
+    const visaReady = visa.every(record => visaTranslations[record.id]);
+    if (!visaReady) continue;
+
+    files.push({
+      path: path.join(locale.path.replace(/^\//, ''), 'visa', 'index.html'),
+      html: buildVisaListPage(visa, visaTranslations, locale, ui, alternatesFor('/visa/', visaLocales)),
+    });
+    for (const record of visa) {
+      files.push({
+        path: path.join(locale.path.replace(/^\//, ''), 'visa', record.id, 'index.html'),
+        html: buildVisaDetailPage(
+          record,
+          visaTranslations[record.id],
+          locale,
+          ui,
+          alternatesFor(`/visa/${record.id}/`, visaLocales)
         ),
       });
     }

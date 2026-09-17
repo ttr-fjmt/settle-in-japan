@@ -28,11 +28,12 @@ const crypto = require('node:crypto');
 
 const { ask, extractJson } = require('./lib/anthropic');
 const { EXTRA_LOCALES, UI_SOURCE } = require('./lib/locales');
-const { checkTranslatedArticle, checkUi } = require('./lib/translation-guards');
+const { checkTranslatedArticle, checkTranslatedVisa, checkUi } = require('./lib/translation-guards');
 const { readArticles } = require('./generate-article-pages');
 
 const ROOT = path.join(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data', 'translations');
+const VISA_PATH = path.join(ROOT, 'data', 'visa-types.json');
 const MAX_ATTEMPTS = 3;
 
 /** 原文の印。訳し直すべきかの判定に使う。 */
@@ -43,6 +44,12 @@ function sourceHash(article) {
     article.description,
     article.sections.map(s => [s.heading_en, s.heading_ja, s.body, (s.quotes || []).map(q => q.text)]),
   ]);
+  return crypto.createHash('sha256').update(text).digest('hex').slice(0, 16);
+}
+
+/** 在留資格側の印。名前が変わった・件数が増えたら訳し直す。 */
+function visaHash(records) {
+  const text = JSON.stringify(records.map(r => [r.id, r.name_ja, r.name_en, r.group]));
   return crypto.createHash('sha256').update(text).digest('hex').slice(0, 16);
 }
 
@@ -105,6 +112,46 @@ ${styleNote(locale)}
 説明: ${article.description}
 
 ${JSON.stringify(sections, null, 2)}`;
+}
+
+/**
+ * 在留資格の名前と説明を訳す。
+ *
+ * 公式の文言（活動内容・在留期間・該当例）は**渡すが訳させない**。
+ * 渡すのは、その在留資格が何なのかを分かって説明を書いてもらうため。
+ * 出力に含めるのは name と description だけで、公式の文言はページ側で
+ * 元のレコードから日本語のまま出す。
+ */
+function visaPrompt(records, locale) {
+  const list = records.map(r => ({
+    id: r.id,
+    name_ja: r.name_ja,
+    name_en: r.name_en,
+    activities_ja: r.activities_ja,
+    examples_ja: r.examples_ja || null,
+  }));
+
+  return `次の在留資格について、名前と短い説明を${locale.label}で書いてください。
+
+${styleNote(locale)}
+
+【絶対に守ること】
+- **公式の文言（activities_ja / examples_ja）は訳さない。出力にも入れない**
+- 説明は**自分の言葉で80〜120字**。公式の文言を写さないでください
+- 「あなたはこの在留資格を取れます」のような、読む人の事情を決めつける書き方をしない
+- 要件・条件を勝手に足さない。渡した内容から分かることだけ書く
+
+【名前の書き方】
+- その在留資格を指す言い方を書く。日本語の名前（${'${r.name_ja}'}）はページに別途そのまま出るので、
+  ここでは読む人が意味を分かる言い方にしてください
+
+【出力の形（JSONだけ。前置きも ${'```'} の囲みも付けない）】
+{
+  "在留資格のid": { "name": "名前", "description": "80〜120字の説明" }
+}
+${records.length}件すべてを入れてください。
+
+${JSON.stringify(list, null, 1)}`;
 }
 
 function uiPrompt(locale) {
@@ -175,8 +222,37 @@ async function translateUi(locale) {
   return null;
 }
 
+async function translateVisa(records, locale) {
+  let problems = [];
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    const retry = problems.length
+      ? `\n\n【前回の訳は次の点で受け付けられませんでした。直してください】\n${problems.slice(0, 10).map(p => '- ' + p).join('\n')}`
+      : '';
+    const { text, stopReason } = await ask({
+      system: 'あなたは、在留資格の案内ページを訳す翻訳者です。公式の文言は訳さず、名前と説明だけを書きます。',
+      prompt: visaPrompt(records, locale) + retry,
+      maxTokens: 16000,
+      script: 'translate',
+    });
+    const translated = extractJson(text);
+    if (!translated) {
+      problems = [
+        stopReason === 'max_tokens'
+          ? '長すぎて途中で切れました。説明をもっと短くしてください'
+          : 'JSON として読めませんでした。JSON だけを出力してください',
+      ];
+      continue;
+    }
+    problems = checkTranslatedVisa(records, translated, { code: locale.code });
+    if (problems.length === 0) return { translated, attempts: attempt };
+    console.log(`    検査に通りませんでした（${problems.length}件）`);
+    problems.slice(0, 5).forEach(p => console.log('      - ' + p));
+  }
+  return { translated: null, problems };
+}
+
 /** 何を訳す必要があるか（訳が無い・原文が変わった）。 */
-function pending(locale, articles) {
+function pending(locale, articles, records = []) {
   const uiFile = path.join(OUT_DIR, locale.code, 'ui.json');
   const ui = readJson(uiFile);
   const needUi = !ui || checkUi(UI_SOURCE, ui, { code: locale.code, allowSameAsSource: true }).length > 0;
@@ -185,7 +261,15 @@ function pending(locale, articles) {
     const saved = readJson(path.join(OUT_DIR, locale.code, 'articles', `${article.id}.json`));
     return !saved || saved.source_hash !== sourceHash(article);
   });
-  return { needUi, needArticles };
+
+  const savedVisa = readJson(path.join(OUT_DIR, locale.code, 'visa.json'));
+  const needVisa =
+    records.length > 0 &&
+    (!savedVisa ||
+      savedVisa.source_hash !== visaHash(records) ||
+      checkTranslatedVisa(records, savedVisa.items || {}, { code: locale.code }).length > 0);
+
+  return { needUi, needArticles, needVisa };
 }
 
 async function main() {
@@ -195,11 +279,14 @@ async function main() {
   if (locales.length === 0) throw new Error('その言語は対応言語に入っていません（lib/locales.js）');
 
   const articles = readArticles();
+  const records = JSON.parse(fs.readFileSync(VISA_PATH, 'utf8'));
   let wrote = 0;
 
   for (const locale of locales) {
-    const { needUi, needArticles } = pending(locale, articles);
-    console.log(`\n[${locale.code}] 画面の文言: ${needUi ? '訳す' : '最新'} ／ 記事: ${needArticles.length}本`);
+    const { needUi, needArticles, needVisa } = pending(locale, articles, records);
+    console.log(
+      `\n[${locale.code}] 画面の文言: ${needUi ? '訳す' : '最新'} ／ 記事: ${needArticles.length}本 ／ 在留資格: ${needVisa ? `訳す（${records.length}件）` : '最新'}`
+    );
     if (dryRun) {
       needArticles.forEach(a => console.log('  - ' + a.id));
       continue;
@@ -213,6 +300,23 @@ async function main() {
         console.log('  画面の文言を訳しました');
       } else {
         console.error('  画面の文言を訳せませんでした（保存しません）');
+      }
+    }
+
+    if (needVisa) {
+      console.log(`  在留資格 ${records.length}件 …`);
+      const { translated, problems } = await translateVisa(records, locale);
+      if (translated) {
+        writeJson(path.join(OUT_DIR, locale.code, 'visa.json'), {
+          source_hash: visaHash(records),
+          translated_at: new Date().toISOString().slice(0, 10),
+          items: translated,
+        });
+        wrote += 1;
+        console.log('  在留資格を訳しました');
+      } else {
+        console.error(`  在留資格: ${MAX_ATTEMPTS}回試しても検査に通らなかったため保存しません`);
+        (problems || []).slice(0, 5).forEach(p => console.error('    - ' + p));
       }
     }
 
@@ -243,4 +347,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { sourceHash, pending, articlePrompt, uiPrompt };
+module.exports = { sourceHash, visaHash, pending, articlePrompt, uiPrompt, visaPrompt };

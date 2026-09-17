@@ -1,0 +1,138 @@
+{
+  "source_hash": "3546f48e213b2221",
+  "translated_at": "2026-09-17",
+  "items": {
+    "diplomat": {
+      "name": "Nhà ngoại giao",
+      "description": "Dành cho đại sứ, lãnh sự và thành viên phái đoàn ngoại giao nước ngoài tại Nhật Bản, cùng người thân sống chung."
+    },
+    "official": {
+      "name": "Công vụ",
+      "description": "Dành cho người làm công vụ cho chính phủ nước ngoài hoặc tổ chức quốc tế, cùng người thân sống chung."
+    },
+    "professor": {
+      "name": "Giáo sư",
+      "description": "Dành cho người nghiên cứu, hướng dẫn nghiên cứu hoặc giảng dạy tại trường đại học hoặc cơ sở tương đương ở Nhật Bản."
+    },
+    "artist": {
+      "name": "Nghệ thuật",
+      "description": "Dành cho người hoạt động nghệ thuật có thu nhập như âm nhạc, hội họa, văn học, ví dụ nhạc sĩ, họa sĩ, nhà văn."
+    },
+    "religious-activities": {
+      "name": "Tôn giáo",
+      "description": "Dành cho nhà truyền giáo được tổ chức tôn giáo nước ngoài cử đến Nhật Bản để truyền giáo."
+    },
+    "journalist": {
+      "name": "Báo chí",
+      "description": "Dành cho phóng viên, nhiếp ảnh gia làm việc theo hợp đồng với cơ quan báo chí nước ngoài để đưa tin tại Nhật Bản."
+    },
+    "highly-skilled-professional-1": {
+      "name": "Chuyên gia trình độ cao số 1",
+      "description": "Dành cho người có năng lực chuyên môn cao, làm nghiên cứu, giảng dạy, kỹ thuật hoặc quản lý kinh doanh theo tiêu chí điểm."
+    },
+    "highly-skilled-professional-2": {
+      "name": "Chuyên gia trình độ cao số 2",
+      "description": "Dành cho người từng có tư cách chuyên gia trình độ cao số 1, tiếp tục nghiên cứu hoặc quản lý kinh doanh tại Nhật Bản."
+    },
+    "business-manager": {
+      "name": "Kinh doanh - Quản lý",
+      "description": "Dành cho người điều hành hoặc quản lý hoạt động kinh doanh, thương mại tại Nhật Bản, như chủ doanh nghiệp."
+    },
+    "legal-accounting-services": {
+      "name": "Dịch vụ pháp lý - kế toán",
+      "description": "Dành cho luật sư, kế toán viên nước ngoài có chứng chỉ hành nghề, thực hiện công việc pháp lý hoặc kế toán tại Nhật Bản."
+    },
+    "medical-services": {
+      "name": "Y tế",
+      "description": "Dành cho bác sĩ, nha sĩ và người có chứng chỉ hành nghề y tế khác, thực hiện khám chữa bệnh tại Nhật Bản."
+    },
+    "researcher": {
+      "name": "Nghiên cứu",
+      "description": "Dành cho người làm công việc nghiên cứu theo hợp đồng với cơ quan hoặc doanh nghiệp tại Nhật Bản."
+    },
+    "instructor": {
+      "name": "Giáo dục",
+      "description": "Dành cho người giảng dạy ngoại ngữ hoặc môn học khác tại trường tiểu học, trung học, trường chuyên môn ở Nhật Bản."
+    },
+    "engineer-specialist": {
+      "name": "Kỹ thuật - Tri thức nhân văn - Nghiệp vụ quốc tế",
+      "description": "Dành cho người làm công việc kỹ thuật, khoa học tự nhiên xã hội hoặc liên quan văn hóa nước ngoài, như phiên dịch, thiết kế."
+    },
+    "intra-company-transferee": {
+      "name": "Chuyển công tác nội bộ doanh nghiệp",
+      "description": "Dành cho nhân viên được công ty nước ngoài điều chuyển đến làm việc tại chi nhánh ở Nhật Bản trong thời gian nhất định."
+    },
+    "nursing-care": {
+      "name": "Điều dưỡng - Chăm sóc",
+      "description": "Dành cho người có chứng chỉ điều dưỡng viên, làm công việc chăm sóc hoặc hướng dẫn chăm sóc tại Nhật Bản."
+    },
+    "entertainer": {
+      "name": "Trình diễn - Giải trí",
+      "description": "Dành cho diễn viên, ca sĩ, vũ công, vận động viên chuyên nghiệp tham gia biểu diễn kịch nghệ, âm nhạc, thể thao."
+    },
+    "skilled-labor": {
+      "name": "Kỹ năng đặc biệt",
+      "description": "Dành cho người có tay nghề thành thạo trong lĩnh vực đặc thù như đầu bếp món ăn nước ngoài hoặc phi công."
+    },
+    "specified-skilled-worker-1": {
+      "name": "Kỹ năng đặc định số 1",
+      "description": "Dành cho người có kiến thức hoặc kinh nghiệm nhất định, làm việc trong ngành đang thiếu nhân lực tại Nhật Bản theo hợp đồng lao động."
+    },
+    "specified-skilled-worker-2": {
+      "name": "Kỹ năng đặc định số 2",
+      "description": "Dành cho người có tay nghề thành thạo, làm việc trong ngành đang thiếu nhân lực tại Nhật Bản theo hợp đồng lao động."
+    },
+    "technical-intern-training-1": {
+      "name": "Thực tập kỹ năng số 1",
+      "description": "Dành cho thực tập sinh kỹ năng giai đoạn đầu, vừa học lý thuyết vừa thực hành công việc theo kế hoạch được công nhận."
+    },
+    "technical-intern-training-2": {
+      "name": "Thực tập kỹ năng số 2",
+      "description": "Dành cho thực tập sinh kỹ năng tiếp tục thực hành công việc theo kế hoạch được công nhận, sau giai đoạn số 1."
+    },
+    "technical-intern-training-3": {
+      "name": "Thực tập kỹ năng số 3",
+      "description": "Dành cho thực tập sinh kỹ năng tiếp tục thực hành công việc theo kế hoạch được công nhận, sau giai đoạn số 2."
+    },
+    "cultural-activities": {
+      "name": "Hoạt động văn hóa",
+      "description": "Dành cho người nghiên cứu học thuật, nghệ thuật không có thu nhập, hoặc học tập văn hóa, kỹ nghệ truyền thống của Nhật Bản."
+    },
+    "temporary-visitor": {
+      "name": "Lưu trú ngắn hạn",
+      "description": "Dành cho người đến Nhật Bản trong thời gian ngắn để du lịch, nghỉ dưỡng, thăm người thân, tham quan hoặc dự hội nghị."
+    },
+    "student": {
+      "name": "Du học",
+      "description": "Dành cho học sinh, sinh viên theo học tại trường đại học, cao đẳng, trung học, tiểu học hoặc trường chuyên môn ở Nhật Bản."
+    },
+    "trainee": {
+      "name": "Tu nghiệp",
+      "description": "Dành cho người được cơ quan hoặc doanh nghiệp tại Nhật Bản tiếp nhận để học tập, rèn luyện kỹ năng."
+    },
+    "dependent": {
+      "name": "Sống cùng gia đình",
+      "description": "Dành cho vợ, chồng hoặc con được người có tư cách lưu trú khác nuôi dưỡng, sinh hoạt hàng ngày cùng gia đình tại Nhật Bản."
+    },
+    "designated-activities": {
+      "name": "Hoạt động đặc định",
+      "description": "Dành cho hoạt động được Bộ trưởng Tư pháp chỉ định riêng cho từng người nước ngoài, tùy theo từng trường hợp cụ thể."
+    },
+    "permanent-resident": {
+      "name": "Vĩnh trú",
+      "description": "Dành cho người được Bộ trưởng Tư pháp cho phép cư trú vĩnh viễn tại Nhật Bản."
+    },
+    "spouse-of-japanese-national": {
+      "name": "Vợ/chồng hoặc con của người Nhật",
+      "description": "Dành cho vợ, chồng, con nuôi đặc biệt hoặc con ruột sinh ra của công dân Nhật Bản."
+    },
+    "spouse-of-permanent-resident": {
+      "name": "Vợ/chồng hoặc con của người vĩnh trú",
+      "description": "Dành cho vợ, chồng của người vĩnh trú, hoặc con sinh ra tại Nhật Bản và tiếp tục sinh sống của người vĩnh trú."
+    },
+    "long-term-resident": {
+      "name": "Định trú",
+      "description": "Dành cho người được Bộ trưởng Tư pháp cho phép cư trú trong thời gian nhất định vì lý do đặc biệt."
+    }
+  }
+}

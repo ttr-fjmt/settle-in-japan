@@ -97,4 +97,53 @@ function checkUi(source, translated, { code = '', allowSameAsSource = false } = 
   return problems;
 }
 
-module.exports = { checkTranslatedArticle, checkUi, numbersIn };
+/**
+ * 訳した在留資格の一覧が、元のレコードとそろっているか。
+ *
+ * 【ここで訳すのは名前と説明だけ】
+ * 活動内容・在留期間・該当例は公式の文言なので訳さず、ページには元のレコードから
+ * 日本語のまま出す。だからこの検査は「訳す対象が全部そろっているか」を見る。
+ * 公式の文言を訳して紛れ込ませていないかは、長さの上限で止める
+ * （公式の活動内容は長文なので、写すと必ず引っかかる）。
+ */
+const MAX_NAME_CHARS = 60;
+const MAX_DESCRIPTION_CHARS = 300;
+
+function checkTranslatedVisa(records, translated, { code = '' } = {}) {
+  const problems = [];
+  if (!translated || typeof translated !== 'object') return [`${code}: 在留資格の訳がありません`];
+
+  for (const record of records) {
+    const t = translated[record.id];
+    if (!t) {
+      problems.push(`${code}/${record.id}: 訳がありません`);
+      continue;
+    }
+    if (!t.name || !String(t.name).trim()) problems.push(`${code}/${record.id}: 名前が空です`);
+    if (!t.description || !String(t.description).trim()) {
+      problems.push(`${code}/${record.id}: 説明が空です`);
+    }
+    if (t.name && String(t.name).length > MAX_NAME_CHARS) {
+      problems.push(`${code}/${record.id}: 名前が長すぎます（${String(t.name).length}字）`);
+    }
+    if (t.description && String(t.description).length > MAX_DESCRIPTION_CHARS) {
+      problems.push(
+        `${code}/${record.id}: 説明が長すぎます（${String(t.description).length}字）。` +
+          '公式の活動内容を写していませんか。説明は自分の言葉で短く書いてください'
+      );
+    }
+    // 公式の文言をそのまま説明に写していないか（訳さずコピーしても、訳してもだめ）
+    for (const activity of record.activities_ja || []) {
+      if (t.description && normalize(t.description).includes(normalize(activity).slice(0, 40))) {
+        problems.push(`${code}/${record.id}: 説明に公式の活動内容が写されています`);
+        break;
+      }
+    }
+  }
+
+  const extra = Object.keys(translated).filter(id => !records.some(r => r.id === id));
+  if (extra.length) problems.push(`${code}: 知らない在留資格があります（${extra.join(', ')}）`);
+  return problems;
+}
+
+module.exports = { checkTranslatedArticle, checkTranslatedVisa, checkUi, numbersIn };

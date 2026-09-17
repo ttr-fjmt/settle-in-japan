@@ -11,16 +11,19 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const { LOCALES, EXTRA_LOCALES } = require('./locales');
+const { LOCALES, EXTRA_LOCALES, UI_SOURCE } = require('./locales');
+const { checkUi } = require('./translation-guards');
 
 const ROOT = path.join(__dirname, '..', '..');
 const TRANSLATIONS = path.join(ROOT, 'data', 'translations');
 
 const readJson = file => (fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null);
 
-/** その言語の、画面の文言と記事の訳。 */
+/** その言語の、画面の文言と記事の訳と在留資格の訳。 */
 function loadLocale(locale) {
   const ui = readJson(path.join(TRANSLATIONS, locale.code, 'ui.json'));
+  const visaFile = readJson(path.join(TRANSLATIONS, locale.code, 'visa.json'));
+  const visa = visaFile ? visaFile.items || {} : {};
   const dir = path.join(TRANSLATIONS, locale.code, 'articles');
   const articles = fs.existsSync(dir)
     ? Object.fromEntries(
@@ -33,12 +36,18 @@ function loadLocale(locale) {
           })
       )
     : {};
-  return { ui, articles };
+  return { ui, articles, visa };
 }
 
-/** 画面の文言と記事の訳がそろっている言語（ページを作れる言語）。 */
+/**
+ * 画面の文言がそろっている言語（ページを作れる言語）。
+ * 文言を足したのに訳し直していない言語は、見出しが空のページになるので外す。
+ */
 function readyLocales() {
-  return EXTRA_LOCALES.filter(locale => loadLocale(locale).ui);
+  return EXTRA_LOCALES.filter(locale => {
+    const { ui } = loadLocale(locale);
+    return ui && checkUi(UI_SOURCE, ui, { code: locale.code, allowSameAsSource: true }).length === 0;
+  });
 }
 
 /** その記事の訳がある言語のコード。 */
