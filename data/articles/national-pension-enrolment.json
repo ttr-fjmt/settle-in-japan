@@ -1,0 +1,93 @@
+{
+  "id": "national-pension-enrolment",
+  "title_en": "Joining the National Pension: Official Pages to Check",
+  "title_ja": "国民年金への加入",
+  "description": "国民年金への加入、保険料、免除・猶予・追納、学生納付特例について、日本年金機構の公式サイトにあるページの場所を紹介します。自分の場合が分からないときの相談窓口も案内します。",
+  "icon": "guide",
+  "published_at": "2026-09-18",
+  "sources": [
+    "nenkin-kokunen",
+    "nenkin-menjo"
+  ],
+  "sections": [
+    {
+      "heading_en": "Finding the enrollment page",
+      "heading_ja": "国民年金の加入について確認する",
+      "body": [
+        {
+          "en": "The Japan Pension Service publishes an official page called 'National Pension enrollment' as part of its National Pension section of the website. Anyone who wants details about joining the National Pension can look at this page, since it is the page the pension office itself provides on this topic.",
+          "ja": "日本年金機構は「国民年金」のページの中に「国民年金の加入」という項目を置いています。国民年金への加入について知りたいときは、まずこの公式ページを確認することができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-kokunen",
+          "text": "国民年金の加入"
+        }
+      ]
+    },
+    {
+      "heading_en": "Checking the premium page",
+      "heading_ja": "保険料について確認する",
+      "body": [
+        {
+          "en": "The same section of the official website also lists a page titled 'National Pension premium'. This is where the pension office places its information about the National Pension premium.",
+          "ja": "同じ「国民年金」のページには「国民年金の保険料」という項目もあります。保険料についての公式な情報はここに置かれています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-kokunen",
+          "text": "国民年金の保険料"
+        }
+      ]
+    },
+    {
+      "heading_en": "Checking exemption, deferral and back-payment",
+      "heading_ja": "免除・猶予・追納について確認する",
+      "body": [
+        {
+          "en": "For situations where paying the premium is difficult, the official site has a separate page called 'National Pension premium exemption, deferral and back-payment'. Within that page there is also an item named 'National Pension premium exemption system and payment deferral system'.",
+          "ja": "保険料を納めることが難しい場合のために、公式サイトには「国民年金保険料の免除・猶予・追納」というページがあります。その中には「国民年金保険料の免除制度・納付猶予制度」という項目もあります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-menjo",
+          "text": "国民年金保険料の免除・猶予・追納"
+        },
+        {
+          "source_id": "nenkin-menjo",
+          "text": "国民年金保険料の免除制度・納付猶予制度"
+        }
+      ]
+    },
+    {
+      "heading_en": "Checking the student payment special exemption",
+      "heading_ja": "学生納付特例制度について確認する",
+      "body": [
+        {
+          "en": "Students are covered by a specific page called 'National Pension premium student payment special exemption system'. This page is listed separately from the general exemption page described above.",
+          "ja": "学生については、「国民年金保険料の学生納付特例制度」という別のページが公式サイトに用意されています。上記の一般的な免除のページとは別に置かれています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-menjo",
+          "text": "国民年金保険料の学生納付特例制度"
+        }
+      ]
+    },
+    {
+      "heading_en": "When it is not clear which applies to your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "When it is not clear which page or procedure applies to a particular situation, the Japan Pension Service website also lists a page for consultation, called 'Consultation and procedure contact points'. This is the page the pension office provides for people who want to ask about their own situation directly.",
+          "ja": "自分の場合にどのページや手続きが当てはまるか分からないときのために、日本年金機構のサイトには「相談・手続き窓口」というページもあります。自分の状況について直接たずねたいときは、このページを確認できます。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

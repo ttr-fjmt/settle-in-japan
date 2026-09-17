@@ -1,0 +1,53 @@
+{
+  "id": "national-pension-enrolment",
+  "title": "Tham gia Bảo hiểm Hưu trí Quốc dân（国民年金）",
+  "description": "Giới thiệu vị trí các trang trên trang web chính thức của Japan Pension Service（日本年金機構）liên quan đến việc tham gia Bảo hiểm Hưu trí Quốc dân（国民年金）, phí bảo hiểm, miễn giảm・hoãn nộp・nộp bù, và chế độ đặc biệt hoãn nộp dành cho sinh viên. Đồng thời hướng dẫn nơi tư vấn khi không rõ trường hợp của bản thân.",
+  "sections": [
+    {
+      "heading": "Kiểm tra về việc tham gia Bảo hiểm Hưu trí Quốc dân（国民年金）",
+      "body": [
+        "Japan Pension Service（日本年金機構）đặt mục 「国民年金の加入」 trong trang 「国民年金」 trên trang web chính thức. Khi muốn biết về việc tham gia Bảo hiểm Hưu trí Quốc dân（国民年金）, có thể xem trước trang chính thức này."
+      ],
+      "quotes": [
+        "国民年金の加入"
+      ]
+    },
+    {
+      "heading": "Kiểm tra về mức phí bảo hiểm",
+      "body": [
+        "Trong cùng trang 「国民年金」 trên trang web chính thức cũng có mục 「国民年金の保険料」. Thông tin chính thức về phí bảo hiểm được đặt tại đây."
+      ],
+      "quotes": [
+        "国民年金の保険料"
+      ]
+    },
+    {
+      "heading": "Kiểm tra về miễn giảm, hoãn nộp và nộp bù",
+      "body": [
+        "Dành cho trường hợp khó khăn trong việc đóng phí bảo hiểm, trang web chính thức có một trang riêng mang tên 「国民年金保険料の免除・猶予・追納」. Trong trang đó cũng có mục 「国民年金保険料の免除制度・納付猶予制度」."
+      ],
+      "quotes": [
+        "国民年金保険料の免除・猶予・追納",
+        "国民年金保険料の免除制度・納付猶予制度"
+      ]
+    },
+    {
+      "heading": "Kiểm tra về chế độ đặc biệt hoãn nộp dành cho sinh viên",
+      "body": [
+        "Đối với sinh viên, trang web chính thức có một trang riêng mang tên 「国民年金保険料の学生納付特例制度」. Trang này được đặt tách biệt với trang miễn giảm chung đã nêu ở trên."
+      ],
+      "quotes": [
+        "国民年金保険料の学生納付特例制度"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của bản thân sẽ như thế nào",
+      "body": [
+        "Khi không rõ trang nào hoặc thủ tục nào phù hợp với trường hợp của bản thân, trang web của Japan Pension Service（日本年金機構）cũng có một trang mang tên 「相談・手続き窓口」. Khi muốn hỏi trực tiếp về tình huống của mình, có thể xem trang này."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "40bea25634e6c428",
+  "translated_at": "2026-09-17"
+}
