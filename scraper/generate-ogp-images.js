@@ -97,8 +97,28 @@ function ogpTargets(records = JSON.parse(fs.readFileSync(VISA_PATH, 'utf8')), ar
   // 各言語のページ（/easy/ /vi/ …）。題名はその言語のものを焼き込む。
   // 訳が無いページは作られないので、ここにも出てこない。
   for (const locale of readyLocales()) {
-    const { articles: translations } = loadLocale(locale);
+    const { articles: translations, visa: visaTranslations } = loadLocale(locale);
     const entries = articles.filter(a => translations[a.id]);
+
+    // 在留資格。33件すべての訳がある言語だけページを作るので、ここも同じ線引きにする
+    // （generate-locale-pages.js と食い違うと、画像の無いページ／使われない画像ができる）。
+    if (records.every(record => visaTranslations[record.id])) {
+      targets.push({
+        pagePath: `${locale.path}/visa/`,
+        kicker: locale.label,
+        titleEn: 'Residence statuses',
+        titleJa: `在留資格${records.length}種類の一覧`,
+      });
+      for (const record of records) {
+        targets.push({
+          pagePath: `${locale.path}/visa/${record.id}/`,
+          kicker: locale.label,
+          titleEn: visaTranslations[record.id].name,
+          titleJa: `在留資格「${record.name_ja}」`,
+        });
+      }
+    }
+
     if (entries.length === 0) continue;
 
     targets.push(
