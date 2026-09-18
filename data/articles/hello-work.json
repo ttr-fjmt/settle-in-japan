@@ -1,0 +1,92 @@
+{
+  "id": "hello-work",
+  "title_en": "How to Use Hello Work: Finding Offices and Reading Official Pages",
+  "title_ja": "ハローワークの使い方",
+  "description": "ハローワークや労働局・労働基準監督署の連絡先を探す方法、ページの自動翻訳機能、PDF資料を見るために必要なソフトなど、厚生労働省の公式ページに書かれている内容をもとに、ハローワークの使い方の基本をまとめて紹介します。",
+  "icon": "work",
+  "published_at": "2026-09-19",
+  "sources": [
+    "mhlw-labour-offices"
+  ],
+  "sections": [
+    {
+      "heading_en": "This Page Can Be Automatically Translated",
+      "heading_ja": "このページは自動翻訳できます",
+      "body": [
+        {
+          "en": "The Ministry of Health, Labour and Welfare's page that lists labour bureaus, labour standards inspection offices, and Hello Work offices can be automatically translated into English, Chinese, and Korean. This translation service applies to the text shown on the page.",
+          "ja": "厚生労働省の労働局・労働基準監督署・ハローワークのページは、英語・中国語・韓国語に自動翻訳できます。この翻訳サービスは、ページに表示されている文字に対して行われます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-labour-offices",
+          "text": "このホームページを、英語・中国語・韓国語へ機械的に自動翻訳します。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Machine Translation May Not Be Completely Accurate",
+      "heading_ja": "自動翻訳が正確とは限りません",
+      "body": [
+        {
+          "en": "Because the translation on this page is done by machine, it is not always completely accurate. When you use the translated version to prepare for a visit to a labour bureau, labour standards inspection office, or Hello Work, keep this in mind.",
+          "ja": "このページの翻訳は機械による自動翻訳のため、必ずしも正確とは限りません。翻訳された内容を参考にするときは、この点に注意してください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-labour-offices",
+          "text": "機械による自動翻訳のため、必ずしも正確な翻訳であるとは限りません。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Some Documents Need Adobe Reader to Open",
+      "heading_ja": "書類によってはAdobe Readerが必要です",
+      "body": [
+        {
+          "en": "Some documents on this ministry site, including materials related to labour bureaus, labour standards inspection offices, and Hello Work, are provided as PDF files. To view a PDF file, software called Adobe Reader is needed, and it is distributed free of charge and can be downloaded from the site.",
+          "ja": "労働局・労働基準監督署・ハローワークに関する資料の一部はPDFファイルで提供されています。PDFファイルを見るためにはAdobe Readerというソフトが必要で、無料で配布されているため、サイトからダウンロードできます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-labour-offices",
+          "text": "PDFファイルを見るためには、Adobe Readerというソフトが必要です。"
+        },
+        {
+          "source_id": "mhlw-labour-offices",
+          "text": "Adobe Readerは無料で配布されていますので、こちらからダウンロードしてください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Find Your Nearest Labour Bureau, Labour Standards Office, and Hello Work",
+      "heading_ja": "最寄りの労働局・労働基準監督署・ハローワークを探す",
+      "body": [
+        {
+          "en": "The ministry publishes a page titled 'Labour bureaus, Labour Standards Inspection Offices, and Hello Work' that organizes these offices by region and by prefecture across Japan, from Hokkaido to Okinawa. You can use this page to look up the offices that cover the area where you live.",
+          "ja": "厚生労働省は「労働局・労働基準監督署・ハローワーク」というページで、北海道から沖縄まで、地域や都道府県ごとにこれらの機関をまとめています。このページで、自分の住んでいる地域を担当する機関を調べることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-labour-offices",
+          "text": "労働局・労働基準監督署・ハローワーク"
+        }
+      ]
+    },
+    {
+      "heading_en": "If You Are Not Sure What Applies to Your Case",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "This page only shows how to find the contact information for labour bureaus, labour standards inspection offices, and Hello Work offices across Japan. If it is not clear which office covers your situation, you can visit the nearest Hello Work office directly or use the contact points listed on the ministry's website.",
+          "ja": "このページは、日本各地の労働局・労働基準監督署・ハローワークの連絡先の探し方を示すものです。自分の場合にどの窓口が担当か分からないときは、最寄りのハローワークを訪ねるか、厚生労働省のサイトにある問い合わせ窓口を利用してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

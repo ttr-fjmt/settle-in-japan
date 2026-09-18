@@ -591,8 +591,9 @@
     "sources": [
       "mhlw-labour-offices"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-09-19"
   },
   {
     "n": 55,

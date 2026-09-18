@@ -1,0 +1,53 @@
+{
+  "id": "hello-work",
+  "title": "Cách sử dụng Hello Work",
+  "description": "Bài viết tổng hợp những điều cơ bản về cách sử dụng Hello Work（ハローワーク）dựa trên nội dung trên trang chính thức của Bộ Y tế, Lao động và Phúc lợi（厚生労働省）, gồm cách tìm địa chỉ liên hệ của Hello Work, Cục Lao động（労働局）, Sở giám sát tiêu chuẩn lao động（労働基準監督署）, chức năng dịch tự động của trang, và phần mềm cần thiết để xem tài liệu PDF.",
+  "sections": [
+    {
+      "heading": "Trang này có thể dịch tự động",
+      "body": [
+        "Trang của Bộ Y tế, Lao động và Phúc lợi（厚生労働省）liệt kê Cục Lao động（労働局）, Sở giám sát tiêu chuẩn lao động（労働基準監督署）và Hello Work（ハローワーク）có thể được dịch tự động sang tiếng Anh, tiếng Trung và tiếng Hàn. Dịch vụ dịch này áp dụng cho các chữ hiển thị trên trang."
+      ],
+      "quotes": [
+        "このホームページを、英語・中国語・韓国語へ機械的に自動翻訳します。"
+      ]
+    },
+    {
+      "heading": "Bản dịch máy có thể không hoàn toàn chính xác",
+      "body": [
+        "Vì bản dịch trên trang này được thực hiện bằng máy, nên không phải lúc nào cũng chính xác hoàn toàn. Khi tham khảo nội dung đã dịch để chuẩn bị đến Cục Lao động（労働局）, Sở giám sát tiêu chuẩn lao động（労働基準監督署）hoặc Hello Work（ハローワーク）, cần lưu ý điều này."
+      ],
+      "quotes": [
+        "機械による自動翻訳のため、必ずしも正確な翻訳であるとは限りません。"
+      ]
+    },
+    {
+      "heading": "Một số tài liệu cần Adobe Reader để mở",
+      "body": [
+        "Một số tài liệu liên quan đến Cục Lao động（労働局）, Sở giám sát tiêu chuẩn lao động（労働基準監督署）và Hello Work（ハローワーク）trên trang của bộ này được cung cấp dưới dạng file PDF. Để xem file PDF, cần có phần mềm gọi là Adobe Reader; phần mềm này được phân phối miễn phí và có thể tải xuống từ trang."
+      ],
+      "quotes": [
+        "PDFファイルを見るためには、Adobe Readerというソフトが必要です。",
+        "Adobe Readerは無料で配布されていますので、こちらからダウンロードしてください。"
+      ]
+    },
+    {
+      "heading": "Tìm Cục Lao động, Sở giám sát tiêu chuẩn lao động và Hello Work gần nhất",
+      "body": [
+        "Bộ Y tế, Lao động và Phúc lợi（厚生労働省）công bố một trang có tên「労働局・労働基準監督署・ハローワーク」tổng hợp các cơ quan này theo vùng và theo tỉnh trên toàn Nhật Bản, từ Hokkaido đến Okinawa. Trang này có thể được dùng để tra cứu cơ quan phụ trách khu vực nơi đang sinh sống."
+      ],
+      "quotes": [
+        "労働局・労働基準監督署・ハローワーク"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Trang này chỉ hướng dẫn cách tìm thông tin liên hệ của Cục Lao động（労働局）, Sở giám sát tiêu chuẩn lao động（労働基準監督署）và Hello Work（ハローワーク）trên toàn Nhật Bản. Khi không rõ cơ quan nào phụ trách trường hợp cụ thể, có thể đến trực tiếp Hello Work（ハローワーク）gần nhất hoặc sử dụng các đầu mối liên hệ được đăng trên trang web của Bộ Y tế, Lao động và Phúc lợi（厚生労働省）."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "516a7f1abe8d06b0",
+  "translated_at": "2026-09-18"
+}
