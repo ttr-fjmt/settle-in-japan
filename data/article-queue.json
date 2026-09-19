@@ -969,8 +969,9 @@
     "sources": [
       "fresc"
     ],
-    "status": "pending",
-    "note": "相談窓口図鑑と連動"
+    "status": "published",
+    "note": "相談窓口図鑑と連動",
+    "published_at": "2026-09-20"
   },
   {
     "n": 89,

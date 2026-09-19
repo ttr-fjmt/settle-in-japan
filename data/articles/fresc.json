@@ -1,0 +1,112 @@
+{
+  "id": "fresc",
+  "title_en": "What Is FRESC, the Support Center for Foreign Residents?",
+  "title_ja": "外国人在留支援センター（FRESC）とは",
+  "description": "外国人在留支援センター（FRESC）は、在留相談や労働相談など複数の政府窓口が集まる施設です。公式サイトの説明をもとに、できることと連絡先を紹介します。",
+  "icon": "guide",
+  "published_at": "2026-09-20",
+  "sources": [
+    "fresc"
+  ],
+  "sections": [
+    {
+      "heading_en": "What is FRESC?",
+      "heading_ja": "外国人在留支援センターとは",
+      "body": [
+        {
+          "en": "FRESC (Foreign Residents Support Center) brings together government contact points that support foreign residents living and working in Japan. It handles consultations from foreign residents, support for companies that want to hire foreign workers, and support for local governments working on foreign resident support.",
+          "ja": "外国人在留支援センター（FRESC／フレスク）には、日本で暮らし活躍する外国人の在留を支援する政府の窓口が集まっています。外国人からの相談対応や、外国人を雇用したい企業への支援、外国人支援に取り組む地方公共団体への支援などを行っています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "外国人在留支援センター（FRESC／フレスク）では、日本で暮らし、活躍する外国人の在留を支援する政府の窓口が集まり、外国人からの相談対応、外国人を雇用したい企業の支援、外国人支援に取り組む地方公共団体の支援などの取組を行っています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "What FRESC does",
+      "heading_ja": "フレスクが行っていること",
+      "body": [
+        {
+          "en": "The agencies housed in FRESC work together to carry out various support measures related to the residence of foreign nationals, in order to improve the environment for accepting foreign residents.",
+          "ja": "フレスクに入っている関係機関が連携し、外国人の在留に関するさまざまな支援施策を実施することで、外国人を受け入れる環境を整えています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "外国人在留支援センター（FRESC）に入居する関係機関が連携して、外国人の在留に関する様々な支援施策を実施することにより、外国人受入れ環境を整備していきます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Residence consultations are by reservation",
+      "heading_ja": "在留相談は予約制",
+      "body": [
+        {
+          "en": "The Tokyo Regional Immigration Services Bureau holds reservation-based residence consultations for foreign residents in Japan and for company staff who want to hire foreign workers. Consultations can be done either in person at FRESC or online.",
+          "ja": "東京出入国在留管理局は、日本に在留する外国人や、外国人を雇用したい企業関係者などを対象に、予約制の在留相談を行っています。相談は、フレスクに直接来て話す方法と、オンラインの方法から選べます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "東京出入国在留管理局は、日本に在留する外国人や外国人を雇用したい企業関係者等を対象に、予約制による在留相談を行っています。"
+        },
+        {
+          "source_id": "fresc",
+          "text": "相談方法は、対面（FRESCに直接来て相談）とオンラインを選ぶことができます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Japanese nationals may also ask",
+      "heading_ja": "日本人も相談できる場合がある",
+      "body": [
+        {
+          "en": "FRESC may also be able to respond to other matters related to foreign nationals. Even Japanese nationals are told to contact FRESC if they have concerns related to this.",
+          "ja": "その他の外国人に関連する事項についても対応できる場合があります。日本人の方も、困っていることがあれば問い合わせるよう案内されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "また、その他の外国人に関連する事項についても対応できる場合がありますので、日本人の方もお困りの場合はお問い合わせください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Contact information",
+      "heading_ja": "連絡先",
+      "body": [
+        {
+          "en": "The FRESC office address is postal code 160-0004, Tokyo, Shinjuku-ku, Yotsuya 1-6-1, Yotsuya Tower 13th floor, and the general phone number is 0570-011000.",
+          "ja": "フレスクの住所は〒160-0004 東京都新宿区四谷1-6-1 四谷タワー13階で、代表電話番号は0570-011000です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "〒160-0004　東京都新宿区四谷1-6-1　四谷タワー13階"
+        },
+        {
+          "source_id": "fresc",
+          "text": "℡0570-011000（代表）"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure what applies to your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Details and required procedures can differ from person to person. For questions about your own situation, do not rely on general information alone; contact FRESC or one of the consultation windows inside it directly.",
+          "ja": "詳しい内容や手続きは人によって異なる場合があります。自分の場合について疑問があるときは、この記事だけで判断せず、外国人在留支援センター（FRESC）やその中にある相談窓口に直接問い合わせてください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
