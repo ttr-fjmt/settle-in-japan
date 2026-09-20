@@ -1,0 +1,62 @@
+{
+  "id": "housing-security-benefit",
+  "title": "Không trả được tiền thuê nhà? Giải thích về Trợ cấp bảo đảm nhà ở（住居確保給付金）",
+  "description": "Giải thích về Trợ cấp bảo đảm nhà ở（住居確保給付金）và quầy tư vấn dành cho trường hợp không trả được tiền thuê nhà, hoặc có nguy cơ mất nơi ở do nghỉ việc, dựa trên thông tin chính thức của Bộ Y tế, Lao động và Phúc lợi.",
+  "sections": [
+    {
+      "heading": "Trợ cấp bảo đảm nhà ở（住居確保給付金）là gì?",
+      "body": [
+        "Nếu một người mất nhà ở do nghỉ việc, hoặc có nguy cơ cao mất nhà ở, thì Trợ cấp bảo đảm nhà ở（住居確保給付金）có thể chi trả một khoản tiền tương đương với tiền thuê nhà trong một khoảng thời gian nhất định. Việc hỗ trợ này có điều kiện là phải thực hiện các hoạt động hướng tới việc tìm việc làm, chẳng hạn như hoạt động tìm kiếm việc làm."
+      ],
+      "quotes": [
+        "離職などにより住居を失った方、または失うおそれの高い方には、就職に向けた活動をするなどを条件に、一定期間、家賃相当額を支給します。"
+      ]
+    },
+    {
+      "heading": "Những ai được coi là đối tượng của trợ cấp?",
+      "body": [
+        "Chế độ hỗ trợ tự lập cho người gặp khó khăn trong cuộc sống（生活困窮者自立支援制度）dành cho những người đang gặp khó khăn trong cuộc sống vì nhiều lý do khác nhau liên quan đến công việc hoặc sinh hoạt. Trong danh sách ví dụ chính thức có nêu các trường hợp như không thể trả tiền thuê nhà hoặc không có nơi ở."
+      ],
+      "quotes": [
+        "・家賃を払えない",
+        "・住むところがない"
+      ]
+    },
+    {
+      "heading": "Có điều kiện về tài sản và thu nhập",
+      "body": [
+        "Trợ cấp bảo đảm nhà ở（住居確保給付金）có một số điều kiện nhất định liên quan đến tài sản và thu nhập. Theo phần giải thích chính thức, chỉ những người đáp ứng các điều kiện này mới thuộc đối tượng của trợ cấp."
+      ],
+      "quotes": [
+        "※一定の資産収入等に関する要件を満たしている方が対象です。"
+      ]
+    },
+    {
+      "heading": "Bước đầu tiên: Trao đổi tại quầy tư vấn",
+      "body": [
+        "Bước đầu tiên có thể là trao đổi với quầy tư vấn tại địa phương, được gọi là Dịch vụ tư vấn hỗ trợ tự lập（自立相談支援）. Nhân viên hỗ trợ sẽ lắng nghe tình hình, cùng suy nghĩ về loại hỗ trợ cần thiết, và lập ra một kế hoạch hỗ trợ cụ thể phù hợp với từng người."
+      ],
+      "quotes": [
+        "支援員が相談を受けて、どのような支援が必要かを相談者と一緒に考え、具体的な支援プランを作成し、寄り添いながら自立に向けた支援を行います。"
+      ]
+    },
+    {
+      "heading": "Nơi liên hệ khi muốn biết thêm chi tiết",
+      "body": [
+        "Khi muốn biết thêm chi tiết về Trợ cấp bảo đảm nhà ở（住居確保給付金）hoặc các hình thức hỗ trợ khác, có thể liên hệ với Cơ quan tư vấn hỗ trợ tự lập（自立相談支援機関）tại khu vực đang sinh sống. Cơ quan này sẽ cung cấp thông tin phù hợp với nơi sinh sống."
+      ],
+      "quotes": [
+        "詳しくは、お住まいの地域の自立相談支援機関にお問い合わせください。"
+      ]
+    },
+    {
+      "heading": "Khi không chắc trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Khi không rõ tình huống của mình có thuộc phạm vi của chế độ này hay không, không nên tự phán đoán một mình, mà nên mang câu hỏi đến quầy của Cơ quan tư vấn hỗ trợ tự lập（自立相談支援機関）tại khu vực đang sinh sống. Việc giải thích chế độ và xác nhận tình huống cụ thể sẽ được thực hiện tại quầy đó."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "72b7c7432c8fddb7",
+  "translated_at": "2026-09-20"
+}

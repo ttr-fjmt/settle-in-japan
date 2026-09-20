@@ -1,0 +1,108 @@
+{
+  "id": "housing-security-benefit",
+  "title_en": "Can't Pay Rent? The Housing Security Benefit Explained",
+  "title_ja": "家賃が払えないとき（住居確保給付金）",
+  "description": "離職などで家賃が払えない、または住むところを失うおそれがあるときに使える住居確保給付金と相談窓口について、厚生労働省の公式情報をもとに説明します。",
+  "icon": "home",
+  "published_at": "2026-09-21",
+  "sources": [
+    "mhlw-konkyu"
+  ],
+  "sections": [
+    {
+      "heading_en": "What the Housing Security Benefit is",
+      "heading_ja": "住居確保給付金とは",
+      "body": [
+        {
+          "en": "If you have lost your housing because you left a job, or you are at high risk of losing it, the Housing Security Benefit can pay an amount equal to your rent for a set period. This support is available on the condition that you take steps toward finding work, such as job-hunting activities.",
+          "ja": "離職などで住居を失った、または失うおそれが高い場合、就職に向けた活動をすることを条件に、家賃相当額が一定期間支給される制度です。生活の土台となる住居を整えたうえで、就職に向けた支援も行われます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "離職などにより住居を失った方、または失うおそれの高い方には、就職に向けた活動をするなどを条件に、一定期間、家賃相当額を支給します。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who this support is for",
+      "heading_ja": "どんな人が対象とされているか",
+      "body": [
+        {
+          "en": "The Comprehensive Support System for People in Need is for people facing various difficulties with work or daily life. The official list of examples includes situations such as not being able to pay rent and having no place to live.",
+          "ja": "生活困窮者自立支援制度は、仕事や生活のさまざまな困難で生活に困っている人を対象としています。家賃を払えない場合や、住むところがない場合も対象の例として挙げられています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "・家賃を払えない"
+        },
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "・住むところがない"
+        }
+      ]
+    },
+    {
+      "heading_en": "There is a condition on assets and income",
+      "heading_ja": "資産や収入に関する要件がある",
+      "body": [
+        {
+          "en": "The Housing Security Benefit also comes with a condition related to assets and income. According to the official description, only people who meet certain requirements regarding assets and income are within the scope of this benefit.",
+          "ja": "住居確保給付金には、資産や収入に関する一定の要件があります。制度の説明では、この要件を満たす人が対象とされています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "※一定の資産収入等に関する要件を満たしている方が対象です。"
+        }
+      ]
+    },
+    {
+      "heading_en": "The first step: talk to a support worker",
+      "heading_ja": "最初の一歩：相談窓口で話す",
+      "body": [
+        {
+          "en": "The first step is to talk with a local consultation service, called the Self-Reliance Consultation Support service. A support worker will listen to your situation, think together with you about what kind of support is needed, and create a concrete support plan tailored to you.",
+          "ja": "まずは地域の相談窓口に相談することができます。支援員が話を聞き、必要な支援を一緒に考えたうえで、具体的な支援プランが作られます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "支援員が相談を受けて、どのような支援が必要かを相談者と一緒に考え、具体的な支援プランを作成し、寄り添いながら自立に向けた支援を行います。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where to ask for more details",
+      "heading_ja": "詳しく知りたいときの問い合わせ先",
+      "body": [
+        {
+          "en": "For more details about the Housing Security Benefit or other kinds of support, you can contact the self-reliance consultation support office in your area. This local office can give you information specific to where you live.",
+          "ja": "住居確保給付金や他の支援について詳しく知りたいときは、お住まいの地域の自立相談支援機関に問い合わせることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "詳しくは、お住まいの地域の自立相談支援機関にお問い合わせください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you're not sure how this applies to you",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If you are not sure whether your situation matches this benefit, do not decide on your own. Bring your questions to the self-reliance consultation support office in your area. Staff there can explain the system and help you understand what applies to your case.",
+          "ja": "自分の状況がこの制度に当てはまるかどうか分からないときは、自己判断せずに、お住まいの地域の自立相談支援機関の窓口に相談してください。制度の説明や個別の状況の確認は、窓口で行われます。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
