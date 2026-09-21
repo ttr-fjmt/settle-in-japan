@@ -1,0 +1,52 @@
+{
+  "id": "work-or-no-work-status",
+  "title": "Sự khác biệt giữa tư cách lưu trú (在留資格) được phép làm việc và không được phép làm việc",
+  "description": "Trong các tư cách lưu trú (在留資格), có loại được phép làm việc và loại không được phép làm việc. Bài viết giải thích dễ hiểu sự khác biệt này dựa trên bảng danh mục chính thức.",
+  "sections": [
+    {
+      "heading": "Tư cách lưu trú (在留資格) được phép làm việc: Bảng thứ nhất (Tư cách lao động)",
+      "body": [
+        "Bảng danh mục tư cách lưu trú (在留資格) chính thức được chia thành nhiều bảng khác nhau. Bảng thứ nhất bao gồm các tư cách như giáo sư, nghệ thuật, tôn giáo, báo chí, và mỗi tư cách được phép thực hiện những hoạt động cụ thể đã quy định, chẳng hạn như nghiên cứu, giảng dạy hoặc truyền giáo."
+      ],
+      "quotes": [
+        "本邦の大学若しくはこれに準ずる機関又は高等専門学校において研究，研究の指導又は教育をする活動"
+      ]
+    },
+    {
+      "heading": "Tư cách lao động có liên quan đến tiêu chuẩn cho phép nhập cảnh (上陸許可基準): Bảng thứ hai",
+      "body": [
+        "Bảng thứ hai cũng là những tư cách được phép làm việc, nhưng sẽ áp dụng thêm tiêu chuẩn cho phép nhập cảnh (上陸許可基準) do quy tắc của Bộ Tư pháp (法務省令) quy định. Các hoạt động như điều hành hoặc quản lý công ty được liệt kê trong bảng này."
+      ],
+      "quotes": [
+        "本邦において貿易その他の事業の経営を行い又は当該事業の管理に従事する活動（この表の法律・会計業務の項に掲げる資格を有しなければ法律上行うことができないこととされている事業の経営又は管理に従事する活動を除く。）"
+      ]
+    },
+    {
+      "heading": "Tư cách lưu trú (在留資格) không được phép làm việc: Bảng thứ ba và bảng thứ tư",
+      "body": [
+        "Bảng thứ ba và bảng thứ tư được coi là các tư cách không được phép làm việc. Ví dụ, tư cách lưu trú ngắn hạn cho phép thực hiện các hoạt động như du lịch, thăm người thân, tham quan, tham dự hội họp, nhưng không cho phép làm việc."
+      ],
+      "quotes": [
+        "本邦に短期間滞在して行う観光，保養，スポーツ，親族の訪問，見学，講習又は会合への参加，業務連絡その他これらに類似する活動"
+      ]
+    },
+    {
+      "heading": "Hoạt động đặc định (特定活動) do Bộ trưởng Bộ Tư pháp chỉ định riêng cho từng người (Bảng thứ năm)",
+      "body": [
+        "Hoạt động đặc định (特定活動), được gọi là bảng thứ năm, có cơ chế khác với các bảng còn lại. Thay vì có một danh sách hoạt động được xác định trước, Bộ trưởng Bộ Tư pháp sẽ chỉ định riêng nội dung hoạt động cho từng người. Vì vậy, việc có được phép làm việc hay không sẽ tùy thuộc vào nội dung chỉ định riêng dành cho người đó."
+      ],
+      "quotes": [
+        "法務大臣が個々の外国人について特に指定する活動"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Việc có được phép làm việc hay không, cũng như những điều kiện đi kèm, sẽ khác nhau tùy theo tư cách lưu trú (在留資格) đó thuộc bảng nào. Khi không rõ quy định nào áp dụng cho trường hợp cụ thể, có thể kiểm tra trực tiếp bảng danh mục tư cách lưu trú (在留資格) hoặc quầy tư vấn của Cục quản lý xuất nhập cảnh và lưu trú Nhật Bản (出入国在留管理庁)."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "c3c067e71beee881",
+  "translated_at": "2026-09-21"
+}

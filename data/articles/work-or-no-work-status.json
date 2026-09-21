@@ -1,0 +1,88 @@
+{
+  "id": "work-or-no-work-status",
+  "title_en": "Which Statuses of Residence Allow Work in Japan?",
+  "title_ja": "就労できる在留資格と、できない在留資格の違い",
+  "description": "在留資格には就労が認められるものと認められないものがあります。公式の一覧表をもとに、それぞれの違いをわかりやすく説明します。",
+  "icon": "work",
+  "published_at": "2026-09-22",
+  "sources": [
+    "visa-list"
+  ],
+  "sections": [
+    {
+      "heading_en": "Work-Permitted Status: The First Table (Skilled Professions)",
+      "heading_ja": "就労が認められる在留資格：一の表（就労資格）",
+      "body": [
+        {
+          "en": "The official status of residence list is divided into several tables. The first table lists professions such as professors, artists, religious workers, and journalists, and each status permits the specific activity described for it, such as research, teaching, or religious work.",
+          "ja": "公式の在留資格一覧表は、複数の表に分かれています。一の表には教授や芸術、宗教、報道などの資格があり、それぞれ研究や教育、布教活動など、定められた活動が認められています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "本邦の大学若しくはこれに準ずる機関又は高等専門学校において研究，研究の指導又は教育をする活動"
+        }
+      ]
+    },
+    {
+      "heading_en": "Work-Permitted Status with Additional Landing Criteria: The Second Table",
+      "heading_ja": "上陸許可基準も関わる就労資格：二の表",
+      "body": [
+        {
+          "en": "The second table also authorizes work, but these statuses come with additional landing permission criteria set by the Ministry of Justice. Business managers and people engaged in managing a company are examples of the activities listed under this table.",
+          "ja": "二の表も就労が認められる資格ですが、法務省令で定める上陸許可基準が追加で適用されます。会社の経営や管理を行う活動などが、この表に含まれています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "本邦において貿易その他の事業の経営を行い又は当該事業の管理に従事する活動（この表の法律・会計業務の項に掲げる資格を有しなければ法律上行うことができないこととされている事業の経営又は管理に従事する活動を除く。）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Non-Work Status: The Third and Fourth Tables",
+      "heading_ja": "就労が認められない在留資格：三の表・四の表",
+      "body": [
+        {
+          "en": "The third and fourth tables are described as non-work status. For example, the short-stay status permits activities such as tourism, visiting relatives, sightseeing, or attending meetings, but it does not authorize working in Japan.",
+          "ja": "三の表・四の表は、非就労資格とされています。例えば短期滞在の資格では、観光や親族の訪問、見学、会合への参加などの活動が認められていますが、就労は認められていません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "本邦に短期間滞在して行う観光，保養，スポーツ，親族の訪問，見学，講習又は会合への参加，業務連絡その他これらに類似する活動"
+        }
+      ]
+    },
+    {
+      "heading_en": "A Special Case: Designated Activities (The Fifth Table)",
+      "heading_ja": "法務大臣が個別に指定する「特定活動」（五の表）",
+      "body": [
+        {
+          "en": "The fifth table, called Designated Activities, works differently from the other tables. Instead of a fixed list of activities, the Minister of Justice decides on a case-by-case basis what specific activity each person is allowed to carry out. This means whether work is permitted under this status depends entirely on the individual decision made for that person.",
+          "ja": "五の表と呼ばれる特定活動は、他の表とは違う仕組みです。あらかじめ決まった活動の一覧ではなく、法務大臣が一人ひとりについて活動内容を個別に指定します。そのため、就労が認められるかどうかは、その人に対する個別の指定内容によって決まります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-list",
+          "text": "法務大臣が個々の外国人について特に指定する活動"
+        }
+      ]
+    },
+    {
+      "heading_en": "When You Are Not Sure Which Rules Apply to You",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Whether a status of residence allows work, and under what conditions, depends on which table and which specific status applies. If it is not clear which rules apply to a particular case, the official status of residence list and the consultation counters run by the Immigration Services Agency of Japan can be checked directly.",
+          "ja": "就労が認められるかどうか、またどのような条件があるかは、どの表のどの在留資格に当てはまるかによって異なります。自分の場合にどの決まりが当てはまるか分からないときは、出入国在留管理庁の在留資格一覧表や、相談窓口に直接確認することができます。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

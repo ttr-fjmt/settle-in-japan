@@ -22,8 +22,9 @@
     "sources": [
       "visa-list"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-09-22"
   },
   {
     "n": 3,
