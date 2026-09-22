@@ -1,0 +1,96 @@
+{
+  "id": "year-end-adjustment",
+  "title_en": "What Is Nenmatsu Chosei (Year-End Tax Adjustment)?",
+  "title_ja": "年末調整とは何か",
+  "description": "国税庁の公式ページをもとに、年末調整に関するお知らせや今年の変更点、通勤手当の非課税限度額の改正などをまとめました。",
+  "icon": "work",
+  "published_at": "2026-09-23",
+  "sources": [
+    "nta-nencho"
+  ],
+  "sections": [
+    {
+      "heading_en": "What This Official Page Provides",
+      "heading_ja": "このページで分かること",
+      "body": [
+        {
+          "en": "The National Tax Agency's page on year-end adjustment provides videos and pamphlets explaining the procedures, as well as the various forms needed for the process. It is meant to be used as a source of official information and documents.",
+          "ja": "国税庁の年末調整のページでは、手順を解説した動画やパンフレット、必要な各種様式を入手・閲覧できると説明されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-nencho",
+          "text": "年末調整の手順等を解説した動画やパンフレット、年末調整時に必要な各種様式など、国税庁が提供している年末調整に関する情報はこのページから入手・閲覧できます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "An Important Notice for This Year",
+      "heading_ja": "今年のお知らせ",
+      "body": [
+        {
+          "en": "For this year's year-end adjustment, the page specifically calls attention to a review of the basic deduction and related items. This is presented as a notice that people should be aware of before the year-end adjustment process.",
+          "ja": "本年の年末調整については、基礎控除の見直し等に注意するようにという案内が出されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-nencho",
+          "text": "本年の年末調整においては、基礎控除の見直し等にご注意ください！"
+        }
+      ]
+    },
+    {
+      "heading_en": "What Was Revised",
+      "heading_ja": "何が見直されたか",
+      "body": [
+        {
+          "en": "The page lists the review of the basic deduction and the salary income deduction as one of the changes for this year. It also lists a revision to the income requirements for dependent relatives as another change.",
+          "ja": "今年の変更点として、「基礎控除」や「給与所得控除」の見直しが挙げられています。また、「扶養親族等の所得要件」の改正も挙げられています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-nencho",
+          "text": "「基礎控除」や「給与所得控除」の見直し"
+        },
+        {
+          "source_id": "nta-nencho",
+          "text": "「扶養親族等の所得要件」の改正"
+        }
+      ]
+    },
+    {
+      "heading_en": "A Change to the Commuting Allowance Limit",
+      "heading_ja": "通勤手当の非課税限度額の改正",
+      "body": [
+        {
+          "en": "On November 19 of Reiwa 7, an amendment to the Order for Enforcement of the Income Tax Act raised the tax-exempt limit for commuting allowances paid to employees who use a car or other vehicle to commute. As a result, if a commuting allowance exceeding the previous tax-exempt limit was paid before the amendment, a response may be needed during the year-end adjustment.",
+          "ja": "令和７年11月19日に所得税法施行令の一部改正が行われ、マイカーなどを使う給与所得者への通勤手当の非課税限度額が引き上げられました。改正前の非課税限度額を超えた通勤手当を支払っていた場合は、年末調整での対応が必要となることがあるとされています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-nencho",
+          "text": "また、令和７年11月19日に所得税法施行令の一部改正が行われ、マイカーなどの交通用具を使用している給与所得者に支給する通勤手当の非課税限度額が引き上げられました。"
+        },
+        {
+          "source_id": "nta-nencho",
+          "text": "このため、改正前に、改正前の非課税限度額を超えた通勤手当を支払っていた場合には、年末調整での対応が必要となることがあります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If You Are Not Sure How This Applies to You",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Details about forms, deadlines, and how these changes affect a specific workplace can differ. For questions about your own situation, check the official National Tax Agency page on year-end adjustment, or ask the payroll or personnel office where you work, since they handle the year-end adjustment procedure for employees.",
+          "ja": "様式や期限、変更点がどう関わるかは職場によって異なります。自分の場合について分からないときは、国税庁の年末調整の公式ページを確認するか、勤務先の給与担当・人事担当の窓口に相談してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "year-end-adjustment",
+  "title": "Quyết toán thuế cuối năm (年末調整) là gì?",
+  "description": "Bài viết tổng hợp thông báo về quyết toán thuế cuối năm (年末調整), những thay đổi của năm nay và việc sửa đổi mức giới hạn miễn thuế đối với trợ cấp đi lại, dựa trên trang chính thức của Cục thuế quốc gia (国税庁).",
+  "sections": [
+    {
+      "heading": "Trang này cho biết điều gì",
+      "body": [
+        "Trang chính thức của Cục thuế quốc gia (国税庁) về quyết toán thuế cuối năm (年末調整) cho biết có thể xem và tải video, tờ rơi giải thích các bước thực hiện, cũng như các mẫu đơn cần thiết khi làm quyết toán thuế cuối năm."
+      ],
+      "quotes": [
+        "年末調整の手順等を解説した動画やパンフレット、年末調整時に必要な各種様式など、国税庁が提供している年末調整に関する情報はこのページから入手・閲覧できます。"
+      ]
+    },
+    {
+      "heading": "Thông báo cho năm nay",
+      "body": [
+        "Đối với việc quyết toán thuế cuối năm (年末調整) của năm nay, có thông báo nhắc mọi người chú ý đến việc xem xét lại khoản khấu trừ cơ bản (基礎控除) và các nội dung liên quan."
+      ],
+      "quotes": [
+        "本年の年末調整においては、基礎控除の見直し等にご注意ください！"
+      ]
+    },
+    {
+      "heading": "Những gì đã được thay đổi",
+      "body": [
+        "Những thay đổi của năm nay bao gồm việc xem xét lại khoản khấu trừ cơ bản (基礎控除) và khoản khấu trừ thu nhập từ tiền lương (給与所得控除). Ngoài ra, cũng có sự sửa đổi về điều kiện thu nhập đối với người phụ thuộc (扶養親族等の所得要件)。"
+      ],
+      "quotes": [
+        "「基礎控除」や「給与所得控除」の見直し",
+        "「扶養親族等の所得要件」の改正"
+      ]
+    },
+    {
+      "heading": "Sửa đổi mức giới hạn miễn thuế đối với trợ cấp đi lại (通勤手当)",
+      "body": [
+        "Vào ngày 19 tháng 11 năm Reiwa 7, một phần của Nghị định thi hành Luật thuế thu nhập (所得税法施行令) đã được sửa đổi, làm tăng mức giới hạn miễn thuế đối với trợ cấp đi lại (通勤手当) trả cho người lao động sử dụng ô tô riêng hoặc phương tiện khác để đi làm. Nếu trước khi có sự sửa đổi này, công ty đã trả trợ cấp đi lại vượt quá mức giới hạn miễn thuế cũ, thì có thể cần xử lý vấn đề này trong quá trình quyết toán thuế cuối năm (年末調整)。"
+      ],
+      "quotes": [
+        "また、令和７年11月19日に所得税法施行令の一部改正が行われ、マイカーなどの交通用具を使用している給与所得者に支給する通勤手当の非課税限度額が引き上げられました。",
+        "このため、改正前に、改正前の非課税限度額を超えた通勤手当を支払っていた場合には、年末調整での対応が必要となることがあります。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Các mẫu đơn, thời hạn, và cách những thay đổi này ảnh hưởng có thể khác nhau tùy theo nơi làm việc. Nếu không rõ về trường hợp của mình, hãy kiểm tra trang chính thức của Cục thuế quốc gia (国税庁) về quyết toán thuế cuối năm (年末調整), hoặc hỏi bộ phận phụ trách lương hay nhân sự tại nơi làm việc, vì đây là nơi thực hiện thủ tục quyết toán thuế cuối năm cho người lao động."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "2c649b658de31204",
+  "translated_at": "2026-09-22"
+}
