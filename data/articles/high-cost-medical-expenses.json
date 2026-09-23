@@ -1,0 +1,108 @@
+{
+  "id": "high-cost-medical-expenses",
+  "title_en": "The High-Cost Medical Expense System: What It Is and How It Works",
+  "title_ja": "高額療養費制度とは",
+  "description": "高額療養費制度は、医療費の自己負担が上限額を超えた場合に、その超えた分が支給される制度です。上限額の決まり方や長期療養者向けの軽減の仕組み、問い合わせ先を公式情報にもとづいて解説します。",
+  "icon": "health",
+  "published_at": "2026-09-24",
+  "sources": [
+    "mhlw-kougaku"
+  ],
+  "sections": [
+    {
+      "heading_en": "What Is the High-Cost Medical Expense System?",
+      "heading_ja": "高額療養費制度とは",
+      "body": [
+        {
+          "en": "The High-Cost Medical Expense System (Kōgaku Ryōyōhi Seido) exists so that the amount you pay for medical care does not become an excessive burden on your household. If the amount you pay at the counter of a hospital or pharmacy goes over a set upper limit, the amount over that limit is paid back to you.",
+          "ja": "高額療養費制度（こうがくりょうようひせいど）は、家計にとって医療費の自己負担が重くなりすぎないための制度です。医療機関や薬局の窓口で支払う医療費が上限額を超えた場合、その超えた分が支給されます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kougaku",
+          "text": "家計に対する医療費の自己負担が過重なものとならないよう、医療機関や薬局の窓口で支払う医療費が上限額を超えた場合、その超えた額を支給する「高額療養費制度」（こうがくりょうようひせいど）があります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "How the Out-of-Pocket Upper Limit Is Decided",
+      "heading_ja": "上限額はどう決まるか",
+      "body": [
+        {
+          "en": "The upper limit is set according to age and income, so it is not the same amount for everyone. The official page explains the system that takes effect from August, Reiwa 8, and gives an example for people under 70 years old. The exact figure depends on each person's income category.",
+          "ja": "上限額は、年齢や所得に応じて定められており、誰でも同じ金額というわけではありません。公式ページでは、令和8年8月からの制度を例に、70歳未満の方の場合が示されています。実際の金額は、それぞれの所得区分によって異なります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kougaku",
+          "text": "例えば、令和８年８月からの制度においては、70歳未満・年収約370万円～約510万円の方であれば、医療費100万円の治療を受けた場合、自己負担は約9.3万円まで抑えられます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Extra Relief for Long-Term Treatment (Multiple-Time Applicability)",
+      "heading_ja": "長期療養者への軽減（多数回該当）",
+      "body": [
+        {
+          "en": "If a person has reached the high-cost medical expense limit for 3 months or more within the most recent 12 months, the self-payment limit for the 4th month onward is lowered further. This mechanism is called 'Tasūkai Gaitō' (multiple-time applicability).",
+          "ja": "直近12か月の間に高額療養費の対象となった月が3か月以上ある場合、4か月目以降は自己負担の上限額がさらに引き下げられます。この仕組みは「多数回該当」と呼ばれています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kougaku",
+          "text": "（※）直近12か月の間に高額療養費に該当した月が３か月以上ある場合は、４か月目以降は自己負担限度額が更に軽減される「多数回該当」という仕組みがあります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "A New Yearly Upper Limit Starting August, Reiwa 8",
+      "heading_ja": "令和8年8月から始まる年間の上限",
+      "body": [
+        {
+          "en": "Until July, Reiwa 8, the system had only a monthly upper limit. From August, Reiwa 8, a new yearly upper limit called 'nenkan jōgen' is being added, which can further reduce the burden for people who need long-term treatment. The official page defines this 'year' as running from August to July of the following year.",
+          "ja": "令和8年7月までの制度では月ごとの上限額のみでしたが、令和8年8月からは新たに年単位の上限額（「年間上限」）が設けられ、長期療養者などの負担がさらに軽くなる場合があります。ここでいう「年間」とは、8月から翌年7月までを指すと説明されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kougaku",
+          "text": "さらに、令和８年７月までの制度では、月単位の上限額となっていますが、令和８年８月からは新たに年単位の上限額を設ける「年間上限」が設けられ、長期療養者などの負担が更に軽減されるケースもあります。"
+        },
+        {
+          "source_id": "mhlw-kougaku",
+          "text": "（年間とは、８月から翌年７月までを指します。）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where to Ask Questions",
+      "heading_ja": "問い合わせ先",
+      "body": [
+        {
+          "en": "Where you should ask depends on which medical insurance you are enrolled in. The official page asks you to first check the name of your insurer before you contact them.",
+          "ja": "問い合わせ先は、加入している医療保険制度によって異なります。公式ページでは、まず加入している保険者名を確認するよう案内しています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kougaku",
+          "text": "高額療養費制度についてのお問い合わせ先は、どの医療保険制度に加入しているかで変わります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "When You Are Not Sure About Your Own Case",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "The details of this system, such as the exact upper limit, depend on each person's age, income, and insurer. If it is not clear how the rules apply to your own situation, first check the name of your insurer and contact that insurer's window, or contact the Ministry of Health, Labour and Welfare call center for questions about this system's recent changes.",
+          "ja": "上限額などの詳しい内容は、年齢や所得、加入している保険者によって異なります。自分の場合がどうなるか分からないときは、まず加入している保険者名を確認し、その窓口に問い合わせるか、今回の制度見直しについては厚生労働省コールセンターに問い合わせることができます。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

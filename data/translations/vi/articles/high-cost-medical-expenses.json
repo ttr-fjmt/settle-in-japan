@@ -1,0 +1,62 @@
+{
+  "id": "high-cost-medical-expenses",
+  "title": "Chế độ Chi phí y tế cao (高額療養費制度) là gì",
+  "description": "Chế độ Chi phí y tế cao (高額療養費制度) là chế độ hoàn trả phần chi phí y tế vượt quá mức giới hạn tự chi trả. Bài viết giải thích cách xác định mức giới hạn, cơ chế giảm nhẹ cho người điều trị dài hạn và nơi liên hệ, dựa trên thông tin chính thức.",
+  "sections": [
+    {
+      "heading": "Chế độ Chi phí y tế cao (高額療養費制度) là gì",
+      "body": [
+        "Chế độ Chi phí y tế cao (高額療養費制度, Kōgaku Ryōyōhi Seido) là chế độ giúp cho khoản tiền người bệnh phải tự chi trả cho y tế không trở thành gánh nặng quá lớn đối với gia đình. Nếu số tiền phải trả tại quầy của bệnh viện, phòng khám hoặc hiệu thuốc vượt quá một mức giới hạn nhất định, phần vượt quá đó sẽ được hoàn trả lại."
+      ],
+      "quotes": [
+        "家計に対する医療費の自己負担が過重なものとならないよう、医療機関や薬局の窓口で支払う医療費が上限額を超えた場合、その超えた額を支給する「高額療養費制度」（こうがくりょうようひせいど）があります。"
+      ]
+    },
+    {
+      "heading": "Mức giới hạn tự chi trả được quyết định như thế nào",
+      "body": [
+        "Mức giới hạn được quy định theo độ tuổi và thu nhập, vì vậy không phải ai cũng có cùng một số tiền. Trang thông tin chính thức lấy ví dụ về chế độ áp dụng từ tháng 8 năm Reiwa 8, với trường hợp người dưới 70 tuổi. Số tiền thực tế sẽ khác nhau tùy theo nhóm thu nhập của từng người."
+      ],
+      "quotes": [
+        "例えば、令和８年８月からの制度においては、70歳未満・年収約370万円～約510万円の方であれば、医療費100万円の治療を受けた場合、自己負担は約9.3万円まで抑えられます。"
+      ]
+    },
+    {
+      "heading": "Giảm nhẹ cho người điều trị dài hạn (Đa số lần đủ điều kiện - 多数回該当)",
+      "body": [
+        "Nếu trong 12 tháng gần nhất có từ 3 tháng trở lên thuộc diện áp dụng Chế độ Chi phí y tế cao (高額療養費制度), thì từ tháng thứ 4 trở đi, mức giới hạn tự chi trả sẽ được giảm thêm. Cơ chế này được gọi là “Đa số lần đủ điều kiện” (多数回該当)."
+      ],
+      "quotes": [
+        "（※）直近12か月の間に高額療養費に該当した月が３か月以上ある場合は、４か月目以降は自己負担限度額が更に軽減される「多数回該当」という仕組みがあります。"
+      ]
+    },
+    {
+      "heading": "Mức giới hạn theo năm bắt đầu áp dụng từ tháng 8 năm Reiwa 8",
+      "body": [
+        "Cho đến tháng 7 năm Reiwa 8, chế độ này chỉ có mức giới hạn theo tháng, nhưng từ tháng 8 năm Reiwa 8, một mức giới hạn theo năm mới được gọi là “Mức giới hạn theo năm” (年間上限) sẽ được thiết lập, giúp giảm thêm gánh nặng cho người điều trị dài hạn trong một số trường hợp. “Năm” ở đây được giải thích là khoảng thời gian từ tháng 8 đến tháng 7 năm sau."
+      ],
+      "quotes": [
+        "さらに、令和８年７月までの制度では、月単位の上限額となっていますが、令和８年８月からは新たに年単位の上限額を設ける「年間上限」が設けられ、長期療養者などの負担が更に軽減されるケースもあります。",
+        "（年間とは、８月から翌年７月までを指します。）"
+      ]
+    },
+    {
+      "heading": "Nơi liên hệ khi có thắc mắc",
+      "body": [
+        "Nơi liên hệ sẽ khác nhau tùy theo chế độ bảo hiểm y tế mà người đó đang tham gia. Trang thông tin chính thức hướng dẫn trước tiên nên kiểm tra tên của cơ quan bảo hiểm mà mình đang tham gia."
+      ],
+      "quotes": [
+        "高額療養費制度についてのお問い合わせ先は、どの医療保険制度に加入しているかで変わります。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của bản thân sẽ như thế nào",
+      "body": [
+        "Nội dung chi tiết như mức giới hạn cụ thể sẽ khác nhau tùy theo độ tuổi, thu nhập và cơ quan bảo hiểm mà mỗi người tham gia. Nếu không rõ trường hợp của bản thân sẽ được áp dụng như thế nào, trước tiên hãy kiểm tra tên cơ quan bảo hiểm đang tham gia và liên hệ với quầy hỗ trợ của cơ quan đó, hoặc có thể liên hệ Trung tâm tư vấn qua điện thoại của Bộ Y tế, Lao động và Phúc lợi (厚生労働省コールセンター) đối với các câu hỏi về lần sửa đổi chế độ này."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "3c91546cf1da5204",
+  "translated_at": "2026-09-23"
+}
