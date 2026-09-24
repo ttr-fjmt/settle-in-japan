@@ -1,0 +1,52 @@
+{
+  "id": "minimum-wage",
+  "title": "Cách tra cứu mức lương tối thiểu",
+  "description": "Bài viết hướng dẫn cách tìm trang \"Danh sách mức lương tối thiểu theo khu vực trên toàn quốc\"（地域別最低賃金の全国一覧）trên trang web Bộ Y tế, Lao động và Phúc lợi（厚生労働省）. Tổng hợp cách kiểm tra số tiền theo từng tỉnh, ngày có hiệu lực và tình hình sửa đổi trong quá khứ.",
+  "sections": [
+    {
+      "heading": "Tìm danh sách mức lương tối thiểu trên toàn quốc",
+      "body": [
+        "Trang web của Bộ Y tế, Lao động và Phúc lợi（厚生労働省）có một trang tên là \"Danh sách mức lương tối thiểu theo khu vực trên toàn quốc\"（地域別最低賃金の全国一覧）, tổng hợp mức lương tối thiểu của từng tỉnh, thành. Trang này trình bày mức lương tối thiểu của năm tài chính Reiwa 7, cùng với ngày có hiệu lực cho biết từ khi nào mức lương đó được áp dụng."
+      ],
+      "quotes": [
+        "令和７年度地域別最低賃金額及び発効日は、以下のとおりです。"
+      ]
+    },
+    {
+      "heading": "Số tiền thực tế nằm trong tệp PDF",
+      "body": [
+        "Bản danh sách ghi số tiền thực tế được công bố dưới dạng tệp PDF. Tệp có tên \"令和７年度地域別最低賃金全国一覧\", với dung lượng tệp được ghi là 41KB. Trước khi đến cơ quan hành chính, có thể mở tệp này để kiểm tra số tiền."
+      ],
+      "quotes": [
+        "令和７年度地域別最低賃金全国一覧［41KB］"
+      ]
+    },
+    {
+      "heading": "Có thể kiểm tra cả tình hình sửa đổi trong quá khứ",
+      "body": [
+        "Cùng trang này cũng đăng tải hồ sơ về cách mức lương tối thiểu đã được sửa đổi trong khoảng thời gian từ năm tài chính Heisei 14 đến năm tài chính Reiwa 7. Khi muốn biết diễn biến thay đổi trong quá khứ, có thể xem tài liệu về tình hình sửa đổi này."
+      ],
+      "quotes": [
+        "また、平成14年度から令和７年度までの地域別最低賃金改定状況については、「令和７年度地域別最低賃金改定状況」の下に掲載しています。"
+      ]
+    },
+    {
+      "heading": "Cũng có bảng tự kiểm tra",
+      "body": [
+        "Ngoài ra, một tệp có tên \"Bảng tự kiểm tra về mức lương tối thiểu\"（最低賃金に関するセルフチェックシート）cũng được đăng trên cùng trang này. Dung lượng tệp được ghi là 25KB."
+      ],
+      "quotes": [
+        "最低賃金に関するセルフチェックシート［25KB］"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Nếu có điều gì chưa rõ về số tiền lương tối thiểu áp dụng cho mình, hoặc về nội dung chi tiết của chế độ, có thể xem trang \"Các quầy tư vấn\"（相談窓口等）trên trang web của Bộ Y tế, Lao động và Phúc lợi. Đối với những trường hợp cụ thể của từng cá nhân, cần xác nhận thông qua quầy tư vấn này."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "2f0c6d08c2765016",
+  "translated_at": "2026-09-24"
+}

@@ -647,8 +647,9 @@
     "sources": [
       "mhlw-minimum-wage"
     ],
-    "status": "pending",
-    "note": "都道府県ごと。数字は公式のみ"
+    "status": "published",
+    "note": "都道府県ごと。数字は公式のみ",
+    "published_at": "2026-09-25"
   },
   {
     "n": 60,

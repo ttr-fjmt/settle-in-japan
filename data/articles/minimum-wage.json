@@ -1,0 +1,88 @@
+{
+  "id": "minimum-wage",
+  "title_en": "How to Check the Minimum Wage in Japan",
+  "title_ja": "最低賃金の調べ方",
+  "description": "厚生労働省のウェブサイトに掲載されている「地域別最低賃金の全国一覧」の探し方を説明する。都道府県ごとの金額や発効日、過去の改定状況の確認方法をまとめている。",
+  "icon": "work",
+  "published_at": "2026-09-25",
+  "sources": [
+    "mhlw-minimum-wage"
+  ],
+  "sections": [
+    {
+      "heading_en": "Find the national list of minimum wages",
+      "heading_ja": "最低賃金の全国一覧を見つける",
+      "body": [
+        {
+          "en": "The Ministry of Health, Labour and Welfare (MHLW) website has a page called \"Regional Minimum Wage National List\" that summarizes the minimum wage for each prefecture. This page shows the minimum wage amounts for fiscal year Reiwa 7, together with the effective dates on which each amount begins to apply.",
+          "ja": "厚生労働省のウェブサイトには、都道府県ごとの最低賃金をまとめた「地域別最低賃金の全国一覧」というページがある。このページには、令和７年度の最低賃金額と、その金額がいつから適用されるかを示す発効日がまとめて示されている。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-minimum-wage",
+          "text": "令和７年度地域別最低賃金額及び発効日は、以下のとおりです。"
+        }
+      ]
+    },
+    {
+      "heading_en": "The actual amounts are in a PDF file",
+      "heading_ja": "実際の金額はPDFファイルにある",
+      "body": [
+        {
+          "en": "The actual list containing the amounts is published as a PDF file. The file is named \"Reiwa 7 Regional Minimum Wage National List,\" and its file size is shown as 41KB. Before visiting a government office, it is possible to open this file and check the amounts.",
+          "ja": "実際の金額が書かれた一覧そのものは、PDFファイルとして公開されている。ファイルの名前は「令和７年度地域別最低賃金全国一覧」で、ファイルサイズは41KBと案内されている。窓口に行く前に、このファイルを開いて金額を確認できる。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-minimum-wage",
+          "text": "令和７年度地域別最低賃金全国一覧［41KB］"
+        }
+      ]
+    },
+    {
+      "heading_en": "Past changes can also be checked",
+      "heading_ja": "過去の改定状況も確認できる",
+      "body": [
+        {
+          "en": "The same page also includes a record of how the minimum wage has been revised from fiscal year Heisei 14 through fiscal year Reiwa 7. Anyone who wants to know how the amounts have changed over time can check this record of past revisions.",
+          "ja": "同じページには、平成14年度から令和７年度までの間に、最低賃金がどのように改定されてきたかという記録もあわせて掲載されている。過去の推移を知りたいときは、この改定状況の資料を確認できる。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-minimum-wage",
+          "text": "また、平成14年度から令和７年度までの地域別最低賃金改定状況については、「令和７年度地域別最低賃金改定状況」の下に掲載しています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "A self-check sheet is also available",
+      "heading_ja": "セルフチェックシートもある",
+      "body": [
+        {
+          "en": "In addition, a file called the \"Self-Check Sheet on the Minimum Wage\" is also posted on the same page. Its file size is shown as 25KB.",
+          "ja": "また、「最低賃金に関するセルフチェックシート」というファイルも、同じページに掲載されている。ファイルサイズは25KBとされている。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-minimum-wage",
+          "text": "最低賃金に関するセルフチェックシート［25KB］"
+        }
+      ]
+    },
+    {
+      "heading_en": "When it is unclear how this applies to your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If anything is unclear about the minimum wage amount that applies, or about the details of the system, the \"Consultation Desks\" (相談窓口等) page on the MHLW website can be checked. For questions about individual circumstances, that consultation desk should be used.",
+          "ja": "自分が受け取るべき最低賃金の金額や、制度の細かい内容について分からないことがある場合は、厚生労働省のウェブサイトにある「相談窓口等」のページで確認できる。個別の事情については、この窓口を通して確認すること。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
