@@ -1,0 +1,105 @@
+{
+  "id": "bringing-family-to-japan",
+  "title_en": "Bringing Family to Japan: Applying for Dependent Status",
+  "title_ja": "家族を日本に呼ぶ（家族滞在の申請）",
+  "description": "家族滞在の在留資格の対象者や、海外にいる家族を呼ぶための在留資格認定証明書交付申請の必要書類、手数料、審査にかかる期間について、出入国在留管理庁の公式情報をもとに解説します。",
+  "icon": "status",
+  "published_at": "2026-09-26",
+  "sources": [
+    "apply-coe",
+    "visa-dependent"
+  ],
+  "sections": [
+    {
+      "heading_en": "Who the 'Dependent' status is for",
+      "heading_ja": "「家族滞在」とはどんな資格か",
+      "body": [
+        {
+          "en": "The 'Dependent' status covers the spouse or child who is supported by a foreign resident holding certain statuses, such as Professor, Engineer/Specialist in Humanities/International Services, or International Student. It allows them to carry out ordinary daily activities in Japan while being supported by that person, and a typical example is a spouse or child supported by a foreign resident already living in Japan.",
+          "ja": "「家族滞在」は、教授や技術・人文知識・国際業務、留学などの在留資格を持つ人に扶養される配偶者や子どもを対象とする資格です。扶養を受けて日常生活を送るための活動を行うもので、日本にいる外国人が扶養する配偶者や子がその例にあたります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "入管法別表第一の一の表の教授、芸術、宗教、報道、二の表の高度専門職、経営・管理、法律・会計業務、医療、研究、教育、技術・人文知識・国際業務、企業内転勤、介護、興行、技能、特定技能２号、三の表の文化活動又はこの表の留学の在留資格をもって在留する者の扶養を受ける配偶者又は子として行う日常的な活動。"
+        },
+        {
+          "source_id": "visa-dependent",
+          "text": "該当例としては、在留外国人が扶養する配偶者・子。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If your family member is still overseas",
+      "heading_ja": "海外にいる家族を呼ぶ手続き",
+      "body": [
+        {
+          "en": "If the family member you want to bring to Japan is still abroad, the application for a Certificate of Eligibility is filed before that person enters Japan. This certificate proves that the planned activity meets the conditions required for landing in Japan, and once it is issued, presenting it when applying for a visa at an overseas Japanese diplomatic mission or when applying for landing permission allows the visa and landing procedures to proceed smoothly.",
+          "ja": "呼びたい家族がまだ海外にいる場合は、来日前に「在留資格認定証明書交付申請」を行います。この証明書は、日本で行おうとする活動が上陸のための条件に合っていることを証明するもので、交付を受けたものを在外公館での査証申請や上陸申請の際に提出・提示すると、査証発給や上陸許可がスムーズに受けられます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "日本に入国しようとする外国人の方が、日本で行おうとする活動内容がいずれかの在留資格（「短期滞在」及び「永住者」を除く）に該当するものである等の上陸のための条件に適合していることを証明するために、入国前にあらかじめ行う申請です。"
+        },
+        {
+          "source_id": "apply-coe",
+          "text": "なお、交付された在留資格認定証明書は、在外公館における査証申請や上陸申請の際に提出・提示することにより、速やかに査証発給や上陸許可を受けることができます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Documents you will need",
+      "heading_ja": "必要な書類",
+      "body": [
+        {
+          "en": "The application asks for documents proving the family relationship between the applicant and the supporting person, such as a copy of the family register, together with documents proving the supporting person's job and income, such as a certificate of employment and tax certificates. Any certificate issued in Japan must be one issued within the past 3 months, and if the application is submitted without all the required documents, the review may be seriously delayed or may result in an unfavorable decision.",
+          "ja": "申請では、戸籍謄本など申請人と扶養者の身分関係を証する書類や、在職証明書・納税証明書など扶養者の職業・収入を証する書類が求められます。日本で発行される証明書は発行日から３か月以内のものを提出する必要があり、必要書類がそろっていない場合、審査が大幅に遅れたり、不利益な結果になる可能性があります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-dependent",
+          "text": "提出書類が揃っていない申請の場合、大幅に審査が遅れる、または不利益処分となり得る可能性があるのでご留意ください。"
+        },
+        {
+          "source_id": "visa-dependent",
+          "text": "日本で発行される証明書は全て、発行日から３か月以内のものを提出してください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Fee and processing time",
+      "heading_ja": "手数料と審査にかかる期間",
+      "body": [
+        {
+          "en": "There is no fee for the Certificate of Eligibility application. The standard processing time is 1 to 3 months, so it is important to apply with enough time to spare before your family member's planned arrival in Japan.",
+          "ja": "在留資格認定証明書交付申請に手数料はかかりません。標準処理期間は１か月～３か月とされているため、家族の来日予定に間に合うよう、余裕をもって申請することが大切です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "手数料はかかりません。"
+        },
+        {
+          "source_id": "apply-coe",
+          "text": "標準処理期間\n１か月～３か月"
+        }
+      ]
+    },
+    {
+      "heading_en": "When you are not sure about your own situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "How these rules apply can differ depending on each family's circumstances and the specific status of residence involved. If you are unsure how the family-stay application applies to your own situation, it is best to check with your local Immigration Services Bureau or the Immigration Information Center before you apply, rather than guessing on your own.",
+          "ja": "制度の当てはめ方は、家族の状況や関わる在留資格によって異なります。自分の場合がどうなるか分からないときは、自己判断せず、申請前に地方出入国在留管理官署や外国人在留総合インフォメーションセンターに相談してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
