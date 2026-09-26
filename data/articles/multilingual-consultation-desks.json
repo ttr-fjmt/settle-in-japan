@@ -1,0 +1,121 @@
+{
+  "id": "multilingual-consultation-desks",
+  "title_en": "Multilingual Consultation Desks: Where to Get Help in Japan",
+  "title_ja": "多言語で相談できる窓口一覧",
+  "description": "日本で暮らす外国人が、複数の言語で相談できる公式の窓口をまとめて紹介する記事です。外国人在留支援センター（FRESC）や各地方出入国在留管理局が参加する合同相談会などの情報をもとにしています。",
+  "icon": "guide",
+  "published_at": "2026-09-27",
+  "sources": [
+    "consultation-desks",
+    "fresc"
+  ],
+  "sections": [
+    {
+      "heading_en": "What is FRESC?",
+      "heading_ja": "FRESC（フレスク）とは",
+      "body": [
+        {
+          "en": "FRESC (Foreign Residents Support Center) brings together government consultation desks that support foreign residents living and working in Japan. It provides consultation for foreign residents, support for companies that want to employ foreign workers, and support for local governments working on assistance for foreign residents.",
+          "ja": "外国人在留支援センター（FRESC）には、日本で暮らす外国人の在留を支える政府の窓口が集まっています。外国人からの相談対応のほか、外国人を雇用したい企業の支援や、外国人支援に取り組む地方公共団体の支援も行っています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "外国人在留支援センター（FRESC／フレスク）では、日本で暮らし、活躍する外国人の在留を支援する政府の窓口が集まり、外国人からの相談対応、外国人を雇用したい企業の支援、外国人支援に取り組む地方公共団体の支援などの取組を行っています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "What kinds of topics can you consult about?",
+      "heading_ja": "相談できる内容の例",
+      "body": [
+        {
+          "en": "Different desks inside FRESC handle different topics. For example, one desk can discuss changes to your status of residence or renewal of your period of stay, while a separate desk handles work problems such as working hours, wages, or dismissal.",
+          "ja": "在留資格の変更や在留期間の更新などについて相談できます。また、労働時間や賃金、解雇など、仕事で困ったときの相談窓口もあります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "在留資格ざいりゅうしかくの変更へんこうや在留期間ざいりゅうきかんの更新こうしんなどについて相談そうだんできます。"
+        },
+        {
+          "source_id": "fresc",
+          "text": "労働時間ろうどうじかんや賃金ちんぎん、解雇かいこなど、仕事しごとで困こまったときの相談窓口そうだんまどぐちです。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Immigration consultation needs an appointment",
+      "heading_ja": "在留相談は予約制です",
+      "body": [
+        {
+          "en": "Consultation about your status of residence at FRESC requires a reservation. Please also note that FRESC cannot handle procedures related to your residence card or the submission of notification forms.",
+          "ja": "相談は予約をしてください。なお、FRESCでは、在留カード関係の手続きや届出書の提出をすることができません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "相談そうだんは予約よやくをしてください。"
+        },
+        {
+          "source_id": "fresc",
+          "text": "※　FRESCでは、在留ざいりゅうカード関係かんけいの手続てつづきや届出書とどけでしょの提出ていしゅつをすることができません。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Joint consultation events held in each region",
+      "heading_ja": "各地域の合同相談会",
+      "body": [
+        {
+          "en": "Joint consultation events are held in each region, run together by local immigration bureaus and organizations that support foreign residents. If you have something to consult about, please make use of these events.",
+          "ja": "各地域において、各地方出入国在留管理局と、外国人支援を行う関係機関との合同相談会を実施することとなりました。相談ごとのある方は、ぜひご活用ください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "各地域において、各地方出入国在留管理局と、外国人支援を行う関係機関との合同相談会を実施することとなりました。"
+        },
+        {
+          "source_id": "fresc",
+          "text": "相談ごとのある方は、ぜひご活用ください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Contact information for FRESC",
+      "heading_ja": "FRESCへの連絡先",
+      "body": [
+        {
+          "en": "You can reach FRESC by calling the Navi Dial number 0570-011000 (there is a different way to call from overseas or from some IP phones). The office is open from 9:00 in the morning to 5:00 in the afternoon, and it is closed on Saturdays, Sundays, national holidays, and the year-end and New Year holiday period.",
+          "ja": "ナビダイヤル０５７０－０１１０００（外国や一部のIP電話からはこちら）に電話できます。開いている時間は午前９時から午後５時までで、土曜日、日曜日、祝日、年末年始はお休みです。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "fresc",
+          "text": "ナビダイヤル ０５７０－０１１０００ （外国がいこくや一部いちぶのIP電話でんわからはこちら）"
+        },
+        {
+          "source_id": "fresc",
+          "text": "＜開あいている時間じかん＞ 午前ごぜん９時じから午後ごご５時じまで ※土曜日どようび、日曜日にちようび、祝日しゅくじつ、年末年始ねんまつねんしはお休やすみ"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure about your own situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If you are not sure which desk fits your question, start from the Immigration Services Agency's consultation desk page, which introduces the Foreign Residents General Information Center, one-stop consultation centers, and FRESC. Staff there can help you find the right place to ask about your own situation.",
+          "ja": "自分がどの窓口に相談すればよいか分からないときは、出入国在留管理庁の「相談窓口」のページから、外国人在留総合インフォメーションセンターやワンストップ型相談センター、FRESCの情報を確認してください。担当者が適切な窓口を案内します。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "multilingual-consultation-desks",
+  "title": "Danh sách các quầy tư vấn bằng nhiều ngôn ngữ",
+  "description": "Bài viết giới thiệu các quầy tư vấn chính thức dành cho người nước ngoài sinh sống tại Nhật Bản, có thể tư vấn bằng nhiều ngôn ngữ. Nội dung dựa trên thông tin về Trung tâm hỗ trợ cư trú người nước ngoài (FRESC) và các buổi tư vấn chung do các Cục quản lý xuất nhập cảnh và lưu trú địa phương tổ chức.",
+  "sections": [
+    {
+      "heading": "FRESC là gì?",
+      "body": [
+        "Trung tâm hỗ trợ cư trú người nước ngoài（FRESC）là nơi tập hợp các quầy tư vấn của chính phủ, hỗ trợ việc cư trú cho người nước ngoài đang sinh sống tại Nhật Bản. Nơi đây tiếp nhận tư vấn từ người nước ngoài, đồng thời hỗ trợ các doanh nghiệp muốn tuyển dụng lao động nước ngoài, cũng như hỗ trợ các cơ quan chính quyền địa phương đang nỗ lực hỗ trợ người nước ngoài."
+      ],
+      "quotes": [
+        "外国人在留支援センター（FRESC／フレスク）では、日本で暮らし、活躍する外国人の在留を支援する政府の窓口が集まり、外国人からの相談対応、外国人を雇用したい企業の支援、外国人支援に取り組む地方公共団体の支援などの取組を行っています。"
+      ]
+    },
+    {
+      "heading": "Ví dụ về các nội dung có thể tư vấn",
+      "body": [
+        "Có thể tư vấn về việc thay đổi tư cách lưu trú hoặc gia hạn thời gian lưu trú, v.v. Ngoài ra còn có quầy tư vấn dành cho những khó khăn trong công việc, chẳng hạn như thời gian làm việc, tiền lương, hay bị sa thải."
+      ],
+      "quotes": [
+        "在留資格ざいりゅうしかくの変更へんこうや在留期間ざいりゅうきかんの更新こうしんなどについて相談そうだんできます。",
+        "労働時間ろうどうじかんや賃金ちんぎん、解雇かいこなど、仕事しごとで困こまったときの相談窓口そうだんまどぐちです。"
+      ]
+    },
+    {
+      "heading": "Tư vấn về lưu trú cần đặt hẹn trước",
+      "body": [
+        "Khi muốn tư vấn, hãy đặt hẹn trước. Ngoài ra, xin lưu ý rằng tại FRESC không thể thực hiện các thủ tục liên quan đến thẻ lưu trú（在留カード）hay nộp các mẫu đơn thông báo."
+      ],
+      "quotes": [
+        "相談そうだんは予約よやくをしてください。",
+        "※　FRESCでは、在留ざいりゅうカード関係かんけいの手続てつづきや届出書とどけでしょの提出ていしゅつをすることができません。"
+      ]
+    },
+    {
+      "heading": "Các buổi tư vấn chung tại từng khu vực",
+      "body": [
+        "Tại mỗi khu vực, các buổi tư vấn chung sẽ được tổ chức, do các Cục quản lý xuất nhập cảnh và lưu trú địa phương phối hợp cùng các cơ quan liên quan đang hỗ trợ người nước ngoài thực hiện. Nếu có điều gì cần tư vấn, hãy tận dụng những buổi tư vấn này."
+      ],
+      "quotes": [
+        "各地域において、各地方出入国在留管理局と、外国人支援を行う関係機関との合同相談会を実施することとなりました。",
+        "相談ごとのある方は、ぜひご活用ください。"
+      ]
+    },
+    {
+      "heading": "Thông tin liên hệ FRESC",
+      "body": [
+        "Có thể gọi điện đến số Navi Dial ０５７０－０１１０００（đây là số dùng khi gọi từ nước ngoài hoặc từ một số điện thoại IP）. Thời gian làm việc là từ 9 giờ sáng đến 5 giờ chiều, nghỉ vào thứ Bảy, Chủ nhật, ngày lễ, và kỳ nghỉ cuối năm, đầu năm mới."
+      ],
+      "quotes": [
+        "ナビダイヤル ０５７０－０１１０００ （外国がいこくや一部いちぶのIP電話でんわからはこちら）",
+        "＜開あいている時間じかん＞ 午前ごぜん９時じから午後ごご５時じまで ※土曜日どようび、日曜日にちようび、祝日しゅくじつ、年末年始ねんまつねんしはお休やすみ"
+      ]
+    },
+    {
+      "heading": "Khi chưa rõ trường hợp của mình nên hỏi ở đâu",
+      "body": [
+        "Khi chưa biết nên tư vấn ở quầy nào, hãy xem trang「相談窓口」của Cơ quan quản lý xuất nhập cảnh và lưu trú（出入国在留管理庁）để tìm hiểu thông tin về Trung tâm thông tin tổng hợp về lưu trú người nước ngoài, các trung tâm tư vấn một cửa（ワンストップ型相談センター）, cũng như FRESC. Nhân viên phụ trách sẽ hướng dẫn đến quầy phù hợp."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "1f2372f2f489fe08",
+  "translated_at": "2026-09-26"
+}
