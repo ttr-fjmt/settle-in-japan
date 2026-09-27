@@ -1,0 +1,63 @@
+{
+  "id": "certificate-of-eligibility",
+  "title": "Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書) là gì và ai nộp đơn xin cấp",
+  "description": "Bài viết giải thích dễ hiểu Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書) là gì và ai có thể nộp đơn xin cấp, dựa trên thông tin từ trang web chính thức của Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁). Bài viết cũng giới thiệu về đối tượng người nước ngoài, nơi nộp hồ sơ, lệ phí và thời gian xử lý tiêu chuẩn.",
+  "sections": [
+    {
+      "heading": "Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書) là gì",
+      "body": [
+        "Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書) là giấy tờ được cấp trước khi người nước ngoài nhập cảnh Nhật Bản, nhằm xác nhận trước rằng nội dung hoạt động mà người đó dự định thực hiện tại Nhật Bản phù hợp với điều kiện của tư cách lưu trú (在留資格) đó. Tư cách \"Lưu trú ngắn hạn\" (短期滞在) và \"Vĩnh trú\" (永住者) không thuộc đối tượng này. Sau khi được cấp, nếu xuất trình giấy chứng nhận này khi xin thị thực (visa) hoặc khi làm thủ tục kiểm tra nhập cảnh, thủ tục sẽ được tiến hành nhanh chóng hơn."
+      ],
+      "quotes": [
+        "日本に入国しようとする外国人の方が、日本で行おうとする活動内容がいずれかの在留資格（「短期滞在」及び「永住者」を除く）に該当するものである等の上陸のための条件に適合していることを証明するために、入国前にあらかじめ行う申請です。"
+      ]
+    },
+    {
+      "heading": "Người nước ngoài là đối tượng áp dụng",
+      "body": [
+        "Đối tượng của việc xin cấp Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書) là người nước ngoài mong muốn nhập cảnh vào Nhật Bản. Tuy nhiên, những người có mục đích là \"Lưu trú ngắn hạn\" (短期滞在) không thuộc đối tượng này."
+      ],
+      "quotes": [
+        "日本に入国を希望する外国人（短期滞在を目的とする者を除きます。）"
+      ]
+    },
+    {
+      "heading": "Ai có thể nộp đơn xin cấp",
+      "body": [
+        "Đơn xin cấp có thể do chính người nộp đơn - tức người nước ngoài mong muốn nhập cảnh vào Nhật Bản - nộp. Ngoài ra, đơn cũng có thể do nhân viên của tổ chức dự định tiếp nhận người đó, hoặc người đại diện khác theo quy định của Bộ Tư pháp, nộp thay. Bên cạnh đó, khi người nộp đơn hoặc tổ chức tiếp nhận đang cư trú tại Nhật Bản, những người đại diện nộp đơn nhất định, chẳng hạn như luật sư hoặc chuyên viên hành chính (gyoseishoshi) đã đăng ký với Cục trưởng Cục quản lý xuất nhập cảnh và lưu trú khu vực (地方出入国在留管理局), cũng có thể nộp hồ sơ thay."
+      ],
+      "quotes": [
+        "当該外国人を受け入れようとする機関の職員その他法務省令で定める代理人（e-Gov法令検索が開きます。）",
+        "地方出入国在留管理局長に届け出た弁護士又は行政書士"
+      ]
+    },
+    {
+      "heading": "Nộp đơn khi nào và lệ phí",
+      "body": [
+        "Để có thể nhận được Giấy chứng nhận đủ điều kiện lưu trú (在留資格認定証明書) trước khi nhập cảnh, nên nộp hồ sơ xin cấp với thời gian dư dả. Việc xin cấp này không mất lệ phí."
+      ],
+      "quotes": [
+        "入国以前に交付を受けることができるように、余裕をもって申請書類を提出してください。",
+        "手数料はかかりません。"
+      ]
+    },
+    {
+      "heading": "Thời gian xét duyệt",
+      "body": [
+        "Thời gian xử lý tiêu chuẩn là từ 1 tháng đến 3 tháng. Khi lên kế hoạch nhập cảnh, nên chuẩn bị dựa trên khoảng thời gian này."
+      ],
+      "quotes": [
+        "１か月～３か月"
+      ]
+    },
+    {
+      "heading": "Khi chưa rõ trường hợp của bản thân sẽ như thế nào",
+      "body": [
+        "Cách áp dụng chế độ này khác nhau tùy theo hoàn cảnh của từng người, vì vậy chỉ riêng bài viết này không thể đưa ra phán đoán cho từng trường hợp cụ thể. Khi muốn xác nhận về trường hợp của mình, nên liên hệ với Cơ quan quản lý xuất nhập cảnh và lưu trú khu vực (地方出入国在留管理官署) hoặc Trung tâm thông tin tổng hợp dành cho người nước ngoài lưu trú (外国人在留総合インフォメーションセンター)."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "d46121135313da25",
+  "translated_at": "2026-09-27"
+}

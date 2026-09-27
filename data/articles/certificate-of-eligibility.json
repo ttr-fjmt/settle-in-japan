@@ -1,0 +1,112 @@
+{
+  "id": "certificate-of-eligibility",
+  "title_en": "Certificate of Eligibility: What It Is and Who Applies",
+  "title_ja": "在留資格認定証明書とは何か、誰が申請するのか",
+  "description": "在留資格認定証明書とは何か、誰が申請書を提出できるのかを、出入国在留管理庁の公式ページの情報にもとづいて分かりやすく説明します。対象となる外国人や提出先、手数料、標準処理期間についても紹介します。",
+  "icon": "card",
+  "published_at": "2026-09-28",
+  "sources": [
+    "apply-coe"
+  ],
+  "sections": [
+    {
+      "heading_en": "What is a Certificate of Eligibility?",
+      "heading_ja": "在留資格認定証明書とは何か",
+      "body": [
+        {
+          "en": "A Certificate of Eligibility is a document issued in advance, before you enter Japan, to confirm that the activity you plan to carry out in Japan meets the requirements for one of the residence statuses. It does not cover Temporary visitor status or Permanent resident status. Once issued, presenting this certificate when applying for a visa or going through landing examination allows those procedures to proceed smoothly.",
+          "ja": "在留資格認定証明書は、日本に入国しようとする外国人が行う活動内容が、在留資格の条件に適合していることを、入国前にあらかじめ証明する書類です。「短期滞在」と「永住者」は対象外です。交付後は、査証申請や上陸審査の際に提示すると手続きが速やかに進みます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "日本に入国しようとする外国人の方が、日本で行おうとする活動内容がいずれかの在留資格（「短期滞在」及び「永住者」を除く）に該当するものである等の上陸のための条件に適合していることを証明するために、入国前にあらかじめ行う申請です。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who is covered by this application",
+      "heading_ja": "対象となる外国人",
+      "body": [
+        {
+          "en": "The Certificate of Eligibility application is for foreign nationals who wish to enter Japan. However, people whose purpose is Temporary visitor status are not included as an applicant target.",
+          "ja": "在留資格認定証明書交付申請の対象は、日本への入国を希望する外国人です。ただし、短期滞在を目的とする人は含まれません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "日本に入国を希望する外国人（短期滞在を目的とする者を除きます。）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who can submit the application",
+      "heading_ja": "誰が申請書を提出できるか",
+      "body": [
+        {
+          "en": "The application can be submitted by the applicant, who is the foreign national wishing to enter Japan. It can also be submitted by an employee of the organization that plans to accept the foreign national, or by another agent set by Ministry of Justice ordinance. In addition, when the applicant or the accepting organization is staying in Japan, certain application submission agents, such as a lawyer or immigration lawyer who has registered with the director of a regional immigration services bureau, can submit the documents on their behalf.",
+          "ja": "申請書は、申請人本人のほか、受け入れ機関の職員や法務省令で定める代理人も提出できます。本人や受け入れ機関が日本に滞在している場合は、地方出入国在留管理局長に届け出た弁護士や行政書士などの申請取次者が代わりに提出することもできます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "当該外国人を受け入れようとする機関の職員その他法務省令で定める代理人（e-Gov法令検索が開きます。）"
+        },
+        {
+          "source_id": "apply-coe",
+          "text": "地方出入国在留管理局長に届け出た弁護士又は行政書士"
+        }
+      ]
+    },
+    {
+      "heading_en": "Timing and fee",
+      "heading_ja": "いつ申請するか・手数料",
+      "body": [
+        {
+          "en": "Please submit your application documents with enough time to spare, so that the certificate can be issued before you enter Japan. There is no fee for this application.",
+          "ja": "在留資格認定証明書は入国前に交付を受けられるよう、余裕をもって申請書類を提出することが案内されています。手数料はかかりません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "入国以前に交付を受けることができるように、余裕をもって申請書類を提出してください。"
+        },
+        {
+          "source_id": "apply-coe",
+          "text": "手数料はかかりません。"
+        }
+      ]
+    },
+    {
+      "heading_en": "How long the review takes",
+      "heading_ja": "審査にかかる期間",
+      "body": [
+        {
+          "en": "The standard processing time for this application is stated as 1 month to 3 months. Please keep this period in mind when planning your entry into Japan.",
+          "ja": "標準処理期間は１か月から３か月です。入国の予定を立てる際は、この期間を踏まえて準備することが案内されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-coe",
+          "text": "１か月～３か月"
+        }
+      ]
+    },
+    {
+      "heading_en": "When you are not sure how this applies to you",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "How these rules apply can differ from person to person, and this article alone cannot decide what applies to your specific situation. If you have questions about your own case, please contact a regional immigration services bureau or the Foreign Residents Support Center General Information Center.",
+          "ja": "制度の当てはめは一人ひとりの事情によって異なるため、この記事だけでは個別の判断はできません。自分の場合について確認したいときは、地方出入国在留管理官署または外国人在留総合インフォメーションセンターに問い合わせることが案内されています。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
