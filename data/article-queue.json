@@ -240,8 +240,9 @@
     "sources": [
       "jutei-mynumber-card"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-09-29"
   },
   {
     "n": 22,

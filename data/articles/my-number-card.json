@@ -1,0 +1,100 @@
+{
+  "id": "my-number-card",
+  "title_en": "How to Get a My Number Card",
+  "title_ja": "マイナンバーカードの作り方",
+  "description": "マイナンバーカードとは何か、どこで受け取れるか、住基カードをお持ちの方の返却方法、在留期間の延長時に必要な変更手続きについて、総務省の公式ページをもとに説明します。",
+  "icon": "card",
+  "published_at": "2026-09-29",
+  "sources": [
+    "jutei-mynumber-card"
+  ],
+  "sections": [
+    {
+      "heading_en": "What is a My Number Card",
+      "heading_ja": "マイナンバーカードとは",
+      "body": [
+        {
+          "en": "A My Number Card is a plastic IC chip card that shows your name, address, date of birth, sex, your My Number, and your photo. It can be used as identification and also for electronic applications such as e-Tax and other municipal services.",
+          "ja": "マイナンバーカードは、プラスチック製のICチップ付きカードで、氏名・住所・生年月日・性別・マイナンバーと本人の顔写真が表示されます。本人確認のための身分証明書として使えるほか、e-Taxなど電子証明書を使った電子申請にも利用できます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-mynumber-card",
+          "text": "マイナンバーカードは、プラスチック製のICチップ付きカードで、券面に氏名、住所、生年月日、性別、マイナンバー（個人番号）と本人の顔写真等が表示されます。"
+        },
+        {
+          "source_id": "jutei-mynumber-card",
+          "text": "本人確認のための身分証明書として利用できるほか、自治体サービス、e-Tax等の電子証明書を利用した電子申請等、様々なサービスにもご利用いただけます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where to receive your card",
+      "heading_ja": "どこで受け取れるか",
+      "body": [
+        {
+          "en": "As a general rule, you can receive your My Number Card at the municipal office where you live, such as your city, town, or ward office.",
+          "ja": "原則として、お住まいの市区町村の窓口でマイナンバーカードの交付を受けることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-mynumber-card",
+          "text": "原則としてお住まいの市区町村でマイナンバーカードの交付を受けることができるようになります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you already have a Basic Resident Register (Juki) Card",
+      "heading_ja": "住基カードをお持ちの方",
+      "body": [
+        {
+          "en": "If you currently hold a Basic Resident Register Card (Juki Card), it can still be used until you obtain a My Number Card, as long as it remains within its period of validity.",
+          "ja": "現在、住基カードをお持ちの方は、住基カードの有効期間内であれば、マイナンバーカードを取得するまでは利用することができます。"
+        },
+        {
+          "en": "When you go to the window to receive your My Number Card, you are asked to bring your Juki Card so it can be returned at that time. If your Juki Card has a photo, it can also be used as identification when receiving the My Number Card.",
+          "ja": "マイナンバーカードの交付を受けるために窓口へ行く際は、住基カードを持参し、その場で返却することになっています。写真付きの住基カードであれば、マイナンバーカードの交付を受けるための本人確認書類としても使うことができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-mynumber-card",
+          "text": "ただし、現在住基カードをお持ちの方は、住基カードの有効期間内であれば、2016年1月以降でも、マイナンバーカードを取得するまでは利用可能です。"
+        },
+        {
+          "source_id": "jutei-mynumber-card",
+          "text": "住基カードをお持ちの方は、2016年1月以降にマイナンバーカードの交付を受ける際に返却していただくこととなりますので、マイナンバーカード交付のために窓口に来られる際は、持参していただくようお願いします（その際、写真付きの住基カードであれば、マイナンバーカードの交付を受けるための本人確認書類として使用できます。）。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If your period of stay is extended",
+      "heading_ja": "在留期間の延長を行った場合",
+      "body": [
+        {
+          "en": "If your period of stay has been extended, the information printed on your My Number Card needs to be changed accordingly.",
+          "ja": "在留期間の延長を行った場合は、マイナンバーカードの券面記載事項の変更が必要です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-mynumber-card",
+          "text": "在留期間の延長を行った場合・・・ マイナンバーカードの券面記載事項の変更が必要です"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure about your own case",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Rules can differ depending on your personal situation, such as your type of residence card or changes to your status. For questions about your own case, it is best to ask directly at the counter of your local municipal office, which handles My Number Card procedures.",
+          "ja": "在留カードの種類や在留資格の変更など、状況によって扱いが異なることがあります。自分の場合について知りたいときは、マイナンバーカードの手続きを担当するお住まいの市区町村の窓口に直接たずねてください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

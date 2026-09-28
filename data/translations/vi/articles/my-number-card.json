@@ -1,0 +1,55 @@
+{
+  "id": "my-number-card",
+  "title": "Cách làm Thẻ My Number (マイナンバーカード)",
+  "description": "Bài viết giải thích Thẻ My Number (マイナンバーカード) là gì, nhận thẻ ở đâu, cách trả lại Thẻ Juki (住基カード) đối với người đang có thẻ này, và thủ tục thay đổi cần thiết khi gia hạn thời gian lưu trú, dựa theo trang chính thức của Bộ Nội vụ và Truyền thông (総務省).",
+  "sections": [
+    {
+      "heading": "Thẻ My Number (マイナンバーカード) là gì",
+      "body": [
+        "Thẻ My Number (マイナンバーカード) là thẻ nhựa có gắn chip IC, trên mặt thẻ có ghi họ tên, địa chỉ, ngày tháng năm sinh, giới tính, số My Number (マイナンバー) của người đó cùng với ảnh chân dung. Thẻ có thể dùng làm giấy tờ chứng minh nhân thân, đồng thời cũng có thể dùng khi làm thủ tục điện tử có sử dụng chứng thư điện tử như hệ thống e-Tax."
+      ],
+      "quotes": [
+        "マイナンバーカードは、プラスチック製のICチップ付きカードで、券面に氏名、住所、生年月日、性別、マイナンバー（個人番号）と本人の顔写真等が表示されます。",
+        "本人確認のための身分証明書として利用できるほか、自治体サービス、e-Tax等の電子証明書を利用した電子申請等、様々なサービスにもご利用いただけます。"
+      ]
+    },
+    {
+      "heading": "Nhận thẻ ở đâu",
+      "body": [
+        "Về nguyên tắc, có thể nhận Thẻ My Number (マイナンバーカード) tại quầy tiếp nhận của ủy ban thành phố, thị trấn, xã, phường nơi đang sinh sống."
+      ],
+      "quotes": [
+        "原則としてお住まいの市区町村でマイナンバーカードの交付を受けることができるようになります。"
+      ]
+    },
+    {
+      "heading": "Đối với người đang có Thẻ Juki (住基カード)",
+      "body": [
+        "Nếu hiện đang có Thẻ Juki (住基カード), thẻ này vẫn có thể sử dụng được cho đến khi nhận được Thẻ My Number (マイナンバーカード), miễn là còn trong thời hạn hiệu lực.",
+        "Khi đến quầy tiếp nhận để nhận Thẻ My Number (マイナンバーカード), cần mang theo Thẻ Juki (住基カード) để trả lại ngay tại chỗ. Nếu Thẻ Juki (住基カード) có gắn ảnh, thẻ đó cũng có thể dùng làm giấy tờ chứng minh nhân thân khi nhận Thẻ My Number (マイナンバーカード)."
+      ],
+      "quotes": [
+        "ただし、現在住基カードをお持ちの方は、住基カードの有効期間内であれば、2016年1月以降でも、マイナンバーカードを取得するまでは利用可能です。",
+        "住基カードをお持ちの方は、2016年1月以降にマイナンバーカードの交付を受ける際に返却していただくこととなりますので、マイナンバーカード交付のために窓口に来られる際は、持参していただくようお願いします（その際、写真付きの住基カードであれば、マイナンバーカードの交付を受けるための本人確認書類として使用できます。）。"
+      ]
+    },
+    {
+      "heading": "Trường hợp gia hạn thời gian lưu trú",
+      "body": [
+        "Nếu đã thực hiện gia hạn thời gian lưu trú, cần phải thay đổi nội dung ghi trên mặt Thẻ My Number (マイナンバーカード)."
+      ],
+      "quotes": [
+        "在留期間の延長を行った場合・・・ マイナンバーカードの券面記載事項の変更が必要です"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của bản thân sẽ như thế nào",
+      "body": [
+        "Cách xử lý có thể khác nhau tùy theo tình huống, chẳng hạn như loại Thẻ Cư trú (在留カード) hoặc việc thay đổi tư cách lưu trú. Nếu muốn biết rõ trường hợp của mình, hãy hỏi trực tiếp tại quầy tiếp nhận của ủy ban thành phố, thị trấn, xã, phường nơi đang sinh sống, nơi phụ trách thủ tục về Thẻ My Number (マイナンバーカード)."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "3a545420175d0dc8",
+  "translated_at": "2026-09-28"
+}
