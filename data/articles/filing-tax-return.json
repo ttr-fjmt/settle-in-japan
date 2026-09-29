@@ -1,0 +1,93 @@
+{
+  "id": "filing-tax-return",
+  "title_en": "Filing an Income Tax Return: Where to Start",
+  "title_ja": "確定申告が必要になる人",
+  "description": "国税庁の公式ページをもとに、確定申告の特集ページの内容、オンラインでの申告書作成、マイナポータル連携、ふるさと納税の証明書の扱い、相談先について紹介します。",
+  "icon": "guide",
+  "published_at": "2026-09-30",
+  "sources": [
+    "nta-kakutei"
+  ],
+  "sections": [
+    {
+      "heading_en": "The official filing season feature page",
+      "heading_ja": "確定申告の特集ページを見る",
+      "body": [
+        {
+          "en": "The National Tax Agency runs a special feature page for income tax returns each filing season. It gathers information on filing and payment deadlines, how to prepare and submit the return, and how to pay any tax due.",
+          "ja": "国税庁は確定申告の時期に合わせて特集ページを用意しています。申告や納税の期限、申告書の作り方や提出方法、納税の方法などがまとめられています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-kakutei",
+          "text": "確定申告特集では、申告・納税の期限のほか、申告書の作成・提出の方法や納税の方法など、確定申告に関する情報を紹介しています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Preparing the return online",
+      "heading_ja": "オンラインで申告書を作成する",
+      "body": [
+        {
+          "en": "From the same official page, you can go directly to the tool used to prepare the return online. The page states that the confirmation return can also be created from there.",
+          "ja": "同じ公式ページから、申告書を作成するためのオンラインツールにそのまま進めます。ページには、確定申告書の作成もそこからできると書かれています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-kakutei",
+          "text": "※　確定申告書の作成もこちらからできます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Using a My Number card to auto-fill data",
+      "heading_ja": "マイナンバーカードでデータを自動入力する",
+      "body": [
+        {
+          "en": "People who have a My Number card can use a service called 'My Number Portal linkage.' The official page notes that using this linkage requires advance preparation beforehand, so it is worth checking the setup steps before the filing period begins.",
+          "ja": "マイナンバーカードを持っている人は、「マイナポータル連携」というサービスを使えます。公式ページには、この連携を利用するためには事前準備が必要だと書かれています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-kakutei",
+          "text": "「マイナポータル連携」を利用するためには、事前準備が必要です。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Hometown tax (furusato nozei) donation certificates",
+      "heading_ja": "ふるさと納税の証明書の扱い",
+      "body": [
+        {
+          "en": "There is a specific rule about attaching proof of donations for the donation deduction. When the recipient of a specified donation is a local government—meaning the donation is a hometown tax (furusato nozei) donation—a 'certificate of donation deduction' issued by a specified business operator can be attached instead of the usual donation receipt.",
+          "ja": "寄附金控除のための証明書の添付には、特定のきまりがあります。特定寄附金の受け取り先が地方団体である場合、つまりふるさと納税である場合は、「寄附金の受領書」の代わりに、特定事業者が発行する「寄附金控除に関する証明書」を添付することができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-kakutei",
+          "text": "特定寄附金の受領者が地方団体であるとき（ふるさと納税であるとき）は、「寄附金の受領書」に代えて、特定事業者が発行する年間寄附額を記載した「寄附金控除に関する証明書」を添付することができます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure how this applies to you",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If it is unclear how the filing rules apply to your own situation, the official page points to support channels beyond its own Q&A page. Questions not covered there can be asked through the chatbot 'Zeimu Shokuin Futaba,' or checked in the 'Tax Answer' collection of frequently asked tax questions, both linked from the National Tax Agency site.",
+          "ja": "自分の場合に制度がどう当てはまるか分からないときは、公式ページのＱ＆Ａに載っていない内容について、相談先を確認できます。チャットボット「税務職員ふたば」に相談するか、「タックスアンサー（よくある税の質問）」で調べることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nta-kakutei",
+          "text": "ここで掲載されていない内容は、チャットボット「税務職員ふたば」にご相談いただくか、税に関する身近な質問を集めた「タックスアンサー（よくある税の質問）」をご覧ください。"
+        }
+      ]
+    }
+  ]
+}

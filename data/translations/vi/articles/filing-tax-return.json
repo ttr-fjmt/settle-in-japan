@@ -1,0 +1,54 @@
+{
+  "id": "filing-tax-return",
+  "title": "Người cần thực hiện khai thuế quyết toán (確定申告)",
+  "description": "Dựa trên trang chính thức của Cục Thuế Quốc gia (国税庁), bài viết giới thiệu nội dung trang chuyên đề về khai thuế quyết toán, cách lập tờ khai trực tuyến, liên kết Mynaportal (マイナポータル), cách xử lý giấy chứng nhận thuế hương thổ (ふるさと納税), và nơi có thể tư vấn.",
+  "sections": [
+    {
+      "heading": "Xem trang chuyên đề về khai thuế quyết toán (確定申告)",
+      "body": [
+        "Cục Thuế Quốc gia (国税庁) chuẩn bị một trang chuyên đề mỗi khi đến mùa khai thuế quyết toán (確定申告). Trang này tổng hợp thời hạn khai thuế và nộp thuế, cách lập và nộp tờ khai, cũng như cách nộp thuế."
+      ],
+      "quotes": [
+        "確定申告特集では、申告・納税の期限のほか、申告書の作成・提出の方法や納税の方法など、確定申告に関する情報を紹介しています。"
+      ]
+    },
+    {
+      "heading": "Lập tờ khai trực tuyến",
+      "body": [
+        "Từ cùng trang chính thức đó, có thể đi thẳng đến công cụ trực tuyến để lập tờ khai. Trang ghi rằng việc lập tờ khai thuế quyết toán (確定申告) cũng có thể thực hiện từ đây."
+      ],
+      "quotes": [
+        "※　確定申告書の作成もこちらからできます。"
+      ]
+    },
+    {
+      "heading": "Dùng thẻ My Number (マイナンバーカード) để tự động nhập dữ liệu",
+      "body": [
+        "Người có thẻ My Number (マイナンバーカード) có thể sử dụng dịch vụ có tên là liên kết Mynaportal (マイナポータル連携). Trang chính thức ghi rằng để sử dụng liên kết này cần chuẩn bị trước, vì vậy nên kiểm tra các bước chuẩn bị trước khi mùa khai thuế bắt đầu."
+      ],
+      "quotes": [
+        "「マイナポータル連携」を利用するためには、事前準備が必要です。"
+      ]
+    },
+    {
+      "heading": "Cách xử lý giấy chứng nhận của thuế hương thổ (ふるさと納税)",
+      "body": [
+        "Việc đính kèm giấy chứng nhận để được khấu trừ tiền quyên góp có quy định riêng. Khi nơi nhận khoản quyên góp đặc biệt là một đoàn thể địa phương — tức là trường hợp thuế hương thổ (ふるさと納税) — thì thay vì \"giấy biên nhận tiền quyên góp\", có thể đính kèm \"giấy chứng nhận khấu trừ tiền quyên góp\" do doanh nghiệp được chỉ định phát hành."
+      ],
+      "quotes": [
+        "特定寄附金の受領者が地方団体であるとき（ふるさと納税であるとき）は、「寄附金の受領書」に代えて、特定事業者が発行する年間寄附額を記載した「寄附金控除に関する証明書」を添付することができます。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Khi không rõ quy định khai thuế áp dụng thế nào cho trường hợp của mình, trang chính thức có chỉ ra những nơi có thể hỏi thêm ngoài phần Hỏi & Đáp trên trang. Những nội dung không có ở đó có thể hỏi qua chatbot có tên là Zeimu Shokuin Futaba (税務職員ふたば), hoặc tìm trong phần Tax Answer (タックスアンサー) — tổng hợp các câu hỏi thường gặp về thuế."
+      ],
+      "quotes": [
+        "ここで掲載されていない内容は、チャットボット「税務職員ふたば」にご相談いただくか、税に関する身近な質問を集めた「タックスアンサー（よくある税の質問）」をご覧ください。"
+      ]
+    }
+  ],
+  "source_hash": "0e1b6768709010cf",
+  "translated_at": "2026-09-29"
+}

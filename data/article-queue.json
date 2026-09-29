@@ -424,8 +424,9 @@
     "sources": [
       "nta-kakutei"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-09-30"
   },
   {
     "n": 39,
