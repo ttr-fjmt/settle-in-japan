@@ -1,0 +1,11 @@
+[
+  {
+    "date": "2026-10-01",
+    "script": "write-next-article",
+    "model": "claude-sonnet-5",
+    "calls": 3,
+    "input_tokens": 24297,
+    "output_tokens": 28298,
+    "estimated_usd": 0.3316
+  }
+]
