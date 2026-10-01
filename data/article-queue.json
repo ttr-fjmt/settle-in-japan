@@ -567,8 +567,10 @@
     "sources": [
       "mhlw-vaccination"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "blocked",
+    "note": "",
+    "blocked_reason": "生後2か月から受けるワクチン: 英語の本文にある \"1\" を裏づける引用がありません。この節の引用にある表記は「2か月」です。そのまま使ってください",
+    "blocked_at": "2026-10-02"
   },
   {
     "n": 52,
