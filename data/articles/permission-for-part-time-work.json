@@ -1,0 +1,104 @@
+{
+  "id": "permission-for-part-time-work",
+  "title_en": "Permission to Engage in Activity Other Than That Permitted (Part-Time Work)",
+  "title_ja": "資格外活動許可（アルバイトをする）",
+  "description": "就労や留学などの在留資格の人がアルバイトなど収入を伴う活動をしたいときに必要な「資格外活動許可」について、申請先・必要書類・処理期間を出入国在留管理庁の公式情報から紹介します。",
+  "icon": "work",
+  "published_at": "2026-10-03",
+  "sources": [
+    "apply-work-permission"
+  ],
+  "sections": [
+    {
+      "heading_en": "What is permission for activity outside your status of residence",
+      "heading_ja": "資格外活動許可とは",
+      "body": [
+        {
+          "en": "Permission for activity outside one's status of residence is required when a foreign national who holds a status such as work or study wants to carry out an income-earning business activity or receive compensation, including part-time work, beyond what is covered by their current status of residence.",
+          "ja": "資格外活動許可は、就労や留学などの在留資格で在留する外国人が、許可された在留資格に応じた活動以外に、アルバイトなど収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとする場合に行う申請です。"
+        },
+        {
+          "en": "This application is filed at the point when you are about to engage in an income-earning business activity or compensated activity that does not belong to the status of residence you currently hold.",
+          "ja": "この申請は、現に有している在留資格に属さない収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとするときに行います。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-work-permission",
+          "text": "就労や留学等の在留資格で在留する外国人の方が、許可された在留資格に応じた活動以外に、アルバイトなど、収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとする場合に行う申請です。"
+        },
+        {
+          "source_id": "apply-work-permission",
+          "text": "現に有している在留資格に属さない収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとするとき。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who this application is for",
+      "heading_ja": "この申請の対象者",
+      "body": [
+        {
+          "en": "This application is for foreign nationals who intend to run an income-earning business activity or to receive compensation for activity that does not belong to the status of residence they currently hold.",
+          "ja": "この申請の対象は、現に有している在留資格に属さない収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとする外国人です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-work-permission",
+          "text": "現に有している在留資格に属さない収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとする外国人"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where to apply and the fee",
+      "heading_ja": "申請先と手数料",
+      "body": [
+        {
+          "en": "Applications are submitted to the regional immigration services bureau that has jurisdiction over your place of residence. There is no fee for this application.",
+          "ja": "申請は、住んでいる場所を管轄する地方出入国在留管理官署に提出します。手数料はかかりません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-work-permission",
+          "text": "住居地を管轄する地方出入国在留管理官署"
+        },
+        {
+          "source_id": "apply-work-permission",
+          "text": "手数料はかかりません"
+        }
+      ]
+    },
+    {
+      "heading_en": "What to bring and how long it takes",
+      "heading_ja": "必要書類と処理にかかる期間",
+      "body": [
+        {
+          "en": "At the time of application, you present your residence card. The standard processing time for this application is from two weeks to two months.",
+          "ja": "申請のときは在留カードを提示します。標準処理期間は２週間～２か月です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "apply-work-permission",
+          "text": "在留カードを提示"
+        },
+        {
+          "source_id": "apply-work-permission",
+          "text": "２週間～２か月"
+        }
+      ]
+    },
+    {
+      "heading_en": "When you are not sure how this applies to you",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If you are not sure whether this permission applies to your own situation, do not try to decide on your own. You can contact the regional immigration services bureau or the Foreign Residents' General Information Center to ask about your own case.",
+          "ja": "この許可が自分の場合に当てはまるかどうか分からないときは、自分だけで判断せず、地方出入国在留管理官署または外国人在留総合インフォメーションセンターに相談してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

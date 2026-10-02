@@ -667,8 +667,9 @@
     "sources": [
       "apply-work-permission"
     ],
-    "status": "pending",
-    "note": "留学生に必須"
+    "status": "published",
+    "note": "留学生に必須",
+    "published_at": "2026-10-03"
   },
   {
     "n": 61,

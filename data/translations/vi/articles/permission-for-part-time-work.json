@@ -1,0 +1,56 @@
+{
+  "id": "permission-for-part-time-work",
+  "title": "Giấy phép hoạt động ngoài tư cách lưu trú（資格外活動許可）(Làm thêm)",
+  "description": "Giới thiệu về giấy phép hoạt động ngoài tư cách lưu trú（資格外活動許可）cần thiết khi người có tư cách lưu trú（在留資格）như đi làm hoặc du học muốn làm thêm hoặc thực hiện hoạt động có thu nhập, bao gồm nơi nộp đơn, giấy tờ cần thiết và thời gian xử lý, dựa theo thông tin chính thức của Cục quản lý xuất nhập cảnh và lưu trú（出入国在留管理庁）.",
+  "sections": [
+    {
+      "heading": "Giấy phép hoạt động ngoài tư cách lưu trú（資格外活動許可）là gì",
+      "body": [
+        "Giấy phép hoạt động ngoài tư cách lưu trú（資格外活動許可）là đơn xin được nộp khi người nước ngoài đang cư trú theo tư cách lưu trú（在留資格）như đi làm hoặc du học muốn thực hiện hoạt động kinh doanh có thu nhập hoặc nhận thù lao, chẳng hạn như làm thêm, ngoài phạm vi hoạt động được cho phép theo tư cách lưu trú（在留資格）hiện có.",
+        "Đơn này được nộp khi người đó định thực hiện hoạt động kinh doanh có thu nhập hoặc nhận thù lao mà không thuộc phạm vi của tư cách lưu trú（在留資格）hiện đang có."
+      ],
+      "quotes": [
+        "就労や留学等の在留資格で在留する外国人の方が、許可された在留資格に応じた活動以外に、アルバイトなど、収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとする場合に行う申請です。",
+        "現に有している在留資格に属さない収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとするとき。"
+      ]
+    },
+    {
+      "heading": "Đối tượng của đơn xin này",
+      "body": [
+        "Đối tượng của đơn xin này là người nước ngoài định thực hiện hoạt động kinh doanh có thu nhập hoặc nhận thù lao mà không thuộc phạm vi của tư cách lưu trú（在留資格）hiện đang có."
+      ],
+      "quotes": [
+        "現に有している在留資格に属さない収入を伴う事業を運営する活動又は報酬を受ける活動を行おうとする外国人"
+      ]
+    },
+    {
+      "heading": "Nơi nộp đơn và lệ phí",
+      "body": [
+        "Đơn được nộp tại cơ quan quản lý xuất nhập cảnh và lưu trú địa phương（地方出入国在留管理官署）có thẩm quyền quản lý nơi cư trú. Không mất lệ phí cho đơn này."
+      ],
+      "quotes": [
+        "住居地を管轄する地方出入国在留管理官署",
+        "手数料はかかりません"
+      ]
+    },
+    {
+      "heading": "Giấy tờ cần thiết và thời gian xử lý",
+      "body": [
+        "Khi nộp đơn, cần xuất trình thẻ lưu trú（在留カード）. Thời gian xử lý tiêu chuẩn là từ 2 tuần đến 2 tháng."
+      ],
+      "quotes": [
+        "在留カードを提示",
+        "２週間～２か月"
+      ]
+    },
+    {
+      "heading": "Khi không biết trường hợp của bản thân sẽ như thế nào",
+      "body": [
+        "Nếu không rõ liệu giấy phép này có áp dụng cho trường hợp của mình hay không, đừng tự mình phán đoán, hãy liên hệ với cơ quan quản lý xuất nhập cảnh và lưu trú địa phương（地方出入国在留管理官署）hoặc Trung tâm thông tin tổng hợp dành cho người nước ngoài（外国人在留総合インフォメーションセンター）để hỏi về trường hợp của bản thân."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "2d6582591ee6bfef",
+  "translated_at": "2026-10-02"
+}

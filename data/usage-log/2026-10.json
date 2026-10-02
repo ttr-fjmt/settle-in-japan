@@ -16,5 +16,23 @@
     "input_tokens": 26059,
     "output_tokens": 28202,
     "estimated_usd": 0.3341
+  },
+  {
+    "date": "2026-10-03",
+    "script": "write-next-article",
+    "model": "claude-sonnet-5",
+    "calls": 1,
+    "input_tokens": 5921,
+    "output_tokens": 8129,
+    "estimated_usd": 0.0931
+  },
+  {
+    "date": "2026-10-03",
+    "script": "translate",
+    "model": "claude-sonnet-5",
+    "calls": 3,
+    "input_tokens": 6351,
+    "output_tokens": 7308,
+    "estimated_usd": 0.0858
   }
 ]
