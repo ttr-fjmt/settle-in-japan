@@ -1,0 +1,97 @@
+{
+  "id": "notify-change-of-employer",
+  "title_en": "Notifying Immigration When You Change Jobs (Within 14 Days)",
+  "title_ja": "転職したときの届出（14日以内）",
+  "description": "転職して勤め先が変わったとき、出入国在留管理庁への届出が14日以内に必要です。対象者、期限、届出方法を公式情報にもとづいて説明します。",
+  "icon": "work",
+  "published_at": "2026-10-04",
+  "sources": [
+    "notify-contract-org",
+    "notify-activity-org"
+  ],
+  "sections": [
+    {
+      "heading_en": "Notification Required When You Change Jobs",
+      "heading_ja": "転職したときに必要な届出",
+      "body": [
+        {
+          "en": "When you change jobs in Japan, the organization you belong to changes. If your contract with your current employer ends, or if you sign a new contract with a different employer, you are required to notify the Immigration Services Agency within 14 days of that change.",
+          "ja": "日本で転職すると、所属する会社などが変わります。今の会社との契約が終わったときや、新しい会社と契約を結んだときは、その日から14日以内に出入国在留管理庁への届出が必要です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "notify-contract-org",
+          "text": "契約機関（会社など）が名称や所在地を変更した場合、消滅した場合、契約機関との契約が終了した場合（注１）、新たな契約を締結した場合（注２）は、１４日以内に法務省令で定める手続により、出入国在留管理庁長官に対し、届出を行う必要があります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who Must Submit This Notification",
+      "heading_ja": "届出の対象になる人",
+      "body": [
+        {
+          "en": "This duty applies to specific statuses of residence. It covers people with a Highly Skilled Professional, Research, Engineer/Specialist in Humanities or International Services, Nursing Care, Entertainer, Skilled Labor, or Specified Skilled Worker status whose contract organization changed, ended, or was newly signed. It also covers people with a Professor, Highly Skilled Professional, Business Manager, Legal/Accounting Services, Medical, Education, Intra-company Transferee, Technical Intern Training, Student, or Trainee status who left their organization or moved to a new one.",
+          "ja": "この届出の義務は、特定の在留資格を持つ人に当てはまります。高度専門職、研究、技術・人文知識・国際業務、介護、興行、技能、特定技能の在留資格で契約機関が変更・終了・新規締結となった人のほか、教授、経営・管理、法律・会計業務、医療、教育、企業内転勤、技能実習、留学、研修の在留資格で活動機関から離脱・移籍した人も対象です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "notify-contract-org",
+          "text": "契約機関の名称変更、所在地変更、消滅、契約機関との契約の終了若しくは新たな契約の締結があった高度専門職１号イ又はロ、高度専門職２号（イ又はロ）、研究、技術・人文知識・国際業務、介護、興行（所属機関との契約に基づいて活動に従事する者に限る。）、技能又は特定技能の在留資格を有する中長期在留者"
+        },
+        {
+          "source_id": "notify-activity-org",
+          "text": "活動機関の名称変更、所在地変更、消滅、活動機関からの離脱や移籍があった教授、高度専門職１号ハ、高度専門職２号（ハ）、経営・管理、法律・会計業務、医療、教育、企業内転勤、技能実習、留学又は研修の在留資格を有する中長期在留者"
+        }
+      ]
+    },
+    {
+      "heading_en": "The 14-Day Deadline",
+      "heading_ja": "届出期間は14日以内",
+      "body": [
+        {
+          "en": "The notification period is set at 14 days, counted from the day the change occurred. This applies whether your contract ended or you started a new contract with a different employer.",
+          "ja": "届出期間は、その事由が生じた日から14日以内と定められています。契約が終了した場合も、新しい契約を結んだ場合も同じ期間です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "notify-contract-org",
+          "text": "上記の事由が生じた日から１４日以内"
+        }
+      ]
+    },
+    {
+      "heading_en": "How to Submit the Notification",
+      "heading_ja": "届出の方法",
+      "body": [
+        {
+          "en": "There are several ways to submit this notification: online, in person, or by mail. The online system can be used 24 hours a day, 365 days a year, and lets you check the history and progress of your notification. If you go in person, bring your residence card to your nearest regional immigration services bureau and submit the notification form there.",
+          "ja": "届出の方法には、オンライン、窓口、郵送があります。電子届出システムは24時間365日利用でき、届出の履歴や処理状況も確認できます。窓口で行う場合は、最寄りの地方出入国在留管理官署に在留カードを持って行き、届出書を提出してください。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "notify-contract-org",
+          "text": "電子届出システムを利用して、２４時間、３６５日、オンラインで届出を行うことができるほか、届出を行った履歴や処理状況が確認できます。"
+        },
+        {
+          "source_id": "notify-contract-org",
+          "text": "最寄りの地方出入国在留管理官署において、在留カードを提示の上で、届出書を提出してください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If You Are Not Sure About Your Own Case",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "The details can differ depending on your status of residence and your personal situation. If you are unsure whether this notification applies to you, or how to complete it, contact your nearest regional immigration services bureau or the Information Center for Residing Foreigners for guidance.",
+          "ja": "在留資格やご自身の状況によって、届出の内容は異なります。届出が必要かどうか、どのように行うか分からないときは、最寄りの地方出入国在留管理官署や外国人在留総合インフォメーションセンターに相談してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

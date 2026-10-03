@@ -1,0 +1,54 @@
+{
+  "id": "notify-change-of-employer",
+  "title": "Thông báo khi chuyển việc làm (trong vòng 14 ngày)",
+  "description": "Khi chuyển việc làm và nơi làm việc thay đổi, cần nộp thông báo cho Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁) trong vòng 14 ngày. Bài viết này giải thích về đối tượng, thời hạn và cách thức nộp thông báo dựa trên thông tin chính thức.",
+  "sections": [
+    {
+      "heading": "Thông báo cần thiết khi chuyển việc làm",
+      "body": [
+        "Khi chuyển việc làm ở Nhật Bản, công ty hoặc tổ chức mà mình trực thuộc sẽ thay đổi. Khi hợp đồng với công ty hiện tại kết thúc, hoặc khi ký hợp đồng mới với công ty khác, cần nộp thông báo cho Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁) trong vòng 14 ngày kể từ ngày đó."
+      ],
+      "quotes": [
+        "契約機関（会社など）が名称や所在地を変更した場合、消滅した場合、契約機関との契約が終了した場合（注１）、新たな契約を締結した場合（注２）は、１４日以内に法務省令で定める手続により、出入国在留管理庁長官に対し、届出を行う必要があります。"
+      ]
+    },
+    {
+      "heading": "Những người thuộc đối tượng phải nộp thông báo",
+      "body": [
+        "Nghĩa vụ thông báo này áp dụng cho những người có tư cách lưu trú cụ thể. Bao gồm những người có tư cách lưu trú Chuyên gia trình độ cao, Nghiên cứu, Kỹ sư/Tri thức nhân văn/Nghiệp vụ quốc tế, Chăm sóc điều dưỡng, Trình diễn, Kỹ năng, hoặc Kỹ năng đặc định mà cơ quan ký hợp đồng của họ thay đổi, kết thúc hoặc ký hợp đồng mới. Ngoài ra, cũng áp dụng cho những người có tư cách lưu trú Giáo sư, Quản lý/Kinh doanh, Nghiệp vụ pháp lý/Kế toán, Y tế, Giáo dục, Nhân viên chuyển công tác nội bộ công ty, Thực tập kỹ năng, Du học, hoặc Tu nghiệp mà rời khỏi hoặc chuyển sang cơ quan hoạt động khác."
+      ],
+      "quotes": [
+        "契約機関の名称変更、所在地変更、消滅、契約機関との契約の終了若しくは新たな契約の締結があった高度専門職１号イ又はロ、高度専門職２号（イ又はロ）、研究、技術・人文知識・国際業務、介護、興行（所属機関との契約に基づいて活動に従事する者に限る。）、技能又は特定技能の在留資格を有する中長期在留者",
+        "活動機関の名称変更、所在地変更、消滅、活動機関からの離脱や移籍があった教授、高度専門職１号ハ、高度専門職２号（ハ）、経営・管理、法律・会計業務、医療、教育、企業内転勤、技能実習、留学又は研修の在留資格を有する中長期在留者"
+      ]
+    },
+    {
+      "heading": "Thời hạn nộp thông báo là trong vòng 14 ngày",
+      "body": [
+        "Thời hạn nộp thông báo được quy định là trong vòng 14 ngày kể từ ngày phát sinh sự việc đó. Dù hợp đồng kết thúc hay ký hợp đồng mới với công ty khác, thời hạn này đều giống nhau."
+      ],
+      "quotes": [
+        "上記の事由が生じた日から１４日以内"
+      ]
+    },
+    {
+      "heading": "Cách thức nộp thông báo",
+      "body": [
+        "Có nhiều cách để nộp thông báo: trực tuyến, tại quầy, hoặc qua đường bưu điện. Hệ thống thông báo điện tử (電子届出システム) có thể sử dụng 24 giờ mỗi ngày, 365 ngày trong năm, và cũng có thể kiểm tra lịch sử cũng như tình trạng xử lý thông báo. Nếu nộp tại quầy, hãy mang theo thẻ lưu trú (在留カード) đến Cục quản lý xuất nhập cảnh và lưu trú địa phương (地方出入国在留管理官署) gần nhất và nộp mẫu đơn thông báo tại đó."
+      ],
+      "quotes": [
+        "電子届出システムを利用して、２４時間、３６５日、オンラインで届出を行うことができるほか、届出を行った履歴や処理状況が確認できます。",
+        "最寄りの地方出入国在留管理官署において、在留カードを提示の上で、届出書を提出してください。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Nội dung thông báo có thể khác nhau tùy theo tư cách lưu trú và tình trạng cá nhân. Nếu không rõ liệu có cần nộp thông báo hay không, hoặc cách thức thực hiện như thế nào, hãy liên hệ Cục quản lý xuất nhập cảnh và lưu trú địa phương (地方出入国在留管理官署) hoặc Trung tâm thông tin tổng hợp dành cho người nước ngoài cư trú (外国人在留総合インフォメーションセンター) gần nhất để được tư vấn."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "d6b47b1da3fd1382",
+  "translated_at": "2026-10-03"
+}
