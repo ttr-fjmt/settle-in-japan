@@ -1,0 +1,93 @@
+{
+  "id": "long-term-care-insurance",
+  "title_en": "What Is Long-Term Care Insurance? (Age 40 and Over)",
+  "title_ja": "介護保険とは（40歳以上）",
+  "description": "介護保険制度は、高齢者が介護が必要になっても住み慣れた地域や住まいで尊厳ある自立した生活を続けられるようにする制度です。40歳になった人（第２号被保険者）向けの案内や、施設利用時の費用の負担限度額の変更なども、公式情報をもとに紹介します。",
+  "icon": "health",
+  "published_at": "2026-10-05",
+  "sources": [
+    "mhlw-kaigo",
+    "mhlw-kaigo-gaiyo"
+  ],
+  "sections": [
+    {
+      "heading_en": "What Is the Long-Term Care Insurance System For?",
+      "heading_ja": "介護保険制度とは",
+      "body": [
+        {
+          "en": "Japan's long-term care insurance system aims to help elderly people continue living with dignity and independence in their own communities and homes, even if they come to need care. The government is working to secure high-quality health, medical, and welfare services, and to keep the long-term care insurance system stable over the long term.",
+          "ja": "介護保険制度は、高齢者が介護を必要とする状態になっても、住み慣れた地域や住まいで尊厳を保ちながら自立した生活を続けられるようにするための制度です。国は、質の高い保健医療・福祉サービスを確保し、将来にわたって安定した制度を維持することを目指しています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kaigo",
+          "text": "高齢者が、介護が必要になっても、住み慣れた地域や住まいで尊厳ある自立した生活を送ることができるよう、質の高い保健医療・福祉サービスの確保、将来にわたって安定した介護保険制度の確立などに取り組んでいます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "For People Who Have Turned 40 (Secondary Insured Persons)",
+      "heading_ja": "40歳になった人（第２号被保険者）向けの案内",
+      "body": [
+        {
+          "en": "Among people enrolled in long-term care insurance, those who have turned 40 are called 'secondary insured persons' (第２号被保険者, dai-ni-go hihokensha). An official information guide for these people has been published, dated the March Reiwa 6 version.",
+          "ja": "介護保険の加入者のうち、40歳になった人は「第２号被保険者」と呼ばれます。この人たちに向けた制度の案内が、令和６年３月版として公表されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kaigo",
+          "text": "介護保険制度について（40歳になられた方（第２号被保険者）向け）（令和６年３月版）"
+        }
+      ]
+    },
+    {
+      "heading_en": "Cost Limits Can Change",
+      "heading_ja": "費用の負担限度額が変わることがある",
+      "body": [
+        {
+          "en": "For people staying at long-term care insurance facilities, the maximum amount charged for housing costs changes from August 1, Reiwa 6. It is also noted that the maximum amount for high-cost long-term care services will change as well. Detailed figures can be checked in the official information leaflets.",
+          "ja": "介護保険施設等に入所する際の居住費について、負担限度額が令和６年８月１日から変わります。また、高額介護サービス費の負担限度額も変わることが案内されています。詳しい金額は周知用のリーフレットで確認できます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kaigo",
+          "text": "介護保険施設等における居住費の負担限度額が令和６年８月１日から変わります（周知用リーフレット）［PDF形式：253KB］"
+        },
+        {
+          "source_id": "mhlw-kaigo",
+          "text": "高額介護サービス費の負担限度額が変わります（周知用リーフレット）［PDF形式：770KB］"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where to Find the Full Overview",
+      "heading_ja": "制度の全体像をもっと知るには",
+      "body": [
+        {
+          "en": "For an overview of the whole long-term care insurance system, an official document called 'Overview of the Long-Term Care Insurance System' (介護保険制度の概要) is published. It can be a helpful reference when you want to understand how the system works.",
+          "ja": "介護保険制度の全体像を知りたいときは、「介護保険制度の概要」という資料が公開されています。制度のしくみを確認したいときに参考になります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-kaigo-gaiyo",
+          "text": "介護保険制度の概要［3.3MB］"
+        }
+      ]
+    },
+    {
+      "heading_en": "If You're Not Sure How This Applies to You",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If anything about the long-term care insurance system, or about your own procedures, is unclear, you can consult your municipal government's long-term care insurance counter, or the Ministry of Health, Labour and Welfare's contact window. Detailed official documents can also be checked at your local counter.",
+          "ja": "介護保険の内容や、自分の手続きがどうなるかについて分からないことがあるときは、市区町村の介護保険担当窓口や、厚生労働省のお問合わせ窓口に相談してください。制度の詳しい資料も、担当窓口で確認できます。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
