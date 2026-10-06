@@ -1,0 +1,53 @@
+{
+  "id": "long-term-care-insurance",
+  "title": "Bảo hiểm chăm sóc dài hạn là gì? (Từ 40 tuổi trở lên)",
+  "description": "Chế độ bảo hiểm chăm sóc dài hạn (介護保険制度) là chế độ giúp người cao tuổi, ngay cả khi cần được chăm sóc, vẫn có thể tiếp tục sống độc lập và có phẩm giá tại khu vực và nơi ở quen thuộc của mình. Bài viết giới thiệu, dựa trên thông tin chính thức, hướng dẫn dành cho người đã tròn 40 tuổi (người được bảo hiểm thứ hai) (第２号被保険者) cũng như những thay đổi về mức giới hạn chi phí khi sử dụng cơ sở.",
+  "sections": [
+    {
+      "heading": "Mục đích của chế độ bảo hiểm chăm sóc dài hạn là gì?",
+      "body": [
+        "Chế độ bảo hiểm chăm sóc dài hạn (介護保険制度) của Nhật Bản nhằm giúp người cao tuổi, dù cần được chăm sóc, vẫn có thể tiếp tục sống độc lập và có phẩm giá tại cộng đồng và nơi ở quen thuộc của mình. Chính phủ đang nỗ lực đảm bảo các dịch vụ y tế, chăm sóc sức khỏe và phúc lợi chất lượng cao, đồng thời duy trì sự ổn định lâu dài của chế độ bảo hiểm chăm sóc dài hạn."
+      ],
+      "quotes": [
+        "高齢者が、介護が必要になっても、住み慣れた地域や住まいで尊厳ある自立した生活を送ることができるよう、質の高い保健医療・福祉サービスの確保、将来にわたって安定した介護保険制度の確立などに取り組んでいます。"
+      ]
+    },
+    {
+      "heading": "Hướng dẫn dành cho người đã tròn 40 tuổi (người được bảo hiểm thứ hai)",
+      "body": [
+        "Trong số những người tham gia bảo hiểm chăm sóc dài hạn (介護保険), những người đã tròn 40 tuổi được gọi là “người được bảo hiểm thứ hai” (第２号被保険者). Một tài liệu hướng dẫn chính thức dành cho những người này đã được công bố, với phiên bản tháng 3 năm Reiwa 6."
+      ],
+      "quotes": [
+        "介護保険制度について（40歳になられた方（第２号被保険者）向け）（令和６年３月版）"
+      ]
+    },
+    {
+      "heading": "Giới hạn chi phí có thể thay đổi",
+      "body": [
+        "Đối với chi phí chỗ ở khi vào các cơ sở bảo hiểm chăm sóc dài hạn (介護保険施設等), mức giới hạn chi phí sẽ thay đổi từ ngày 1 tháng 8 năm Reiwa 6. Ngoài ra, mức giới hạn chi phí dịch vụ chăm sóc dài hạn cao (高額介護サービス費) cũng được thông báo sẽ thay đổi. Số tiền chi tiết có thể được xem trong tờ rơi thông tin chính thức."
+      ],
+      "quotes": [
+        "介護保険施設等における居住費の負担限度額が令和６年８月１日から変わります（周知用リーフレット）［PDF形式：253KB］",
+        "高額介護サービス費の負担限度額が変わります（周知用リーフレット）［PDF形式：770KB］"
+      ]
+    },
+    {
+      "heading": "Muốn biết thêm về tổng quan chế độ",
+      "body": [
+        "Nếu muốn biết tổng quan về toàn bộ chế độ bảo hiểm chăm sóc dài hạn, có một tài liệu chính thức được công bố với tên gọi “Tổng quan về chế độ bảo hiểm chăm sóc dài hạn” (介護保険制度の概要). Đây có thể là tài liệu tham khảo hữu ích khi muốn tìm hiểu cách thức hoạt động của chế độ."
+      ],
+      "quotes": [
+        "介護保険制度の概要［3.3MB］"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Nếu có điều gì chưa rõ về nội dung của bảo hiểm chăm sóc dài hạn (介護保険), hoặc về các thủ tục liên quan đến bản thân, có thể liên hệ với quầy phụ trách bảo hiểm chăm sóc dài hạn tại chính quyền thành phố, quận, huyện (市区町村), hoặc quầy liên hệ của Bộ Y tế, Lao động và Phúc lợi (厚生労働省). Tài liệu chi tiết về chế độ cũng có thể được xem tại quầy phụ trách."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "e4da50d95d87066e",
+  "translated_at": "2026-10-06"
+}

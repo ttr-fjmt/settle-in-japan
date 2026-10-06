@@ -1,0 +1,61 @@
+{
+  "id": "support-for-those-in-need",
+  "title": "Khi cuộc sống khó khăn: Hỗ trợ cho người gặp khó khăn trong sinh hoạt (生活困窮者自立支援)",
+  "description": "Giới thiệu về chế độ tư vấn và hỗ trợ công khai dành cho những người đang gặp khó khăn trong cuộc sống như công việc hay tiền thuê nhà, dựa trên thông tin của Bộ Y tế, Lao động và Phúc lợi.",
+  "sections": [
+    {
+      "heading": "Chế độ này là gì",
+      "body": [
+        "Có một chế độ công khai tiếp nhận tư vấn cho những người đang gặp khó khăn trong cuộc sống. Tùy theo hoàn cảnh của từng người, chế độ này cung cấp nhiều loại hỗ trợ khác nhau, như hỗ trợ tìm việc làm, hỗ trợ về nhà ở (ví dụ như chi trả một khoản tiền tương đương tiền thuê nhà), và hỗ trợ để khôi phục lại tình hình tài chính của gia đình."
+      ],
+      "quotes": [
+        "生活にお困りの方の相談を受け付け、ひとりひとりの状況に合わせて、仕事の支援、家賃相当額の支給などの住まいの支援、家計の立て直しの支援などさまざまな支援を提供しています。"
+      ]
+    },
+    {
+      "heading": "Đối tượng áp dụng là ai",
+      "body": [
+        "Chế độ này dành cho những người đang gặp khó khăn trong cuộc sống do nhiều lý do khác nhau liên quan đến công việc hay sinh hoạt. Điều này bao gồm cả những trường hợp như không tìm được việc làm, muốn làm việc nhưng không thể làm việc, không trả được tiền thuê nhà, hoặc không có nơi để ở."
+      ],
+      "quotes": [
+        "仕事や生活など、様々な困難により生活に困窮しているかた"
+      ]
+    },
+    {
+      "heading": "Trước tiên, hãy trao đổi với quầy tư vấn của địa phương",
+      "body": [
+        "Nếu đang gặp khó khăn hoặc lo lắng trong cuộc sống, trước tiên có thể trao đổi với quầy tư vấn của địa phương. Nhân viên hỗ trợ sẽ lắng nghe, cùng suy nghĩ xem cần loại hỗ trợ nào, rồi lập một kế hoạch hỗ trợ cụ thể."
+      ],
+      "quotes": [
+        "生活に困りごとや不安を抱えている場合は、まずは地域の相談窓口にご相談ください。"
+      ]
+    },
+    {
+      "heading": "Hỗ trợ về nhà ở (chi trả khoản tiền tương đương tiền thuê nhà)",
+      "body": [
+        "Đối với những người đã mất chỗ ở do nghỉ việc, hoặc có nguy cơ cao sẽ mất chỗ ở, có một cơ chế chi trả một khoản tiền tương đương tiền thuê nhà trong một khoảng thời gian nhất định, với điều kiện người đó phải thực hiện các hoạt động hướng tới việc tìm việc làm, v.v."
+      ],
+      "quotes": [
+        "離職などにより住居を失った方、または失うおそれの高い方には、就職に向けた活動をするなどを条件に、一定期間、家賃相当額を支給します。"
+      ]
+    },
+    {
+      "heading": "Có thể hỏi thêm thông tin chi tiết ở đâu",
+      "body": [
+        "Về nội dung chi tiết của chế độ này, có thể liên hệ với cơ quan hỗ trợ tư vấn tự lập（自立相談支援機関）tại khu vực nơi mình đang sinh sống."
+      ],
+      "quotes": [
+        "詳しくは、お住まいの地域の自立相談支援機関にお問い合わせください。"
+      ]
+    },
+    {
+      "heading": "Khi không biết trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Việc chế độ này áp dụng như thế nào sẽ khác nhau tùy theo hoàn cảnh của từng người, chẳng hạn như công việc, thu nhập, nhà ở. Thay vì tự mình phán đoán, có thể liên hệ trực tiếp với cơ quan hỗ trợ tư vấn tự lập（自立相談支援機関）của địa phương hoặc quầy phúc lợi liên quan, rồi trình bày về tình hình của mình."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "f8ebb9ac410c52d7",
+  "translated_at": "2026-10-06"
+}

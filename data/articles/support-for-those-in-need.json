@@ -1,0 +1,105 @@
+{
+  "id": "support-for-those-in-need",
+  "title_en": "When Life Is Difficult: Support for People in Need (Self-Reliance Support System)",
+  "title_ja": "生活が苦しいとき（生活困窮者自立支援）",
+  "description": "仕事や家賃の支払いなど生活に困っている人のための公的な相談・支援制度について、厚生労働省の情報をもとに紹介します。",
+  "icon": "guide",
+  "published_at": "2026-10-06",
+  "sources": [
+    "mhlw-konkyu",
+    "mhlw-seikatsuhogo"
+  ],
+  "sections": [
+    {
+      "heading_en": "What this system is",
+      "heading_ja": "この制度はどんなものか",
+      "body": [
+        {
+          "en": "There is a public system that accepts consultations from people who are having a hard time in daily life. Based on each person's situation, it provides various kinds of support, including help finding work, support for housing such as payment of an amount equivalent to rent, and support for rebuilding household finances.",
+          "ja": "生活に困ったときの相談を受け付ける公的な制度があります。一人ひとりの状況に合わせて、仕事の支援や、家賃相当額の支給などの住まいの支援、家計の立て直しの支援など、さまざまな支援が用意されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "生活にお困りの方の相談を受け付け、ひとりひとりの状況に合わせて、仕事の支援、家賃相当額の支給などの住まいの支援、家計の立て直しの支援などさまざまな支援を提供しています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Who this is for",
+      "heading_ja": "どんな人が対象か",
+      "body": [
+        {
+          "en": "This system is for people who are struggling in life due to various difficulties related to work or daily living. It covers situations such as not being able to find a job, wanting to work but being unable to, not being able to pay rent, or having no place to live.",
+          "ja": "この制度は、仕事や生活など、様々な困難により生活に困窮している人を対象としています。仕事が見つからない、働きたくても働けない、家賃を払えない、住むところがないといった状況も含まれます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "仕事や生活など、様々な困難により生活に困窮しているかた"
+        }
+      ]
+    },
+    {
+      "heading_en": "First step: talk to a local consultation desk",
+      "heading_ja": "まず地域の相談窓口に相談する",
+      "body": [
+        {
+          "en": "If you are struggling with worries or anxiety in daily life, the first step is to consult the local consultation desk. A support worker will listen and think together with you about what kind of support is needed, then create a concrete support plan.",
+          "ja": "生活に困りごとや不安を抱えている場合は、まずは地域の相談窓口に相談することができます。支援員が相談を受け、どのような支援が必要かを一緒に考え、具体的な支援プランを作ります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "生活に困りごとや不安を抱えている場合は、まずは地域の相談窓口にご相談ください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Support with housing (payment equivalent to rent)",
+      "heading_ja": "住まいの支援（家賃相当額の支給）",
+      "body": [
+        {
+          "en": "For people who have lost their housing due to reasons such as leaving a job, or who are at high risk of losing it, an amount equivalent to rent can be paid for a certain period, on the condition that the person engages in activities toward finding employment, among other conditions.",
+          "ja": "離職などにより住居を失った人、または失うおそれの高い人には、就職に向けた活動をするなどを条件に、一定期間、家賃相当額が支給される仕組みがあります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "離職などにより住居を失った方、または失うおそれの高い方には、就職に向けた活動をするなどを条件に、一定期間、家賃相当額を支給します。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Where to ask for details",
+      "heading_ja": "詳しいことはどこに聞けるか",
+      "body": [
+        {
+          "en": "For more detailed information about this system, you can contact the self-reliance support organization in the area where you live.",
+          "ja": "この制度の詳しい内容については、お住まいの地域の自立相談支援機関に問い合わせることができます。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "mhlw-konkyu",
+          "text": "詳しくは、お住まいの地域の自立相談支援機関にお問い合わせください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "When you are not sure about your own situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Whether and how this system applies depends on each person's situation, such as work, income, and housing. Rather than judging your own case by yourself, it is best to contact the local self-reliance support consultation desk or a related welfare office window directly and explain your situation.",
+          "ja": "この制度がどのように当てはまるかは、仕事や収入、住まいなど、人によって状況が異なります。自分で判断しようとせず、地域の自立相談支援機関や関連する福祉の窓口に直接問い合わせ、状況を説明することができます。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}
