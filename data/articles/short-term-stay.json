@@ -1,0 +1,101 @@
+{
+  "id": "short-term-stay",
+  "title_en": "How Long You Can Stay in Japan as a Temporary Visitor (Tourism)",
+  "title_ja": "短期滞在（観光）で日本に来られる期間",
+  "description": "観光などの「短期滞在」で日本に滞在できる期間や、延長・変更の手続きについて、出入国在留管理庁の公式情報をもとに解説します。",
+  "icon": "status",
+  "published_at": "2026-10-07",
+  "sources": [
+    "visa-temporary-visitor"
+  ],
+  "sections": [
+    {
+      "heading_en": "What activities fall under 'Temporary Visitor' status",
+      "heading_ja": "「短期滞在」にあたる活動とは",
+      "body": [
+        {
+          "en": "The 'Temporary Visitor' status covers short stays in Japan for sightseeing, recreation, sports, visiting relatives, inspection tours, taking short courses, attending meetings, business contact, and other similar activities. Typical examples include tourists and people attending conferences.",
+          "ja": "「短期滞在」は、観光、保養、スポーツ、親族の訪問、見学、講習、会合への参加、業務連絡など、短期間の滞在で行う活動にあてはまります。代表例は観光客や会議参加者です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "本邦に短期間滞在して行う観光、保養、スポーツ、親族の訪問、見学、講習又は会合への参加、業務連絡その他これらに類似する活動"
+        },
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "該当例としては、観光客、会議参加者等。"
+        }
+      ]
+    },
+    {
+      "heading_en": "How long you can stay",
+      "heading_ja": "滞在できる期間",
+      "body": [
+        {
+          "en": "Under this status, the period of stay is 90 days, 30 days, or 15 days. If the Minister of Justice sets a specific period for an individual foreign national, that designated period applies, as long as it does not exceed 90 days.",
+          "ja": "この在留資格の在留期間は、90日、30日又は15日です。法務大臣が個々の外国人について期間を指定する場合は、その指定された期間となりますが、90日を超えることはありません。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "９０日、３０日又は１５日（法務大臣が個々の外国人について９０日を超えない範囲内で日を単位とする期間を指定する場合にあっては、当該指定する期間)"
+        }
+      ]
+    },
+    {
+      "heading_en": "Extending your stay",
+      "heading_ja": "在留期間を延長する場合",
+      "body": [
+        {
+          "en": "Extending a 'Temporary Visitor' stay through the extension application (在留期間更新許可申請) is generally approved only when there are truly unavoidable humanitarian reasons or special circumstances equivalent to them, such as the need to receive medical treatment.",
+          "ja": "在留期間更新許可申請による「短期滞在」の期間延長は、原則として、人道上やむを得ない事情やこれに相当する特別な事情がある場合に認められ、例えば病気治療が必要な場合などがこれにあたります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "在留資格「短期滞在」に係る在留期間の更新は、原則として、人道上の真にやむをえない事情又はこれに相当する特別な事情がある場合に認められるものであり、例えば、病気治療をする必要がある場合などがこれに当たります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Changing to another status while in Japan",
+      "heading_ja": "日本にいる間に在留資格を変更する場合",
+      "body": [
+        {
+          "en": "People who already hold another status of residence in Japan and want to switch to activities covered by 'Temporary Visitor' need to file a change of status application. The official guidance also states that anyone intending to carry out activities under a different status should apply promptly.",
+          "ja": "すでに別の在留資格で日本に滞在している人が、「短期滞在」にあたる活動に変えたい場合は、在留資格変更許可申請が必要です。公式案内では、他の在留資格に該当する活動を行おうとする場合は速やかに申請するよう求めています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "既にほかの在留資格を持って日本に滞在されている方が、活動内容を変更し、この在留資格に該当する活動を行おうとする場合の申請です。"
+        },
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "他の在留資格に該当する活動を行おうとする場合は速やかに申請してください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure how the rules apply to you",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "Questions about how to fill in application forms or which documents are required can be directed to the Immigration Information Center. Contacting them before visiting an immigration office can help make sure the right documents are ready in advance.",
+          "ja": "申請書の書き方や必要書類について分からないときは、外国人在留総合インフォメーションセンターに問い合わせることができます。窓口に行く前に確認しておくと準備がしやすくなります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "visa-temporary-visitor",
+          "text": "申請書の書き方、必要書類等についての御質問は、「外国人在留総合インフォメーションセンター」へお問い合わせください。"
+        }
+      ]
+    }
+  ]
+}

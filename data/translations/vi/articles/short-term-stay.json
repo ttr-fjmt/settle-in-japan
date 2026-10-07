@@ -1,0 +1,56 @@
+{
+  "id": "short-term-stay",
+  "title": "Thời gian có thể ở Nhật theo diện \"Lưu trú ngắn hạn\" (du lịch)",
+  "description": "Giải thích về khoảng thời gian có thể ở Nhật theo diện lưu trú “短期滞在”（Lưu trú ngắn hạn） cho mục đích du lịch, cùng thủ tục gia hạn hoặc thay đổi tư cách lưu trú, dựa trên thông tin chính thức của Cục quản lý xuất nhập cảnh và lưu trú.",
+  "sections": [
+    {
+      "heading": "Những hoạt động nào thuộc tư cách lưu trú “短期滞在”（Lưu trú ngắn hạn）",
+      "body": [
+        "Tư cách lưu trú “短期滞在”（Lưu trú ngắn hạn） áp dụng cho các hoạt động thực hiện trong thời gian ngắn tại Nhật Bản, như du lịch, nghỉ dưỡng, thể thao, thăm người thân, tham quan, tham gia khóa học ngắn hạn, tham dự hội họp, liên lạc công việc, v.v. Ví dụ tiêu biểu là khách du lịch hoặc người tham dự hội nghị."
+      ],
+      "quotes": [
+        "本邦に短期間滞在して行う観光、保養、スポーツ、親族の訪問、見学、講習又は会合への参加、業務連絡その他これらに類似する活動",
+        "該当例としては、観光客、会議参加者等。"
+      ]
+    },
+    {
+      "heading": "Thời gian có thể lưu trú",
+      "body": [
+        "Theo tư cách lưu trú này, thời gian lưu trú là 90 ngày, 30 ngày hoặc 15 ngày. Trường hợp Bộ trưởng Bộ Tư pháp chỉ định thời gian riêng cho từng người nước ngoài, thời gian đó sẽ được áp dụng, nhưng không vượt quá 90 ngày."
+      ],
+      "quotes": [
+        "９０日、３０日又は１５日（法務大臣が個々の外国人について９０日を超えない範囲内で日を単位とする期間を指定する場合にあっては、当該指定する期間)"
+      ]
+    },
+    {
+      "heading": "Trường hợp gia hạn thời gian lưu trú",
+      "body": [
+        "Việc gia hạn thời gian lưu trú của diện “短期滞在”（Lưu trú ngắn hạn） thông qua đơn xin gia hạn thời gian lưu trú (在留期間更新許可申請) về nguyên tắc chỉ được chấp nhận khi có lý do nhân đạo thực sự bất khả kháng hoặc có hoàn cảnh đặc biệt tương đương, ví dụ như trường hợp cần điều trị bệnh."
+      ],
+      "quotes": [
+        "在留資格「短期滞在」に係る在留期間の更新は、原則として、人道上の真にやむをえない事情又はこれに相当する特別な事情がある場合に認められるものであり、例えば、病気治療をする必要がある場合などがこれに当たります。"
+      ]
+    },
+    {
+      "heading": "Trường hợp thay đổi tư cách lưu trú trong thời gian ở Nhật",
+      "body": [
+        "Người đang có tư cách lưu trú khác tại Nhật Bản, nếu muốn chuyển sang hoạt động thuộc diện “短期滞在”（Lưu trú ngắn hạn）, cần nộp đơn xin thay đổi tư cách lưu trú (在留資格変更許可申請). Thông tin chính thức cũng nêu rõ rằng người có ý định thực hiện hoạt động thuộc tư cách lưu trú khác nên nộp đơn càng sớm càng tốt."
+      ],
+      "quotes": [
+        "既にほかの在留資格を持って日本に滞在されている方が、活動内容を変更し、この在留資格に該当する活動を行おうとする場合の申請です。",
+        "他の在留資格に該当する活動を行おうとする場合は速やかに申請してください。"
+      ]
+    },
+    {
+      "heading": "Khi chưa rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Những thắc mắc về cách viết đơn xin hoặc giấy tờ cần thiết có thể được hỏi tại Trung tâm thông tin tổng hợp dành cho người nước ngoài lưu trú（外国人在留総合インフォメーションセンター）. Việc xác nhận trước khi đến quầy thủ tục có thể giúp việc chuẩn bị giấy tờ thuận tiện hơn."
+      ],
+      "quotes": [
+        "申請書の書き方、必要書類等についての御質問は、「外国人在留総合インフォメーションセンター」へお問い合わせください。"
+      ]
+    }
+  ],
+  "source_hash": "5867b856f07110eb",
+  "translated_at": "2026-10-07"
+}
