@@ -1,0 +1,92 @@
+{
+  "id": "moving-out-notification",
+  "title_en": "What to Do When You Move to a New Address in Japan",
+  "title_ja": "転出・転居したときの手続き",
+  "description": "日本国内で別の市区町村へ引っ越したときや、同じ市区町村内で住所を変えたとき、海外へ出国するときに必要な転出・転居の届出について、総務省の公式情報をもとにわかりやすく説明します。届出の期限や持ち物も確認できます。",
+  "icon": "move",
+  "published_at": "2026-10-08",
+  "sources": [
+    "jutei-move"
+  ],
+  "sections": [
+    {
+      "heading_en": "Moving to a different city or town",
+      "heading_ja": "別の市区町村へ引っ越すとき",
+      "body": [
+        {
+          "en": "If you move to a different municipality, you need to file a notification of moving out (tenshutsu) at your current municipality, and also a notification of moving in (tennyu) at your new municipality. When you file the moving-out notification, you will be given a 'moving-out certificate' (tenshutsu shomeisho). You must bring this certificate and complete the moving-in notification at the new municipality within 14 days of settling at the new address.",
+          "ja": "別の市区町村へ引っ越す場合は、今住んでいる市区町村で転出の届出を行い、新しく住む市区町村でも転入の届出を行う必要があります。転出の届出をすると「転出証明書」が交付されます。新しい住所を定めてから14日以内に、この転出証明書を持って新しい市区町村で転入の届出を行います。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "住民基本台帳制度では、外国人住民の方も、別の市区町村へ引っ越しをする際には、転出の届出をお住まいの市区町村にて行うとともに、転入の届出を新たにお住まいになる市区町村にて行っていただくことが必要となります。"
+        },
+        {
+          "source_id": "jutei-move",
+          "text": "新しい市区町村へ転入する際、住所を定めてから14日以内にこの「転出証明書」をお持ちいただいて転入の届出を行うことになります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Moving within the same city or town",
+      "heading_ja": "同じ市区町村内で住所を変えるとき",
+      "body": [
+        {
+          "en": "If you change your address but stay within the same municipality, the procedure is different from moving to another city. In this case, you need to file a notification of change of residence (tenkyo) at your municipality.",
+          "ja": "同じ市区町村の中で住所を変える場合は、別の市区町村へ引っ越す場合とは手続きが異なります。この場合は、お住まいの市区町村に転居の届出を行う必要があります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "同一の市区町村内で住所を変更する際には、お住まいの市区町村に転居の届出を行う必要があります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Leaving Japan to live abroad",
+      "heading_ja": "日本を出国して海外で暮らすとき",
+      "body": [
+        {
+          "en": "If you leave Japan to live overseas, a notification of moving out is, as a general rule, required at your municipality of residence.",
+          "ja": "日本を出国して海外で暮らす場合は、原則としてお住まいの市区町村で転出の届出が必要です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "日本を出国して海外で暮らす場合は、原則としてお住まいの市区町村にて転出の届出が必要です。"
+        }
+      ]
+    },
+    {
+      "heading_en": "What to bring when filing the notification",
+      "heading_ja": "届出のときに持っていくもの",
+      "body": [
+        {
+          "en": "When filing a notification of moving in or a notification of change of residence, you are asked to bring either your residence card, your special permanent resident certificate, or your alien registration certificate.",
+          "ja": "転入の届出や転居の届出を行う際には、在留カード、特別永住者証明書、または外国人登録証明書のいずれかを持っていく必要があります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "jutei-move",
+          "text": "転入の届出や転居の届出の際には、在留カード、特別永住者証明書（又は外国人登録証明書）のいずれかを御持参ください。"
+        }
+      ]
+    },
+    {
+      "heading_en": "If you are not sure what applies to your situation",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "The procedures described here are based on the general system explained by the Ministry of Internal Affairs and Communications. Your specific situation, the documents you need, and the deadlines that apply to you can differ depending on your residence status and circumstances. For questions about your own case, contact the residence registration counter (jumin-ka or similar) at your municipal office, which is the official point of contact for these notifications.",
+          "ja": "ここで説明した内容は、総務省が示す制度の一般的な仕組みにもとづいています。実際に必要な書類や期限は、在留資格や状況によって異なる場合があります。自分の場合について詳しく知りたいときは、お住まいの市区町村役場の住民登録を担当する窓口（住民課など）に相談してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

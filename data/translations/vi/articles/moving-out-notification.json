@@ -1,0 +1,53 @@
+{
+  "id": "moving-out-notification",
+  "title": "Thủ tục cần làm khi chuyển đi hoặc chuyển nơi ở tại Nhật Bản",
+  "description": "Bài viết giải thích dễ hiểu về thủ tục chuyển đi, chuyển đến khi chuyển sang một thành phố/quận/huyện khác trong Nhật Bản, khi đổi địa chỉ trong cùng khu vực, hoặc khi xuất cảnh ra nước ngoài, dựa trên thông tin chính thức của Bộ Nội vụ và Truyền thông. Có thể kiểm tra thời hạn nộp hồ sơ và giấy tờ cần mang theo.",
+  "sections": [
+    {
+      "heading": "Khi chuyển đến một thành phố, quận hoặc huyện khác",
+      "body": [
+        "Nếu chuyển đến một thành phố, quận hoặc huyện khác, cần làm thủ tục chuyển đi (転出) tại thành phố/quận/huyện nơi đang sinh sống hiện tại, đồng thời làm thủ tục chuyển đến (転入) tại thành phố/quận/huyện nơi sẽ sinh sống mới. Khi làm thủ tục chuyển đi, sẽ được cấp “giấy chứng nhận chuyển đi” (転出証明書). Trong vòng 14 ngày kể từ khi xác định địa chỉ mới, cần mang giấy chứng nhận chuyển đi này đến làm thủ tục chuyển đến tại thành phố/quận/huyện mới."
+      ],
+      "quotes": [
+        "住民基本台帳制度では、外国人住民の方も、別の市区町村へ引っ越しをする際には、転出の届出をお住まいの市区町村にて行うとともに、転入の届出を新たにお住まいになる市区町村にて行っていただくことが必要となります。",
+        "新しい市区町村へ転入する際、住所を定めてから14日以内にこの「転出証明書」をお持ちいただいて転入の届出を行うことになります。"
+      ]
+    },
+    {
+      "heading": "Khi đổi địa chỉ trong cùng một thành phố, quận hoặc huyện",
+      "body": [
+        "Nếu đổi địa chỉ nhưng vẫn ở trong cùng một thành phố, quận hoặc huyện, thủ tục sẽ khác với khi chuyển đến nơi khác. Trong trường hợp này, cần làm thủ tục chuyển nơi ở (転居) tại thành phố/quận/huyện nơi đang sinh sống."
+      ],
+      "quotes": [
+        "同一の市区町村内で住所を変更する際には、お住まいの市区町村に転居の届出を行う必要があります。"
+      ]
+    },
+    {
+      "heading": "Khi xuất cảnh khỏi Nhật Bản để sinh sống ở nước ngoài",
+      "body": [
+        "Khi xuất cảnh khỏi Nhật Bản để sinh sống ở nước ngoài, về nguyên tắc cần làm thủ tục chuyển đi (転出) tại thành phố/quận/huyện nơi đang sinh sống."
+      ],
+      "quotes": [
+        "日本を出国して海外で暮らす場合は、原則としてお住まいの市区町村にて転出の届出が必要です。"
+      ]
+    },
+    {
+      "heading": "Những giấy tờ cần mang theo khi làm thủ tục",
+      "body": [
+        "Khi làm thủ tục chuyển đến hoặc thủ tục chuyển nơi ở, cần mang theo một trong các giấy tờ sau: thẻ lưu trú (在留カード), giấy chứng nhận người vĩnh trú đặc biệt (特別永住者証明書), hoặc giấy chứng nhận đăng ký người nước ngoài (外国人登録証明書)."
+      ],
+      "quotes": [
+        "転入の届出や転居の届出の際には、在留カード、特別永住者証明書（又は外国人登録証明書）のいずれかを御持参ください。"
+      ]
+    },
+    {
+      "heading": "Khi chưa rõ trường hợp của bản thân sẽ như thế nào",
+      "body": [
+        "Nội dung được giải thích ở đây dựa trên cơ chế chung của chế độ do Bộ Nội vụ và Truyền thông công bố. Giấy tờ cần thiết và thời hạn thực tế có thể khác nhau tùy theo tư cách lưu trú và hoàn cảnh của mỗi người. Nếu muốn biết chi tiết về trường hợp của mình, hãy liên hệ với quầy phụ trách đăng ký cư dân (ví dụ: phòng đăng ký cư dân) tại văn phòng hành chính của thành phố/quận/huyện nơi đang sinh sống."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "2f2fbc6927ec1cd5",
+  "translated_at": "2026-10-08"
+}
