@@ -470,8 +470,9 @@
       "nenkin-kounen",
       "nenkin-kokunen"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-10-09"
   },
   {
     "n": 43,

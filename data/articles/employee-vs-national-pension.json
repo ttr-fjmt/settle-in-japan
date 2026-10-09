@@ -1,0 +1,105 @@
+{
+  "id": "employee-vs-national-pension",
+  "title_en": "Kosei Nenkin vs Kokumin Nenkin: Understanding Japan's Two Pension Pages",
+  "title_ja": "厚生年金と国民年金の違い",
+  "description": "厚生年金保険と国民年金は、日本年金機構のサイトでそれぞれ別のページに案内されています。公式ページに書かれている項目を手がかりに、どのような情報が載っているかを紹介します。",
+  "icon": "guide",
+  "published_at": "2026-10-09",
+  "sources": [
+    "nenkin-kounen",
+    "nenkin-kokunen"
+  ],
+  "sections": [
+    {
+      "heading_en": "Two Separate Official Pages",
+      "heading_ja": "制度ごとに案内ページが分かれている",
+      "body": [
+        {
+          "en": "The Japan Pension Service website explains Japan's public pension system through two separate pages: one titled Kosei Nenkin Hoken (employees' pension insurance) and one titled Kokumin Nenkin (national pension). Each page organizes information under its own heading in the site menu.",
+          "ja": "日本年金機構のホームページには、「厚生年金保険」と「国民年金」という見出しで、それぞれ別の案内ページが用意されています。制度ごとに内容がまとめられています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-kounen",
+          "text": "厚生年金保険"
+        },
+        {
+          "source_id": "nenkin-kokunen",
+          "text": "国民年金"
+        }
+      ]
+    },
+    {
+      "heading_en": "What the Kosei Nenkin Page Covers",
+      "heading_ja": "厚生年金保険ページに載っている項目",
+      "body": [
+        {
+          "en": "On the Kosei Nenkin page, the listed topics include information about covered workplaces and insured workers and dependents, as well as premium-related matters for health insurance and employees' pension insurance.",
+          "ja": "厚生年金保険のページには、適用事業所や被保険者・被扶養者についての項目と、健康保険・厚生年金保険の保険料に関する項目が載っています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-kounen",
+          "text": "適用事業所と被保険者・被扶養者"
+        },
+        {
+          "source_id": "nenkin-kounen",
+          "text": "健康保険・厚生年金保険の保険料関係"
+        }
+      ]
+    },
+    {
+      "heading_en": "What the Kokumin Nenkin Page Covers",
+      "heading_ja": "国民年金ページに載っている項目",
+      "body": [
+        {
+          "en": "On the Kokumin Nenkin page, the listed topics include joining the national pension system and matters related to exemption, postponement, and later payment of national pension premiums.",
+          "ja": "国民年金のページには、国民年金の加入についての項目や、国民年金保険料の免除・猶予・追納についての項目が載っています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-kokunen",
+          "text": "国民年金の加入"
+        },
+        {
+          "source_id": "nenkin-kokunen",
+          "text": "国民年金保険料の免除・猶予・追納"
+        }
+      ]
+    },
+    {
+      "heading_en": "Online Procedures Are Listed for Individuals",
+      "heading_ja": "個人向けのオンライン手続きも案内されている",
+      "body": [
+        {
+          "en": "The Kokumin Nenkin page lists an item for electronic applications by individuals for national pension matters. The same site menu also lists a general item for carrying out procedures online for individuals, shown on both the Kosei Nenkin and Kokumin Nenkin pages.",
+          "ja": "国民年金のページには、個人の方による電子申請についての項目があります。また同じサイトのメニューには、個人の方がオンラインで手続きを行うための項目も案内されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "nenkin-kokunen",
+          "text": "個人の方の電子申請（国民年金）"
+        },
+        {
+          "source_id": "nenkin-kounen",
+          "text": "オンラインで手続きする（個人の方）"
+        }
+      ]
+    },
+    {
+      "heading_en": "If You're Not Sure Which Applies to You",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "The Japan Pension Service site also lists a section for consultation and procedure counters under its Q&A menu. If it is unclear which pension system or procedure applies to a particular situation, that consultation and procedure counter listing is the place provided by the official site to ask.",
+          "ja": "日本年金機構のサイトの「ご相談・Q&A」のメニューには、「相談・手続き窓口」という案内も載っています。自分の場合にどの制度や手続きが関係するか分からないときは、この相談・手続き窓口を確認してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

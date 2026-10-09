@@ -1,0 +1,56 @@
+{
+  "id": "employee-vs-national-pension",
+  "title": "Sự khác nhau giữa Kosei Nenkin (厚生年金・Bảo hiểm hưu trí phúc lợi) và Kokumin Nenkin (国民年金・Bảo hiểm hưu trí quốc dân)",
+  "description": "Bảo hiểm hưu trí phúc lợi (厚生年金保険) và Bảo hiểm hưu trí quốc dân (国民年金) được giới thiệu ở hai trang riêng biệt trên trang web của Tổ chức Hưu trí Nhật Bản (日本年金機構). Bài viết này giới thiệu những thông tin được ghi trên từng trang chính thức.",
+  "sections": [
+    {
+      "heading": "Có hai trang thông tin chính thức riêng biệt",
+      "body": [
+        "Trên trang chủ của Tổ chức Hưu trí Nhật Bản (日本年金機構), có hai trang hướng dẫn riêng được đặt tên là 「厚生年金保険」 (Bảo hiểm hưu trí phúc lợi) và 「国民年金」 (Bảo hiểm hưu trí quốc dân). Thông tin của từng chế độ được tổng hợp riêng theo từng trang."
+      ],
+      "quotes": [
+        "厚生年金保険",
+        "国民年金"
+      ]
+    },
+    {
+      "heading": "Những mục được đăng trên trang Kosei Nenkin (厚生年金保険)",
+      "body": [
+        "Trên trang Kosei Nenkin (厚生年金保険), có các mục về nơi làm việc thuộc diện áp dụng, người tham gia bảo hiểm và người phụ thuộc, cũng như các mục liên quan đến phí bảo hiểm của bảo hiểm sức khỏe và bảo hiểm hưu trí phúc lợi."
+      ],
+      "quotes": [
+        "適用事業所と被保険者・被扶養者",
+        "健康保険・厚生年金保険の保険料関係"
+      ]
+    },
+    {
+      "heading": "Những mục được đăng trên trang Kokumin Nenkin (国民年金)",
+      "body": [
+        "Trên trang Kokumin Nenkin (国民年金), có mục về việc tham gia Bảo hiểm hưu trí quốc dân (国民年金), cũng như các mục liên quan đến việc miễn, hoãn và đóng bù sau phí bảo hiểm hưu trí quốc dân."
+      ],
+      "quotes": [
+        "国民年金の加入",
+        "国民年金保険料の免除・猶予・追納"
+      ]
+    },
+    {
+      "heading": "Thủ tục trực tuyến dành cho cá nhân cũng được giới thiệu",
+      "body": [
+        "Trên trang Kokumin Nenkin (国民年金) có mục về việc nộp đơn điện tử dành cho cá nhân. Ngoài ra, trong menu của cùng trang web này còn có mục hướng dẫn cá nhân thực hiện thủ tục trực tuyến."
+      ],
+      "quotes": [
+        "個人の方の電子申請（国民年金）",
+        "オンラインで手続きする（個人の方）"
+      ]
+    },
+    {
+      "heading": "Khi chưa rõ trường hợp của mình thuộc chế độ nào",
+      "body": [
+        "Trong menu 「ご相談・Q&A」 (Tư vấn・Hỏi đáp) trên trang web của Tổ chức Hưu trí Nhật Bản (日本年金機構), có mục hướng dẫn mang tên 「相談・手続き窓口」 (Quầy tư vấn・thủ tục). Khi chưa rõ chế độ hoặc thủ tục nào liên quan đến trường hợp của mình, hãy tham khảo mục quầy tư vấn・thủ tục này."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "a7b805a796a0c261",
+  "translated_at": "2026-10-09"
+}
