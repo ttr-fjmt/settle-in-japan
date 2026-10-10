@@ -1,0 +1,92 @@
+{
+  "id": "residence-card-validity",
+  "title_en": "Residence Card: What It Certifies and How Its Record Changes",
+  "title_ja": "在留カードの有効期間と更新",
+  "description": "在留カードが何を証明するか、記載事項の変更届出義務、2026年6月からの顔写真表示や新様式の変更点を、出入国在留管理庁の公式情報で確認できる記事です。",
+  "icon": "card",
+  "published_at": "2026-10-10",
+  "sources": [
+    "card-what"
+  ],
+  "sections": [
+    {
+      "heading_en": "What the Residence Card Certifies",
+      "heading_ja": "在留カードが証明すること",
+      "body": [
+        {
+          "en": "A residence card is issued to a mid-to-long-term resident in Japan as a result of permission related to status of residence, including new landing permission, permission for change of status of residence, and permission for renewal of period of stay. It certifies that the holder is lawfully staying in Japan with a status of residence and period of stay recognized by the Director-General.",
+          "ja": "在留カードは、新規の上陸許可や在留資格の変更許可、在留期間の更新許可などの結果として、日本に中長期間在留する人に交付されます。中長期間滞在できる在留資格と在留期間をもって適法に在留していることを証明する書類です。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-what",
+          "text": "在留カードは、新規の上陸許可、在留資格の変更許可や在留期間の更新許可など在留資格に係る許可の結果として我が国に中長期間在留する者（中長期在留者）に対して交付されます。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Information on the Card and Your Duty to Report Changes",
+      "heading_ja": "記載事項と変更届出の義務",
+      "body": [
+        {
+          "en": "The residence card records important information the Immigration Services Agency holds, such as name, date of birth, sex, nationality/region, address, status of residence, and whether work is permitted. If any of this recorded information changes, there is an obligation to report the change.",
+          "ja": "在留カードには、氏名、生年月日、性別、国籍・地域、住居地、在留資格、就労の可否など、出入国在留管理庁が把握する情報の重要な部分が記載されます。記載事項に変更があった場合は、変更の届出が義務付けられています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-what",
+          "text": "在留カードには、氏名、生年月日、性別、国籍・地域、住居地、在留資格、就労の可否など、出入国在留管理庁長官が把握する情報の重要部分が記載されていますので、記載事項に変更が生じた場合には変更の届出を義務付けており、常に最新の情報が反映されることになります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "Photo Display Changes from June 14, 2026",
+      "heading_ja": "顔写真表示のルールの変化（2026年6月14日から）",
+      "body": [
+        {
+          "en": "For residence cards issued on or after June 14, 2026, a photo is displayed for holders aged 1 or older. For residence cards issued on or before June 13, 2026, a photo is displayed for holders aged 16 or older.",
+          "ja": "2026年6月14日以降に発行される在留カードでは、1歳以上の人に顔写真が表示されます。2026年6月13日以前に発行された在留カードでは、16歳以上の人に顔写真が表示されています。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-what",
+          "text": "また、2026年6月14日以降は１歳（※）以上の方には顔写真が表示されます。"
+        },
+        {
+          "source_id": "card-what",
+          "text": "※ 2026年6月13日以前に発行された在留カード等は、１６歳以上の方に顔写真が表示されています。"
+        }
+      ]
+    },
+    {
+      "heading_en": "New Card Format from June 14, 2026",
+      "heading_ja": "2026年6月14日からの新様式カード",
+      "body": [
+        {
+          "en": "From June 14, 2026, a residence card with added My Number card functions (specific residence card) and a special permanent resident certificate with the same functions (specific special permanent resident certificate) will be introduced. Residence cards and special permanent resident certificates will also change to a new format, and the items printed on the card will change.",
+          "ja": "2026年6月14日から、マイナンバーカードの機能を付加した在留カード（特定在留カード）が導入されます。在留カードと特別永住者証明書は新しい様式になり、券面に記載される事項が変わります。"
+        }
+      ],
+      "quotes": [
+        {
+          "source_id": "card-what",
+          "text": "2026年6月14日から、マイナンバーカードの機能を付加するための措置が講じられた在留カード（特定在留カード）及び特別永住者証明書（特定特別永住者証明書）が導入され、在留カード及び特別永住者証明書についても新様式となり、券面記載事項が変わります。"
+        }
+      ]
+    },
+    {
+      "heading_en": "When You Are Not Sure How This Applies to You",
+      "heading_ja": "自分の場合はどうなるか分からないとき",
+      "body": [
+        {
+          "en": "If you are not sure how the validity period or renewal rules apply in your own case, check with the Immigration Services Agency's counters or consultation services.",
+          "ja": "在留カードの有効期間や更新の手続について、自分の場合どうなるか分からないときは、出入国在留管理庁の窓口や相談窓口に確認してください。"
+        }
+      ],
+      "quotes": []
+    }
+  ]
+}

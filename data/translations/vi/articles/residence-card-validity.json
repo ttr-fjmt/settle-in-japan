@@ -1,0 +1,53 @@
+{
+  "id": "residence-card-validity",
+  "title": "Hiệu lực và việc gia hạn Thẻ lưu trú (在留カード)",
+  "description": "Bài viết giải thích Thẻ lưu trú (在留カード) chứng nhận điều gì, nghĩa vụ khai báo khi thay đổi thông tin, cùng những thay đổi về hiển thị ảnh và mẫu thẻ mới từ tháng 6 năm 2026, dựa trên thông tin chính thức của Cục quản lý xuất nhập cảnh và lưu trú Nhật Bản (出入国在留管理庁).",
+  "sections": [
+    {
+      "heading": "Thẻ lưu trú (在留カード) chứng nhận điều gì",
+      "body": [
+        "Thẻ lưu trú (在留カード) được cấp cho người cư trú trung và dài hạn tại Nhật Bản, như kết quả của việc được cấp phép liên quan đến tư cách lưu trú (在留資格), bao gồm giấy phép đổ bộ mới, giấy phép thay đổi tư cách lưu trú, hoặc giấy phép gia hạn thời gian lưu trú. Đây là giấy tờ chứng nhận việc cư trú hợp pháp tại Nhật Bản với tư cách lưu trú và thời gian lưu trú đã được công nhận."
+      ],
+      "quotes": [
+        "在留カードは、新規の上陸許可、在留資格の変更許可や在留期間の更新許可など在留資格に係る許可の結果として我が国に中長期間在留する者（中長期在留者）に対して交付されます。"
+      ]
+    },
+    {
+      "heading": "Các mục ghi trên thẻ và nghĩa vụ khai báo khi thay đổi",
+      "body": [
+        "Trên Thẻ lưu trú (在留カード) có ghi những thông tin quan trọng mà Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁) nắm giữ, như họ tên, ngày tháng năm sinh, giới tính, quốc tịch/khu vực, nơi cư trú, tư cách lưu trú (在留資格), và việc có được phép làm việc hay không. Khi có thay đổi đối với những thông tin này, có nghĩa vụ phải khai báo việc thay đổi đó."
+      ],
+      "quotes": [
+        "在留カードには、氏名、生年月日、性別、国籍・地域、住居地、在留資格、就労の可否など、出入国在留管理庁長官が把握する情報の重要部分が記載されていますので、記載事項に変更が生じた場合には変更の届出を義務付けており、常に最新の情報が反映されることになります。"
+      ]
+    },
+    {
+      "heading": "Thay đổi quy định hiển thị ảnh (từ ngày 14 tháng 6 năm 2026)",
+      "body": [
+        "Đối với Thẻ lưu trú (在留カード) được cấp từ ngày 14 tháng 6 năm 2026 trở đi, ảnh sẽ được hiển thị cho người từ 1 tuổi trở lên. Đối với Thẻ lưu trú (在留カード) được cấp từ ngày 13 tháng 6 năm 2026 trở về trước, ảnh được hiển thị cho người từ 16 tuổi trở lên."
+      ],
+      "quotes": [
+        "また、2026年6月14日以降は１歳（※）以上の方には顔写真が表示されます。",
+        "※ 2026年6月13日以前に発行された在留カード等は、１６歳以上の方に顔写真が表示されています。"
+      ]
+    },
+    {
+      "heading": "Mẫu thẻ mới từ ngày 14 tháng 6 năm 2026",
+      "body": [
+        "Từ ngày 14 tháng 6 năm 2026, Thẻ lưu trú tích hợp chức năng của Thẻ My Number (特定在留カード) sẽ được đưa vào sử dụng. Thẻ lưu trú (在留カード) và Giấy chứng nhận người vĩnh trú đặc biệt (特別永住者証明書) cũng sẽ chuyển sang mẫu mới, và các mục được ghi trên mặt thẻ sẽ thay đổi."
+      ],
+      "quotes": [
+        "2026年6月14日から、マイナンバーカードの機能を付加するための措置が講じられた在留カード（特定在留カード）及び特別永住者証明書（特定特別永住者証明書）が導入され、在留カード及び特別永住者証明書についても新様式となり、券面記載事項が変わります。"
+      ]
+    },
+    {
+      "heading": "Khi không rõ trường hợp của mình sẽ như thế nào",
+      "body": [
+        "Nếu không rõ thời hạn hiệu lực của Thẻ lưu trú (在留カード) hoặc thủ tục gia hạn sẽ áp dụng như thế nào cho trường hợp cụ thể của mình, nên hỏi trực tiếp tại quầy tiếp đón hoặc quầy tư vấn của Cục quản lý xuất nhập cảnh và lưu trú (出入国在留管理庁)."
+      ],
+      "quotes": []
+    }
+  ],
+  "source_hash": "1f32002db0fd578b",
+  "translated_at": "2026-10-10"
+}
